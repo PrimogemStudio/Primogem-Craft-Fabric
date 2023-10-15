@@ -12,8 +12,8 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.List;
 
-public class GrassCoreBlock extends Block {
-    public GrassCoreBlock() {
+public class DendroCoreBlock extends Block {
+    public DendroCoreBlock() {
         super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(10f, 20f).requiresCorrectToolForDrops());
     }
 
@@ -24,6 +24,7 @@ public class GrassCoreBlock extends Block {
         list.add(Component.literal("也可以合成"));
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
         return 15;
