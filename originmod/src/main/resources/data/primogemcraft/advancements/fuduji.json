@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:sanyueqidiaoxiang_01"
+    },
+    "title": {
+      "translate": "advancements.fuduji.title"
+    },
+    "description": {
+      "translate": "advancements.fuduji.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fuduji": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:chengjingle"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:lajitongzunyan"
+    },
+    "title": {
+      "translate": "advancements.zhzhiyexuanshou.title"
+    },
+    "description": {
+      "translate": "advancements.zhzhiyexuanshou.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "zhzhiyexuanshou": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "primogemcraft:lajitongzunyan"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "primogemcraft:zhzhongkouwei"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:blocks/djqjkkkkkk",
+    "up": "primogemcraft:blocks/djqjkkkkkk",
+    "north": "primogemcraft:blocks/djqjkkkkkk",
+    "east": "primogemcraft:blocks/djqjkkkkkk",
+    "south": "primogemcraft:blocks/djqjkkkkkk",
+    "west": "primogemcraft:blocks/djqjkkkkkk",
+    "particle": "primogemcraft:blocks/djqjkkkkkk"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "乐透的惩罚",
+    "icon": "yin_he_da_le_tou_.png",
+    "color": {
+      "value": -39169,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "ZLetouchengfahenshuxing"
+    }
+  }
+}

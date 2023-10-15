@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "huo_cao_pao"
+      },
+      "name": "default"
+    }
+  }
+}

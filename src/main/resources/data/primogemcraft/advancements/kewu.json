@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:zhapiandingzhengshi"
+    },
+    "title": {
+      "translate": "advancements.kewu.title"
+    },
+    "description": {
+      "translate": "advancements.kewu.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kewu": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:ttazhenhaokan"
+}

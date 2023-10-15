@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="primogemcraft"
+version="2.0.1"
+displayName="原石工艺"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://www.mcmod.cn/class/10429.html"
+logoFile="logo.png"
+authors="Pepper某人, MCreator"
+description='''
+一个暂时啥也不是的mod
+'''
+
+[[dependencies.primogemcraft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

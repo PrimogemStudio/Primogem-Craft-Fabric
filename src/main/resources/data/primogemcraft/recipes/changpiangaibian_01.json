@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "primogemcraft:jijiuchanzhiyuan"
+  },
+  "addition": {
+    "item": "primogemcraft:mmola_01"
+  },
+  "result": {
+    "item": "primogemcraft:bbuzainianqingdeqincezhuang_012"
+  }
+}

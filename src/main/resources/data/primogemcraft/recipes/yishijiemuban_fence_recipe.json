@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    },
+    "3": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yishijiemuban_fence",
+    "count": 3
+  }
+}

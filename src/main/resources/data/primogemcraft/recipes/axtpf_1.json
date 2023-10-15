@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_helmet"
+  },
+  "addition": {
+    "item": "primogemcraft:axtsj"
+  },
+  "result": {
+    "item": "primogemcraft:axtt_helmet"
+  }
+}

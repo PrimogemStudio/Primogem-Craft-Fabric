@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:copper_ingot"
+    },
+    "1": {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    "2": {
+      "item": "minecraft:copper_ingot"
+    },
+    "3": {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    "4": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "5": {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    "6": {
+      "item": "minecraft:copper_ingot"
+    },
+    "7": {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    "8": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:djtsj",
+    "count": 1
+  }
+}

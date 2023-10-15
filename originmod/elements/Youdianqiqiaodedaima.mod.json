@@ -1,0 +1,58 @@
+{
+  "_fv": 39,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "qiqiaodedaima",
+    "customModelName": "Normal",
+    "name": "§5『奇物』§9有点蹊跷的代码",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 31,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§7将这段代码修复成正常的奇物需要",
+      "§7击杀30只生物",
+      "§",
+      "§7修复期间：",
+      "§2玩家造成暴击时概率降低自",
+      "§2身生命值",
+      "§7代码修复后：",
+      "§2造成暴击后极高概率恢复生",
+      "§2命值，持续到增益结束"
+    ],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "Fumianqiwufaguang"
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "Daima2shuxing"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

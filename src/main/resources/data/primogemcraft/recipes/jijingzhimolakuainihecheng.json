@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 19,
+  "ingredient": {
+    "item": "primogemcraft:jingzhimolakuai"
+  },
+  "result": "primogemcraft:mmola_01"
+}

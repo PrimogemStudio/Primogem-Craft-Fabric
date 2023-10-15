@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Jljtie"
+      },
+      {
+        "value": "CUSTOM:Jljzs"
+      },
+      {
+        "value": "CUSTOM:Jjljxjhj"
+      },
+      {
+        "value": "CUSTOM:Jlg"
+      },
+      {
+        "value": "CUSTOM:Jlf"
+      },
+      {
+        "value": "CUSTOM:Jlq"
+      },
+      {
+        "value": "CUSTOM:Jlc"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "geo_infusion",
+    "namespace": "genshincraft"
+  }
+}

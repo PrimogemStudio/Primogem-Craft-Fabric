@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "primogemcraft:block/caomu_25"
+    },
+    "powered=true": {
+      "model": "primogemcraft:block/caomu_25_down"
+    }
+  }
+}

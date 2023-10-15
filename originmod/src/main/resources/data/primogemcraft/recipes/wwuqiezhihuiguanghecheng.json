@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "primogemcraft:zuishengkuai"
+    },
+    "2": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "primogemcraft:zuishengzijing"
+    },
+    "4": {
+      "item": "minecraft:diamond_sword"
+    },
+    "6": {
+      "item": "minecraft:white_terracotta"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:wuqiezhihuiguang",
+    "count": 1
+  }
+}

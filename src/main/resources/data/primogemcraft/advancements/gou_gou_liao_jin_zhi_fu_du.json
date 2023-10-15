@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:sanyueqidiaoxiang_01"
+    },
+    "title": {
+      "translate": "advancements.gou_gou_liao_jin_zhi_fu_du.title"
+    },
+    "description": {
+      "translate": "advancements.gou_gou_liao_jin_zhi_fu_du.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "gou_gou_liao_jin_zhi_fu_du": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:fuduji"
+}

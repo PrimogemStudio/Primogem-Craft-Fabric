@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:cangsangshizhuan"
+    },
+    "1": {
+      "item": "primogemcraft:cangsangshizhuan"
+    },
+    "2": {
+      "item": "primogemcraft:cangsangshizhuan"
+    },
+    "3": {
+      "item": "primogemcraft:cangsangshizhuan"
+    },
+    "4": {
+      "item": "primogemcraft:cangsangshizhuan"
+    },
+    "5": {
+      "item": "primogemcraft:cangsangshizhuan"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:cangsangshizhuanweiqiang",
+    "count": 4
+  }
+}

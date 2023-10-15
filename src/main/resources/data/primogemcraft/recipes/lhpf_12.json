@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 24,
+  "ingredient": {
+    "tag": "primogemcraft:yuansutaoxiajiehejin"
+  },
+  "result": "primogemcraft:qhzlh"
+}

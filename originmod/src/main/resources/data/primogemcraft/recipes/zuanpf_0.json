@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "forge:zuan_0"
+  },
+  "addition": {
+    "item": "primogemcraft:mzsj_2"
+  },
+  "result": {
+    "item": "minecraft:diamond_helmet"
+  }
+}

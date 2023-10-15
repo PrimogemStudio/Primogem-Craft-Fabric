@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "1": {
+      "item": "primogemcraft:mmolapeiziwupin"
+    },
+    "2": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "3": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "5": {
+      "item": "primogemcraft:jinzhimola"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:kkuijiaceshi_boots",
+    "count": 1
+  }
+}

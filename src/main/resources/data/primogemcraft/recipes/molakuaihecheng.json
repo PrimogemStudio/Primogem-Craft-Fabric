@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "1": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "2": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "3": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "4": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "5": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "6": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "7": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "8": {
+      "item": "primogemcraft:moladui_02"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:molakuai_01",
+    "count": 1
+  }
+}

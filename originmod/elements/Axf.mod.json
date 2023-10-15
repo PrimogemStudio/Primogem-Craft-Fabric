@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "axdf",
+    "customModelName": "Normal",
+    "name": "§b『哀叙冰玉』斧",
+    "specialInfo": [
+      "§d右键空气时：",
+      "§7 - 50%概率消耗一个§d§n最胜紫晶 碎屑",
+      "§7 - 对周围非队友生物",
+      "§7    造成一次§b§o [3d8] §7真实伤害",
+      "§7 - 冷却10秒",
+      "§",
+      "§d使用摩拉可添加队友"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 4,
+    "efficiency": 8.0,
+    "attackSpeed": 1.0,
+    "enchantability": 20,
+    "damageVsEntity": 8.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Aixubingyusuixie"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "Axfsx"
+    }
+  }
+}

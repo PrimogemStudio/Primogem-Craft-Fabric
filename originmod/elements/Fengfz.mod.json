@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zizaitiejian"
+      },
+      {
+        "value": "CUSTOM:Zizaizuanshijian"
+      },
+      {
+        "value": "CUSTOM:Zizaihejinjian"
+      },
+      {
+        "value": "CUSTOM:Zizgao"
+      },
+      {
+        "value": "CUSTOM:Zizaifu"
+      },
+      {
+        "value": "CUSTOM:Zizaiqiao"
+      },
+      {
+        "value": "CUSTOM:Zizaichu"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "anemo_infusion",
+    "namespace": "genshincraft"
+  }
+}

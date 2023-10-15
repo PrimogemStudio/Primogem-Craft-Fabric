@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:mmolapeiziwupin"
+    },
+    "title": {
+      "translate": "advancements.beiguotiejiang.title"
+    },
+    "description": {
+      "translate": "advancements.beiguotiejiang.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beiguotiejiang": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:mmolajianjindu"
+}

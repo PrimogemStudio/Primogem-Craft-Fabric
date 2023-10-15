@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "primogemcraft:blocks/zsss_ks_01",
+    "particle": "primogemcraft:blocks/zsss_ks_01"
+  }
+}

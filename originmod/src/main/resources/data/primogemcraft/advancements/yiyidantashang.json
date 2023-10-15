@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:lajitong"
+    },
+    "title": {
+      "translate": "advancements.yiyidantashang.title"
+    },
+    "description": {
+      "translate": "advancements.yiyidantashang.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "yiyidantashang": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:wanwuqiyuan"
+}

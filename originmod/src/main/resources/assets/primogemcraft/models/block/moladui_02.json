@@ -1,0 +1,8 @@
+{
+  "parent": "primogemcraft:custom/moladui",
+  "textures": {
+    "all": "primogemcraft:blocks/moladui01",
+    "particle": "primogemcraft:blocks/moladui01",
+    "0": "primogemcraft:blocks/moladui01"
+  }
+}

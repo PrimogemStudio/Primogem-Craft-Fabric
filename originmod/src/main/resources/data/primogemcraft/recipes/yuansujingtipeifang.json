@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "primogemcraft:yuansujingticailiaobiaoqian"
+  },
+  "addition": {
+    "item": "primogemcraft:shanbianzhichen"
+  },
+  "result": {
+    "item": "primogemcraft:yuansujingti"
+  }
+}

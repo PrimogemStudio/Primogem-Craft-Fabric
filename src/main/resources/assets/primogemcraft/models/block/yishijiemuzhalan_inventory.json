@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "primogemcraft:blocks/yimuce",
+    "particle": "primogemcraft:blocks/yimuce"
+  }
+}

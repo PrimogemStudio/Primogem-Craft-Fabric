@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:logs"
+    },
+    "1": {
+      "tag": "minecraft:logs"
+    },
+    "2": {
+      "tag": "minecraft:logs"
+    },
+    "3": {
+      "tag": "minecraft:logs"
+    },
+    "4": {
+      "item": "primogemcraft:yuanshi"
+    },
+    "5": {
+      "tag": "minecraft:logs"
+    },
+    "6": {
+      "tag": "minecraft:logs"
+    },
+    "7": {
+      "tag": "minecraft:logs"
+    },
+    "8": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yishijieyuanmumuban",
+    "count": 32
+  }
+}

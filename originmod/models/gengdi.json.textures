@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "diyugengdi_2",
+        "2": "xiajieyangengdi_dongtai"
+      },
+      "name": "default"
+    }
+  }
+}

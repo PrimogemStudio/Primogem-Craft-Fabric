@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:ziziyousongshisuixie"
+    },
+    "1": {
+      "item": "primogemcraft:ziziyousongshisuixie"
+    },
+    "2": {
+      "item": "primogemcraft:ziziyousongshisuixie"
+    },
+    "3": {
+      "item": "primogemcraft:ziziyousongshisuixie"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:zziyousongshiduanpian",
+    "count": 1
+  }
+}

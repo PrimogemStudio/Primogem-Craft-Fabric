@@ -1,0 +1,99 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zizaitiejia.helmet"
+      },
+      {
+        "value": "CUSTOM:Zizaitiejia.body"
+      },
+      {
+        "value": "CUSTOM:Zizaitiejia.legs"
+      },
+      {
+        "value": "CUSTOM:Zizaitiejia.boots"
+      },
+      {
+        "value": "CUSTOM:Kjjlt.helmet"
+      },
+      {
+        "value": "CUSTOM:Kjjlt.body"
+      },
+      {
+        "value": "CUSTOM:Kjjlt.legs"
+      },
+      {
+        "value": "CUSTOM:Kjjlt.boots"
+      },
+      {
+        "value": "CUSTOM:Zstkj.helmet"
+      },
+      {
+        "value": "CUSTOM:Zstkj.body"
+      },
+      {
+        "value": "CUSTOM:Zstkj.legs"
+      },
+      {
+        "value": "CUSTOM:Zstkj.boots"
+      },
+      {
+        "value": "CUSTOM:Szkjtie.helmet"
+      },
+      {
+        "value": "CUSTOM:Szkjtie.body"
+      },
+      {
+        "value": "CUSTOM:Szkjtie.legs"
+      },
+      {
+        "value": "CUSTOM:Szkjtie.boots"
+      },
+      {
+        "value": "CUSTOM:Djtt.helmet"
+      },
+      {
+        "value": "CUSTOM:Djtt.body"
+      },
+      {
+        "value": "CUSTOM:Djtt.legs"
+      },
+      {
+        "value": "CUSTOM:Djtt.boots"
+      },
+      {
+        "value": "CUSTOM:Rytt.helmet"
+      },
+      {
+        "value": "CUSTOM:Rytt.body"
+      },
+      {
+        "value": "CUSTOM:Rytt.legs"
+      },
+      {
+        "value": "CUSTOM:Rytt.boots"
+      },
+      {
+        "value": "CUSTOM:Axtt.helmet"
+      },
+      {
+        "value": "CUSTOM:Axtt.body"
+      },
+      {
+        "value": "CUSTOM:Axtt.legs"
+      },
+      {
+        "value": "CUSTOM:Axtt.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "yuansutaotie",
+    "namespace": "primogemcraft"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "primogemcraft",
+  "version": "2.0.1",
+  "name": "Primogem Craft (Fabric)",
+  "description": "A distinctive Minecraft mod integrated with Genshin Impact and Honkai: Star Rail",
+  "authors": [
+    "Coder2", "hackermdch", "PepperMR"
+  ],
+  "contact": {
+    "repo": "https://github.com/Primogem-Craft-Development/Primogem-Craft-Fabric",
+    "issues": "https://github.com/Primogem-Craft-Development/Primogem-Craft-Fabric/issues",
+    "sources": "https://github.com/Primogem-Craft-Development/Primogem-Craft-Fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/primogemcraft/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.primogemstudio.primogemcraft.client.PrimogemCraftFabricClient"
+    ],
+    "main": [
+      "com.primogemstudio.primogemcraft.PrimogemCraftFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.11.4",
+    "fabric": "*",
+    "minecraft": "1.20.x"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "addition": {
+    "item": "primogemcraft:shengjijlhjwp"
+  },
+  "result": {
+    "item": "primogemcraft:jlkjhj_chestplate"
+  }
+}

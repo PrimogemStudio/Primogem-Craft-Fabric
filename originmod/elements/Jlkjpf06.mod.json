@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.DIAMOND_CHESTPLATE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Shengjijlzswp"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Jlkjzs.body"
+    },
+    "name": "jlkjpf_06",
+    "namespace": "mod"
+  }
+}

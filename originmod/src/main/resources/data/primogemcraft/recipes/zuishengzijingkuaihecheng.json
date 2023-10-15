@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "1": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "2": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "3": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "4": {
+      "item": "primogemcraft:zuishengzijing"
+    },
+    "5": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "6": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "7": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "8": {
+      "item": "primogemcraft:zuishengsuixie"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:zuisnegzijingkuai",
+    "count": 1
+  }
+}

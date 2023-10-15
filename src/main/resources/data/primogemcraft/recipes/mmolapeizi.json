@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "1": {
+      "tag": "minecraft:sand"
+    },
+    "2": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "3": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "4": {
+      "item": "primogemcraft:ranyuankuai"
+    },
+    "5": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "6": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "7": {
+      "item": "primogemcraft:molakuai_01"
+    },
+    "8": {
+      "item": "primogemcraft:jingzhimolakuai"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:mmolapeiziwupin",
+    "count": 1
+  }
+}

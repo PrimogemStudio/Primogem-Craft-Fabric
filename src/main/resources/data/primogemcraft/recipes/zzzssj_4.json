@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "addition": {
+    "item": "primogemcraft:shengjizizaizuan"
+  },
+  "result": {
+    "item": "primogemcraft:zizaizuantao_boots"
+  }
+}

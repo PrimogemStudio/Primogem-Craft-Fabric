@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "primogemcraft:block/sanyueqidiaoxiang_01"
+    },
+    "facing=east": {
+      "model": "primogemcraft:block/sanyueqidiaoxiang_01",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "primogemcraft:block/sanyueqidiaoxiang_01",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "primogemcraft:block/sanyueqidiaoxiang_01",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 39,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:Disuikuai1"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 40.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

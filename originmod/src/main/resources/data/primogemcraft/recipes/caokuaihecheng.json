@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:caoyuanhe"
+    },
+    "1": {
+      "item": "primogemcraft:caoyuanhe"
+    },
+    "2": {
+      "item": "primogemcraft:caoyuanhe"
+    },
+    "3": {
+      "item": "primogemcraft:caoyuanhe"
+    },
+    "4": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "5": {
+      "item": "primogemcraft:caoyuanhe"
+    },
+    "6": {
+      "item": "primogemcraft:caoyuanhe"
+    },
+    "7": {
+      "item": "primogemcraft:caoyuanhe"
+    },
+    "8": {
+      "item": "primogemcraft:caoyuanhe"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:caoyuanhekuai",
+    "count": 1
+  }
+}

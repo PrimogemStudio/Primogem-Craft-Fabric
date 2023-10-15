@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:feiqiupingzheng"
+    },
+    "title": {
+      "translate": "advancements.zhongjifeiqiu.title"
+    },
+    "description": {
+      "translate": "advancements.zhongjifeiqiu.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "zhongjifeiqiu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "primogemcraft:feiqiupingzheng"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "primogemcraft:d_du_tu_de_kai_shi"
+}

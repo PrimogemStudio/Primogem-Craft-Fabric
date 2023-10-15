@@ -1,0 +1,41 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "zztj",
+    "customModelName": "Normal",
+    "name": "§a『自在松石』§f铁剑",
+    "specialInfo": [
+      "§d攻击目标时：",
+      "§7 - 可以击飞目标！",
+      "§7 - 触发几率25%"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 2,
+    "efficiency": 6.0,
+    "attackSpeed": 1.6,
+    "enchantability": 2,
+    "damageVsEntity": 5.0,
+    "usageCount": 320,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ziziyousongshisuixie"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Zizaijianshuxing"
+    }
+  }
+}

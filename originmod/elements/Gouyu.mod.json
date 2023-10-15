@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "勾玉",
+    "icon": "gouyu.png",
+    "color": {
+      "value": -1878800,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "Gouyukaishi"
+    },
+    "onActiveTick": {
+      "name": "Gouyu_shuxing"
+    }
+  }
+}

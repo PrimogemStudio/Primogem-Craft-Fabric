@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "primogemcraft:blocks/yimuding",
+    "top": "primogemcraft:blocks/yimuding",
+    "side": "primogemcraft:blocks/yimuding"
+  }
+}

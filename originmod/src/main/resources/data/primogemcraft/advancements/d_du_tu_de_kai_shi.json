@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:yiyinhedaletou"
+    },
+    "title": {
+      "translate": "advancements.d_du_tu_de_kai_shi.title"
+    },
+    "description": {
+      "translate": "advancements.d_du_tu_de_kai_shi.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "d_du_tu_de_kai_shi": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "primogemcraft:yiyinhedaletou"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "primogemcraft:nnizhiguanchou"
+}

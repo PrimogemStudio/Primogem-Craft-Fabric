@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Jlkjzs.body"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Sshengjijlzsshjwp"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Jlkjhj.body"
+    },
+    "name": "jlkjpf_14",
+    "namespace": "mod"
+  }
+}

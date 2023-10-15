@@ -1,0 +1,40 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "jiuchanzhigao_xin",
+    "customModelName": "Normal",
+    "name": "§d纠缠之缘镐",
+    "specialInfo": [
+      "抽卡哪有挖矿有意思",
+      "§",
+      "§5破坏方块时：",
+      "§2有概率掉落§e摩拉§f",
+      "§2小概率掉落§b原石"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 6,
+    "efficiency": 20.0,
+    "attackSpeed": 1.0,
+    "enchantability": 3,
+    "damageVsEntity": 4.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jijiuchanzhiyuan"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "onBlockDestroyedWithTool": {
+      "name": "Jiuchanzhigaosuijidiaoluo"
+    }
+  }
+}

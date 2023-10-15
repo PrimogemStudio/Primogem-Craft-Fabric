@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "1": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "2": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "3": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "4": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "5": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "6": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "7": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "8": {
+      "item": "primogemcraft:jinzhimola"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:wmoladai",
+    "count": 1
+  }
+}

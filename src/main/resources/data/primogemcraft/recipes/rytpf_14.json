@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "primogemcraft:ruzst_chestplate"
+  },
+  "addition": {
+    "item": "primogemcraft:ryzsshjsj"
+  },
+  "result": {
+    "item": "primogemcraft:ryhjt_chestplate"
+  }
+}

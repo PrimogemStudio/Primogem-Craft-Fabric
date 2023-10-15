@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zizaitiejia.helmet"
+      },
+      {
+        "value": "CUSTOM:Zstkj.helmet"
+      },
+      {
+        "value": "CUSTOM:Kjjlt.helmet"
+      },
+      {
+        "value": "CUSTOM:Szkjtie.helmet"
+      },
+      {
+        "value": "CUSTOM:Djtt.helmet"
+      },
+      {
+        "value": "CUSTOM:Rytt.helmet"
+      },
+      {
+        "value": "CUSTOM:Axtt.helmet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "tie_0",
+    "namespace": "forge"
+  }
+}

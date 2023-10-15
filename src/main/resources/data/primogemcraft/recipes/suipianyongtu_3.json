@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:lajitongsuipian"
+    },
+    "1": {
+      "item": "primogemcraft:lajitongsuipian"
+    },
+    "2": {
+      "item": "primogemcraft:lajitongsuipian"
+    },
+    "3": {
+      "item": "primogemcraft:lajitongsuipian"
+    },
+    "4": {
+      "item": "primogemcraft:shanbianzhichen"
+    },
+    "5": {
+      "item": "primogemcraft:lajitongsuipian"
+    },
+    "6": {
+      "item": "primogemcraft:lajitongsuipian"
+    },
+    "7": {
+      "item": "primogemcraft:lajitongsuipian"
+    },
+    "8": {
+      "item": "primogemcraft:lajitongsuipian"
+    }
+  },
+  "result": {
+    "item": "minecraft:iron_ingot",
+    "count": 4
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Sztj"
+      },
+      {
+        "value": "CUSTOM:Szzsj"
+      },
+      {
+        "value": "CUSTOM:Szhjj"
+      },
+      {
+        "value": "CUSTOM:Szg"
+      },
+      {
+        "value": "CUSTOM:Szf"
+      },
+      {
+        "value": "CUSTOM:Szq"
+      },
+      {
+        "value": "CUSTOM:Szc"
+      },
+      {
+        "value": "CUSTOM:Zfg"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "dendro_infusion",
+    "namespace": "genshincraft"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "liezfg",
+    "customModelName": "Normal",
+    "name": "§9『涤净青金』§a绽放镐",
+    "specialInfo": [
+      "§d挖掘方块时：",
+      "§7 - 概率在玩家位置生成草原核"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 8.0,
+    "attackSpeed": 1.0,
+    "enchantability": 15,
+    "damageVsEntity": 7.0,
+    "usageCount": 2561,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Shengzhangbifeisuixie"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "CUSTOM:Yuanshi"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "Zfgsx"
+    }
+  }
+}

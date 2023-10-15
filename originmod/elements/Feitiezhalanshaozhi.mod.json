@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 0.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Cshixiutiezhalan"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.IRON_NUGGET"
+    },
+    "name": "feitiezhalanshaozhi",
+    "namespace": "mod"
+  }
+}

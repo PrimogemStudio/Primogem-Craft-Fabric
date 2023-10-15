@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:yiyishijieyuanmubanzhuan"
+    },
+    "1": {
+      "item": "primogemcraft:yishijieyuanmumuban"
+    },
+    "2": {
+      "item": "primogemcraft:yiyishijieyuanmubanzhuan"
+    },
+    "3": {
+      "item": "primogemcraft:yishijieyuanmumuban"
+    },
+    "4": {
+      "item": "primogemcraft:yishijieyuanmumuban"
+    },
+    "5": {
+      "item": "primogemcraft:yishijieyuanmumuban"
+    },
+    "7": {
+      "item": "primogemcraft:yishijieyuanmumuban"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yishijiemuban_planks",
+    "count": 6
+  }
+}

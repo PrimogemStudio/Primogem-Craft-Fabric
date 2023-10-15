@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "primogemcraft:xinyuekuangshi"
+  },
+  "result": "primogemcraft:xinyuejinshu"
+}

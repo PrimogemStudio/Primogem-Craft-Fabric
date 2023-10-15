@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    {
+      "item": "primogemcraft:diijingqingjing"
+    },
+    {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    {
+      "item": "primogemcraft:dijingsuixie"
+    },
+    {
+      "item": "primogemcraft:dijingsuixie"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:dijingqingjinkuai",
+    "count": 1
+  }
+}

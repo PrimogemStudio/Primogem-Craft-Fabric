@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zizizaihejintao.boots"
+      },
+      {
+        "value": "CUSTOM:Jlkjhj.boots"
+      },
+      {
+        "value": "CUSTOM:Zshjt.boots"
+      },
+      {
+        "value": "CUSTOM:Szhjkj.boots"
+      },
+      {
+        "value": "CUSTOM:Djhjt.boots"
+      },
+      {
+        "value": "CUSTOM:Ryhjt.boots"
+      },
+      {
+        "value": "CUSTOM:Axhjt.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "hejin_3",
+    "namespace": "forge"
+  }
+}

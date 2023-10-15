@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "primogemcraft:shengzhangbifeidakuai"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:shengzhangduanpian",
+    "count": 18
+  }
+}

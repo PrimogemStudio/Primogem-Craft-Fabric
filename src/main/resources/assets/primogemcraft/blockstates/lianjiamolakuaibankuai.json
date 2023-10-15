@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "primogemcraft:block/lianjiamolakuaibankuai"
+    },
+    "type=top": {
+      "model": "primogemcraft:block/lianjiamolakuaibankuai_top"
+    },
+    "type=double": {
+      "model": "primogemcraft:block/lianjiamolakuaibankuai_full"
+    }
+  }
+}

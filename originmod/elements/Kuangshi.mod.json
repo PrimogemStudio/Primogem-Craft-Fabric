@@ -1,0 +1,38 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Yuanshikuangshi"
+      },
+      {
+        "value": "CUSTOM:Ziyousongshikuangshi"
+      },
+      {
+        "value": "CUSTOM:Jianlaokuangshi"
+      },
+      {
+        "value": "CUSTOM:Zuishengkuangshi"
+      },
+      {
+        "value": "CUSTOM:Shengzhangkuangshi"
+      },
+      {
+        "value": "CUSTOM:Dijingqinjingkuangshi"
+      },
+      {
+        "value": "CUSTOM:Ranyuanmanaokuangshi"
+      },
+      {
+        "value": "CUSTOM:Aixubingyukuangshi"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "ores",
+    "namespace": "forge"
+  }
+}

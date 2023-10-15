@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "CUSTOM:Chuangshijiejing"
+      },
+      {
+        "value": "Blocks.WOOL#5"
+      },
+      {
+        "value": "CUSTOM:Kongyuejinshu"
+      },
+      {
+        "value": "CUSTOM:Shanbianzhichen"
+      },
+      {
+        "value": "CUSTOM:Xinyuejinshu"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Kongyuezhufu"
+    },
+    "name": "kongyuezhufupeifang",
+    "namespace": "mod"
+  }
+}

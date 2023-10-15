@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "molagao",
+    "customModelName": "Normal",
+    "name": "『勤劳』的哲学",
+    "specialInfo": [
+      "§b挖掘时§f有小概率掉落§e摩拉"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 5,
+    "efficiency": 18.0,
+    "attackSpeed": 1.0,
+    "enchantability": 5,
+    "damageVsEntity": 6.0,
+    "usageCount": 800,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Moladui02"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "Ppohuaifangkuaisuijimola"
+    }
+  }
+}

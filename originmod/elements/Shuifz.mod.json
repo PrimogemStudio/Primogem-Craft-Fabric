@@ -1,0 +1,39 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Djtj"
+      },
+      {
+        "value": "CUSTOM:Ddjzsj"
+      },
+      {
+        "value": "CUSTOM:Djhjj"
+      },
+      {
+        "value": "CUSTOM:Djg"
+      },
+      {
+        "value": "CUSTOM:Djf"
+      },
+      {
+        "value": "CUSTOM:Djq"
+      },
+      {
+        "value": "CUSTOM:Djc"
+      },
+      {
+        "value": "CUSTOM:Zfg"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "hydro_infusion",
+    "namespace": "genshincraft"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "primogemcraft:block/yiyishijieyuanmubanzhuan"
+    },
+    "type=top": {
+      "model": "primogemcraft:block/yiyishijieyuanmubanzhuan_top"
+    },
+    "type=double": {
+      "model": "primogemcraft:block/yiyishijieyuanmubanzhuan_full"
+    }
+  }
+}

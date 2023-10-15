@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:ranyuansuixie"
+    },
+    "1": {
+      "item": "primogemcraft:ranyuansuixie"
+    },
+    "2": {
+      "item": "primogemcraft:ranyuansuixie"
+    },
+    "3": {
+      "item": "primogemcraft:ranyuansuixie"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:ranyuanduanpian",
+    "count": 1
+  }
+}

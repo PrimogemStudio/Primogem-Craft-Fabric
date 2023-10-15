@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_sword"
+  },
+  "addition": {
+    "item": "primogemcraft:djtsj"
+  },
+  "result": {
+    "item": "primogemcraft:djtj"
+  }
+}

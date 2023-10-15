@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Yishijiemugun"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Yishijiemugun"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Tiaoguozhang"
+    },
+    "name": "tiaoguozhizhanghecheng",
+    "namespace": "mod"
+  }
+}

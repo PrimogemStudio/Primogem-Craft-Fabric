@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "bottom": "primogemcraft:blocks/guanzi03",
+    "top": "primogemcraft:blocks/guanzi02"
+  }
+}

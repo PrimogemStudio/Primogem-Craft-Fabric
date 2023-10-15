@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Jianlaokuaiwupin"
+      },
+      {
+        "value": "CUSTOM:Jianlaokuaiwupin"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Jianlaokuaiwupin"
+      },
+      {
+        "value": "CUSTOM:Jianlaokuaiwupin"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Jianlaohuangyu"
+    },
+    "name": "jianlaohuangyupeifang",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "primogemcraft:zszst_boots"
+  },
+  "addition": {
+    "item": "primogemcraft:sjzszsshj"
+  },
+  "result": {
+    "item": "primogemcraft:zshjt_boots"
+  }
+}

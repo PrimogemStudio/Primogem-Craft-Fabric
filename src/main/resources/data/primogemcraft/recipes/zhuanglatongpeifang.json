@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:lajitong"
+    },
+    "1": {
+      "item": "primogemcraft:laji"
+    },
+    "2": {
+      "item": "primogemcraft:lajitong"
+    },
+    "3": {
+      "item": "primogemcraft:laji"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "primogemcraft:laji"
+    },
+    "6": {
+      "item": "primogemcraft:lajitong"
+    },
+    "7": {
+      "item": "primogemcraft:laji"
+    },
+    "8": {
+      "item": "primogemcraft:lajitong"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:zhuangmanlajidelajitong",
+    "count": 1
+  }
+}

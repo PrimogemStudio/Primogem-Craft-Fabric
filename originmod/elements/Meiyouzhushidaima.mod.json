@@ -1,0 +1,60 @@
+{
+  "_fv": 39,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "quezhushi",
+    "customModelName": "Normal",
+    "name": "§5『奇物』§d没有注释的代码",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 31,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§7将这段代码修复成正常的奇物需要",
+      "§7击杀30只生物",
+      "§",
+      "§7修复期间：",
+      "§2玩家攻击目标时，概率使目标周围的非玩家",
+      "§2生物获得力量等级加成",
+      "§7代码修复后：",
+      "§2击杀目标后概率提升自身力量等级",
+      "§2若力量效果小于20秒，将继承持续时间",
+      "§2否则取持续时间的5%继承",
+      "§2持续到增益结束"
+    ],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "Fumianqiwufaguang"
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "Meiyouzhushishuxing"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

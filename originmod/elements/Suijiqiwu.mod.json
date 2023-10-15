@@ -1,0 +1,141 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 179,
+    "height": 183,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 9,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "Sscs"
+          },
+          "x": 153,
+          "y": 81
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "Sscs"
+          },
+          "x": 206,
+          "y": 81
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "Sscs"
+          },
+          "x": 259,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_shua_xin",
+          "text": "刷新",
+          "onClick": {
+            "name": "Suijiqiwuguishuxing"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 197,
+          "y": 104
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Yuzhousuipian"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 206,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sui_ji_qi_wu",
+          "text": {
+            "fixedValue": "随机奇物"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 130,
+          "y": 35
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Kaifaqiangzhi01"
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 666,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 281,
+          "y": 33
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "GUItishi"
+    },
+    "onTick": {
+      "name": "GUItishi"
+    },
+    "onClosed": {
+      "name": "Shijianguanbi"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 14,
+      "oy": 26,
+      "snapOnGrid": false
+    }
+  }
+}

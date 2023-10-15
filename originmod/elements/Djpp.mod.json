@@ -1,0 +1,26 @@
+{
+  "_fv": 39,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "涤净泡泡",
+    "icon": "bubble.png",
+    "color": {
+      "value": -3342337,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "Djqjkaishi"
+    },
+    "onActiveTick": {
+      "name": "Djppguocheng"
+    },
+    "onExpired": {
+      "name": "Djpppolie"
+    }
+  }
+}

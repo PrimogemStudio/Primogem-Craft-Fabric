@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "forge:tie_3"
+  },
+  "addition": {
+    "item": "primogemcraft:mzsj"
+  },
+  "result": {
+    "item": "minecraft:iron_boots"
+  }
+}

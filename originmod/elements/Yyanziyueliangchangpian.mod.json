@@ -1,0 +1,19 @@
+{
+  "_fv": 39,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "盐渍月亮！",
+    "texture": "yanzhanyueliang",
+    "description": "HOYO-MiX",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:yanziyueliang"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

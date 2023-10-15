@@ -1,0 +1,109 @@
+{
+  "_fv": 39,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "zizai_tietou",
+    "enableBody": true,
+    "textureBody": "zizai_tieyi",
+    "enableLeggings": true,
+    "textureLeggings": "zizai_tieku",
+    "enableBoots": true,
+    "textureBoots": "zizai_tiexue",
+    "onHelmetTick": {
+      "name": "Zizaitaoshuxing"
+    },
+    "onBodyTick": {
+      "name": "Zizaitaoshuxing"
+    },
+    "onLeggingsTick": {
+      "name": "Zizaitaoshuxing"
+    },
+    "onBootsTick": {
+      "name": "Zizaitaoshuxing"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "armorTextureFile": "zizaitie_",
+    "helmetName": "§a『自在松石』 铁头盔",
+    "bodyName": "§a『自在松石』 铁胸甲",
+    "leggingsName": "§a『自在松石』 铁护腿",
+    "bootsName": "§a『自在松石』 铁靴子",
+    "helmetSpecialInfo": [
+      "§2包含套装数值：§b[0.5]",
+      "§",
+      "§7 - 2套装：获得永久羽坠效果",
+      "§",
+      "§d提升程度基于套装数值"
+    ],
+    "bodySpecialInfo": [
+      "§2包含套装数值：§b[0.5]",
+      "§",
+      "§7 - 2套装：获得永久羽坠效果",
+      "§",
+      "§d提升程度基于套装数值"
+    ],
+    "leggingsSpecialInfo": [
+      "§2包含套装数值：§b[0.5]",
+      "§",
+      "§7 - 2套装：获得永久羽坠效果",
+      "§",
+      "§d提升程度基于套装数值"
+    ],
+    "bootsSpecialInfo": [
+      "§2包含套装数值：§b[0.5]",
+      "§",
+      "§7 - 2套装：获得永久羽坠效果",
+      "§",
+      "§d提升程度基于套装数值"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "maxDamage": 21,
+    "damageValueHelmet": 3,
+    "damageValueBody": 7,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 12,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ziziyousongshisuixie"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
+  }
+}

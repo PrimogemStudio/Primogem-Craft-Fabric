@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "1": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "2": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "3": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "4": {
+      "item": "minecraft:diamond_block"
+    },
+    "5": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "6": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "7": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "8": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:jiuchanzhiyuankuai",
+    "count": 1
+  }
+}

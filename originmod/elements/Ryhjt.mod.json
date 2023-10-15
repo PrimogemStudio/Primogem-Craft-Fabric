@@ -1,0 +1,113 @@
+{
+  "_fv": 39,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "rutt06",
+    "enableBody": true,
+    "textureBody": "rutt08",
+    "enableLeggings": true,
+    "textureLeggings": "rutt10",
+    "enableBoots": true,
+    "textureBoots": "rutt12",
+    "onHelmetTick": {
+      "name": "Rytsx"
+    },
+    "onBodyTick": {
+      "name": "Rytsx"
+    },
+    "onLeggingsTick": {
+      "name": "Rytsx"
+    },
+    "onBootsTick": {
+      "name": "Rytsx"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "armorTextureFile": "ryhjt_",
+    "helmetName": "§c『燃愿玛瑙』§e下界合金头盔",
+    "bodyName": "§c『燃愿玛瑙』§e下界合金胸甲",
+    "leggingsName": "§c『燃愿玛瑙』§e下界合金护腿",
+    "bootsName": "§c『燃愿玛瑙』§e下界合金靴子",
+    "helmetSpecialInfo": [
+      "§4包含套装数值：§d[2]",
+      "§",
+      "§7 - 2套装：提供永久抗火效果",
+      "§7 - 4套装：遭遇火焰或岩浆时提供飞行能力",
+      "§",
+      "§d提升程度基于套装数值"
+    ],
+    "bodySpecialInfo": [
+      "§4包含套装数值：§d[2]",
+      "§",
+      "§7 - 2套装：提供永久抗火效果",
+      "§7 - 4套装：遭遇火焰或岩浆时提供飞行能力",
+      "§",
+      "§d提升程度基于套装数值"
+    ],
+    "leggingsSpecialInfo": [
+      "§4包含套装数值：§d[2]",
+      "§",
+      "§7 - 2套装：提供永久抗火效果",
+      "§7 - 4套装：遭遇火焰或岩浆时提供飞行能力",
+      "§",
+      "§d提升程度基于套装数值"
+    ],
+    "bootsSpecialInfo": [
+      "§4包含套装数值：§d[2]",
+      "§",
+      "§7 - 2套装：提供永久抗火效果",
+      "§7 - 4套装：遭遇火焰或岩浆时提供飞行能力",
+      "§",
+      "§d提升程度基于套装数值"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "maxDamage": 233,
+    "damageValueHelmet": 5,
+    "damageValueBody": 9,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 5,
+    "enchantability": 10,
+    "toughness": 1.0,
+    "knockbackResistance": 0.2,
+    "equipSound": {
+      "value": "item.armor.equip_netherite"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ranyuanduanpian"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ]
+  }
+}

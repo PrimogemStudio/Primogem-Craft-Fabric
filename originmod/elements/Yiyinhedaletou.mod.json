@@ -1,0 +1,59 @@
+{
+  "_fv": 39,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "xin_yhdlt",
+    "customModelName": "Tool",
+    "name": "Yiyinhedaletou",
+    "rarity": "RARE",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 2,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "§a副手持有时：",
+      "§2破坏方块：",
+      "§a - 小概率获得钻石",
+      "§a - 小概率获得§5奇物",
+      "§a - 大概率触发§c§m惊喜",
+      "§a并§c摧毁§a物品",
+      "§",
+      "§7主手持右键空气查询当前",
+      "§7损坏银河大乐透的数量",
+      "§9全员透露结果冷却1分钟"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Letouchaxun"
+    },
+    "onDroppedByPlayer": {
+      "name": "Dadaletoushibiezhuangtai"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

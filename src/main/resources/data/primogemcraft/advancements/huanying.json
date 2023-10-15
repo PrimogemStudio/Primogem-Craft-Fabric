@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "primogemcraft:ceshiyongwupin"
+    },
+    "title": {
+      "translate": "advancements.huanying.title"
+    },
+    "description": {
+      "translate": "advancements.huanying.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "huanying": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

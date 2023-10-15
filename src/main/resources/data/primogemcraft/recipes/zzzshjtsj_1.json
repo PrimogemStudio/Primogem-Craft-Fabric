@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "primogemcraft:zizaizuantao_helmet"
+  },
+  "addition": {
+    "item": "primogemcraft:shengjizuanshejin"
+  },
+  "result": {
+    "item": "primogemcraft:zizizaihejintao_helmet"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "forge:tie_1"
+  },
+  "addition": {
+    "item": "primogemcraft:mzsj"
+  },
+  "result": {
+    "item": "minecraft:iron_chestplate"
+  }
+}

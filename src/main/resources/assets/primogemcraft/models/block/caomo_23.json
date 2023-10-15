@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "primogemcraft:blocks/yuanhe_muban_2",
+    "particle": "primogemcraft:blocks/yuanhe_muban_2"
+  }
+}

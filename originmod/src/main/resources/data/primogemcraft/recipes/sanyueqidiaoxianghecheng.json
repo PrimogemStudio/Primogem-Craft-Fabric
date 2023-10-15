@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "1": {
+      "item": "primogemcraft:xixiangyuzhiyuan"
+    },
+    "2": {
+      "item": "minecraft:white_terracotta"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:sanyueqidiaoxiang_01",
+    "count": 1
+  }
+}

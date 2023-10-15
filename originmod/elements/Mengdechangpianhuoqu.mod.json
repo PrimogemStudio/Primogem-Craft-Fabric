@@ -1,0 +1,87 @@
+{
+  "_fv": 39,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CLERIC"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:Xiaodaimola"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": "CUSTOM:Yuanshi"
+            },
+            "countPrice2": 5,
+            "offer": {
+              "value": "CUSTOM:Xiwangdeyitian011"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 2,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:Jijiuchanzhiyuan"
+            },
+            "countPrice1": 10,
+            "price2": {
+              "value": "CUSTOM:Xiaodaimola"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:Shilianchou"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.0
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:Ceshixiaodengfasheqi"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "CUSTOM:Cchonggaodaodedezanxu"
+            },
+            "countPrice2": 5,
+            "offer": {
+              "value": "CUSTOM:Chuangzaoxiaodengfasheqi"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.01
+          },
+          {
+            "price1": {
+              "value": "Items.BOOK"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.EXPERIENCE_BOTTLE"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:Dayingxiongdejingyan"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

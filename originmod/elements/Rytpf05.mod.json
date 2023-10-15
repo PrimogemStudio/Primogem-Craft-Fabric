@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.DIAMOND_HELMET"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Ryzssj"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Djzst.helmet"
+    },
+    "name": "rytpf_05",
+    "namespace": "mod"
+  }
+}

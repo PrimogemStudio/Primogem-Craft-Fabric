@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "primogemcraft:items/yin_he_da_le_tou_"
+  }
+}

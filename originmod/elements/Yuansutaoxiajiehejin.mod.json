@@ -1,0 +1,99 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zizizaihejintao.helmet"
+      },
+      {
+        "value": "CUSTOM:Zizizaihejintao.body"
+      },
+      {
+        "value": "CUSTOM:Zizizaihejintao.legs"
+      },
+      {
+        "value": "CUSTOM:Zizizaihejintao.boots"
+      },
+      {
+        "value": "CUSTOM:Jlkjhj.helmet"
+      },
+      {
+        "value": "CUSTOM:Jlkjhj.body"
+      },
+      {
+        "value": "CUSTOM:Jlkjhj.legs"
+      },
+      {
+        "value": "CUSTOM:Jlkjhj.boots"
+      },
+      {
+        "value": "CUSTOM:Zshjt.helmet"
+      },
+      {
+        "value": "CUSTOM:Zshjt.body"
+      },
+      {
+        "value": "CUSTOM:Zshjt.legs"
+      },
+      {
+        "value": "CUSTOM:Zshjt.boots"
+      },
+      {
+        "value": "CUSTOM:Szhjkj.helmet"
+      },
+      {
+        "value": "CUSTOM:Szhjkj.body"
+      },
+      {
+        "value": "CUSTOM:Szhjkj.legs"
+      },
+      {
+        "value": "CUSTOM:Szhjkj.boots"
+      },
+      {
+        "value": "CUSTOM:Djhjt.helmet"
+      },
+      {
+        "value": "CUSTOM:Djhjt.body"
+      },
+      {
+        "value": "CUSTOM:Djhjt.legs"
+      },
+      {
+        "value": "CUSTOM:Djhjt.boots"
+      },
+      {
+        "value": "CUSTOM:Ryhjt.helmet"
+      },
+      {
+        "value": "CUSTOM:Ryhjt.body"
+      },
+      {
+        "value": "CUSTOM:Ryhjt.legs"
+      },
+      {
+        "value": "CUSTOM:Ryhjt.boots"
+      },
+      {
+        "value": "CUSTOM:Axhjt.helmet"
+      },
+      {
+        "value": "CUSTOM:Axhjt.body"
+      },
+      {
+        "value": "CUSTOM:Axhjt.legs"
+      },
+      {
+        "value": "CUSTOM:Axhjt.boots"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "yuansutaoxiajiehejin",
+    "namespace": "primogemcraft"
+  }
+}

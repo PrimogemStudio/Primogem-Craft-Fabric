@@ -1,0 +1,41 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "yxaxg",
+    "customModelName": "Normal",
+    "name": "§d§kah§f『异象』§b哀叙冰玉 镐§d§kah",
+    "specialInfo": [
+      "§d右键方块时：",
+      "§7 - 95%概率转化§f§n通用元素晶体块§7为随机元素晶体块",
+      "§c - 5%概率销毁方块"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 5,
+    "efficiency": 8.0,
+    "attackSpeed": 1.0,
+    "enchantability": 5,
+    "damageVsEntity": 4.0,
+    "usageCount": 2561,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ysfc"
+      },
+      {
+        "value": "CUSTOM:Aixubingyusuixie"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "Yxaxgsx"
+    }
+  }
+}

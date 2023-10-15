@@ -1,0 +1,25 @@
+{
+  "_fv": 39,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "§f下界合金锭",
+    "texture": "zhapianding",
+    "description": "§c！§7—§e！§7—§9！§7—§a！§7——",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "specialInfo": [
+      "§7表面留有细纹",
+      "§7或许可以放进唱片机...."
+    ],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:zhapian"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0,
+    "onRightClickedOnBlock": {
+      "name": "Zhapianding_tuozhan_1"
+    }
+  }
+}

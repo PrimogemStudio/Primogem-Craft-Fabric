@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "forge:hejin_2"
+  },
+  "addition": {
+    "item": "primogemcraft:mzsj_3"
+  },
+  "result": {
+    "item": "minecraft:netherite_leggings"
+  }
+}

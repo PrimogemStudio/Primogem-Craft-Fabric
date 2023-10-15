@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "forge:ystj"
+  },
+  "addition": {
+    "item": "primogemcraft:mzsj"
+  },
+  "result": {
+    "item": "minecraft:iron_sword"
+  }
+}

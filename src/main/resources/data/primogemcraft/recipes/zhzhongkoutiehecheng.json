@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_ingot"
+  },
+  "addition": {
+    "item": "primogemcraft:zhuangmanlajidelajitong"
+  },
+  "result": {
+    "item": "primogemcraft:zhongkouweitieding"
+  }
+}

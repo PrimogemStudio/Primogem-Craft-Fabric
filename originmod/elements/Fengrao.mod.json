@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "丰饶",
+    "icon": "feng_rao_.png",
+    "color": {
+      "value": -16751046,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "Fengrao_lizishuxing"
+    },
+    "onExpired": {
+      "name": "Fengrao_shuxing_4"
+    }
+  }
+}

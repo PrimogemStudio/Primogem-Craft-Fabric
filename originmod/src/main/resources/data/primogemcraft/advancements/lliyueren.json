@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "title": {
+      "translate": "advancements.lliyueren.title"
+    },
+    "description": {
+      "translate": "advancements.lliyueren.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lliyueren": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:qinlaodezhexuejindu"
+}

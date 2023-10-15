@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:mengying"
+    },
+    "title": {
+      "translate": "advancements.sierfusheng.title"
+    },
+    "description": {
+      "translate": "advancements.sierfusheng.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "sierfusheng": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:ttazhenhaokan"
+}

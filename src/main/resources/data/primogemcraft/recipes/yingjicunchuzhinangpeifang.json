@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:jiuchanzhiyuanxian"
+    },
+    "1": {
+      "item": "primogemcraft:yuanshi"
+    },
+    "2": {
+      "item": "primogemcraft:jiuchanzhiyuanxian"
+    },
+    "3": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "5": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "6": {
+      "item": "primogemcraft:chuangshijiejing"
+    },
+    "7": {
+      "item": "primogemcraft:jiuchanzhiyuankuai"
+    },
+    "8": {
+      "item": "primogemcraft:chuangshijiejing"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yingjicunchunang",
+    "count": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "jlhjj",
+    "customModelName": "Normal",
+    "name": "§6『坚牢黄玉』§e下界合金剑",
+    "specialInfo": [
+      "§d攻击目标时：",
+      "§7 - 大大削弱目标攻击伤害",
+      "§7 - 触发几率100%",
+      "§7 - 存储的触发次数 10",
+      "§7 - 触发冷却8秒 每次单独计算",
+      "§7 - 单次触发持续时间 10秒"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 4,
+    "efficiency": 9.0,
+    "attackSpeed": 2.0,
+    "enchantability": 18,
+    "damageVsEntity": 7.0,
+    "usageCount": 2680,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Zziyousongshiduanpian"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Jljsx"
+    }
+  }
+}

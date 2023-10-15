@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:d_11"
+    },
+    "1": {
+      "item": "primogemcraft:d_11"
+    },
+    "2": {
+      "item": "primogemcraft:d_11"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:d_13",
+    "count": 6
+  }
+}

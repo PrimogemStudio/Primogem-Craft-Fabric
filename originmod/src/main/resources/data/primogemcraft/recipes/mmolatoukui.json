@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "1": {
+      "item": "primogemcraft:mmolapeiziwupin"
+    },
+    "2": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "3": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "5": {
+      "item": "primogemcraft:moladui_02"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:kkuijiaceshi_helmet",
+    "count": 1
+  }
+}

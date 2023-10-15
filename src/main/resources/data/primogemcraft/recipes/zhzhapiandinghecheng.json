@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "primogemcraft:zhapiandingzhengshi"
+    }
+  ],
+  "result": {
+    "item": "minecraft:netherite_scrap",
+    "count": 1
+  }
+}

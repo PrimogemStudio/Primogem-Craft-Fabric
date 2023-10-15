@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "primogemcraft:jijiuchanzhiyuan"
+  },
+  "addition": {
+    "item": "primogemcraft:shengzhangbifei"
+  },
+  "result": {
+    "item": "primogemcraft:ccangruimilinjian_014"
+  }
+}

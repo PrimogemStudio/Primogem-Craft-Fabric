@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "primogemcraft:blocks/caoyuanhe_muban",
+    "particle": "primogemcraft:blocks/caoyuanhe_muban"
+  }
+}

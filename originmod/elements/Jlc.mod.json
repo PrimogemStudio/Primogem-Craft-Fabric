@@ -1,0 +1,37 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "jlc",
+    "customModelName": "Normal",
+    "name": "§6『坚牢黄玉』锄",
+    "specialInfo": [
+      "§d攻击目标时：",
+      "§7 - 消耗耐久概率产出坚牢黄玉（0.1%）"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 3,
+    "efficiency": 8.5,
+    "attackSpeed": 1.2,
+    "enchantability": 15,
+    "damageVsEntity": 8.0,
+    "usageCount": 1200,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jianlaoduanpian"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Jjlcjlqsx"
+    }
+  }
+}

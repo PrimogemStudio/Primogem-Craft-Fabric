@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:nether_star"
+  },
+  "addition": {
+    "item": "minecraft:orange_dye"
+  },
+  "result": {
+    "item": "primogemcraft:gongzhuxinghua"
+  }
+}

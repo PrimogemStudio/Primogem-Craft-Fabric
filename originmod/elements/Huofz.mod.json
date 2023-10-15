@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Rytj"
+      },
+      {
+        "value": "CUSTOM:Ryzsj"
+      },
+      {
+        "value": "CUSTOM:Ryhjj"
+      },
+      {
+        "value": "CUSTOM:Ryg"
+      },
+      {
+        "value": "CUSTOM:Ryf"
+      },
+      {
+        "value": "CUSTOM:Ryq"
+      },
+      {
+        "value": "CUSTOM:Ryc"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "pyro_infusion",
+    "namespace": "genshincraft"
+  }
+}

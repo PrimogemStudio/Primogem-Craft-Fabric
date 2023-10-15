@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:mmola_01"
+    },
+    "1": {
+      "item": "minecraft:light_weighted_pressure_plate"
+    },
+    "2": {
+      "item": "primogemcraft:mmola_01"
+    },
+    "3": {
+      "item": "primogemcraft:mmola_01"
+    },
+    "4": {
+      "item": "primogemcraft:ganjinglajitongxiangzi"
+    },
+    "5": {
+      "item": "primogemcraft:mmola_01"
+    },
+    "6": {
+      "item": "primogemcraft:mmola_01"
+    },
+    "7": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "8": {
+      "item": "primogemcraft:mmola_01"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:mmolazhilajitong",
+    "count": 1
+  }
+}

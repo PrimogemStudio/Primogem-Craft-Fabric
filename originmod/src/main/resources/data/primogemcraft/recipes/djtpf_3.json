@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_leggings"
+  },
+  "addition": {
+    "item": "primogemcraft:djtsj"
+  },
+  "result": {
+    "item": "primogemcraft:djtt_leggings"
+  }
+}

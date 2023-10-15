@@ -1,0 +1,32 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Yishijieyuanmumuban"
+      },
+      {
+        "value": "CUSTOM:Caoyuanhehuamuban"
+      },
+      {
+        "value": "CUSTOM:Caoyuanhehuabuban2"
+      },
+      {
+        "value": "CUSTOM:Ccaoyuanhehuamuban3"
+      },
+      {
+        "value": "CUSTOM:YishijiemubanPlanks"
+      },
+      {
+        "value": "CUSTOM:D11"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "planks",
+    "namespace": "minecraft"
+  }
+}

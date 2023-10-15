@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:blocks/aixubingyu_kuangshi",
+    "up": "primogemcraft:blocks/aixubingyu_kuangshi",
+    "north": "primogemcraft:blocks/aixubingyu_kuangshi",
+    "east": "primogemcraft:blocks/aixubingyu_kuangshi",
+    "south": "primogemcraft:blocks/aixubingyu_kuangshi",
+    "west": "primogemcraft:blocks/aixubingyu_kuangshi",
+    "particle": "primogemcraft:blocks/aixubingyu_kuangshi"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 ",
+    " 3"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:shengzhangduanpian"
+    },
+    "3": {
+      "item": "primogemcraft:ysfc"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:shengzhangbifeisuixie",
+    "count": 5
+  }
+}

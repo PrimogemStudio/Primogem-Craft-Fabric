@@ -1,0 +1,109 @@
+{
+  "_fv": 39,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "djt01",
+    "enableBody": true,
+    "textureBody": "djt02",
+    "enableLeggings": true,
+    "textureLeggings": "djt03",
+    "enableBoots": true,
+    "textureBoots": "djt04",
+    "onHelmetTick": {
+      "name": "Djtsx"
+    },
+    "onBodyTick": {
+      "name": "Djtsx"
+    },
+    "onLeggingsTick": {
+      "name": "Djtsx"
+    },
+    "onBootsTick": {
+      "name": "Djtsx"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "armorTextureFile": "djtt_",
+    "helmetName": "§b『涤净青金』§f铁头盔",
+    "bodyName": "§b『涤净青金』§f铁胸甲",
+    "leggingsName": "§b『涤净青金』§f铁护腿",
+    "bootsName": "§b『涤净青金』§f铁靴子",
+    "helmetSpecialInfo": [
+      "§9包含套装数值：§b[0.5]",
+      "§",
+      "§7 - 2套装：提供永久潮涌核心效果",
+      "§",
+      "§c不受套装数值影响！"
+    ],
+    "bodySpecialInfo": [
+      "§9包含套装数值：§b[0.5]",
+      "§",
+      "§7 - 2套装：提供永久潮涌核心效果",
+      "§",
+      "§c不受套装数值影响！"
+    ],
+    "leggingsSpecialInfo": [
+      "§9包含套装数值：§b[0.5]",
+      "§",
+      "§7 - 2套装：提供永久潮涌核心效果",
+      "§",
+      "§c不受套装数值影响！"
+    ],
+    "bootsSpecialInfo": [
+      "§9包含套装数值：§b[0.5]",
+      "§",
+      "§7 - 2套装：提供永久潮涌核心效果",
+      "§",
+      "§c不受套装数值影响！"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "maxDamage": 21,
+    "damageValueHelmet": 4,
+    "damageValueBody": 7,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 4,
+    "enchantability": 12,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
+  }
+}

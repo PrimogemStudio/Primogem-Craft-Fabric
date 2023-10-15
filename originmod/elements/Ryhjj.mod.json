@@ -1,0 +1,41 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ryhjj",
+    "customModelName": "Normal",
+    "name": "§c『燃愿玛瑙』§e下界合金剑",
+    "specialInfo": [
+      "§d攻击目标时：",
+      "§7 - 为目标施加灼烧效果III（6s）",
+      "§7 - 触发概率75%"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 4,
+    "efficiency": 9.0,
+    "attackSpeed": 2.0,
+    "enchantability": 18,
+    "damageVsEntity": 8.0,
+    "usageCount": 2561,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ranyuanduanpian"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Ryjsx"
+    }
+  }
+}

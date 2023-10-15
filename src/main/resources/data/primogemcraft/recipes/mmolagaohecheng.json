@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "1": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "2": {
+      "item": "primogemcraft:moladui_02"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:mmolagao",
+    "count": 1
+  }
+}

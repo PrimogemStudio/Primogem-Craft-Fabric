@@ -1,0 +1,8 @@
+{
+  "parent": "primogemcraft:custom/cx_ljt_01",
+  "textures": {
+    "all": "primogemcraft:blocks/chuanchuanxinlajitong",
+    "particle": "primogemcraft:blocks/chuanchuanxinlajitong",
+    "3": "primogemcraft:blocks/chuanchuanxinlajitong"
+  }
+}

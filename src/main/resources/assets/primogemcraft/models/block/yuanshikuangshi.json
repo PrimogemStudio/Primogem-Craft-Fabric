@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "primogemcraft:blocks/yuanshikuangshi_xin_shitou",
+    "particle": "primogemcraft:blocks/yuanshi"
+  }
+}

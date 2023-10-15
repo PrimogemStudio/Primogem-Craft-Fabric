@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Zszst.helmet"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Sjzszsshj"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Zshjt.helmet"
+    },
+    "name": "zskjpf_13",
+    "namespace": "mod"
+  }
+}

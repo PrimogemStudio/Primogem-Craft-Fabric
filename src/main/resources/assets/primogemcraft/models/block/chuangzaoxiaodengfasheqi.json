@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:blocks/ceshi_xiaodengfasheqi_3",
+    "up": "primogemcraft:blocks/chuangzaomoshi_xiaodengfashe",
+    "north": "primogemcraft:blocks/ceshi_xiaodengfasheqi_2",
+    "east": "primogemcraft:blocks/ceshi_xiaodengfasheqi_2",
+    "south": "primogemcraft:blocks/ceshi_xiaodengfasheqi_2",
+    "west": "primogemcraft:blocks/ceshi_xiaodengfasheqi_2",
+    "particle": "primogemcraft:blocks/ceshi_xiaodengfasheqi_3"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zizaitiejian"
+      },
+      {
+        "value": "CUSTOM:Zstj"
+      },
+      {
+        "value": "CUSTOM:Sztj"
+      },
+      {
+        "value": "CUSTOM:Djtj"
+      },
+      {
+        "value": "CUSTOM:Rytj"
+      },
+      {
+        "value": "CUSTOM:Axtj"
+      },
+      {
+        "value": "CUSTOM:Jljtie"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "ystj",
+    "namespace": "forge"
+  }
+}

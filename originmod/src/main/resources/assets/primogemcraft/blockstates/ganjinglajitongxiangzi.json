@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "face=floor,facing=north": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi"
+    },
+    "face=floor,facing=east": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "y": 270
+    },
+    "face=wall,facing=north": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "primogemcraft:block/ganjinglajitongxiangzi",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

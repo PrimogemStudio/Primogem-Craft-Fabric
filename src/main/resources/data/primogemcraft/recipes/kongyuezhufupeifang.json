@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blue_wool"
+    },
+    "1": {
+      "item": "primogemcraft:chuangshijiejing"
+    },
+    "2": {
+      "item": "minecraft:lime_wool"
+    },
+    "3": {
+      "item": "primogemcraft:chiyuejinshu"
+    },
+    "4": {
+      "item": "primogemcraft:shanbianzhichen"
+    },
+    "5": {
+      "item": "primogemcraft:xinyuejinshu"
+    },
+    "7": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:kongyuezhufu",
+    "count": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Ziyousongshikuai"
+      },
+      {
+        "value": "CUSTOM:Jianlaohuangyukuai"
+      },
+      {
+        "value": "CUSTOM:Zuisnegzijingkuai"
+      },
+      {
+        "value": "CUSTOM:Shengzhangbifeidakuai"
+      },
+      {
+        "value": "CUSTOM:Dijingqingjinkuai"
+      },
+      {
+        "value": "CUSTOM:Ranyuankuai2"
+      },
+      {
+        "value": "CUSTOM:Yuansujingshikuai"
+      },
+      {
+        "value": "CUSTOM:AixubingyufangkuI"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "yuansujingtikuai",
+    "namespace": "forge"
+  }
+}

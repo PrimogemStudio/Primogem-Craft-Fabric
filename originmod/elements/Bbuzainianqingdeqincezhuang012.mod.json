@@ -1,0 +1,19 @@
+{
+  "_fv": 39,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "不再年轻的村庄",
+    "texture": "liyuedaibiao",
+    "description": "陈致逸,HOYO-MiX",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:liyueqincezhuang012"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

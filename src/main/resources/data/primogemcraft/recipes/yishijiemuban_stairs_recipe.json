@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    },
+    "3": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    },
+    "4": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    },
+    "6": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    },
+    "7": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    },
+    "8": {
+      "item": "primogemcraft:yishijiemuban_planks"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yishijiemuban_stairs",
+    "count": 4
+  }
+}

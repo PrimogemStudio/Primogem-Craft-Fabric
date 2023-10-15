@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:jianlaoduanpian"
+    },
+    "1": {
+      "item": "primogemcraft:jianlaoduanpian"
+    },
+    "2": {
+      "item": "primogemcraft:jianlaoduanpian"
+    },
+    "3": {
+      "item": "primogemcraft:jianlaoduanpian"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:jianlaokuaiwupin",
+    "count": 1
+  }
+}

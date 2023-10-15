@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "primogemcraft:shengzhangkuai"
+    },
+    "3": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "5": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "6": {
+      "item": "minecraft:dirt"
+    },
+    "7": {
+      "item": "primogemcraft:yiyimuguoshi"
+    },
+    "8": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:jianmushengfaqi",
+    "count": 1
+  }
+}

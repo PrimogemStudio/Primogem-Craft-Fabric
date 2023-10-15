@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "primogemcraft:ysfc"
+    },
+    "1": {
+      "item": "primogemcraft:ysfc"
+    },
+    "2": {
+      "item": "primogemcraft:ysfc"
+    },
+    "3": {
+      "item": "primogemcraft:ysfc"
+    },
+    "4": {
+      "item": "primogemcraft:yuansujingti"
+    },
+    "5": {
+      "item": "primogemcraft:ysfc"
+    },
+    "6": {
+      "item": "primogemcraft:ysfc"
+    },
+    "7": {
+      "item": "primogemcraft:ysfc"
+    },
+    "8": {
+      "item": "primogemcraft:ysfc"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yuansujingshikuai",
+    "count": 1
+  }
+}

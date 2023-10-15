@@ -1,0 +1,47 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Ziyousongshikuai"
+      },
+      {
+        "value": "CUSTOM:Jingzhimolakuai"
+      },
+      {
+        "value": "CUSTOM:Molakuai01"
+      },
+      {
+        "value": "CUSTOM:Jiuchanzhiyuankuai"
+      },
+      {
+        "value": "CUSTOM:Jianlaohuangyukuai"
+      },
+      {
+        "value": "CUSTOM:Zuisnegzijingkuai"
+      },
+      {
+        "value": "CUSTOM:Shengzhangbifeidakuai"
+      },
+      {
+        "value": "CUSTOM:Dijingqingjinkuai"
+      },
+      {
+        "value": "CUSTOM:Ranyuankuai2"
+      },
+      {
+        "value": "CUSTOM:AixubingyufangkuI"
+      },
+      {
+        "value": "CUSTOM:Yuansujingshikuai"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "storage_blocks",
+    "namespace": "forge"
+  }
+}

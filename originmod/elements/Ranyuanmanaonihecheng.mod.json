@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 64,
+    "group": "",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:Rranyuanmanao"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:Ranyuansuixie"
+    },
+    "name": "ranyuanmanaonihecheng",
+    "namespace": "mod"
+  }
+}

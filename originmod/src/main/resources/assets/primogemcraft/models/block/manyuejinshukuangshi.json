@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:blocks/manyue_kuangshi",
+    "up": "primogemcraft:blocks/manyue_kuangshi",
+    "north": "primogemcraft:blocks/manyue_kuangshi",
+    "east": "primogemcraft:blocks/manyue_kuangshi",
+    "south": "primogemcraft:blocks/manyue_kuangshi",
+    "west": "primogemcraft:blocks/manyue_kuangshi",
+    "particle": "primogemcraft:blocks/manyue_kuangshi"
+  }
+}

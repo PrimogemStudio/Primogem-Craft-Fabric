@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:blocks/yuanhe_muban_3",
+    "up": "primogemcraft:blocks/yuanhe_muban_3",
+    "north": "primogemcraft:blocks/yuanhe_muban_3",
+    "east": "primogemcraft:blocks/yuanhe_muban_3",
+    "south": "primogemcraft:blocks/yuanhe_muban_3",
+    "west": "primogemcraft:blocks/yuanhe_muban_3",
+    "particle": "primogemcraft:blocks/yuanhe_muban_3"
+  }
+}
