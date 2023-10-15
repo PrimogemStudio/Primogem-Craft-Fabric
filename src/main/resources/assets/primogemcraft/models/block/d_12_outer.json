@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "primogemcraft:blocks/yimudi",
-    "top": "primogemcraft:blocks/yimudi",
-    "side": "primogemcraft:blocks/yimudi"
-  }
-}

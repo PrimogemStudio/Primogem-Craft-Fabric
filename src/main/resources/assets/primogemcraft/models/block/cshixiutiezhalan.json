@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_orientable_trapdoor_bottom",
-  "textures": {
-    "texture": "primogemcraft:blocks/xiutiekuai",
-    "particle": "primogemcraft:blocks/xiutiekuai"
-  }
-}

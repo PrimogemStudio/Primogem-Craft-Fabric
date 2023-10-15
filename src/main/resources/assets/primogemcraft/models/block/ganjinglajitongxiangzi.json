@@ -1,8 +1,0 @@
-{
-  "parent": "primogemcraft:custom/cx_ljt_02",
-  "textures": {
-    "all": "primogemcraft:blocks/cx_gjljt_tt",
-    "particle": "primogemcraft:blocks/cx_gjljt_tt",
-    "4": "primogemcraft:blocks/cx_gjljt_tt"
-  }
-}

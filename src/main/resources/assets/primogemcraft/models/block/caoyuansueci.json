@@ -1,8 +1,0 @@
-{
-  "parent": "primogemcraft:custom/caoqiaojiangli",
-  "textures": {
-    "all": "primogemcraft:blocks/caoqiaojiangliwenli",
-    "particle": "primogemcraft:blocks/caoqiaojiangliwenli",
-    "0": "primogemcraft:blocks/caoqiaojiangliwenli"
-  }
-}
