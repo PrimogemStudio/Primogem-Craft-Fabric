@@ -118,7 +118,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 									if (world instanceof ServerLevel _level)
 										_level.getServer().getCommands().performCommand(
 												new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-												"loot spawn ~ ~ ~ loot primogemcraft:blocks/yinhedaletouzhanlipinbiao");
+												"loot spawn ~ ~ ~ loot primogemcraft:block/yinhedaletouzhanlipinbiao");
 									if (entity instanceof Player _player && !_player.level.isClientSide())
 										_player.displayClientMessage(new TextComponent("\u00A75\u7CFB\u7EDF\uFF1A\u00A7b\u5C0F\u8D5A\u4E00\u7B14"), (false));
 								}
@@ -248,7 +248,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 									if (world instanceof ServerLevel _level)
 										_level.getServer().getCommands().performCommand(
 												new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-												"loot spawn ~ ~ ~ loot primogemcraft:blocks/yinhedaletouzhanlipinbiao");
+												"loot spawn ~ ~ ~ loot primogemcraft:block/yinhedaletouzhanlipinbiao");
 									if (entity instanceof Player _player && !_player.level.isClientSide())
 										_player.displayClientMessage(new TextComponent("\u00A75\u7CFB\u7EDF\uFF1A\u00A7b\u5C0F\u8D5A\u4E00\u7B14"), (false));
 								}

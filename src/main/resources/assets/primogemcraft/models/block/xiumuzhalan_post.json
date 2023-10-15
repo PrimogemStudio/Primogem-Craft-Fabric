@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_post",
-  "textures": {
-    "texture": "primogemcraft:blocks/xiumu",
-    "particle": "primogemcraft:blocks/xiumu"
-  }
-}

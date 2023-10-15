@@ -1,7 +1,0 @@
-{
-  "parent": "block/door_top_rh",
-  "textures": {
-    "bottom": "ceshi:blocks/chuangshijiejingfangkuai",
-    "top": "ceshi:blocks/chuangshijiejingfangkuai"
-  }
-}

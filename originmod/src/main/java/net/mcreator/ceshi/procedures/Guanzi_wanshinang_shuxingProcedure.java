@@ -51,7 +51,7 @@ public class Guanzi_wanshinang_shuxingProcedure {
 								entity.getPersistentData().putBoolean("wanshinang_naijiu", (true));
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-											"loot spawn ~ ~ ~ loot primogemcraft:blocks/daguanzi");
+											"loot spawn ~ ~ ~ loot primogemcraft:block/daguanzi");
 							}
 						}
 					}
@@ -79,7 +79,7 @@ public class Guanzi_wanshinang_shuxingProcedure {
 							}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DIG_SLOWDOWN) : false)) {
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-											"loot spawn ~ ~ ~ loot primogemcraft:blocks/xiaoguanzi");
+											"loot spawn ~ ~ ~ loot primogemcraft:block/xiaoguanzi");
 								entity.getPersistentData().putBoolean("wanshinang_naijiu", (true));
 							}
 						}
