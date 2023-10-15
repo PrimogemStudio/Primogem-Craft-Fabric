@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "experience": 0,
-  "cookingtime": 100,
-  "ingredient": {
-    "item": "primogemcraft:cshixiutiezhalan"
-  },
-  "result": "minecraft:iron_nugget"
-}

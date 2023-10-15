@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 64,
-  "ingredient": {
-    "item": "primogemcraft:zziyousongshi"
-  },
-  "result": "primogemcraft:ziziyousongshisuixie"
-}
