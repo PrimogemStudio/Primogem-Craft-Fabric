@@ -1,3 +1,8 @@
 {
-  "block.primogemcraft.dendro_core_block": "草原核 块"
+  "itemGroup.primogemcraft": "原石工艺",
+  "block.primogemcraft.dendro_core_block": "草原核 块",
+  "item.primogemcraft.primogem": "原石",
+  "item.primogemcraft.vayuda_turquoise_gemstone": "自在松石",
+  "tooltip.primogemcraft.dendro_core_block.line1": "当闪电击中草原核时出现",
+  "tooltip.primogemcraft.dendro_core_block.line2": "也可以合成"
 }
