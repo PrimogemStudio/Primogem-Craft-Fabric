@@ -9,11 +9,16 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+    maven {
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
     maven { url = 'https://maven.aliyun.com/repository/google/' }
     maven { url = 'https://maven.aliyun.com/repository/jcenter/' }
     maven { url = 'https://maven.aliyun.com/repository/public' }
     maven { url = 'https://maven.parchmentmc.org' }
-    maven { url = 'https://api.modrinth.com/maven' }
 }
 
 dependencies {
