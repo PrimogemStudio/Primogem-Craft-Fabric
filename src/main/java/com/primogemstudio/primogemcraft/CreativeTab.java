@@ -18,6 +18,7 @@ public class CreativeTab {
     public static void init() {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(PRIMOGEM);
+            output.accept(INTERTWINED_FATE);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
             output.accept(DENDRO_CORE_BLOCK_ITEM);
         }).build());
