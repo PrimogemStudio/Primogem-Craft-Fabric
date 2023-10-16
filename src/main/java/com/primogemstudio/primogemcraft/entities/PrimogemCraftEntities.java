@@ -2,9 +2,8 @@ package com.primogemstudio.primogemcraft.entities;
 
 import com.primogemstudio.primogemcraft.entities.instances.entities.DendroCoreEntity;
 import com.primogemstudio.primogemcraft.entities.instances.renderer.DendroCoreEntityRenderer;
-import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -22,6 +21,7 @@ public class PrimogemCraftEntities {
                 DENDRO_CORE_ENTITY,
                 DendroCoreEntityRenderer::new
         );
+        FabricDefaultAttributeRegistry.register(DENDRO_CORE_ENTITY, DendroCoreEntity.createAttributes());
     }
 
     private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

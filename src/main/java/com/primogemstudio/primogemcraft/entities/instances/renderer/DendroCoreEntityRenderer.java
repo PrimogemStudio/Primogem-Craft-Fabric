@@ -9,9 +9,9 @@ import org.jetbrains.annotations.NotNull;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 
-public class DendroCoreEntityRenderer extends MobRenderer<DendroCoreEntity, DendroCoreEntityModel<DendroCoreEntity>> {
+public class DendroCoreEntityRenderer extends MobRenderer<DendroCoreEntity, DendroCoreEntityModel> {
     public DendroCoreEntityRenderer(EntityRendererProvider.Context context) {
-        super(context, new DendroCoreEntityModel<>(context.bakeLayer(DendroCoreEntityModel.LAYER_LOCATION)), 0.2f);
+        super(context, new DendroCoreEntityModel(), 0.2f);
     }
 
     @Override

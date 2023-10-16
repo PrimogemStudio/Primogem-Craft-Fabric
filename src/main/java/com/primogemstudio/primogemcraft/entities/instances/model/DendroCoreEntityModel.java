@@ -2,24 +2,22 @@ package com.primogemstudio.primogemcraft.entities.instances.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.primogemstudio.primogemcraft.entities.instances.entities.DendroCoreEntity;
 import net.minecraft.client.model.EntityModel;
-import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
 
-import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
-
-public class DendroCoreEntityModel<T extends Entity> extends EntityModel<T> {
-    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(MOD_ID, "dendro_entity_model"), "main");
+public class DendroCoreEntityModel extends EntityModel<DendroCoreEntity> {
+    static {
+        getTexturedModelData();
+    }
     public final ModelPart seed;
-    public DendroCoreEntityModel(ModelPart root) {
-        this.seed = root.getChild("seed");
+    public DendroCoreEntityModel() {
+        this.seed = getTexturedModelData().bakeRoot().getChild("seed");
     }
 
-    public static LayerDefinition createBodyLayer() {
+    public static LayerDefinition getTexturedModelData() {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
         PartDefinition seed = partdefinition.addOrReplaceChild("seed",
@@ -51,7 +49,7 @@ public class DendroCoreEntityModel<T extends Entity> extends EntityModel<T> {
         seed.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
     }
 
-    public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+    public void setupAnim(DendroCoreEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         this.seed.yRot = ageInTicks;
     }
 }
