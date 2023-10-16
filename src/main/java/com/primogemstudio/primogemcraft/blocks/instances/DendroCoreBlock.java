@@ -20,8 +20,8 @@ public class DendroCoreBlock extends Block {
     @Override
     public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
         super.appendHoverText(itemstack, world, list, flag);
-        list.add(Component.literal("当闪电击中草原核时出现"));
-        list.add(Component.literal("也可以合成"));
+        list.add(Component.translatable("tooltip.primogemcraft.dendro_core_block.line1"));
+        list.add(Component.translatable("tooltip.primogemcraft.dendro_core_block.line2"));
     }
 
     @SuppressWarnings("deprecation")

@@ -1,3 +1,8 @@
 {
-  "block.primogemcraft.dendro_core_block": "DendroCore Block"
+  "itemGroup.primogemcraft": "Primogem Craft",
+  "block.primogemcraft.dendro_core_block": "DendroCore Block",
+  "item.primogemcraft.primogem": "Primogem",
+  "item.primogemcraft.vayuda_turquoise_gemstone": "Vayuda Turquoise Gemstone",
+  "tooltip.primogemcraft.dendro_core_block.line1": "Generated when lightning strikes the dendro core",
+  "tooltip.primogemcraft.dendro_core_block.line2": "It can also be crafted"
 }

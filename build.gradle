@@ -9,11 +9,16 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+    maven {
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
     maven { url = 'https://maven.aliyun.com/repository/google/' }
     maven { url = 'https://maven.aliyun.com/repository/jcenter/' }
     maven { url = 'https://maven.aliyun.com/repository/public' }
     maven { url = 'https://maven.parchmentmc.org' }
-    maven { url = 'https://api.modrinth.com/maven' }
 }
 
 dependencies {
@@ -25,7 +30,6 @@ dependencies {
 
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation "maven.modrinth:modmenu:7.2.2"
 }
 
 processResources {
