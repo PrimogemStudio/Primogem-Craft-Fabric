@@ -1,5 +1,7 @@
 package com.primogemstudio.primogemcraft.entities.instances.entities;
 
+import com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
@@ -15,9 +17,7 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 public class DendroCoreEntity extends PathfinderMob {
-    /*public DendroCoreEntity(PlayMessages.SpawnEntity packet, Level world) {
-        this(PrimogemcraftModEntities.CAOYUANHESHENGWU.get(), world);
-    }*/
+    private int age = 0;
 
     public DendroCoreEntity(EntityType<DendroCoreEntity> type, Level world) {
         super(type, world);
@@ -38,7 +38,7 @@ public class DendroCoreEntity extends PathfinderMob {
     }
 
     @Override
-    public MobType getMobType() {
+    public @NotNull MobType getMobType() {
         return MobType.UNDEFINED;
     }
 
@@ -60,13 +60,26 @@ public class DendroCoreEntity extends PathfinderMob {
     @Override
     public void thunderHit(ServerLevel serverWorld, LightningBolt lightningBolt) {
         super.thunderHit(serverWorld, lightningBolt);
-        // Shiti_cao_beileipiProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+        double x = getX(), y = getY(), z = getZ();
+        teleportTo(x, y - 20.0, z);
+        serverWorld.setBlock(BlockPos.containing(x, y, z), PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
     }
 
     @Override
     public void baseTick() {
         super.baseTick();
-        // Ceoyuanhe_gengxinProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+        double x = getX(), y = getY(), z = getZ();
+        if (++age >= 200) {
+            hurt(damageSources().generic(), Float.MAX_VALUE);
+            teleportTo(x, -64.0, z);
+        }
+        if (isOnFire()) {
+            var level = level();
+            if (!level.isClientSide()) {
+                level.explode(null, x, y, z, 4.0F, Level.ExplosionInteraction.TNT);
+            }
+            discard();
+        }
     }
 
     public static void init() {
