@@ -5,5 +5,6 @@
   "item.primogemcraft.vayuda_turquoise_gemstone": "自在松石",
   "item.primogemcraft.intertwined_fate": "纠缠之缘",
   "tooltip.primogemcraft.dendro_core_block.line1": "当闪电击中草原核时出现",
-  "tooltip.primogemcraft.dendro_core_block.line2": "也可以合成"
+  "tooltip.primogemcraft.dendro_core_block.line2": "也可以合成",
+  "entity.primogemcraft.dendro_core_entity": "草原核"
 }
