@@ -16,6 +16,6 @@ public class DendroCoreEntityRenderer extends MobRenderer<DendroCoreEntity, Dend
 
     @Override
     public @NotNull ResourceLocation getTextureLocation(DendroCoreEntity entity) {
-        return new ResourceLocation(MOD_ID, "textures/entities/demdro_core.png");
+        return new ResourceLocation(MOD_ID, "textures/entities/dendro_core.png");
     }
 }
