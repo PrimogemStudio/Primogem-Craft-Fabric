@@ -1,8 +1,10 @@
 package com.primogemstudio.primogemcraft.entities.instances.entities;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.damagesource.DamageSource;
@@ -47,14 +49,12 @@ public class DendroCoreEntity extends PathfinderMob {
 
     @Override
     public SoundEvent getHurtSound(DamageSource ds) {
-        // return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:wu_sheng"));
-        return super.getHurtSound(ds);
+        return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
     }
 
     @Override
     public SoundEvent getDeathSound() {
-        // return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.twinkle_far"));
-        return super.getDeathSound();
+        return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.firework_rocket.twinkle_far"));
     }
 
     @Override
