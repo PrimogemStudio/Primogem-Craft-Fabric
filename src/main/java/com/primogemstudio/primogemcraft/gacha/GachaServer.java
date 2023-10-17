@@ -15,7 +15,6 @@ public class GachaServer {
         ServerPlayNetworking.registerGlobalReceiver(
                 GACHA_TRIGGER,
                 (server, player, handler, buf, responseSender) -> {
-                    System.out.println(buf.readResourceLocation());
                     System.out.println(buf.readNbt());
                 }
         );

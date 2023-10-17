@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft.gacha.packets.client;
 
+import io.netty.buffer.ByteBuf;
 import net.fabricmc.fabric.api.networking.v1.FabricPacket;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.PacketType;
@@ -24,10 +25,15 @@ public class GachaTriggerClientPacket extends ServerboundCustomPayloadPacket imp
         return tag;
     }
     public GachaTriggerClientPacket() {
-        super(GACHA_TRIGGER, PacketByteBufs.create().writeNbt(createGachaSeed()));
+        super(GACHA_TRIGGER, PacketByteBufs.create());
     }
 
     public PacketType<GachaTriggerClientPacket> getType() {
         return PacketType.create(GACHA_TRIGGER, a -> new GachaTriggerClientPacket());
+    }
+
+    @Override
+    public void write(FriendlyByteBuf buffer) {
+        buffer.writeNbt(createGachaSeed());
     }
 }

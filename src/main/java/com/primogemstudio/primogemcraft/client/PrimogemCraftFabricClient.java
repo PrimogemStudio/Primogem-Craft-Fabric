@@ -1,29 +1,30 @@
 package com.primogemstudio.primogemcraft.client;
 
+import com.mojang.brigadier.Command;
+import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.primogemstudio.primogemcraft.gacha.GachaClient;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
+import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
-import org.slf4j.LoggerFactory;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Gui;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.network.chat.Component;
 
 import static net.minecraft.commands.Commands.literal;
+
 
 public class PrimogemCraftFabricClient implements ClientModInitializer {
     public void onInitializeClient() {
         GachaClient.init();
-        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            dispatcher.register(literal(
-                    "primogem_craft_gacha_test"
-            ).executes(context -> {
-                try {
-                    ClientPlayNetworking.send(new GachaTriggerClientPacket());
-                }
-                catch (Exception e) {
-                    LoggerFactory.getLogger(PrimogemCraftFabricClient.class).error("Error occured", e);
-                }
-                return 0;
-            }));
-        });
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> dispatcher.register(literal("primogem_craft_gacha_test").executes(context -> {
+            ClientPlayNetworking.send(new GachaTriggerClientPacket());
+            Minecraft.getInstance().gui.getChat().addMessage(Component.literal("祈愿数据包已发送"));
+            return 0;
+        })));
     }
 }
