@@ -9,8 +9,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class PrimogemCraftFabric implements ModInitializer {
-    public static String MOD_ID = "primogemcraft";
-    public static Logger logger = LogManager.getLogger();
+    public static final String MOD_ID = "primogemcraft";
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public void onInitialize() {
         PrimogemCraftBlocks.init();
@@ -18,6 +18,6 @@ public class PrimogemCraftFabric implements ModInitializer {
         PrimogemCraftEntities.init();
         CreativeTab.init();
         GachaServer.init();
-        logger.info("Primogem Craft Loaded");
+        LOGGER.info("Primogem Craft Loaded");
     }
 }
