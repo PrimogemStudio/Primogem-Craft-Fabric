@@ -1,7 +1,10 @@
 package com.primogemstudio.primogemcraft.items.instances;
 
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.BowItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Vanishable;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
