@@ -2,6 +2,7 @@ package com.primogemstudio.primogemcraft;
 
 import com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks;
 import com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities;
+import com.primogemstudio.primogemcraft.gacha.GachaServer;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
@@ -16,6 +17,7 @@ public class PrimogemCraftFabric implements ModInitializer {
         PrimogemCraftItems.init();
         PrimogemCraftEntities.init();
         CreativeTab.init();
+        GachaServer.init();
         logger.info("Primogem Craft Loaded");
     }
 }

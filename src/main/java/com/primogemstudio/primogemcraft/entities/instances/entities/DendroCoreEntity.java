@@ -16,6 +16,8 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
+import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
+
 public class DendroCoreEntity extends PathfinderMob {
     private int age = 0;
 
@@ -49,7 +51,7 @@ public class DendroCoreEntity extends PathfinderMob {
 
     @Override
     public SoundEvent getHurtSound(DamageSource ds) {
-        return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
+        return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation(MOD_ID, "muted"));
     }
 
     @Override

@@ -6,5 +6,6 @@
   "item.primogemcraft.intertwined_fate": "Intertwined Fate",
   "tooltip.primogemcraft.dendro_core_block.line1": "Generated when lightning strikes the dendro core",
   "tooltip.primogemcraft.dendro_core_block.line2": "It can also be crafted",
-  "entity.primogemcraft.dendro_core_entity": "Dendro Core"
+  "entity.primogemcraft.dendro_core_entity": "Dendro Core",
+  "subtitles.muted": "...."
 }
