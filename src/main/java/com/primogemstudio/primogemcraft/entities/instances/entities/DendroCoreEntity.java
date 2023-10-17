@@ -60,9 +60,8 @@ public class DendroCoreEntity extends PathfinderMob {
     @Override
     public void thunderHit(ServerLevel serverWorld, LightningBolt lightningBolt) {
         super.thunderHit(serverWorld, lightningBolt);
-        double x = getX(), y = getY(), z = getZ();
-        teleportTo(x, y - 20.0, z);
-        serverWorld.setBlock(BlockPos.containing(x, y, z), PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
+        discard();
+        serverWorld.setBlock(BlockPos.containing(getX(), getY(), getZ()), PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
     }
 
     @Override
@@ -70,8 +69,8 @@ public class DendroCoreEntity extends PathfinderMob {
         super.baseTick();
         double x = getX(), y = getY(), z = getZ();
         if (++age >= 200) {
-            hurt(damageSources().generic(), Float.MAX_VALUE);
-            teleportTo(x, -64.0, z);
+            dropFromLootTable(damageSources().generic(), false);
+            discard();
         }
         if (isOnFire()) {
             var level = level();
