@@ -3,7 +3,6 @@ package com.primogemstudio.primogemcraft.mixin;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.Lifecycle;
-import com.primogemstudio.primogemcraft.PrimogemCraftFabric;
 import com.primogemstudio.primogemcraft.gacha.GachaServer;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
@@ -33,12 +32,12 @@ public class LevelStorageSourceMixin {
 
         @Inject(at = @At("HEAD"), method = "getDataTag")
         public void onGetDataTag(DynamicOps<Tag> ops, WorldDataConfiguration dataConfiguration, Registry<LevelStem> levelStemRegistry, Lifecycle lifecycle, CallbackInfoReturnable<@Nullable Pair<WorldData, WorldDimensions.Complete>> cir) {
+            GachaServer.currentDir = levelDirectory.path();
             GachaServer.loadData();
         }
 
         @Inject(at = @At("HEAD"), method = "saveDataTag(Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/nbt/CompoundTag;)V")
         public void onSaveDataTag(RegistryAccess registries, WorldData serverConfiguration, CompoundTag hostPlayerNBT, CallbackInfo ci) {
-            PrimogemCraftFabric.LOGGER.error(levelDirectory.path().toString());
             GachaServer.saveData();
         }
     }
