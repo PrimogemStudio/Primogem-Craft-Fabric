@@ -1,11 +1,15 @@
 {
   "itemGroup.primogemcraft": "Primogem Craft",
-  "block.primogemcraft.dendro_core_block": "DendroCore Block",
+  "block.primogemcraft.dendro_core_block": "§aDendroCore Block",
   "item.primogemcraft.primogem": "Primogem",
   "item.primogemcraft.vayuda_turquoise_gemstone": "Vayuda Turquoise Gemstone",
   "item.primogemcraft.intertwined_fate": "Intertwined Fate",
   "tooltip.primogemcraft.dendro_core_block.line1": "Generated when lightning strikes the dendro core",
   "tooltip.primogemcraft.dendro_core_block.line2": "It can also be crafted",
   "entity.primogemcraft.dendro_core_entity": "Dendro Core",
-  "subtitles.muted": "...."
+  "subtitles.muted": "....",
+  "tooltip.primogemcraft.dendro_pickaxe.line1": "§d处于水中时：",
+  "tooltip.primogemcraft.dendro_pickaxe.line2": "§7 - 挖掘方块有概率掉落物品草原核",
+  "tooltip.primogemcraft.primogem.line1": "给他20原石，他能帮你......",
+  "item.primogemcraft.dendro_core": "草镐"
 }

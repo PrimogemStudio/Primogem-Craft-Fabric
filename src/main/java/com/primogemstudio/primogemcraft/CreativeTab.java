@@ -21,6 +21,7 @@ public class CreativeTab {
             output.accept(INTERTWINED_FATE);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
             output.accept(DENDRO_CORE_BLOCK_ITEM);
+            output.accept(DENDRO_PICKAXE);
         }).build());
     }
 }
