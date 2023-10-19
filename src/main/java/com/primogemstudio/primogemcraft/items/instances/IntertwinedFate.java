@@ -34,7 +34,6 @@ public class IntertwinedFate extends Item {
 
     @Override
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-        super.appendHoverText(itemstack, world, list, flag);
         list.add(Component.translatable("tooltip.primogemcraft.intertwined_fate.line1"));
         list.add(Component.translatable("tooltip.primogemcraft.intertwined_fate.line2"));
     }
@@ -47,7 +46,6 @@ public class IntertwinedFate extends Item {
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-        super.inventoryTick(stack, level, entity, slotId, isSelected);
         if (isSelected && entity instanceof Player player) {
             player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 50, 2));
             player.addEffect(new MobEffectInstance(MobEffects.LUCK, 20, 1));
