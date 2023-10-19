@@ -38,6 +38,7 @@ public class LevelStorageSourceMixin {
 
         @Inject(at = @At("HEAD"), method = "saveDataTag(Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/nbt/CompoundTag;)V")
         public void onSaveDataTag(RegistryAccess registries, WorldData serverConfiguration, CompoundTag hostPlayerNBT, CallbackInfo ci) {
+            GachaServer.currentDir = levelDirectory.path();
             GachaServer.saveData();
         }
     }
