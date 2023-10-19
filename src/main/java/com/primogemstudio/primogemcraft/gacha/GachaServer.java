@@ -22,26 +22,24 @@ import static com.primogemstudio.primogemcraft.gacha.GachaNetworkConstants.GACHA
 
 public class GachaServer {
     public static Path currentDir;
-    private static final Gson parser = new GsonBuilder()
-            .registerTypeAdapter(ResourceLocation.class, new TypeAdapter<ResourceLocation>() {
-                public void write(JsonWriter jsonWriter, ResourceLocation resourceLocation) throws IOException {
-                    jsonWriter.value(resourceLocation.toString());
-                }
+    private static final Gson parser = new GsonBuilder().registerTypeAdapter(ResourceLocation.class, new TypeAdapter<ResourceLocation>() {
+        public void write(JsonWriter jsonWriter, ResourceLocation resourceLocation) throws IOException {
+            jsonWriter.value(resourceLocation.toString());
+        }
 
-                public ResourceLocation read(JsonReader jsonReader) throws IOException {
-                    return new ResourceLocation(jsonReader.nextString());
-                }
-            })
-            .registerTypeAdapter(UUID.class, new TypeAdapter<UUID>() {
-                public void write(JsonWriter jsonWriter, UUID uuid) throws IOException {
-                    jsonWriter.value(uuid.toString());
-                }
+        public ResourceLocation read(JsonReader jsonReader) throws IOException {
+            return new ResourceLocation(jsonReader.nextString());
+        }
+    }).registerTypeAdapter(UUID.class, new TypeAdapter<UUID>() {
+        public void write(JsonWriter jsonWriter, UUID uuid) throws IOException {
+            jsonWriter.value(uuid.toString());
+        }
 
-                public UUID read(JsonReader jsonReader) throws IOException {
-                    return UUID.fromString(jsonReader.nextString());
-                }
-            })
-            .create();
+        public UUID read(JsonReader jsonReader) throws IOException {
+            return UUID.fromString(jsonReader.nextString());
+        }
+    }).create();
+
     public static void init() {
         ServerPlayNetworking.registerGlobalReceiver(GACHA_TRIGGER, (server, player, handler, buf, responseSender) -> LOGGER.warn(buf.readNbt()));
     }
