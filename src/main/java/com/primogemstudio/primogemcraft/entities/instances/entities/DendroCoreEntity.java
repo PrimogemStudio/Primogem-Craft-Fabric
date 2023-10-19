@@ -67,16 +67,14 @@ public class DendroCoreEntity extends PathfinderMob {
     @Override
     public void thunderHit(ServerLevel serverWorld, LightningBolt lightningBolt) {
         super.thunderHit(serverWorld, lightningBolt);
-        BlockPos posit = BlockPos.containing(getX(), getY(), getZ());
+        var posit = BlockPos.containing(getX(), getY(), getZ());
         if (isAir(serverWorld, posit)) {
             serverWorld.setBlock(posit, PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
+        } else if ((posit = findAir(serverWorld, posit)) != null) {
+            serverWorld.setBlock(posit, PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
+        } else {
+            serverWorld.addFreshEntity(new ItemEntity(serverWorld, getX(), getY(), getZ(), new ItemStack(PrimogemCraftItems.DENDRO_CORE_BLOCK_ITEM)));
         }
-        else if (findAir(serverWorld, posit) != null) {
-            serverWorld.setBlock(findAir(serverWorld, posit), PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
-        }
-        else serverWorld.addFreshEntity(new ItemEntity(
-                    serverWorld, getX(), getY(), getZ(), new ItemStack(PrimogemCraftItems.DENDRO_CORE_BLOCK_ITEM)
-            ));
         discard();
     }
 
@@ -98,13 +96,6 @@ public class DendroCoreEntity extends PathfinderMob {
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return Mob.createMobAttributes()
-                .add(Attributes.MOVEMENT_SPEED, 0)
-                .add(Attributes.MAX_HEALTH, 1)
-                .add(Attributes.ARMOR, 0.1)
-                .add(Attributes.ATTACK_DAMAGE, 1)
-                .add(Attributes.FOLLOW_RANGE, 1)
-                .add(Attributes.KNOCKBACK_RESISTANCE, 10)
-                .add(Attributes.ATTACK_KNOCKBACK, 0.1);
+        return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0).add(Attributes.MAX_HEALTH, 1).add(Attributes.ARMOR, 0.1).add(Attributes.ATTACK_DAMAGE, 1).add(Attributes.FOLLOW_RANGE, 1).add(Attributes.KNOCKBACK_RESISTANCE, 10).add(Attributes.ATTACK_KNOCKBACK, 0.1);
     }
 }
