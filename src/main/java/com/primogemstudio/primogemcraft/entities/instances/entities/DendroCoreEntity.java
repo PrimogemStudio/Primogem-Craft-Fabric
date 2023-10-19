@@ -1,6 +1,7 @@
 package com.primogemstudio.primogemcraft.entities.instances.entities;
 
 import com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks;
+import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.protocol.Packet;
@@ -13,10 +14,14 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
+import static com.primogemstudio.primogemcraft.util.BlockUtil.findAir;
+import static com.primogemstudio.primogemcraft.util.BlockUtil.isAir;
 
 public class DendroCoreEntity extends PathfinderMob {
     private int age = 0;
@@ -62,8 +67,17 @@ public class DendroCoreEntity extends PathfinderMob {
     @Override
     public void thunderHit(ServerLevel serverWorld, LightningBolt lightningBolt) {
         super.thunderHit(serverWorld, lightningBolt);
+        BlockPos posit = BlockPos.containing(getX(), getY(), getZ());
+        if (isAir(serverWorld, posit)) {
+            serverWorld.setBlock(posit, PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
+        }
+        else if (findAir(serverWorld, posit) != null) {
+            serverWorld.setBlock(findAir(serverWorld, posit), PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
+        }
+        else serverWorld.addFreshEntity(new ItemEntity(
+                    serverWorld, getX(), getY(), getZ(), new ItemStack(PrimogemCraftItems.DENDRO_CORE_BLOCK_ITEM)
+            ));
         discard();
-        serverWorld.setBlock(BlockPos.containing(getX(), getY(), getZ()), PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
     }
 
     @Override
@@ -83,18 +97,14 @@ public class DendroCoreEntity extends PathfinderMob {
         }
     }
 
-    public static void init() {
-    }
-
     public static AttributeSupplier.Builder createAttributes() {
-        AttributeSupplier.Builder builder = Mob.createMobAttributes();
-        builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
-        builder = builder.add(Attributes.MAX_HEALTH, 1);
-        builder = builder.add(Attributes.ARMOR, 0.1);
-        builder = builder.add(Attributes.ATTACK_DAMAGE, 1);
-        builder = builder.add(Attributes.FOLLOW_RANGE, 1);
-        builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 10);
-        builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0.1);
-        return builder;
+        return Mob.createMobAttributes()
+                .add(Attributes.MOVEMENT_SPEED, 0)
+                .add(Attributes.MAX_HEALTH, 1)
+                .add(Attributes.ARMOR, 0.1)
+                .add(Attributes.ATTACK_DAMAGE, 1)
+                .add(Attributes.FOLLOW_RANGE, 1)
+                .add(Attributes.KNOCKBACK_RESISTANCE, 10)
+                .add(Attributes.ATTACK_KNOCKBACK, 0.1);
     }
 }
