@@ -139,6 +139,10 @@ public class GachaServer {
         }
     }
 
+    public static void removeData() {
+        data = null;
+    }
+
     public static void onDataChange() {
         saveData();
     }
