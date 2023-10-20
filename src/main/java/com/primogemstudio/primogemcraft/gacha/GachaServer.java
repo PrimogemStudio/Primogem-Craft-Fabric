@@ -7,11 +7,9 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.item.Items;
 
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -26,6 +24,7 @@ import static com.primogemstudio.primogemcraft.gacha.GachaNetworkConstants.GACHA
 public class GachaServer {
     public static Path currentDir;
     private static GachaRecordModel.DataModel data = new GachaRecordModel.DataModel();
+
     private enum GachaProtocols {
         PROTOCOL_VER_0 {
             @Override
@@ -33,22 +32,21 @@ public class GachaServer {
                 long timest = tag.getLong("timestamp") / 3 + tag.getLong("mem_free") / 3 + tag.getLong("timestamp_nano") / 3;
                 return new Random((long) (timest * new Random().nextDouble(-1, 1))).nextLong();
             }
-        },
-        PROTOCOL_ALL {
+        }, PROTOCOL_ALL {
             @Override
             public Long parse(CompoundTag tag) {
-                switch (tag.getInt("gacha_protocol_version")) {
-                    case 0:
-                        return PROTOCOL_VER_0.parse(tag);
-                    default:
-                        return super.parse(tag);
-                }
+                return switch (tag.getInt("gacha_protocol_version")) {
+                    case 0 -> PROTOCOL_VER_0.parse(tag);
+                    default -> super.parse(tag);
+                };
             }
         };
+
         public Long parse(CompoundTag tag) {
             return new Random().nextLong();
         }
     }
+
     private static final Gson parser = new GsonBuilder().registerTypeAdapter(ResourceLocation.class, new TypeAdapter<ResourceLocation>() {
         public void write(JsonWriter jsonWriter, ResourceLocation resourceLocation) throws IOException {
             jsonWriter.value(resourceLocation.toString());
@@ -73,6 +71,7 @@ public class GachaServer {
             server.execute(() -> triggered(nbtdata, player));
         });
     }
+
     private static void triggered(CompoundTag nbtdata, ServerPlayer player) {
         int level = 3;
         var star5pity = data.pity_5.increasePity(player.getGameProfile());
@@ -80,11 +79,9 @@ public class GachaServer {
 
         if (star5pity) {
             level = 5;
-        }
-        else if (star4pity) {
+        } else if (star4pity) {
             level = 4;
-        }
-        else {
+        } else {
             var profed = data.pity_5.getPity(player.getGameProfile());
             var profed4 = data.pity_4.getPity(player.getGameProfile());
             double star5stacked = Math.min(1, profed <= 73 ? 0.006 : 0.006 + (profed - 73) * 0.06);
@@ -93,8 +90,7 @@ public class GachaServer {
             if (genNum < star5stacked) {
                 level = 5;
                 data.pity_5.resetPity(player.getGameProfile());
-            }
-            else if (genNum < star4stacked) {
+            } else if (genNum < star4stacked) {
                 level = 4;
                 data.pity_4.resetPity(player.getGameProfile());
             }
