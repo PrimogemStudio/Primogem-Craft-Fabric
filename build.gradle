@@ -30,7 +30,8 @@ dependencies {
 
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    // include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.0")))
+    include(implementation("org.apache.derby:derby:10.15.2.0"))
+    include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.0")))
 }
 
 processResources {

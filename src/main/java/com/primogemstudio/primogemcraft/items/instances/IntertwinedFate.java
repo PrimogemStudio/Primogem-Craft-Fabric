@@ -55,8 +55,7 @@ public class IntertwinedFate extends Item {
     @Override
     @NotNull
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack itemStack = player.getItemInHand(usedHand);
         player.startUsingItem(usedHand);
-        return InteractionResultHolder.consume(itemStack);
+        return InteractionResultHolder.consume(player.getItemInHand(usedHand));
     }
 }

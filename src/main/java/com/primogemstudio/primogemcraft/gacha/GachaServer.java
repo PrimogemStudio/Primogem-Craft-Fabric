@@ -113,7 +113,7 @@ public class GachaServer {
         data.gachaRecord.add(gac);
         onDataChange();
 
-        System.out.println(level);
+        LOGGER.info("level: " + level);
     }
 
     public static void loadData() {
