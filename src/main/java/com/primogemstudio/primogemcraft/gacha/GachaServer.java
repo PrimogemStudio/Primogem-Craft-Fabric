@@ -7,9 +7,13 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
+import net.fabricmc.fabric.mixin.container.ServerPlayerEntityMixin;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.TickTask;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.Items;
 
 import java.io.FileOutputStream;
@@ -79,12 +83,37 @@ public class GachaServer {
     }).create();
 
     public static void init() {
-        ServerPlayNetworking.registerGlobalReceiver(GACHA_TRIGGER, (server, player, handler, buf, responseSender) -> {
-            double genNum = new Random(GachaProtocols.PROTOCOL_ALL.parse(buf.readNbt())).nextDouble(0, 1);
-            System.out.println(genNum);
-        });
+        ServerPlayNetworking.registerGlobalReceiver(GACHA_TRIGGER, (server, player, handler, buf, responseSender) -> server.execute(() -> triggered(buf, player)));
     }
+    private static void triggered(FriendlyByteBuf buf, ServerPlayer player) {
+        int level = 3;
+        var star5pity = data.pity_5.increasePity(player.getGameProfile());
+        var star4pity = data.pity_4.increasePity(player.getGameProfile());
 
+        if (star5pity) {
+            level = 5;
+        }
+        else if (star4pity) {
+            level = 4;
+        }
+        else {
+            var profed = data.pity_5.getPity(player.getGameProfile());
+            var profed4 = data.pity_4.getPity(player.getGameProfile());
+            double star5stacked = Math.min(1, profed <= 73 ? 0.006 : 0.006 + (profed - 73) * 0.06);
+            double star4stacked = Math.min(1, profed4 <= 8 ? 0.051 : 0.051 + (profed4 - 8) * 0.51);
+            double genNum = new Random(GachaProtocols.PROTOCOL_ALL.parse(buf.readNbt())).nextDouble(0, 1);
+            if (genNum < star5stacked) {
+                level = 5;
+                data.pity_5.resetPity(player.getGameProfile());
+            }
+            else if (genNum < star4stacked) {
+                level = 4;
+                data.pity_4.resetPity(player.getGameProfile());
+            }
+        }
+
+        System.out.println(level);
+    }
 
     public static void loadData() {
         var file = currentDir.resolve("gacha_data.json").toFile();
