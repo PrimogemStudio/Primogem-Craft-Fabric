@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Primogem extends Item {
     public Primogem() {
-        super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(9).saturationMod(9f).alwaysEat().build()));
+        super(new Item.Properties().stacksTo(160).fireResistant().rarity(Rarity.EPIC));
     }
 
     public int getUseDuration(ItemStack itemstack) {

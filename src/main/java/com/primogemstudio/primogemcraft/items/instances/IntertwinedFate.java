@@ -52,6 +52,7 @@ public class IntertwinedFate extends Item {
         }
     }
 
+
     @Override
     @NotNull
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
