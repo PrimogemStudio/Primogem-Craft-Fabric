@@ -4,14 +4,13 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.item.Items;
 
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -51,18 +50,26 @@ public class GachaServer {
     }
     private static final Gson parser = new GsonBuilder().registerTypeAdapter(ResourceLocation.class, new TypeAdapter<ResourceLocation>() {
         public void write(JsonWriter jsonWriter, ResourceLocation resourceLocation) throws IOException {
-            jsonWriter.value(resourceLocation.toString());
+            jsonWriter.value(resourceLocation == null ? null : resourceLocation.toString());
         }
 
         public ResourceLocation read(JsonReader jsonReader) throws IOException {
+            if (jsonReader.peek() == JsonToken.NULL) {
+                jsonReader.nextNull();
+                return null;
+            }
             return new ResourceLocation(jsonReader.nextString());
         }
     }).registerTypeAdapter(UUID.class, new TypeAdapter<UUID>() {
         public void write(JsonWriter jsonWriter, UUID uuid) throws IOException {
-            jsonWriter.value(uuid.toString());
+            jsonWriter.value(uuid == null ? null : uuid.toString());
         }
 
         public UUID read(JsonReader jsonReader) throws IOException {
+            if (jsonReader.peek() == JsonToken.NULL) {
+                jsonReader.nextNull();
+                return null;
+            }
             return UUID.fromString(jsonReader.nextString());
         }
     }).create();
@@ -116,6 +123,7 @@ public class GachaServer {
         if (file.exists()) {
             try (var fr = new FileReader(file)) {
                 data = parser.fromJson(fr, GachaRecordModel.DataModel.class);
+                if (data == null) data = new GachaRecordModel.DataModel();
                 LOGGER.info("Data read!");
             } catch (IOException e) {
                 LOGGER.error("read failed", e);
