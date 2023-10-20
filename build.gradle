@@ -15,11 +15,14 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
-    maven { url = 'https://maven.aliyun.com/repository/google/' }
-    maven { url = 'https://maven.aliyun.com/repository/jcenter/' }
+    maven { url = 'https://maven.aliyun.com/repository/apache-snapshots' }
+    maven { url = 'https://maven.aliyun.com/repository/gradle-plugin' }
+    maven { url = 'https://maven.aliyun.com/repository/central' }
+    maven { url = 'https://maven.aliyun.com/repository/google' }
+    maven { url = 'https://maven.aliyun.com/repository/jcenter' }
     maven { url = 'https://maven.aliyun.com/repository/public' }
     maven { url = 'https://maven.parchmentmc.org' }
-    mavenCentral()
+    // mavenCentral()
 }
 
 dependencies {
@@ -31,8 +34,8 @@ dependencies {
 
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    include(implementation("org.apache.derby:derby:10.15.2.0"))
-    include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.0")))
+    // include(implementation("org.apache.derby:derby:10.15.2.0"))
+    // include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.0")))
 }
 
 processResources {
