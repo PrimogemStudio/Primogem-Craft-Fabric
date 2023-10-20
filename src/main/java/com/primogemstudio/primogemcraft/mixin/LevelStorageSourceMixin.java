@@ -40,7 +40,6 @@ public class LevelStorageSourceMixin {
         public void onSaveDataTag(RegistryAccess registries, WorldData serverConfiguration, CompoundTag hostPlayerNBT, CallbackInfo ci) {
             GachaServer.currentDir = levelDirectory.path();
             GachaServer.saveData();
-            GachaServer.removeData();
         }
     }
 }
