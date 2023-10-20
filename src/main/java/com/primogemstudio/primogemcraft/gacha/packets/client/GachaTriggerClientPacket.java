@@ -20,8 +20,6 @@ public class GachaTriggerClientPacket extends ServerboundCustomPayloadPacket imp
         tag.putLong("timestamp", System.currentTimeMillis());
         tag.putLong("timestamp_nano", System.nanoTime());
         tag.putLong("mem_free", Runtime.getRuntime().freeMemory());
-        tag.putLongArray("randlongs", new Random().longs().limit(64).toArray());
-        tag.putIntArray("randints", new Random().ints().limit(64).toArray());
         return tag;
     }
     public GachaTriggerClientPacket() {
