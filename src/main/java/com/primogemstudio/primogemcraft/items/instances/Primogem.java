@@ -1,7 +1,6 @@
 package com.primogemstudio.primogemcraft.items.instances;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
@@ -12,7 +11,7 @@ import java.util.List;
 
 public class Primogem extends Item {
     public Primogem() {
-        super(new Item.Properties().stacksTo(160).fireResistant().rarity(Rarity.EPIC));
+        super(new Item.Properties().stacksTo(160).rarity(Rarity.EPIC));
     }
 
     public int getUseDuration(ItemStack itemstack) {

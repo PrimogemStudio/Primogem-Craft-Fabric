@@ -1,8 +1,11 @@
 package com.primogemstudio.primogemcraft.items.instances;
 
+import com.primogemstudio.primogemcraft.entities.instances.entities.IntertwinedFateEntity;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -42,6 +45,16 @@ public class IntertwinedFate extends Item {
     public void releaseUsing(ItemStack stack, Level level, LivingEntity livingEntity, int timeCharged) {
         if (getUseDuration(stack) - timeCharged < 10) return;
         if (level.isClientSide()) ClientPlayNetworking.send(new GachaTriggerClientPacket());
+        else if (livingEntity instanceof Player player) {
+            var ife = new IntertwinedFateEntity(level, player);
+            ife.setItem(stack);
+            ife.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0f, 1.5f, 1.0f);
+            level.addFreshEntity(ife);
+            level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5f, 0.4f / (level.getRandom().nextFloat() * 0.4f + 0.8f));
+            if (!player.getAbilities().instabuild) {
+                stack.shrink(1);
+            }
+        }
     }
 
     @Override
