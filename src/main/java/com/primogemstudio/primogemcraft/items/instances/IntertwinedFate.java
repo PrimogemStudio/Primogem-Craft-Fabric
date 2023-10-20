@@ -41,7 +41,9 @@ public class IntertwinedFate extends Item {
     @Override
     public void releaseUsing(ItemStack stack, Level level, LivingEntity livingEntity, int timeCharged) {
         if (getUseDuration(stack) - timeCharged < 10) return;
-        if (level.isClientSide()) ClientPlayNetworking.send(new GachaTriggerClientPacket());
+        if (level.isClientSide()) {
+            for (int i = 0; i < 10; i++) ClientPlayNetworking.send(new GachaTriggerClientPacket());
+        }
     }
 
     @Override

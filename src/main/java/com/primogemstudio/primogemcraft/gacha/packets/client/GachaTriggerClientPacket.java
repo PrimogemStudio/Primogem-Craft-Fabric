@@ -1,15 +1,11 @@
 package com.primogemstudio.primogemcraft.gacha.packets.client;
 
-import io.netty.buffer.ByteBuf;
 import net.fabricmc.fabric.api.networking.v1.FabricPacket;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.PacketType;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.game.ServerboundCustomPayloadPacket;
-
-import java.util.Random;
-import java.util.function.Function;
 
 import static com.primogemstudio.primogemcraft.gacha.GachaNetworkConstants.GACHA_TRIGGER;
 

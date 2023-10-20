@@ -55,6 +55,6 @@ public class GachaRecordModel {
     public static class DataModel {
         public PityMap5Star pity_5 = new PityMap5Star();
         public PityMap4Star pity_4 = new PityMap4Star();
-        public RecordList gachaRecord;
+        public RecordList gachaRecord = new RecordList();
     }
 }
