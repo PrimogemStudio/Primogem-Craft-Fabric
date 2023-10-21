@@ -22,9 +22,9 @@ public class GachaDatabase {
         statement.executeUpdate("create table if not exists gacha_history(id integer primary key autoincrement unique,username varchar(64),uuid varchar(36),timestamp long, level integer,item varchar(2048))");
         statement.close();
     }
-    public void write(GachaRecordModel.DataModel data) throws SQLException {
-        conn.createStatement().executeUpdate("drop table if exists gacha_pity");
-        conn.createStatement().executeUpdate("drop table if exists gacha_history");
+    public synchronized void write(GachaRecordModel.DataModel data) throws SQLException {
+        conn.createStatement().executeUpdate("delete from gacha_pity");
+        conn.createStatement().executeUpdate("delete from gacha_history");
 
         data.gachaRecord.forEach(m -> {
             PreparedStatement state;
@@ -60,7 +60,7 @@ public class GachaDatabase {
                     }
                 });
     }
-    public GachaRecordModel.DataModel read() throws SQLException {
+    public synchronized GachaRecordModel.DataModel read() throws SQLException {
         var model = new GachaRecordModel.DataModel();
         ResultSet set = conn.createStatement().executeQuery("select * from gacha_pity");
         while (set.next()) {
