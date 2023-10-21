@@ -44,23 +44,11 @@ public class DendroPickaxe extends PickaxeItem {
     }
 
     public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity entity) {
-        boolean ret = super.mineBlock(stack, world, state, pos, entity);
         // TODO item addition -> PrimogemcraftModItems.CAOYUANHE
-        /*BlockPos pos = new BlockPos((int) entity.getX(), (int) entity.getY(), (int) entity.getZ());
-        if (Math.random() < 0.1 && ((world.getBlockState(pos)).getBlock() == Blocks.WATER
-                || (world.getBlockState()).getBlock() == Blocks.WATER || (world.getBlockState(pos)).getBlock() == Blocks.BUBBLE_COLUMN)) {
-            if (world.isClientSide()) {
-                ItemEntity entityToSpawn = new ItemEntity(world, x, y, z, new ItemStack(PrimogemcraftModItems.CAOYUANHE.get()));
-                entityToSpawn.setPickUpDelay(10);
-                world.addFreshEntity(entityToSpawn);
-            }
-        }*/
-
-        return ret;
+        return super.mineBlock(stack, world, state, pos, entity);
     }
 
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltipComponents, TooltipFlag isAdvanced) {
-        super.appendHoverText(stack, level, tooltipComponents, isAdvanced);
         tooltipComponents.add(Component.translatable("tooltip.primogemcraft.dendro_pickaxe.line1"));
         tooltipComponents.add(Component.translatable("tooltip.primogemcraft.dendro_pickaxe.line2"));
     }

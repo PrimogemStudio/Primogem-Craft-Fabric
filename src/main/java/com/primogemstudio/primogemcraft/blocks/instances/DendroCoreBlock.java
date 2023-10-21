@@ -9,10 +9,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.storage.loot.LootParams;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.Collections;
 import java.util.List;
 
 public class DendroCoreBlock extends Block {
@@ -30,14 +27,5 @@ public class DendroCoreBlock extends Block {
     @Override
     public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
         return 15;
-    }
-
-    @SuppressWarnings("deprecation")
-    @Override
-    @NotNull
-    public List<ItemStack> getDrops(BlockState state, LootParams.Builder params) {
-        List<ItemStack> dropsOriginal = super.getDrops(state, params);
-        if (!dropsOriginal.isEmpty()) return dropsOriginal;
-        return Collections.singletonList(new ItemStack(this, 1));
     }
 }
