@@ -3,6 +3,7 @@ package com.primogemstudio.primogemcraft.items.instances;
 import com.primogemstudio.primogemcraft.entities.instances.entities.IntertwinedFateEntity;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -44,7 +45,7 @@ public class IntertwinedFate extends Item {
     @Override
     public void releaseUsing(ItemStack stack, Level level, LivingEntity livingEntity, int timeCharged) {
         if (getUseDuration(stack) - timeCharged < 10) return;
-        if (level.isClientSide()) ClientPlayNetworking.send(new GachaTriggerClientPacket());
+        if (level.isClientSide()) GachaTriggerClientPacket.send();
         else if (livingEntity instanceof Player player) {
             var ife = new IntertwinedFateEntity(level, player);
             ife.setItem(stack);

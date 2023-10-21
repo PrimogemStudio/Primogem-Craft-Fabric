@@ -6,8 +6,8 @@ import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
+import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -20,7 +20,6 @@ import java.util.Random;
 import java.util.UUID;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
-import static com.primogemstudio.primogemcraft.gacha.GachaNetworkConstants.GACHA_TRIGGER;
 
 public class GachaServer {
     public static Path currentDir;
@@ -75,7 +74,7 @@ public class GachaServer {
     }).create();
 
     public static void init() {
-        ServerPlayNetworking.registerGlobalReceiver(GACHA_TRIGGER, (server, player, handler, buf, responseSender) -> {
+        GachaTriggerClientPacket.register((server, player, handler, buf, responseSender) -> {
             var nbtdata = buf.readNbt();
             server.execute(() -> triggered(nbtdata, player));
         });

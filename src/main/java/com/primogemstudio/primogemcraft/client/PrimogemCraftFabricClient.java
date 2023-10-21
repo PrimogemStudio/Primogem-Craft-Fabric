@@ -8,6 +8,8 @@ import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 
+import javax.swing.table.TableRowSorter;
+
 import static net.minecraft.commands.Commands.literal;
 
 
@@ -15,9 +17,7 @@ public class PrimogemCraftFabricClient implements ClientModInitializer {
     public void onInitializeClient() {
         GachaClient.init();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> dispatcher.register(literal("primogem_craft_gacha_test").executes(context -> {
-            for (int i = 0; i < 90; i++) {
-                ClientPlayNetworking.send(new GachaTriggerClientPacket());
-            }
+            for (int i = 0; i < 90; i++) GachaTriggerClientPacket.send();
             Minecraft.getInstance().gui.getChat().addMessage(Component.literal("祈愿数据包已发送"));
             return 0;
         })));
