@@ -1,27 +1,87 @@
 package com.primogemstudio.primogemcraft.database;
 
+import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
+import net.minecraft.resources.ResourceLocation;
+import org.apache.commons.lang3.tuple.ImmutablePair;
+
+import java.io.File;
 import java.sql.*;
+import java.util.UUID;
 
 public class GachaDatabase {
-    public static void main(String[] args) throws Exception {
+    private final Connection conn;
+    public GachaDatabase(File file) throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
-        Connection conn = DriverManager.getConnection("jdbc:sqlite:D:/test_gacha_data.db");
+        conn = DriverManager.getConnection("jdbc:sqlite:" + file.toString());
+
+        checkOrCreateTable();
+    }
+    private void checkOrCreateTable() throws SQLException {
         Statement statement = conn.createStatement();
-        statement.executeUpdate("create table if not exists gacha_pity(id integer primary key autoincrement unique,username varchar(64) unique,uuid varchar(36) unique,pity5 integer,pity4 integer)");
+        statement.executeUpdate("create table if not exists gacha_pity(id integer primary key autoincrement unique,uuid varchar(36) unique,pity5 integer,pity4 integer)");
         statement.executeUpdate("create table if not exists gacha_history(id integer primary key autoincrement unique,username varchar(64),uuid varchar(36),timestamp long, level integer,item varchar(2048))");
-        statement.execute("delete from gacha_pity");
         statement.close();
+    }
+    public void write(GachaRecordModel.DataModel data) throws SQLException {
+        conn.createStatement().executeUpdate("delete from gacha_pity");
+        conn.createStatement().executeUpdate("delete from gacha_history");
 
-        PreparedStatement state = conn.prepareStatement("insert into gacha_pity(username,uuid,pity5,pity4) values(?,?,?,?)");
-        state.setString(1, "Coder2");
-        state.setString(2, "test");
-        state.setInt(3, 4);
-        state.setInt(4, 4);
-        state.executeUpdate();
+        data.gachaRecord.forEach(m -> {
+            PreparedStatement state;
+            try {
+                state = conn.prepareStatement("insert into gacha_history(username,uuid,timestamp,level,item) values(?,?,?,?,?)");
+                state.setString(1, m.name);
+                state.setString(2, m.uuid.toString());
+                state.setLong(3, m.timestamp);
+                state.setInt(4, m.level);
+                state.setString(5, m.item.toString());
+                state.executeUpdate();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        });
 
-        ResultSet rs = conn.createStatement().executeQuery("select * from gacha_pity");
-        while (rs.next()) {
-            System.out.printf("%s, %s, %s, %s\n", rs.getString(2), rs.getString(3), rs.getInt(4), rs.getInt(5));
+        data.pity_5.entrySet().stream()
+                .map(uuidIntegerEntry -> new ImmutablePair<>(
+                        uuidIntegerEntry.getKey(),
+                        new ImmutablePair<>(
+                                uuidIntegerEntry.getValue(),
+                                data.pity_4.get(uuidIntegerEntry.getKey()))
+                ))
+                .forEach(data2 -> {
+                    System.out.println(data2);
+                    try {
+                        PreparedStatement state = conn.prepareStatement("insert into gacha_pity(uuid,pity5,pity4) values(?,?,?)");
+                        state.setString(1, data2.left.toString());
+                        state.setInt(2, data2.right.left);
+                        state.setInt(3, data2.right.right);
+                        state.executeUpdate();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                });
+    }
+    public GachaRecordModel.DataModel read() throws SQLException {
+        var model = new GachaRecordModel.DataModel();
+        ResultSet set = conn.createStatement().executeQuery("select * from gacha_pity");
+        while (set.next()) {
+            UUID uuid = UUID.fromString(set.getString(2));
+            int pity5 = set.getInt(3);
+            int pity4 = set.getInt(4);
+            model.pity_4.put(uuid, pity4);
+            model.pity_5.put(uuid, pity5);
         }
+
+        ResultSet set2 = conn.createStatement().executeQuery("select * from gacha_history");
+        while (set2.next()) {
+            var data = new GachaRecordModel();
+            data.name = set2.getString(2);
+            data.uuid = UUID.fromString(set2.getString(3));
+            data.timestamp = set2.getLong(4);
+            data.level = set2.getInt(5);
+            data.item = new ResourceLocation(set2.getString(6));
+            model.gachaRecord.add(data);
+        }
+        return model;
     }
 }
