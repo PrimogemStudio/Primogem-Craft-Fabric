@@ -3,24 +3,25 @@ package com.primogemstudio.primogemcraft.entities.instances.model;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.primogemstudio.primogemcraft.entities.instances.entities.DendroCoreEntity;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 
+@Environment(value = EnvType.CLIENT)
 public class DendroCoreEntityModel extends EntityModel<DendroCoreEntity> {
-    static {
-        getTexturedModelData();
-    }
     public final ModelPart seed;
+
     public DendroCoreEntityModel() {
         this.seed = getTexturedModelData().bakeRoot().getChild("seed");
     }
 
     public static LayerDefinition getTexturedModelData() {
-        MeshDefinition meshdefinition = new MeshDefinition();
-        PartDefinition partdefinition = meshdefinition.getRoot();
-        PartDefinition seed = partdefinition.addOrReplaceChild("seed",
+        var meshdefinition = new MeshDefinition();
+        var partdefinition = meshdefinition.getRoot();
+        partdefinition.addOrReplaceChild("seed",
                 CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -4.0F, -3.0F, 6.0F, 4.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(13, 22).addBox(-1.0F, 1.0F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(18, 0)
                         .addBox(-2.0F, 0.0F, -1.0F, 4.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 15).addBox(-1.0F, 0.0F, -2.0F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(12, 11)
                         .addBox(-2.0F, -5.0F, -2.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(5, 21).addBox(-2.0F, -5.0F, 2.0F, 4.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(18, 3)
