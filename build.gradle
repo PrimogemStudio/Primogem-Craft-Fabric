@@ -25,7 +25,6 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
-    // mavenCentral()
 }
 
 dependencies {
@@ -37,8 +36,7 @@ dependencies {
 
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    // include(implementation("org.apache.derby:derby:10.16.1.1")) -> MySQL
-    include(implementation("org.xerial:sqlite-jdbc:3.34.0")) // -> SQLite
+    include(implementation("org.xerial:sqlite-jdbc:3.34.0"))
     include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.0")))
 }
 

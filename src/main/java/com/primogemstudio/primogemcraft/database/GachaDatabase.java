@@ -8,20 +8,25 @@ import java.io.File;
 import java.sql.*;
 import java.util.UUID;
 
+import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
+
 public class GachaDatabase {
     private final Connection conn;
+
     public GachaDatabase(File file) throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
         conn = DriverManager.getConnection("jdbc:sqlite:" + file.toString());
 
         checkOrCreateTable();
     }
+
     private void checkOrCreateTable() throws SQLException {
         Statement statement = conn.createStatement();
         statement.executeUpdate("create table if not exists gacha_pity(id integer primary key autoincrement unique,uuid varchar(36) unique,pity5 integer,pity4 integer)");
         statement.executeUpdate("create table if not exists gacha_history(id integer primary key autoincrement unique,username varchar(64),uuid varchar(36),timestamp long, level integer,item varchar(2048))");
         statement.close();
     }
+
     public synchronized void write(GachaRecordModel.DataModel data) throws SQLException {
         conn.createStatement().executeUpdate("delete from gacha_pity");
         conn.createStatement().executeUpdate("delete from gacha_history");
@@ -37,29 +42,23 @@ public class GachaDatabase {
                 state.setString(5, m.item == null ? null : m.item.toString());
                 state.executeUpdate();
             } catch (SQLException e) {
-                e.printStackTrace();
+                LOGGER.error("sql error: ", e);
             }
         });
 
-        data.pity_5.entrySet().stream()
-                .map(uuidIntegerEntry -> new ImmutablePair<>(
-                        uuidIntegerEntry.getKey(),
-                        new ImmutablePair<>(
-                                uuidIntegerEntry.getValue(),
-                                data.pity_4.get(uuidIntegerEntry.getKey()))
-                ))
-                .forEach(data2 -> {
-                    try {
-                        PreparedStatement state = conn.prepareStatement("insert into gacha_pity(uuid,pity5,pity4) values(?,?,?)");
-                        state.setString(1, data2.left.toString());
-                        state.setInt(2, data2.right.left);
-                        state.setInt(3, data2.right.right);
-                        state.executeUpdate();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
-                });
+        data.pity_5.entrySet().stream().map(uuidIntegerEntry -> new ImmutablePair<>(uuidIntegerEntry.getKey(), new ImmutablePair<>(uuidIntegerEntry.getValue(), data.pity_4.get(uuidIntegerEntry.getKey())))).forEach(data2 -> {
+            try {
+                PreparedStatement state = conn.prepareStatement("insert into gacha_pity(uuid,pity5,pity4) values(?,?,?)");
+                state.setString(1, data2.left.toString());
+                state.setInt(2, data2.right.left);
+                state.setInt(3, data2.right.right);
+                state.executeUpdate();
+            } catch (SQLException e) {
+                LOGGER.error("sql error: ", e);
+            }
+        });
     }
+
     public synchronized GachaRecordModel.DataModel read() throws SQLException {
         var model = new GachaRecordModel.DataModel();
         ResultSet set = conn.createStatement().executeQuery("select * from gacha_pity");
