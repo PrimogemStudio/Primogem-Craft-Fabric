@@ -66,7 +66,6 @@ public class DendroCoreEntity extends PathfinderMob {
 
     @Override
     public void thunderHit(ServerLevel serverWorld, LightningBolt lightningBolt) {
-        super.thunderHit(serverWorld, lightningBolt);
         var posit = BlockPos.containing(getX(), getY(), getZ());
         if (isAir(serverWorld, posit)) {
             serverWorld.setBlock(posit, PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);

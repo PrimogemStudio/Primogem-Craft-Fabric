@@ -8,6 +8,10 @@ plugins {
 version = project.mod_version
 group = project.maven_group
 
+loom {
+    accessWidenerPath = file("src/main/resources/META-INF/aw.accesswidener")
+}
+
 repositories {
     maven {
         url = 'https://api.modrinth.com/maven'
