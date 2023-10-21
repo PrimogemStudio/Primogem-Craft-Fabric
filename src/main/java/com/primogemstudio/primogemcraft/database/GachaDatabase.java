@@ -7,8 +7,8 @@ public class GachaDatabase {
         Class.forName("org.sqlite.JDBC");
         Connection conn = DriverManager.getConnection("jdbc:sqlite:D:/test_gacha_data.db");
         Statement statement = conn.createStatement();
-        statement.executeUpdate("create table if not exists gacha_pity(id integer primary key autoincrement,username varchar(64),uuid varchar(36),pity5 integer,pity4 integer)");
-        statement.executeUpdate("create table if not exists gacha_history(id integer primary key autoincrement,username varchar(64),uuid varchar(36),timestamp long, level integer,item varchar(2048))");
+        statement.executeUpdate("create table if not exists gacha_pity(id integer primary key autoincrement unique,username varchar(64) unique,uuid varchar(36) unique,pity5 integer,pity4 integer)");
+        statement.executeUpdate("create table if not exists gacha_history(id integer primary key autoincrement unique,username varchar(64),uuid varchar(36),timestamp long, level integer,item varchar(2048))");
         statement.execute("delete from gacha_pity");
         statement.close();
 
