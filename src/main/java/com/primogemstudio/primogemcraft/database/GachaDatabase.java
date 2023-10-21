@@ -23,18 +23,18 @@ public class GachaDatabase {
         statement.close();
     }
     public void write(GachaRecordModel.DataModel data) throws SQLException {
-        conn.createStatement().executeUpdate("delete from gacha_pity");
-        conn.createStatement().executeUpdate("delete from gacha_history");
+        conn.createStatement().executeUpdate("drop table if exists gacha_pity");
+        conn.createStatement().executeUpdate("drop table if exists gacha_history");
 
         data.gachaRecord.forEach(m -> {
             PreparedStatement state;
             try {
                 state = conn.prepareStatement("insert into gacha_history(username,uuid,timestamp,level,item) values(?,?,?,?,?)");
                 state.setString(1, m.name);
-                state.setString(2, m.uuid.toString());
+                state.setString(2, m.uuid == null ? null : m.uuid.toString());
                 state.setLong(3, m.timestamp);
                 state.setInt(4, m.level);
-                state.setString(5, m.item.toString());
+                state.setString(5, m.item == null ? null : m.item.toString());
                 state.executeUpdate();
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -49,7 +49,6 @@ public class GachaDatabase {
                                 data.pity_4.get(uuidIntegerEntry.getKey()))
                 ))
                 .forEach(data2 -> {
-                    System.out.println(data2);
                     try {
                         PreparedStatement state = conn.prepareStatement("insert into gacha_pity(uuid,pity5,pity4) values(?,?,?)");
                         state.setString(1, data2.left.toString());
@@ -76,10 +75,10 @@ public class GachaDatabase {
         while (set2.next()) {
             var data = new GachaRecordModel();
             data.name = set2.getString(2);
-            data.uuid = UUID.fromString(set2.getString(3));
+            data.uuid = set2.getString(3) == null ? null : UUID.fromString(set2.getString(3));
             data.timestamp = set2.getLong(4);
             data.level = set2.getInt(5);
-            data.item = new ResourceLocation(set2.getString(6));
+            data.item = set2.getString(6) == null ? null : new ResourceLocation(set2.getString(6));
             model.gachaRecord.add(data);
         }
         return model;

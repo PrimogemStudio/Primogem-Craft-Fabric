@@ -6,14 +6,13 @@ import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
+import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 
-import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Random;
@@ -116,24 +115,24 @@ public class GachaServer {
     }
 
     public static void loadData() {
-        var file = currentDir.resolve("gacha_data.json").toFile();
+        var file = currentDir.resolve("gacha_data.db").toFile();
         if (file.exists()) {
-            try (var fr = new FileReader(file)) {
-                data = parser.fromJson(fr, GachaRecordModel.DataModel.class);
+            try {
+                data = new GachaDatabase(file).read();
                 if (data == null) data = new GachaRecordModel.DataModel();
                 LOGGER.info("Data read!");
-            } catch (IOException e) {
+            } catch (Exception e) {
                 LOGGER.error("read failed", e);
             }
         }
     }
 
     public static void saveData() {
-        var file = currentDir.resolve("gacha_data.json").toFile();
-        try (var fo = new FileOutputStream(file)) {
-            fo.write(parser.toJson(data).getBytes());
+        var file = currentDir.resolve("gacha_data.db").toFile();
+        try {
+            new GachaDatabase(file).write(data);
             LOGGER.info("Data saved!");
-        } catch (IOException e) {
+        } catch (Exception e) {
             LOGGER.error("write failed", e);
         }
     }
