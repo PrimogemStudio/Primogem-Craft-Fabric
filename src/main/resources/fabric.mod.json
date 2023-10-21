@@ -5,7 +5,9 @@
   "name": "Primogem Craft (Fabric)",
   "description": "A distinctive Minecraft mod integrated with Genshin Impact and Honkai: Star Rail",
   "authors": [
-    "Coder2", "hackermdch", "PepperMR"
+    "Coder2",
+    "hackermdch",
+    "PepperMR"
   ],
   "contact": {
     "repo": "https://github.com/Primogem-Craft-Development/Primogem-Craft-Fabric",
@@ -27,5 +29,9 @@
     "fabricloader": ">=0.11.4",
     "fabric": "*",
     "minecraft": "1.20.x"
-  }
+  },
+  "mixins": [
+    "primogemcraft.mixins.json"
+  ],
+  "accessWidener": "META-INF/aw.accesswidener"
 }

@@ -1,8 +1,17 @@
 {
   "itemGroup.primogemcraft": "原石工艺",
-  "block.primogemcraft.dendro_core_block": "草原核 块",
+  "block.primogemcraft.dendro_core_block": "§a草原核块",
   "item.primogemcraft.primogem": "原石",
   "item.primogemcraft.vayuda_turquoise_gemstone": "自在松石",
+  "item.primogemcraft.intertwined_fate": "纠缠之缘",
   "tooltip.primogemcraft.dendro_core_block.line1": "当闪电击中草原核时出现",
-  "tooltip.primogemcraft.dendro_core_block.line2": "也可以合成"
+  "tooltip.primogemcraft.dendro_core_block.line2": "也可以合成",
+  "entity.primogemcraft.dendro_core_entity": "草原核",
+  "subtitles.muted": "....",
+  "tooltip.primogemcraft.dendro_pickaxe.line1": "§d处于水中时：",
+  "tooltip.primogemcraft.dendro_pickaxe.line2": "§7 - 挖掘方块有概率掉落物品草原核",
+  "tooltip.primogemcraft.primogem.line1": "给他20原石，他能帮你......",
+  "item.primogemcraft.dendro_pickaxe": "§a『生长碧翡』镐",
+  "tooltip.primogemcraft.intertwined_fate.line1": "手持§b长按右键§f以抽卡",
+  "tooltip.primogemcraft.intertwined_fate.line2": "§f十....保....歪"
 }
