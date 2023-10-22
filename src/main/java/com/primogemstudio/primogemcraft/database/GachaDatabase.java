@@ -33,7 +33,7 @@ public class GachaDatabase implements Closeable {
                 }
                 catch (InterruptedException ignored) {}
                 catch (Exception e) {
-                    e.printStackTrace();
+                    logger.error("failed to write staged data", e);
                 }
             }
         });
