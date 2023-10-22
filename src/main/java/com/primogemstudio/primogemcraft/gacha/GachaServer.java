@@ -1,14 +1,18 @@
 package com.primogemstudio.primogemcraft.gacha;
 
+import com.google.common.collect.ImmutableList;
 import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
+import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.phys.Vec3;
 
 import java.util.Random;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
+import static com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities.*;
 
 public class GachaServer {
     public static GachaDatabase database;
@@ -39,11 +43,12 @@ public class GachaServer {
     public static void init() {
         GachaTriggerClientPacket.register((server, player, handler, buf, responseSender) -> {
             var nbtdata = buf.readNbt();
-            server.execute(() -> triggered(nbtdata, player));
+            var pos = buf.readBlockPos();
+            server.execute(() -> triggered(nbtdata, player, pos));
         });
     }
 
-    private static void triggered(CompoundTag nbtdata, ServerPlayer player) {
+    private static void triggered(CompoundTag nbtdata, ServerPlayer player, BlockPos pos) {
         int level = 3;
         var star5pity = data.pity_5.increasePity(player.getGameProfile());
         var star4pity = data.pity_4.increasePity(player.getGameProfile());
@@ -75,6 +80,11 @@ public class GachaServer {
         data.gachaRecord.add(gac);
         onDataChange();
 
+        final var ls = ImmutableList.of(BLUE_LIGHT, PURPLE_LIGHT, GOLDEN_LIGHT);
+        var li = ls.get(level - 3).create(player.level());
+        li.setPos(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
+        player.level().addFreshEntity(li);
+
         LOGGER.info("level: " + level);
     }
 
@@ -94,7 +104,6 @@ public class GachaServer {
     public static void saveData() {
         try {
             database.stageChanges(data);
-            // database.write(data);
             LOGGER.info("Data saved!");
         } catch (Exception e) {
             LOGGER.error("write failed", e);
