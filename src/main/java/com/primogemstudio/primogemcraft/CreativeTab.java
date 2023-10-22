@@ -20,7 +20,13 @@ public class CreativeTab {
             output.accept(PRIMOGEM);
             output.accept(INTERTWINED_FATE);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
+        }).build());
+
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(DENDRO_CORE_BLOCK_ITEM);
+        }).build());
+
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(DENDRO_PICKAXE);
         }).build());
     }
