@@ -4,14 +4,13 @@ import com.google.common.collect.ImmutableList;
 import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
+import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.Random;
-import java.util.function.Consumer;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
 import static com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities.*;
@@ -49,10 +48,11 @@ public class GachaServer {
             if (validGacha(player)) server.execute(() -> triggered(nbtdata, player, pos));
         });
     }
+
     private static boolean validGacha(ServerPlayer player) {
         final int[] counts = {0};
         player.containerMenu.slots.forEach(slot -> {
-            if (slot.getItem().getItem().toString().equals("intertwined_fate")) {
+            if (slot.getItem().getItem() == PrimogemCraftItems.INTERTWINED_FATE) {
                 counts[0] += slot.getItem().getCount();
             }
         });
@@ -103,11 +103,9 @@ public class GachaServer {
         try {
             if (database != null) data = database.read();
             LOGGER.info("Data read!");
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             LOGGER.error("read failed", e);
-        }
-        finally {
+        } finally {
             if (data == null) data = new GachaRecordModel.DataModel();
         }
     }

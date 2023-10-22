@@ -41,8 +41,8 @@ public class IntertwinedFateItem extends Item {
 
     @Override
     public void releaseUsing(ItemStack stack, Level level, LivingEntity livingEntity, int timeCharged) {
-        if (getUseDuration(stack) - timeCharged < 10) {}
-        else if (livingEntity instanceof Player player) {
+        if (getUseDuration(stack) - timeCharged < 10) return;
+        if (livingEntity instanceof Player player) {
             var ife = new IntertwinedFateEntity(level, player);
             ife.setItem(stack);
             ife.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0f, 1.5f, 1.0f);
