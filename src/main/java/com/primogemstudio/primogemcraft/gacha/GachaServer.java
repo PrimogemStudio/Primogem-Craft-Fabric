@@ -7,9 +7,11 @@ import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.Random;
+import java.util.function.Consumer;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
 import static com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities.*;
@@ -44,8 +46,17 @@ public class GachaServer {
         GachaTriggerClientPacket.register((server, player, handler, buf, responseSender) -> {
             var nbtdata = buf.readNbt();
             var pos = buf.readBlockPos();
-            server.execute(() -> triggered(nbtdata, player, pos));
+            if (validGacha(player)) server.execute(() -> triggered(nbtdata, player, pos));
         });
+    }
+    private static boolean validGacha(ServerPlayer player) {
+        final int[] counts = {0};
+        player.containerMenu.slots.forEach(slot -> {
+            if (slot.getItem().getItem().toString().equals("intertwined_fate")) {
+                counts[0] += slot.getItem().getCount();
+            }
+        });
+        return counts[0] > 0;
     }
 
     private static void triggered(CompoundTag nbtdata, ServerPlayer player, BlockPos pos) {
