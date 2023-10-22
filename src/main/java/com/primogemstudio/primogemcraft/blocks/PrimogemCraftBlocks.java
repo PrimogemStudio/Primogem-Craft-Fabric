@@ -2,6 +2,8 @@ package com.primogemstudio.primogemcraft.blocks;
 
 import com.primogemstudio.primogemcraft.blocks.instances.DendroCoreBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.PrimogemBlock;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
