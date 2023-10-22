@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft.client;
 
+import com.primogemstudio.primogemcraft.entities.PrimogemCraftEntityRenderers;
 import com.primogemstudio.primogemcraft.gacha.GachaClient;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import net.fabricmc.api.ClientModInitializer;
@@ -16,6 +17,7 @@ import static net.minecraft.commands.Commands.literal;
 public class PrimogemCraftFabricClient implements ClientModInitializer {
     public void onInitializeClient() {
         GachaClient.init();
+        PrimogemCraftEntityRenderers.init();
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> dispatcher.register(literal("primogem_craft_gacha_test").executes(context -> {
             for (int i = 0; i < 90; i++) GachaTriggerClientPacket.send();
             Minecraft.getInstance().gui.getChat().addMessage(Component.literal("祈愿数据包已发送"));

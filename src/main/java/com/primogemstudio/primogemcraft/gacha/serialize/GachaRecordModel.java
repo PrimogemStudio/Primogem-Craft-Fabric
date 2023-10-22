@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class GachaRecordModel {
     public String name;
@@ -13,7 +14,7 @@ public class GachaRecordModel {
     public int level;
     public ResourceLocation item;
     public long timestamp;
-    public static class RecordList extends ArrayList<GachaRecordModel> {}
+    public static class RecordList extends ConcurrentLinkedDeque<GachaRecordModel> {}
     public static class PityMap extends HashMap<UUID, Integer> {
         private final int pityMax;
         public PityMap(int pityMax) {

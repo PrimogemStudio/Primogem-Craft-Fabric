@@ -3,6 +3,7 @@ package com.primogemstudio.primogemcraft.mixin;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.Lifecycle;
+import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.gacha.GachaServer;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
@@ -22,6 +23,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import java.sql.SQLException;
+
 @Mixin(LevelStorageSource.class)
 public class LevelStorageSourceMixin {
     @Mixin(LevelStorageSource.LevelStorageAccess.class)
@@ -31,14 +34,14 @@ public class LevelStorageSourceMixin {
         LevelStorageSource.LevelDirectory levelDirectory;
 
         @Inject(at = @At("HEAD"), method = "getDataTag")
-        public void onGetDataTag(DynamicOps<Tag> ops, WorldDataConfiguration dataConfiguration, Registry<LevelStem> levelStemRegistry, Lifecycle lifecycle, CallbackInfoReturnable<@Nullable Pair<WorldData, WorldDimensions.Complete>> cir) {
-            GachaServer.currentDir = levelDirectory.path();
+        public void onGetDataTag(DynamicOps<Tag> ops, WorldDataConfiguration dataConfiguration, Registry<LevelStem> levelStemRegistry, Lifecycle lifecycle, CallbackInfoReturnable<@Nullable Pair<WorldData, WorldDimensions.Complete>> cir) throws SQLException, ClassNotFoundException {
+            if (GachaServer.database != null) GachaServer.database.close();
+            GachaServer.database = new GachaDatabase(levelDirectory.path().resolve("gacha_data.db").toFile());
             GachaServer.loadData();
         }
 
         @Inject(at = @At("HEAD"), method = "saveDataTag(Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/nbt/CompoundTag;)V")
         public void onSaveDataTag(RegistryAccess registries, WorldData serverConfiguration, CompoundTag hostPlayerNBT, CallbackInfo ci) {
-            GachaServer.currentDir = levelDirectory.path();
             GachaServer.saveData();
         }
     }

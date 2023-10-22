@@ -1,28 +1,21 @@
 package com.primogemstudio.primogemcraft.gacha;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.TypeAdapter;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonToken;
-import com.google.gson.stream.JsonWriter;
+import com.google.common.collect.ImmutableList;
+import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
+import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.phys.Vec3;
 
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.nio.file.Path;
 import java.util.Random;
-import java.util.UUID;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
+import static com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities.*;
 
 public class GachaServer {
-    public static Path currentDir;
+    public static GachaDatabase database;
     private static GachaRecordModel.DataModel data = new GachaRecordModel.DataModel();
 
     private enum GachaProtocols {
@@ -47,40 +40,15 @@ public class GachaServer {
         }
     }
 
-    private static final Gson parser = new GsonBuilder().registerTypeAdapter(ResourceLocation.class, new TypeAdapter<ResourceLocation>() {
-        public void write(JsonWriter jsonWriter, ResourceLocation resourceLocation) throws IOException {
-            jsonWriter.value(resourceLocation == null ? null : resourceLocation.toString());
-        }
-
-        public ResourceLocation read(JsonReader jsonReader) throws IOException {
-            if (jsonReader.peek() == JsonToken.NULL) {
-                jsonReader.nextNull();
-                return null;
-            }
-            return new ResourceLocation(jsonReader.nextString());
-        }
-    }).registerTypeAdapter(UUID.class, new TypeAdapter<UUID>() {
-        public void write(JsonWriter jsonWriter, UUID uuid) throws IOException {
-            jsonWriter.value(uuid == null ? null : uuid.toString());
-        }
-
-        public UUID read(JsonReader jsonReader) throws IOException {
-            if (jsonReader.peek() == JsonToken.NULL) {
-                jsonReader.nextNull();
-                return null;
-            }
-            return UUID.fromString(jsonReader.nextString());
-        }
-    }).create();
-
     public static void init() {
         GachaTriggerClientPacket.register((server, player, handler, buf, responseSender) -> {
             var nbtdata = buf.readNbt();
-            server.execute(() -> triggered(nbtdata, player));
+            var pos = buf.readBlockPos();
+            server.execute(() -> triggered(nbtdata, player, pos));
         });
     }
 
-    private static void triggered(CompoundTag nbtdata, ServerPlayer player) {
+    private static void triggered(CompoundTag nbtdata, ServerPlayer player, BlockPos pos) {
         int level = 3;
         var star5pity = data.pity_5.increasePity(player.getGameProfile());
         var star4pity = data.pity_4.increasePity(player.getGameProfile());
@@ -112,28 +80,32 @@ public class GachaServer {
         data.gachaRecord.add(gac);
         onDataChange();
 
+        final var ls = ImmutableList.of(BLUE_LIGHT, PURPLE_LIGHT, GOLDEN_LIGHT);
+        var li = ls.get(level - 3).create(player.level());
+        li.setPos(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
+        player.level().addFreshEntity(li);
+
         LOGGER.info("level: " + level);
     }
 
     public static void loadData() {
-        var file = currentDir.resolve("gacha_data.json").toFile();
-        if (file.exists()) {
-            try (var fr = new FileReader(file)) {
-                data = parser.fromJson(fr, GachaRecordModel.DataModel.class);
-                if (data == null) data = new GachaRecordModel.DataModel();
-                LOGGER.info("Data read!");
-            } catch (IOException e) {
-                LOGGER.error("read failed", e);
-            }
+        try {
+            data = database.read();
+            LOGGER.info("Data read!");
+        }
+        catch (Exception e) {
+            LOGGER.error("read failed", e);
+        }
+        finally {
+            if (data == null) data = new GachaRecordModel.DataModel();
         }
     }
 
     public static void saveData() {
-        var file = currentDir.resolve("gacha_data.json").toFile();
-        try (var fo = new FileOutputStream(file)) {
-            fo.write(parser.toJson(data).getBytes());
+        try {
+            database.stageChanges(data);
             LOGGER.info("Data saved!");
-        } catch (IOException e) {
+        } catch (Exception e) {
             LOGGER.error("write failed", e);
         }
     }
