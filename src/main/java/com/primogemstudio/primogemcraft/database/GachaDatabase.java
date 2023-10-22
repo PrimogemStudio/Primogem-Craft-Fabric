@@ -3,21 +3,51 @@ package com.primogemstudio.primogemcraft.database;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.minecraft.resources.ResourceLocation;
 import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import java.io.Closeable;
 import java.io.File;
+import java.io.IOException;
 import java.sql.*;
 import java.util.UUID;
 
-import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
-
-public class GachaDatabase {
+public class GachaDatabase implements Closeable {
+    private final Logger logger = LoggerFactory.getLogger(GachaDatabase.class);
     private final Connection conn;
-
+    private GachaRecordModel.DataModel staged_data;
+    private Thread stage_thread;
     public GachaDatabase(File file) throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
         conn = DriverManager.getConnection("jdbc:sqlite:" + file.toString());
 
         checkOrCreateTable();
+        stage_thread = new Thread(() -> {
+            while (true) {
+                try {
+                    if (staged_data != null) {
+                        write(staged_data);
+                        staged_data = null;
+                    }
+                    Thread.sleep(1000);
+                }
+                catch (InterruptedException ignored) {}
+                catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        stage_thread.start();
+    }
+
+    public void close() {
+        stage_thread.interrupt();
+        try {
+            conn.close();
+        }
+        catch (SQLException e) {
+            logger.error("Cannot close connection to database", e);
+        }
     }
 
     private void checkOrCreateTable() throws SQLException {
@@ -26,10 +56,13 @@ public class GachaDatabase {
         statement.executeUpdate("create table if not exists gacha_history(id integer primary key autoincrement unique,username varchar(64),uuid varchar(36),timestamp long, level integer,item varchar(2048))");
         statement.close();
     }
-
+    public void stageChanges(GachaRecordModel.DataModel data) {
+        staged_data = data;
+    }
     public synchronized void write(GachaRecordModel.DataModel data) throws SQLException {
-        conn.createStatement().executeUpdate("delete from gacha_pity");
-        conn.createStatement().executeUpdate("delete from gacha_history");
+        conn.createStatement().executeUpdate("drop table if exists gacha_pity");
+        conn.createStatement().executeUpdate("drop table if exists gacha_history");
+        checkOrCreateTable();
 
         data.gachaRecord.forEach(m -> {
             PreparedStatement state;
@@ -42,23 +75,29 @@ public class GachaDatabase {
                 state.setString(5, m.item == null ? null : m.item.toString());
                 state.executeUpdate();
             } catch (SQLException e) {
-                LOGGER.error("sql error: ", e);
+                logger.error("failed to write gacha record(s)", e);
             }
         });
 
-        data.pity_5.entrySet().stream().map(uuidIntegerEntry -> new ImmutablePair<>(uuidIntegerEntry.getKey(), new ImmutablePair<>(uuidIntegerEntry.getValue(), data.pity_4.get(uuidIntegerEntry.getKey())))).forEach(data2 -> {
-            try {
-                PreparedStatement state = conn.prepareStatement("insert into gacha_pity(uuid,pity5,pity4) values(?,?,?)");
-                state.setString(1, data2.left.toString());
-                state.setInt(2, data2.right.left);
-                state.setInt(3, data2.right.right);
-                state.executeUpdate();
-            } catch (SQLException e) {
-                LOGGER.error("sql error: ", e);
-            }
-        });
+        data.pity_5.entrySet().stream()
+                .map(uuidIntegerEntry -> new ImmutablePair<>(
+                        uuidIntegerEntry.getKey(),
+                        new ImmutablePair<>(
+                                uuidIntegerEntry.getValue(),
+                                data.pity_4.get(uuidIntegerEntry.getKey()))
+                ))
+                .forEach(data2 -> {
+                    try {
+                        PreparedStatement state = conn.prepareStatement("insert into gacha_pity(uuid,pity5,pity4) values(?,?,?)");
+                        state.setString(1, data2.left.toString());
+                        state.setInt(2, data2.right.left);
+                        state.setInt(3, data2.right.right);
+                        state.executeUpdate();
+                    } catch (SQLException e) {
+                        logger.error("failed to write gacha pity values", e);
+                    }
+                });
     }
-
     public synchronized GachaRecordModel.DataModel read() throws SQLException {
         var model = new GachaRecordModel.DataModel();
         ResultSet set = conn.createStatement().executeQuery("select * from gacha_pity");

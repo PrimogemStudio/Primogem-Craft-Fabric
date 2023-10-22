@@ -14,14 +14,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.Random;
 import java.util.UUID;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
 
 public class GachaServer {
-    public static Path currentDir;
+    public static GachaDatabase database;
     private static GachaRecordModel.DataModel data = new GachaRecordModel.DataModel();
 
     private enum GachaProtocols {
@@ -115,22 +114,22 @@ public class GachaServer {
     }
 
     public static void loadData() {
-        var file = currentDir.resolve("gacha_data.db").toFile();
-        if (file.exists()) {
-            try {
-                data = new GachaDatabase(file).read();
-                if (data == null) data = new GachaRecordModel.DataModel();
-                LOGGER.info("Data read!");
-            } catch (Exception e) {
-                LOGGER.error("read failed", e);
-            }
+        try {
+            data = database.read();
+            LOGGER.info("Data read!");
+        }
+        catch (Exception e) {
+            LOGGER.error("read failed", e);
+        }
+        finally {
+            if (data == null) data = new GachaRecordModel.DataModel();
         }
     }
 
     public static void saveData() {
-        var file = currentDir.resolve("gacha_data.db").toFile();
         try {
-            new GachaDatabase(file).write(data);
+            database.stageChanges(data);
+            // database.write(data);
             LOGGER.info("Data saved!");
         } catch (Exception e) {
             LOGGER.error("write failed", e);
