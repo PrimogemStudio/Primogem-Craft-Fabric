@@ -1,21 +1,12 @@
 package com.primogemstudio.primogemcraft.gacha;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.TypeAdapter;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonToken;
-import com.google.gson.stream.JsonWriter;
 import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 
-import java.io.IOException;
 import java.util.Random;
-import java.util.UUID;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
 
@@ -44,32 +35,6 @@ public class GachaServer {
             return new Random().nextLong();
         }
     }
-
-    private static final Gson parser = new GsonBuilder().registerTypeAdapter(ResourceLocation.class, new TypeAdapter<ResourceLocation>() {
-        public void write(JsonWriter jsonWriter, ResourceLocation resourceLocation) throws IOException {
-            jsonWriter.value(resourceLocation == null ? null : resourceLocation.toString());
-        }
-
-        public ResourceLocation read(JsonReader jsonReader) throws IOException {
-            if (jsonReader.peek() == JsonToken.NULL) {
-                jsonReader.nextNull();
-                return null;
-            }
-            return new ResourceLocation(jsonReader.nextString());
-        }
-    }).registerTypeAdapter(UUID.class, new TypeAdapter<UUID>() {
-        public void write(JsonWriter jsonWriter, UUID uuid) throws IOException {
-            jsonWriter.value(uuid == null ? null : uuid.toString());
-        }
-
-        public UUID read(JsonReader jsonReader) throws IOException {
-            if (jsonReader.peek() == JsonToken.NULL) {
-                jsonReader.nextNull();
-                return null;
-            }
-            return UUID.fromString(jsonReader.nextString());
-        }
-    }).create();
 
     public static void init() {
         GachaTriggerClientPacket.register((server, player, handler, buf, responseSender) -> {
