@@ -14,6 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class IntertwinedFateEntity extends ThrowableItemProjectile {
     public boolean triggered;
+
     public IntertwinedFateEntity(EntityType<? extends ThrowableItemProjectile> entityType, Level level) {
         super(entityType, level);
     }
