@@ -12,8 +12,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class TheAllBeginning extends Item {
-    public TheAllBeginning() {
+public class TheAllBeginningItem extends Item {
+    public TheAllBeginningItem() {
         super(new Item.Properties().durability(32).fireResistant().rarity(Rarity.EPIC));
     }
     @Override

@@ -101,7 +101,7 @@ public class GachaServer {
 
     public static void loadData() {
         try {
-            data = database.read();
+            if (database != null) data = database.read();
             LOGGER.info("Data read!");
         }
         catch (Exception e) {
@@ -114,7 +114,7 @@ public class GachaServer {
 
     public static void saveData() {
         try {
-            database.stageChanges(data);
+            if (database != null) database.stageChanges(data);
             LOGGER.info("Data saved!");
         } catch (Exception e) {
             LOGGER.error("write failed", e);

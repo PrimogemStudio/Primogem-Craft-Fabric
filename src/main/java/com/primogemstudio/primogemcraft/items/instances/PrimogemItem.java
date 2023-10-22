@@ -9,8 +9,8 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
-public class Primogem extends Item {
-    public Primogem() {
+public class PrimogemItem extends Item {
+    public PrimogemItem() {
         super(new Item.Properties().stacksTo(160).rarity(Rarity.EPIC));
     }
 

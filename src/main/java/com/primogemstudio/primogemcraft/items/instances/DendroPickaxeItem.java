@@ -13,8 +13,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DendroPickaxe extends PickaxeItem {
-    public DendroPickaxe() {
+public class DendroPickaxeItem extends PickaxeItem {
+    public DendroPickaxeItem() {
         super(new Tier() {
             public int getUses() {
                 return 1561;

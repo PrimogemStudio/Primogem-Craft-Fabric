@@ -41,7 +41,8 @@ public class LevelStorageSourceMixin {
         }
 
         @Inject(at = @At("HEAD"), method = "saveDataTag(Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/nbt/CompoundTag;)V")
-        public void onSaveDataTag(RegistryAccess registries, WorldData serverConfiguration, CompoundTag hostPlayerNBT, CallbackInfo ci) {
+        public void onSaveDataTag(RegistryAccess registries, WorldData serverConfiguration, CompoundTag hostPlayerNBT, CallbackInfo ci) throws SQLException, ClassNotFoundException {
+            if (GachaServer.database == null) GachaServer.database = new GachaDatabase(levelDirectory.path().resolve("gacha_data.db").toFile());
             GachaServer.saveData();
         }
     }

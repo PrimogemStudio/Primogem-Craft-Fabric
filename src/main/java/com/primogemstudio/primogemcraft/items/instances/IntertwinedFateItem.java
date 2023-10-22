@@ -1,9 +1,6 @@
 package com.primogemstudio.primogemcraft.items.instances;
 
 import com.primogemstudio.primogemcraft.entities.instances.entities.IntertwinedFateEntity;
-import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -20,8 +17,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class IntertwinedFate extends Item {
-    public IntertwinedFate() {
+public class IntertwinedFateItem extends Item {
+    public IntertwinedFateItem() {
         super(new Item.Properties().rarity(Rarity.UNCOMMON));
     }
 
