@@ -18,6 +18,7 @@ public class CreativeTab {
     public static final ResourceKey<CreativeModeTab> KEY_TOOLS = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_tools_tab"));
     public static void init() {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
+            output.accept(THE_ALL_BEGINNING);
             output.accept(PRIMOGEM);
             output.accept(INTERTWINED_FATE);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
