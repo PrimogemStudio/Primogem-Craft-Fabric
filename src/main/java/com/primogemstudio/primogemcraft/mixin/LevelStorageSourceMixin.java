@@ -45,5 +45,15 @@ public class LevelStorageSourceMixin {
             if (GachaServer.database == null) GachaServer.database = new GachaDatabase(levelDirectory.path().resolve("gacha_data.db").toFile());
             GachaServer.saveData();
         }
+
+        @Inject(at = @At("HEAD"), method = "deleteLevel")
+        public void onDeleteLevel(CallbackInfo ci) {
+            if (GachaServer.database != null) {
+                try {
+                    GachaServer.database.close();
+                }
+                catch (Exception ignored) {}
+            }
+        }
     }
 }
