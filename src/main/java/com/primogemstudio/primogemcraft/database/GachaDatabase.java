@@ -25,6 +25,7 @@ public class GachaDatabase implements Closeable {
         stage_thread = new Thread(() -> {
             while (true) {
                 try {
+                    if (conn.isClosed()) break;
                     if (staged_data != null) {
                         write(staged_data);
                         staged_data = null;
