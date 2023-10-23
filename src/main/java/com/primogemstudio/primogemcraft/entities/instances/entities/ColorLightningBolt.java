@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft.entities.instances.entities;
 
+import com.primogemstudio.primogemcraft.modprotocols.GenshinCraftProtocol;
 import net.fabricmc.loader.api.FabricLoader;
 import net.hacker.genshincraft.element.shadow.Element;
 import net.hacker.genshincraft.element.shadow.ElementDamageSource;
@@ -62,15 +63,13 @@ public abstract class ColorLightningBolt extends Entity {
                 var list = level().getEntities(this, new AABB(getX() - 3.0, getY() - 3.0, getZ() - 3.0, getX() + 3.0, getY() + 6.0 + 3.0, getZ() + 3.0), Entity::isAlive);
                 for (var entity : list) {
                     if (entity instanceof ItemEntity || entity instanceof ExperienceOrb) continue;
-                    if (FabricLoader.getInstance().isModLoaded("genshincraft")) execute(entity);
-                    else entity.hurt(damageSources().lightningBolt(), 5);
+                    GenshinCraftProtocol.INSTANCE.onGachaLightningBolt(
+                            entity,
+                            () -> entity.hurt(damageSources().lightningBolt(), 5)
+                    );
                 }
             }
         }
-    }
-
-    private void execute(Entity entity) {
-        entity.hurt(new ElementDamageSource(damageSources().lightningBolt(), Element.fromType(Element.Type.Electro, 1, Element.getDelta(1))).setCooldown(true), 162);
     }
 
     private void powerLightningRod() {
