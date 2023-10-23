@@ -12,13 +12,7 @@ import static net.minecraft.commands.Commands.literal;
 
 public class PrimogemCraftFabricClient implements ClientModInitializer {
     public void onInitializeClient() {
-        GachaClient.init();
         PrimogemCraftEntityRenderers.init();
-        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> dispatcher.register(literal("playsound_test").executes(context -> {
-            if (Minecraft.getInstance().player != null) {
-                Minecraft.getInstance().player.playSound(PrimogemCraftSounds.A_NEW_DAY_WITH_HOPE_RECORD);
-            }
-            return 0;
-        })));
+        GachaClient.init();
     }
 }

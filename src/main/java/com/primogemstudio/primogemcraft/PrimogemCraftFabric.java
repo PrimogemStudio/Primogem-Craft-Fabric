@@ -16,7 +16,6 @@ public class PrimogemCraftFabric implements ModInitializer {
         PrimogemCraftBlocks.init();
         PrimogemCraftItems.init();
         PrimogemCraftEntities.init();
-        PrimogemCraftSounds.init();
         CreativeTabs.init();
         LOGGER.info("Primogem Craft Loaded");
     }
