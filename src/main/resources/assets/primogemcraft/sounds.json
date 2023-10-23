@@ -16,5 +16,14 @@
         "stream": true
       }
     ]
+  },
+  "music_disc.the_fading_stories": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:the_fading_stories",
+        "stream": true
+      }
+    ]
   }
 }
