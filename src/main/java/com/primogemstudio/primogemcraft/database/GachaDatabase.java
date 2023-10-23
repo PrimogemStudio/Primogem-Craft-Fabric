@@ -8,7 +8,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.Closeable;
 import java.io.File;
-import java.io.IOException;
 import java.sql.*;
 import java.util.UUID;
 
@@ -16,14 +15,16 @@ public class GachaDatabase implements Closeable {
     private final Logger logger = LoggerFactory.getLogger(GachaDatabase.class);
     private final Connection conn;
     private GachaRecordModel.DataModel staged_data;
-    private Thread stage_thread;
+    private boolean stop = false;
+
+    @SuppressWarnings("BusyWait")
     public GachaDatabase(File file) throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
         conn = DriverManager.getConnection("jdbc:sqlite:" + file.toString());
 
         checkOrCreateTable();
-        stage_thread = new Thread(() -> {
-            while (true) {
+        var stage_thread = new Thread(() -> {
+            while (!stop) {
                 try {
                     if (conn.isClosed()) break;
                     if (staged_data != null) {
@@ -31,9 +32,8 @@ public class GachaDatabase implements Closeable {
                         staged_data = null;
                     }
                     Thread.sleep(1000);
-                }
-                catch (InterruptedException ignored) {}
-                catch (Exception e) {
+                } catch (InterruptedException ignored) {
+                } catch (Exception e) {
                     logger.error("failed to write staged data", e);
                 }
             }
@@ -42,11 +42,10 @@ public class GachaDatabase implements Closeable {
     }
 
     public void close() {
-        stage_thread.stop();
+        stop = true;
         try {
             conn.close();
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             logger.error("Cannot close connection to database", e);
         }
     }
@@ -57,9 +56,11 @@ public class GachaDatabase implements Closeable {
         statement.executeUpdate("create table if not exists gacha_history(id integer primary key autoincrement unique,username varchar(64),uuid varchar(36),timestamp long, level integer,item varchar(2048))");
         statement.close();
     }
+
     public void stageChanges(GachaRecordModel.DataModel data) {
         staged_data = data;
     }
+
     public synchronized void write(GachaRecordModel.DataModel data) throws SQLException {
         conn.createStatement().executeUpdate("drop table if exists gacha_pity");
         conn.createStatement().executeUpdate("drop table if exists gacha_history");
@@ -80,25 +81,19 @@ public class GachaDatabase implements Closeable {
             }
         });
 
-        data.pity_5.entrySet().stream()
-                .map(uuidIntegerEntry -> new ImmutablePair<>(
-                        uuidIntegerEntry.getKey(),
-                        new ImmutablePair<>(
-                                uuidIntegerEntry.getValue(),
-                                data.pity_4.get(uuidIntegerEntry.getKey()))
-                ))
-                .forEach(data2 -> {
-                    try {
-                        PreparedStatement state = conn.prepareStatement("insert into gacha_pity(uuid,pity5,pity4) values(?,?,?)");
-                        state.setString(1, data2.left.toString());
-                        state.setInt(2, data2.right.left);
-                        state.setInt(3, data2.right.right);
-                        state.executeUpdate();
-                    } catch (SQLException e) {
-                        logger.error("failed to write gacha pity values", e);
-                    }
-                });
+        data.pity_5.entrySet().stream().map(uuidIntegerEntry -> new ImmutablePair<>(uuidIntegerEntry.getKey(), new ImmutablePair<>(uuidIntegerEntry.getValue(), data.pity_4.get(uuidIntegerEntry.getKey())))).forEach(data2 -> {
+            try {
+                PreparedStatement state = conn.prepareStatement("insert into gacha_pity(uuid,pity5,pity4) values(?,?,?)");
+                state.setString(1, data2.left.toString());
+                state.setInt(2, data2.right.left);
+                state.setInt(3, data2.right.right);
+                state.executeUpdate();
+            } catch (SQLException e) {
+                logger.error("failed to write gacha pity values", e);
+            }
+        });
     }
+
     public synchronized GachaRecordModel.DataModel read() throws SQLException {
         var model = new GachaRecordModel.DataModel();
         ResultSet set = conn.createStatement().executeQuery("select * from gacha_pity");
