@@ -8,19 +8,15 @@ import net.minecraft.world.entity.Entity;
 public final class GenshinCraftProtocol implements AbstractModProtocol {
     GenshinCraftProtocol() {}
     public void onGachaLightningBolt(Entity entity, Runnable fallback) {
-        if (enabled()) {
-            entity.hurt(new ElementDamageSource(
-                    entity.damageSources().lightningBolt(),
-                    Element.fromType(
-                            Element.Type.Electro,
-                            1,
-                            Element.getDelta(1)
-                    ))
-                    .setCooldown(true),
+        entity.hurt(new ElementDamageSource(
+                entity.damageSources().lightningBolt(),
+                        Element.fromType(
+                                Element.Type.Electro,
+                                1,
+                                Element.getDelta(1)
+                    )).setCooldown(true),
                     162
-            );
-        }
-        else fallback.run();
+        );
     }
 
     @Override
