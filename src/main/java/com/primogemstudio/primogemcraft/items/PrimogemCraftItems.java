@@ -35,7 +35,7 @@ public class PrimogemCraftItems {
         INTERTWINED_FATE = register("intertwined_fate", new IntertwinedFateItem());
         DENDRO_PICKAXE = register("dendro_pickaxe", new DendroPickaxeItem());
 
-        A_NEW_DAY_WITH_HOPE_RECORD = register("a_new_day_with_hope", new ANewDayWithHopeItem());
+        A_NEW_DAY_WITH_HOPE_RECORD = register("music_disc_a_new_day_with_hope", new ANewDayWithHopeItem());
     }
 
     private static <T extends Item> T register(String id, T item) {
