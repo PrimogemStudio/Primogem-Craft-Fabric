@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XO ",
+    "O  "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:coal"
+    },
+    "O": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:primogem",
+    "count": 3
+  }
+}

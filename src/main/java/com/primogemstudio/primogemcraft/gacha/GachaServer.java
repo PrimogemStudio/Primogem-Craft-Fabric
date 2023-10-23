@@ -1,8 +1,9 @@
 package com.primogemstudio.primogemcraft.gacha;
 
-import com.google.common.collect.ImmutableList;
 import com.primogemstudio.primogemcraft.database.GachaDatabase;
-import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
+import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFiveStarEntity;
+import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFourStarEntity;
+import com.primogemstudio.primogemcraft.entities.instances.entities.GachaThreeStarEntity;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -40,15 +41,17 @@ public class GachaServer {
         }
     }
 
-    public static void init() {
-        GachaTriggerClientPacket.register((server, player, handler, buf, responseSender) -> {
-            var nbtdata = buf.readNbt();
-            var pos = buf.readBlockPos();
-            server.execute(() -> triggered(nbtdata, player, pos));
-        });
+    private static CompoundTag createGachaSeed() {
+        CompoundTag tag = new CompoundTag();
+        tag.putInt("gacha_protocol_version", 0);
+        tag.putLong("timestamp", System.currentTimeMillis());
+        tag.putLong("timestamp_nano", System.nanoTime());
+        tag.putLong("mem_free", Runtime.getRuntime().freeMemory());
+        return tag;
     }
 
-    private static void triggered(CompoundTag nbtdata, ServerPlayer player, BlockPos pos) {
+    public static void triggered(ServerPlayer player, BlockPos pos) {
+        var nbt = createGachaSeed();
         int level = 3;
         var star5pity = data.pity_5.increasePity(player.getGameProfile());
         var star4pity = data.pity_4.increasePity(player.getGameProfile());
@@ -62,7 +65,7 @@ public class GachaServer {
             var profed4 = data.pity_4.getPity(player.getGameProfile());
             double star5stacked = Math.min(1, profed <= 73 ? 0.006 : 0.006 + (profed - 73) * 0.06);
             double star4stacked = Math.min(1, profed4 <= 8 ? 0.051 : 0.051 + (profed4 - 8) * 0.51);
-            double genNum = new Random(GachaProtocols.PROTOCOL_ALL.parse(nbtdata)).nextDouble(0, 1);
+            double genNum = new Random(GachaProtocols.PROTOCOL_ALL.parse(nbt)).nextDouble(0, 1);
             if (genNum < star5stacked) {
                 level = 5;
                 data.pity_5.resetPity(player.getGameProfile());
@@ -76,37 +79,33 @@ public class GachaServer {
         gac.uuid = player.getGameProfile().getId();
         gac.timestamp = System.currentTimeMillis();
         gac.level = level;
-        // gac.item = BuiltInRegistries.ITEM.getKey(Items.STONE_SWORD);
         data.gachaRecord.add(gac);
         onDataChange();
 
-        final var ls = ImmutableList.of(BLUE_LIGHT, PURPLE_LIGHT, GOLDEN_LIGHT);
-        var li = ls.get(level - 3).create(player.level());
+        var li = switch (level) {
+            case 4 -> new GachaFourStarEntity(PURPLE_LIGHT, player.level());
+            case 5 -> new GachaFiveStarEntity(GOLDEN_LIGHT, player.level());
+            default -> new GachaThreeStarEntity(BLUE_LIGHT, player.level());
+        };
         li.setPos(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
         player.level().addFreshEntity(li);
-
-        LOGGER.info("level: " + level);
     }
 
     public static void loadData() {
         try {
-            data = database.read();
-            LOGGER.info("Data read!");
-        }
-        catch (Exception e) {
-            LOGGER.error("read failed", e);
-        }
-        finally {
+            if (database != null) data = database.read();
+        } catch (Exception e) {
+            LOGGER.error("read failed: ", e);
+        } finally {
             if (data == null) data = new GachaRecordModel.DataModel();
         }
     }
 
     public static void saveData() {
         try {
-            database.stageChanges(data);
-            LOGGER.info("Data saved!");
+            if (database != null) database.stageChanges(data);
         } catch (Exception e) {
-            LOGGER.error("write failed", e);
+            LOGGER.error("write failed: ", e);
         }
     }
 
