@@ -4,9 +4,7 @@ import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFiveStarEntity;
 import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFourStarEntity;
 import com.primogemstudio.primogemcraft.entities.instances.entities.GachaThreeStarEntity;
-import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
-import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
@@ -43,25 +41,17 @@ public class GachaServer {
         }
     }
 
-    public static void init() {
-        GachaTriggerClientPacket.register((server, player, handler, buf, responseSender) -> {
-            var nbtdata = buf.readNbt();
-            var pos = buf.readBlockPos();
-            if (validGacha(player)) server.execute(() -> triggered(nbtdata, player, pos));
-        });
+    private static CompoundTag createGachaSeed() {
+        CompoundTag tag = new CompoundTag();
+        tag.putInt("gacha_protocol_version", 0);
+        tag.putLong("timestamp", System.currentTimeMillis());
+        tag.putLong("timestamp_nano", System.nanoTime());
+        tag.putLong("mem_free", Runtime.getRuntime().freeMemory());
+        return tag;
     }
-
-    private static boolean validGacha(ServerPlayer player) {
-        final int[] counts = {0};
-        player.containerMenu.slots.forEach(slot -> {
-            if (slot.getItem().getItem() == PrimogemCraftItems.INTERTWINED_FATE) {
-                counts[0] += slot.getItem().getCount();
-            }
-        });
-        return counts[0] > 0;
-    }
-
-    public static void triggered(CompoundTag nbtdata, ServerPlayer player, BlockPos pos) {
+    
+    public static void triggered(ServerPlayer player, BlockPos pos) {
+        var nbt = createGachaSeed();
         int level = 3;
         var star5pity = data.pity_5.increasePity(player.getGameProfile());
         var star4pity = data.pity_4.increasePity(player.getGameProfile());
@@ -75,7 +65,7 @@ public class GachaServer {
             var profed4 = data.pity_4.getPity(player.getGameProfile());
             double star5stacked = Math.min(1, profed <= 73 ? 0.006 : 0.006 + (profed - 73) * 0.06);
             double star4stacked = Math.min(1, profed4 <= 8 ? 0.051 : 0.051 + (profed4 - 8) * 0.51);
-            double genNum = new Random(GachaProtocols.PROTOCOL_ALL.parse(nbtdata)).nextDouble(0, 1);
+            double genNum = new Random(GachaProtocols.PROTOCOL_ALL.parse(nbt)).nextDouble(0, 1);
             if (genNum < star5stacked) {
                 level = 5;
                 data.pity_5.resetPity(player.getGameProfile());

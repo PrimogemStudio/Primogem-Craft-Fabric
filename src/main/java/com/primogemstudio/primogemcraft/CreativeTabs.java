@@ -12,12 +12,13 @@ import net.minecraft.world.item.ItemStack;
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 import static com.primogemstudio.primogemcraft.items.PrimogemCraftItems.*;
 
-public class CreativeTab {
-    public static final ResourceKey<CreativeModeTab> KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_tab"));
+public class CreativeTabs {
+    public static final ResourceKey<CreativeModeTab> KEY_MAIN = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_tab"));
     public static final ResourceKey<CreativeModeTab> KEY_BLOCKS = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_blocks_tab"));
     public static final ResourceKey<CreativeModeTab> KEY_TOOLS = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_tools_tab"));
+
     public static void init() {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_MAIN, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(THE_ALL_BEGINNING);
             output.accept(PRIMOGEM);
             output.accept(INTERTWINED_FATE);
