@@ -1,7 +1,9 @@
 package com.primogemstudio.primogemcraft.gacha;
 
-import com.google.common.collect.ImmutableList;
 import com.primogemstudio.primogemcraft.database.GachaDatabase;
+import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFiveStarEntity;
+import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFourStarEntity;
+import com.primogemstudio.primogemcraft.entities.instances.entities.GachaThreeStarEntity;
 import com.primogemstudio.primogemcraft.gacha.packets.client.GachaTriggerClientPacket;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
@@ -59,7 +61,7 @@ public class GachaServer {
         return counts[0] > 0;
     }
 
-    private static void triggered(CompoundTag nbtdata, ServerPlayer player, BlockPos pos) {
+    public static void triggered(CompoundTag nbtdata, ServerPlayer player, BlockPos pos) {
         int level = 3;
         var star5pity = data.pity_5.increasePity(player.getGameProfile());
         var star4pity = data.pity_4.increasePity(player.getGameProfile());
@@ -87,12 +89,14 @@ public class GachaServer {
         gac.uuid = player.getGameProfile().getId();
         gac.timestamp = System.currentTimeMillis();
         gac.level = level;
-        // gac.item = BuiltInRegistries.ITEM.getKey(Items.STONE_SWORD);
         data.gachaRecord.add(gac);
         onDataChange();
 
-        final var ls = ImmutableList.of(BLUE_LIGHT, PURPLE_LIGHT, GOLDEN_LIGHT);
-        var li = ls.get(level - 3).create(player.level());
+        var li = switch (level) {
+            case 4 -> new GachaFourStarEntity(PURPLE_LIGHT, player.level());
+            case 5 -> new GachaFiveStarEntity(GOLDEN_LIGHT, player.level());
+            default -> new GachaThreeStarEntity(BLUE_LIGHT, player.level());
+        };
         li.setPos(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
         player.level().addFreshEntity(li);
 
