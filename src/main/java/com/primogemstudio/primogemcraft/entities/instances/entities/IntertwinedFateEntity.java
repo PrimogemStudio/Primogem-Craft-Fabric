@@ -34,13 +34,8 @@ public class IntertwinedFateEntity extends ThrowableItemProjectile {
     @Override
     protected void onHit(HitResult result) {
         super.onHit(result);
-        if (!level().isClientSide) {
-            if (getOwner() instanceof ServerPlayer player) {
-                GachaServer.triggered(player, blockPosition());
-            }
-            level().playSound(null, BlockPos.containing(result.getLocation()), PrimogemCraftSounds.PRE_GACHA, SoundSource.HOSTILE, 70, 1);
-        } else {
-            level().playLocalSound(BlockPos.containing(result.getLocation()), PrimogemCraftSounds.PRE_GACHA, SoundSource.HOSTILE, 70, 1, false);
+        if (!level().isClientSide && getOwner() instanceof ServerPlayer player) {
+            GachaServer.triggered(player, blockPosition());
         }
         discard();
     }
