@@ -12,10 +12,11 @@ public interface AbstractModProtocol {
                 fallback.run();
             }
         };
-        private static AbstractModProtocol GENSHIN_CRAFT_PROTOCOL = new GenshinCraftProtocol();
+        private static AbstractModProtocol GENSHIN_CRAFT_PROTOCOL;
     }
     static AbstractModProtocol getGenshinCraftProtocol() {
         if (Holder.GENSHIN_CRAFT_PROTOCOL.enabled()) {
+            if (Holder.GENSHIN_CRAFT_PROTOCOL == null) Holder.GENSHIN_CRAFT_PROTOCOL = new GenshinCraftProtocol();
             return Holder.GENSHIN_CRAFT_PROTOCOL;
         }
         else return Holder.DUMMY;
