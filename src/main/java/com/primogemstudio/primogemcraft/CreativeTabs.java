@@ -24,6 +24,7 @@ public class CreativeTabs {
             output.accept(THE_ALL_BEGINNING);
             output.accept(PRIMOGEM);
             output.accept(INTERTWINED_FATE);
+            output.accept(INTERTWINED_FATE_TEN);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
             output.accept(A_NEW_DAY_WITH_HOPE_RECORD);
             output.accept(THE_FADING_STORIES);
