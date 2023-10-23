@@ -60,10 +60,7 @@ public abstract class ColorLightningBolt extends Entity {
                 var list = level().getEntities(this, new AABB(getX() - 3.0, getY() - 3.0, getZ() - 3.0, getX() + 3.0, getY() + 6.0 + 3.0, getZ() + 3.0), Entity::isAlive);
                 for (var entity : list) {
                     if (entity instanceof ItemEntity || entity instanceof ExperienceOrb) continue;
-                    AbstractModProtocol.getGenshinCraftProtocol().onGachaLightningBolt(
-                            entity,
-                            () -> entity.hurt(damageSources().lightningBolt(), 5)
-                    );
+                    AbstractModProtocol.getGenshinCraftProtocol().onGachaLightningBolt(entity);
                 }
             }
         }

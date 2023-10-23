@@ -4,16 +4,16 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.world.entity.Entity;
 
 public interface AbstractModProtocol {
+    boolean GENSHINCRAFT = FabricLoader.getInstance().isModLoaded("genshincraft");
+
     class Holder {
-        private static AbstractModProtocol DUMMY = (entity, fallback) -> fallback.run();
-        private static AbstractModProtocol GENSHIN_CRAFT_PROTOCOL;
+        private static final AbstractModProtocol DUMMY = entity -> entity.hurt(entity.damageSources().lightningBolt(), 5);
+        private static final AbstractModProtocol GENSHIN_CRAFT_PROTOCOL = GENSHINCRAFT ? new GenshinCraftProtocol() : null;
     }
+
     static AbstractModProtocol getGenshinCraftProtocol() {
-        if (FabricLoader.getInstance().isModLoaded("genshincraft")) {
-            if (Holder.GENSHIN_CRAFT_PROTOCOL == null) Holder.GENSHIN_CRAFT_PROTOCOL = new GenshinCraftProtocol();
-            return Holder.GENSHIN_CRAFT_PROTOCOL;
-        }
-        else return Holder.DUMMY;
+        return GENSHINCRAFT ? Holder.GENSHIN_CRAFT_PROTOCOL : Holder.DUMMY;
     }
-    void onGachaLightningBolt(Entity entity, Runnable fallback);
+
+    void onGachaLightningBolt(Entity entity);
 }
