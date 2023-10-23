@@ -18,9 +18,4 @@ public final class GenshinCraftProtocol implements AbstractModProtocol {
                     162
         );
     }
-
-    @Override
-    public boolean enabled() {
-        return FabricLoader.getInstance().isModLoaded("genshincraft");
-    }
 }
