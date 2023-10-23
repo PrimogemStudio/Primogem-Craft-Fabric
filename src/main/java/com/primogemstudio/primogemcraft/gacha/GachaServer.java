@@ -49,7 +49,7 @@ public class GachaServer {
         tag.putLong("mem_free", Runtime.getRuntime().freeMemory());
         return tag;
     }
-    
+
     public static void triggered(ServerPlayer player, BlockPos pos) {
         var nbt = createGachaSeed();
         int level = 3;
@@ -89,16 +89,13 @@ public class GachaServer {
         };
         li.setPos(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
         player.level().addFreshEntity(li);
-
-        LOGGER.info("level: " + level);
     }
 
     public static void loadData() {
         try {
             if (database != null) data = database.read();
-            LOGGER.info("Data read!");
         } catch (Exception e) {
-            LOGGER.error("read failed", e);
+            LOGGER.error("read failed: ", e);
         } finally {
             if (data == null) data = new GachaRecordModel.DataModel();
         }
@@ -107,9 +104,8 @@ public class GachaServer {
     public static void saveData() {
         try {
             if (database != null) database.stageChanges(data);
-            LOGGER.info("Data saved!");
         } catch (Exception e) {
-            LOGGER.error("write failed", e);
+            LOGGER.error("write failed: ", e);
         }
     }
 

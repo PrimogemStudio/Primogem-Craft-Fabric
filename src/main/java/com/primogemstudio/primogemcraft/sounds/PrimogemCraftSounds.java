@@ -12,7 +12,6 @@ public class PrimogemCraftSounds {
 
     public static void init() {
         PRE_GACHA = register("pre_gacha", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "pre_gacha")));
-
     }
 
     public static <T extends SoundEvent> T register(String name, T event) {
