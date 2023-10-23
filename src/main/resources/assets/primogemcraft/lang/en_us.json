@@ -19,5 +19,6 @@
   "item.primogemcraft.the_all_beginning": "The beginning of all",
   "tooltip.primogemcraft.the_all_beginning.line1": "It's nothing",
   "block.primogemcraft.primogem_block": "Primogem Block",
-  "item.primogemcraft.music_disc_a_new_day_with_hope": "Record - A New Day with Hope - HOYO-MiX"
+  "item.primogemcraft.music_disc_a_new_day_with_hope": "Music Disc",
+  "item.primogemcraft.music_disc_a_new_day_with_hope.desc": "A New Day with Hope - 陈致逸/HOYO-MiX"
 }
