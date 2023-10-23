@@ -3,7 +3,7 @@
     "category": "hostile",
     "sounds": [
       {
-        "name": "pre_gacha",
+        "name": "primogemcraft:pre_gacha",
         "stream": false
       }
     ]
