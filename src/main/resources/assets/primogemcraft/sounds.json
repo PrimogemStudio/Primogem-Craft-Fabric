@@ -1,9 +1,9 @@
 {
-  "choukaqianxi01": {
+  "pre_gacha": {
     "category": "hostile",
     "sounds": [
       {
-        "name": "primogemcraft:chou_qia_qian_xi_",
+        "name": "pre_gacha",
         "stream": false
       }
     ]

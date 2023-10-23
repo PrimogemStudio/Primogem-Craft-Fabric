@@ -3,10 +3,14 @@ package com.primogemstudio.primogemcraft.entities.instances.entities;
 import com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities;
 import com.primogemstudio.primogemcraft.gacha.GachaServer;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
+import com.primogemstudio.primogemcraft.sounds.PrimogemCraftSounds;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
@@ -33,7 +37,13 @@ public class IntertwinedFateEntity extends ThrowableItemProjectile {
     protected void onHit(HitResult result) {
         super.onHit(result);
         if (!level().isClientSide) {
-            GachaServer.triggered((ServerPlayer) getOwner(), blockPosition());
+            if (getOwner() instanceof ServerPlayer serverply) {
+                GachaServer.triggered(serverply, blockPosition());
+            }
+            level().playSound(null, BlockPos.containing(result.getLocation()), PrimogemCraftSounds.PRE_GACHA, SoundSource.HOSTILE, 70, 1);
+        }
+        else {
+            level().playLocalSound(BlockPos.containing(result.getLocation()), PrimogemCraftSounds.PRE_GACHA, SoundSource.HOSTILE, 70, 1, false);
         }
         discard();
     }
