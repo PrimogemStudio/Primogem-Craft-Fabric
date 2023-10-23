@@ -9,6 +9,7 @@ import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 
 public class PrimogemCraftSounds {
     public static SoundEvent PRE_GACHA;
+
     public static void init() {
         PRE_GACHA = register("pre_gacha", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "pre_gacha")));
 
