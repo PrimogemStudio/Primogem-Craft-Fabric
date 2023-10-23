@@ -5,9 +5,8 @@ import net.hacker.genshincraft.element.shadow.Element;
 import net.hacker.genshincraft.element.shadow.ElementDamageSource;
 import net.minecraft.world.entity.Entity;
 
-public class GenshinCraftProtocol implements AbstractModProtocol {
-    public static final GenshinCraftProtocol INSTANCE = new GenshinCraftProtocol();
-    private GenshinCraftProtocol() {}
+public final class GenshinCraftProtocol implements AbstractModProtocol {
+    GenshinCraftProtocol() {}
     public void onGachaLightningBolt(Entity entity, Runnable fallback) {
         if (enabled()) {
             entity.hurt(new ElementDamageSource(
