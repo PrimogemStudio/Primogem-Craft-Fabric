@@ -10,7 +10,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
@@ -32,17 +31,15 @@ public class IntertwinedFateEntity extends ThrowableItemProjectile {
         return PrimogemCraftItems.INTERTWINED_FATE;
     }
 
-    @SuppressWarnings("DataFlowIssue")
     @Override
     protected void onHit(HitResult result) {
         super.onHit(result);
         if (!level().isClientSide) {
-            if (getOwner() instanceof ServerPlayer serverply) {
-                GachaServer.triggered(serverply, blockPosition());
+            if (getOwner() instanceof ServerPlayer player) {
+                GachaServer.triggered(player, blockPosition());
             }
             level().playSound(null, BlockPos.containing(result.getLocation()), PrimogemCraftSounds.PRE_GACHA, SoundSource.HOSTILE, 70, 1);
-        }
-        else {
+        } else {
             level().playLocalSound(BlockPos.containing(result.getLocation()), PrimogemCraftSounds.PRE_GACHA, SoundSource.HOSTILE, 70, 1, false);
         }
         discard();
