@@ -7,5 +7,14 @@
         "stream": false
       }
     ]
+  },
+  "a_new_day_with_hope": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:a_new_day_with_hope",
+        "stream": true
+      }
+    ]
   }
 }

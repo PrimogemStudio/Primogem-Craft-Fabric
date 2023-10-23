@@ -23,6 +23,7 @@ public class CreativeTabs {
             output.accept(PRIMOGEM);
             output.accept(INTERTWINED_FATE);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
+            output.accept(A_NEW_DAY_WITH_HOPE_RECORD);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
