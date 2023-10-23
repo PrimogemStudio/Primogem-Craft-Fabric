@@ -25,6 +25,9 @@ public class PrimogemCraftItems {
     public static final DendroPickaxeItem DENDRO_PICKAXE = register("dendro_pickaxe", new DendroPickaxeItem());
     public static final ANewDayWithHopeItem A_NEW_DAY_WITH_HOPE_RECORD = register("music_disc_a_new_day_with_hope", new ANewDayWithHopeItem());
 
+    public static void init() {
+    }
+
     private static <T extends Item> T register(String id, T item) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(MOD_ID, id), item);
     }

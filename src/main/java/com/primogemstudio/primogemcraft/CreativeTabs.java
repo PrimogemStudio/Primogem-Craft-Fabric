@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft;
 
+import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -18,6 +19,7 @@ public class CreativeTabs {
     public static final ResourceKey<CreativeModeTab> KEY_TOOLS = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_tools_tab"));
 
     public static void init() {
+        PrimogemCraftItems.init();
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_MAIN, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(THE_ALL_BEGINNING);
             output.accept(PRIMOGEM);
