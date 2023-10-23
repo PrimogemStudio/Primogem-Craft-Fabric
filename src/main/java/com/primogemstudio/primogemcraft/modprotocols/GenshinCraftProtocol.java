@@ -7,6 +7,7 @@ import net.minecraft.world.entity.Entity;
 
 public class GenshinCraftProtocol implements AbstractModProtocol {
     public static final GenshinCraftProtocol INSTANCE = new GenshinCraftProtocol();
+    private GenshinCraftProtocol() {}
     public void onGachaLightningBolt(Entity entity, Runnable fallback) {
         if (enabled()) {
             entity.hurt(new ElementDamageSource(
