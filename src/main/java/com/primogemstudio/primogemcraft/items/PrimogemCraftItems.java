@@ -10,7 +10,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.DENDRO_CORE_BLOCK;
@@ -24,8 +23,8 @@ public class PrimogemCraftItems {
     public static Item VAYUDA_TURQUOISE_GEMSTONE;
     public static IntertwinedFateItem INTERTWINED_FATE;
     public static DendroPickaxeItem DENDRO_PICKAXE;
-
     public static ANewDayWithHopeItem A_NEW_DAY_WITH_HOPE_RECORD;
+
     public static void init() {
         THE_ALL_BEGINNING = register("the_all_beginning", new TheAllBeginningItem());
         PRIMOGEM = register("primogem", new PrimogemItem());
