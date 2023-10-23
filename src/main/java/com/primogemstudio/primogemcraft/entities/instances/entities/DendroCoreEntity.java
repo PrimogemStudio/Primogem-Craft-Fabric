@@ -82,14 +82,12 @@ public class DendroCoreEntity extends PathfinderMob {
         super.baseTick();
         double x = getX(), y = getY(), z = getZ();
         if (++age >= 200) {
-            dropFromLootTable(damageSources().generic(), false);
+            if (!level().isClientSide) dropFromLootTable(damageSources().generic(), false);
             discard();
         }
         if (isOnFire()) {
             var level = level();
-            if (!level.isClientSide()) {
-                level.explode(null, x, y, z, 4.0F, Level.ExplosionInteraction.TNT);
-            }
+            if (!level.isClientSide) level.explode(null, x, y, z, 4.0F, Level.ExplosionInteraction.TNT);
             discard();
         }
     }
