@@ -41,7 +41,7 @@ public class GachaDatabase implements Closeable {
     }
 
     public void close() {
-        stage_thread.interrupt();
+        stage_thread.stop();
         try {
             conn.close();
         }
