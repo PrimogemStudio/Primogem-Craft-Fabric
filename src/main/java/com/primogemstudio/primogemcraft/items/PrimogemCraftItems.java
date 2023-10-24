@@ -1,9 +1,6 @@
 package com.primogemstudio.primogemcraft.items;
 
-import com.primogemstudio.primogemcraft.items.instances.DendroPickaxeItem;
-import com.primogemstudio.primogemcraft.items.instances.IntertwinedFateItem;
-import com.primogemstudio.primogemcraft.items.instances.PrimogemItem;
-import com.primogemstudio.primogemcraft.items.instances.TheAllBeginningItem;
+import com.primogemstudio.primogemcraft.items.instances.*;
 import com.primogemstudio.primogemcraft.items.instances.records.ANewDayWithHopeItem;
 import com.primogemstudio.primogemcraft.items.instances.records.TheFadingStoriesItem;
 import net.minecraft.core.Registry;
@@ -26,6 +23,7 @@ public class PrimogemCraftItems {
     public static final DendroPickaxeItem DENDRO_PICKAXE = register("dendro_pickaxe", new DendroPickaxeItem());
     public static final ANewDayWithHopeItem A_NEW_DAY_WITH_HOPE_RECORD = register("music_disc_a_new_day_with_hope", new ANewDayWithHopeItem());
     public static final TheFadingStoriesItem THE_FADING_STORIES = register("music_disc_the_fading_stories", new TheFadingStoriesItem());
+    public static final IntertwinedFateTenTimesItem INTERTWINED_FATE_TEN = register("intertwined_fate_ten", new IntertwinedFateTenTimesItem());
 
     public static void init() {
     }
