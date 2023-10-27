@@ -1,15 +1,13 @@
 package com.primogemstudio.primogemcraft.util;
 
+import com.google.common.collect.Lists;
 import com.google.gson.Gson;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class DevPorting {
     public static void main(String[] args) throws FileNotFoundException {
@@ -32,7 +30,7 @@ public class DevPorting {
     }
 
     public static void renameItem(String s) {
-        List<String> args = Arrays.stream(s.split(" ")).toList();
+        List<String> args = new ArrayList<>(Arrays.stream(s.split(" ")).toList());
         args.remove(0);
     }
 
