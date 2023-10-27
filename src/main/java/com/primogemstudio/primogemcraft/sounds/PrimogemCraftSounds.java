@@ -11,6 +11,7 @@ public class PrimogemCraftSounds {
     public static final SoundEvent PRE_GACHA = register("pre_gacha", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "pre_gacha")));
     public static final SoundEvent A_NEW_DAY_WITH_HOPE_RECORD = register("a_new_day_with_hope", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "music_disc.a_new_day_with_hope")));
     public static final SoundEvent THE_FADING_STORIES = register("the_fading_stories", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "music_disc.the_fading_stories")));
+    public static final SoundEvent HAKUSHIN_LULLABY = register("hakushin_lullaby", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "music_disc.hakushin_lullaby")));
 
     public static <T extends SoundEvent> T register(String name, T event) {
         return Registry.register(BuiltInRegistries.SOUND_EVENT, new ResourceLocation(MOD_ID, name), event);
