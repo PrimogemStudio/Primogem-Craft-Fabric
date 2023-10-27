@@ -1,0 +1,6 @@
+{
+  "parent": "item/template_music_disc",
+  "textures": {
+    "layer0": "primogemcraft:item/music_disc_hakushin_lullaby"
+  }
+}
