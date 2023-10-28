@@ -38,6 +38,7 @@ public class CreativeTabs {
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(DENDRO_PICKAXE);
+            output.accept(PRIMOGEM_PICKAXE);
         }).build());
     }
 }
