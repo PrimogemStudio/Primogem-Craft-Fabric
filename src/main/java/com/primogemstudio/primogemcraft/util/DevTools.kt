@@ -36,6 +36,10 @@ class DevTools {
                     Map::class.java
                 ).toMutableMap()
                 println("物品模型 -> $itemmodel")
+                if (itemmodel["parent"].toString().startsWith("primogemcraft:block/")) {
+                    println("该物品为方块物品")
+                    return
+                }
                 val textureRemapped = HashMap<String, String>()
                 (itemmodel["textures"] as Map<*, *>).onEach {
                     print("重命名 (${it.key} $ ${it.value}) -> ")

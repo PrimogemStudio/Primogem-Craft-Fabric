@@ -110,3 +110,5 @@ gradle-app.setting
 .gradletasknamecache
 **/build/
 run/
+
+extractassets/
