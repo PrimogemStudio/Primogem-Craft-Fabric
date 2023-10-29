@@ -21,6 +21,7 @@
   "item.primogemcraft.primogem_axe": "§b原石 斧",
   "item.primogemcraft.primogem_shovel": "§b原石 锹",
   "item.primogemcraft.primogem_sword": "§b原石 剑",
+  "item.primogemcraft.dull_blade": "无锋剑",
   "entity.primogemcraft.dendro_core_entity": "草原核",
   "tooltip.primogemcraft.dendro_core_block.line1": "当闪电击中草原核时出现",
   "tooltip.primogemcraft.dendro_core_block.line2": "也可以合成",
@@ -30,5 +31,6 @@
   "tooltip.primogemcraft.intertwined_fate.line1": "手持§b长按右键§f以抽卡",
   "tooltip.primogemcraft.intertwined_fate.line2": "§f十....保....歪",
   "tooltip.primogemcraft.the_all_beginning.line1": "啥也不是，啥也不是",
+  "tooltip.primogemcraft.dull_blade.line1": "有能力改变一个世界的人才能拥有它",
   "subtitles.muted": "...."
 }
