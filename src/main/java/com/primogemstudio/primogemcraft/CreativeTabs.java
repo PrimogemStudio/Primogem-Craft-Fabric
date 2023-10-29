@@ -28,6 +28,7 @@ public class CreativeTabs {
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
             output.accept(A_NEW_DAY_WITH_HOPE_RECORD);
             output.accept(THE_FADING_STORIES);
+            output.accept(HAKUSHIN_LULLABY);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
@@ -37,6 +38,11 @@ public class CreativeTabs {
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(DENDRO_PICKAXE);
+            output.accept(PRIMOGEM_PICKAXE);
+            output.accept(PRIMOGEM_HOE);
+            output.accept(PRIMOGEM_AXE);
+            output.accept(PRIMOGEM_SHOVEL);
+            output.accept(PRIMOGEM_SWORD);
         }).build());
     }
 }

@@ -25,5 +25,14 @@
         "stream": true
       }
     ]
+  },
+  "music_disc.hakushin_lullaby": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:hakushin_lullaby",
+        "stream": true
+      }
+    ]
   }
 }

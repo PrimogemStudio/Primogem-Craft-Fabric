@@ -11,7 +11,7 @@ import java.io.File;
 import java.sql.*;
 import java.util.UUID;
 
-public class GachaDatabase implements Closeable {
+public class GachaDatabase implements AbstractDatabase, Closeable {
     private final Logger logger = LoggerFactory.getLogger(GachaDatabase.class);
     private final Connection conn;
     private GachaRecordModel.DataModel staged_data;
