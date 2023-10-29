@@ -23,6 +23,10 @@ public class PrimogemCraftItems {
     public static final IntertwinedFateItem INTERTWINED_FATE = register("intertwined_fate", new IntertwinedFateItem());
     public static final DendroPickaxeItem DENDRO_PICKAXE = register("dendro_pickaxe", new DendroPickaxeItem());
     public static final PrimogemPickaxeItem PRIMOGEM_PICKAXE = register("primogem_pickaxe", new PrimogemPickaxeItem());
+    public static final PrimogemHoeItem PRIMOGEM_HOE = register("primogem_hoe", new PrimogemHoeItem());
+    public static final PrimogemAxeItem PRIMOGEM_AXE = register("primogem_axe", new PrimogemAxeItem());
+    public static final PrimogemShovelItem PRIMOGEM_SHOVEL = register("primogem_shovel", new PrimogemShovelItem());
+    public static final PrimogemSwordItem PRIMOGEM_SWORD = register("primogem_sword", new PrimogemSwordItem());
     public static final ANewDayWithHopeItem A_NEW_DAY_WITH_HOPE_RECORD = register("music_disc_a_new_day_with_hope", new ANewDayWithHopeItem());
     public static final TheFadingStoriesItem THE_FADING_STORIES = register("music_disc_the_fading_stories", new TheFadingStoriesItem());
     public static final HakushinLullabyItem HAKUSHIN_LULLABY = register("music_disc_hakushin_lullaby", new HakushinLullabyItem());
