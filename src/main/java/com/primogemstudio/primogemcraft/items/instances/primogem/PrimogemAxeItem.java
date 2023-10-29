@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.items.instances;
+package com.primogemstudio.primogemcraft.items.instances.primogem;
 
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.world.item.AxeItem;

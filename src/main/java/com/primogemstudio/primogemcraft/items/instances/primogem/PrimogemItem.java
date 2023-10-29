@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.items.instances;
+package com.primogemstudio.primogemcraft.items.instances.primogem;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
