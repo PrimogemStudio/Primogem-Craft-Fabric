@@ -33,7 +33,8 @@ public class CreativeTabs {
             output.accept(HAKUSHIN_LULLABY);
         }).build());
 
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE_ITEM)).displayItems((itemDisplayParameters, output) -> {
+            output.accept(PRIMOGEM_ORE_ITEM);
             output.accept(PRIMOGEM_BLOCK_ITEM);
             output.accept(DENDRO_CORE_BLOCK_ITEM);
         }).build());

@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft.items;
 
+import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
 import com.primogemstudio.primogemcraft.items.instances.records.ANewDayWithHopeItem;
@@ -13,8 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
-import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.DENDRO_CORE_BLOCK;
-import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.PRIMOGEM_BLOCK;
+import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.*;
 
 public class PrimogemCraftItems {
     public static final TheAllBeginningItem THE_ALL_BEGINNING = register("the_all_beginning", new TheAllBeginningItem());
@@ -37,8 +37,10 @@ public class PrimogemCraftItems {
     public static final Item MORA_BILLET = register("mora_billet", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Item MORA = register("mora", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD = register("strange_primogem_sword", new StrangePrimogemSwordItem());
+    public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
 
     public static void init() {
+        PrimogemCraftMobEffects.init();
     }
 
     private static <T extends Item> T register(String id, T item) {
