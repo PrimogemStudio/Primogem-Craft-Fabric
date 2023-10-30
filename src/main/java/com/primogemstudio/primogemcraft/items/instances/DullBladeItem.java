@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft.items.instances;
 
+import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -31,25 +32,22 @@ public class DullBladeItem extends SwordItem {
                 return 15;
             }
 
-            public @NotNull Ingredient getRepairIngredient() {
-                // TODO add item "摩拉原胚"
-                return Ingredient.EMPTY;
+            @NotNull
+            public Ingredient getRepairIngredient() {
+                return Ingredient.of(PrimogemCraftItems.MORA_BILLET);
             }
         }, 3, -3.95f, new Item.Properties().fireResistant());
     }
-    // TODO porting to fabric/vanilla api
-    public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-        ItemStack retval = new ItemStack(this);
-        retval.setDamageValue(itemstack.getDamageValue() + 1);
-        return retval.getDamageValue() >= retval.getMaxDamage() ? ItemStack.EMPTY : retval;
+
+    @Override
+    public ItemStack getRecipeRemainder(ItemStack stack) {
+        var ret = new ItemStack(this);
+        ret.setDamageValue(stack.getDamageValue() + 1);
+        return ret.getDamageValue() >= ret.getMaxDamage() ? ItemStack.EMPTY : ret;
     }
 
     public boolean hasCraftingRemainingItem() {
         return true;
-    }
-
-    public boolean isValidRepairItem(ItemStack stack, ItemStack repairCandidate) {
-        return false;
     }
 
     @Override
