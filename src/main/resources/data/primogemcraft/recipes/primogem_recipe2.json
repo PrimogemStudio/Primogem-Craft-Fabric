@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "primogemcraft:primogem_block",
-      "count": 1
+      "item": "primogemcraft:primogem_block"
     }
   ],
   "result": {

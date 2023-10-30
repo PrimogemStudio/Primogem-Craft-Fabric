@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XO ",
-    "O  "
+    "01",
+    "1 "
   ],
   "key": {
-    "X": {
+    "0": {
       "item": "minecraft:coal"
     },
-    "O": {
+    "1": {
       "item": "minecraft:diamond"
     }
   },
