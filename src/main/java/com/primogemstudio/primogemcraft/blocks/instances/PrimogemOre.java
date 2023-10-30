@@ -19,7 +19,7 @@ public class PrimogemOre extends Block {
     }
 
     public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-        list.add(Component.literal("再氪两单嘛~"));
+        list.add(Component.translatable("tooltip.primogemcraft.primogem_ore"));
     }
 
     @SuppressWarnings("deprecation")
