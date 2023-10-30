@@ -36,6 +36,7 @@ public class PrimogemCraftItems {
     public static final IntertwinedFateTenTimesItem INTERTWINED_FATE_TEN = register("intertwined_fate_ten", new IntertwinedFateTenTimesItem());
     public static final Item MORA_BILLET = register("mora_billet", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Item MORA = register("mora", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD = register("strange_primogem_sword", new StrangePrimogemSwordItem());
 
     public static void init() {
     }

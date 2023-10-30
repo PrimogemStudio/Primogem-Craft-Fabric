@@ -39,13 +39,14 @@ public class CreativeTabs {
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE)).displayItems((itemDisplayParameters, output) -> {
+            output.accept(DULL_BLADE);
             output.accept(DENDRO_PICKAXE);
             output.accept(PRIMOGEM_PICKAXE);
             output.accept(PRIMOGEM_HOE);
             output.accept(PRIMOGEM_AXE);
             output.accept(PRIMOGEM_SHOVEL);
             output.accept(PRIMOGEM_SWORD);
-            output.accept(DULL_BLADE);
+            output.accept(STRANGE_PRIMOGEM_SWORD);
         }).build());
     }
 }

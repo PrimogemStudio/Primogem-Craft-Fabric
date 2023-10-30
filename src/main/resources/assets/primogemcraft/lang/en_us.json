@@ -24,6 +24,7 @@
   "item.primogemcraft.dull_blade": "Dull Blade",
   "item.primogemcraft.mora_billet": " Mora Billet",
   "item.primogemcraft.mora": "Mora",
+  "item.primogemcraft.strange_primogem_sword": "§4Strange Primogem Sword",
   "entity.primogemcraft.dendro_core_entity": "Dendro Core",
   "tooltip.primogemcraft.dendro_core_block.line1": "Generated when lightning strikes the dendro core",
   "tooltip.primogemcraft.dendro_core_block.line2": "It can also be crafted",
@@ -34,5 +35,10 @@
   "tooltip.primogemcraft.intertwined_fate.line2": "§f十....保....歪",
   "tooltip.primogemcraft.the_all_beginning.line1": "It's nothing",
   "tooltip.primogemcraft.dull_blade.line1": "有能力改变一个世界的人才能拥有它",
+  "tooltip.primogemcraft.strange_primogem_sword.line1": "§6§o『彩蛋武器』",
+  "tooltip.primogemcraft.strange_primogem_sword.line2": "§7 • 攻击生命值小于10点的生物使其触发一",
+  "tooltip.primogemcraft.strange_primogem_sword.line3": "§7 个神奇的效果",
+  "tooltip.primogemcraft.strange_primogem_sword.line4": "§7 • 使用时有10%概率直接损坏",
+  "tooltip.primogemcraft.strange_primogem_sword.line5": "§c • 别在家里使用",
   "subtitles.muted": "...."
 }

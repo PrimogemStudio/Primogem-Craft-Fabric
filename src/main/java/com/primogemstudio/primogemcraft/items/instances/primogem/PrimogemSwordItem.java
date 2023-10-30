@@ -34,29 +34,23 @@ public class PrimogemSwordItem extends SwordItem {
                 return 10;
             }
 
-            public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.PRIMOGEM));
+            @NotNull
+            public Ingredient getRepairIngredient() {
+                return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
             }
         }, 3, -2.4f, new Item.Properties().fireResistant());
     }
 
     @Override
-    public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
-        super.onCraftedBy(itemstack, world, entity);
-        if (Math.random() < 0.01) itemstack.getOrCreateTag().putBoolean("special", (true));
+    public void onCraftedBy(ItemStack stack, Level world, Player entity) {
+        if (Math.random() < 0.01) stack.getOrCreateTag().putBoolean("strange", true);
     }
 
     @Override
-    public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-        super.inventoryTick(itemstack, world, entity, slot, selected);
-        if (itemstack.getOrCreateTag().getBoolean("special")) {
-            if (entity instanceof Player _player) {
-                _player.getInventory().clearOrCountMatchingItems(p -> itemstack.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-                // TODO do NOT delete -> add item "Special Primogem Sword" (奇怪的原石剑)
-                /*ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QGDYSJ.get());
-                _setstack.setCount(1);
-                ItemHandlerHelper.giveItemToPlayer(_player, _setstack);*/
-            }
+    public void inventoryTick(ItemStack stack, Level world, Entity entity, int slot, boolean selected) {
+        if (stack.hasTag() && stack.getOrCreateTag().getBoolean("strange") && entity instanceof Player player) {
+            player.getInventory().removeItem(slot, stack.getCount());
+            player.getInventory().add(slot, PrimogemCraftItems.STRANGE_PRIMOGEM_SWORD.getDefaultInstance());
         }
     }
 }
