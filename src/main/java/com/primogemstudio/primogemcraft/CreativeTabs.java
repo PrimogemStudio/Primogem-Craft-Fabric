@@ -23,6 +23,8 @@ public class CreativeTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_MAIN, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(THE_ALL_BEGINNING);
             output.accept(PRIMOGEM);
+            output.accept(MORA);
+            output.accept(MORA_BILLET);
             output.accept(INTERTWINED_FATE);
             output.accept(INTERTWINED_FATE_TEN);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
@@ -31,19 +33,21 @@ public class CreativeTabs {
             output.accept(HAKUSHIN_LULLABY);
         }).build());
 
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE_ITEM)).displayItems((itemDisplayParameters, output) -> {
+            output.accept(PRIMOGEM_ORE_ITEM);
             output.accept(PRIMOGEM_BLOCK_ITEM);
             output.accept(DENDRO_CORE_BLOCK_ITEM);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE)).displayItems((itemDisplayParameters, output) -> {
+            output.accept(DULL_BLADE);
             output.accept(DENDRO_PICKAXE);
             output.accept(PRIMOGEM_PICKAXE);
             output.accept(PRIMOGEM_HOE);
             output.accept(PRIMOGEM_AXE);
             output.accept(PRIMOGEM_SHOVEL);
             output.accept(PRIMOGEM_SWORD);
-            output.accept(DULL_BLADE);
+            output.accept(STRANGE_PRIMOGEM_SWORD);
         }).build());
     }
 }

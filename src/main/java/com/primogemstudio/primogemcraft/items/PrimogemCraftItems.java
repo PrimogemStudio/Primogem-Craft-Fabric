@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft.items;
 
+import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
 import com.primogemstudio.primogemcraft.items.instances.records.ANewDayWithHopeItem;
@@ -10,10 +11,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
-import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.DENDRO_CORE_BLOCK;
-import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.PRIMOGEM_BLOCK;
+import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.*;
 
 public class PrimogemCraftItems {
     public static final TheAllBeginningItem THE_ALL_BEGINNING = register("the_all_beginning", new TheAllBeginningItem());
@@ -28,13 +29,18 @@ public class PrimogemCraftItems {
     public static final PrimogemAxeItem PRIMOGEM_AXE = register("primogem_axe", new PrimogemAxeItem());
     public static final PrimogemShovelItem PRIMOGEM_SHOVEL = register("primogem_shovel", new PrimogemShovelItem());
     public static final PrimogemSwordItem PRIMOGEM_SWORD = register("primogem_sword", new PrimogemSwordItem());
-    public static final DullBladeItem DULL_BLADE  = register("dull_blade", new DullBladeItem());
+    public static final DullBladeItem DULL_BLADE = register("dull_blade", new DullBladeItem());
     public static final ANewDayWithHopeItem A_NEW_DAY_WITH_HOPE_RECORD = register("music_disc_a_new_day_with_hope", new ANewDayWithHopeItem());
     public static final TheFadingStoriesItem THE_FADING_STORIES = register("music_disc_the_fading_stories", new TheFadingStoriesItem());
     public static final HakushinLullabyItem HAKUSHIN_LULLABY = register("music_disc_hakushin_lullaby", new HakushinLullabyItem());
     public static final IntertwinedFateTenTimesItem INTERTWINED_FATE_TEN = register("intertwined_fate_ten", new IntertwinedFateTenTimesItem());
+    public static final Item MORA_BILLET = register("mora_billet", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final Item MORA = register("mora", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD = register("strange_primogem_sword", new StrangePrimogemSwordItem());
+    public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
 
     public static void init() {
+        PrimogemCraftMobEffects.init();
     }
 
     private static <T extends Item> T register(String id, T item) {

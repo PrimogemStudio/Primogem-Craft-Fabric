@@ -3,7 +3,6 @@ package com.primogemstudio.primogemcraft.items.instances.primogem;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
@@ -31,8 +30,9 @@ public class PrimogemAxeItem extends AxeItem {
                 return 15;
             }
 
-            public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.PRIMOGEM));
+            @NotNull
+            public Ingredient getRepairIngredient() {
+                return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
             }
         }, 1, -3f, new Item.Properties().fireResistant());
     }

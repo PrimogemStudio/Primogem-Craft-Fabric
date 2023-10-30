@@ -34,25 +34,26 @@ public class LevelStorageSourceMixin {
         LevelStorageSource.LevelDirectory levelDirectory;
 
         @Inject(at = @At("HEAD"), method = "getDataTag")
-        public void onGetDataTag(DynamicOps<Tag> ops, WorldDataConfiguration dataConfiguration, Registry<LevelStem> levelStemRegistry, Lifecycle lifecycle, CallbackInfoReturnable<@Nullable Pair<WorldData, WorldDimensions.Complete>> cir) throws SQLException, ClassNotFoundException {
+        private void onGetDataTag(DynamicOps<Tag> ops, WorldDataConfiguration dataConfiguration, Registry<LevelStem> levelStemRegistry, Lifecycle lifecycle, CallbackInfoReturnable<@Nullable Pair<WorldData, WorldDimensions.Complete>> cir) throws SQLException, ClassNotFoundException {
             if (GachaServer.database != null) GachaServer.database.close();
             GachaServer.database = new GachaDatabase(levelDirectory.path().resolve("gacha_data.db").toFile());
             GachaServer.loadData();
         }
 
         @Inject(at = @At("HEAD"), method = "saveDataTag(Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/nbt/CompoundTag;)V")
-        public void onSaveDataTag(RegistryAccess registries, WorldData serverConfiguration, CompoundTag hostPlayerNBT, CallbackInfo ci) throws SQLException, ClassNotFoundException {
-            if (GachaServer.database == null) GachaServer.database = new GachaDatabase(levelDirectory.path().resolve("gacha_data.db").toFile());
+        private void onSaveDataTag(RegistryAccess registries, WorldData serverConfiguration, CompoundTag hostPlayerNBT, CallbackInfo ci) throws SQLException, ClassNotFoundException {
+            if (GachaServer.database == null)
+                GachaServer.database = new GachaDatabase(levelDirectory.path().resolve("gacha_data.db").toFile());
             GachaServer.saveData();
         }
 
         @Inject(at = @At("HEAD"), method = "deleteLevel")
-        public void onDeleteLevel(CallbackInfo ci) {
+        private void onDeleteLevel(CallbackInfo ci) {
             if (GachaServer.database != null) {
                 try {
                     GachaServer.database.close();
+                } catch (Exception ignored) {
                 }
-                catch (Exception ignored) {}
             }
         }
     }
