@@ -3,6 +3,7 @@ package com.primogemstudio.primogemcraft.items.instances.primogem;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
@@ -34,6 +35,6 @@ public class PrimogemHoeItem extends HoeItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
             }
-        }, 0, -3f, new Item.Properties().fireResistant());
+        }, 0, -3f, new Item.Properties().fireResistant().rarity(Rarity.RARE));
     }
 }

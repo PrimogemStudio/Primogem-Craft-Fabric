@@ -11,7 +11,7 @@ import java.util.List;
 
 public class PrimogemBilletItem extends Item {
     public PrimogemBilletItem() {
-        super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+        super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE));
     }
 
     @Override

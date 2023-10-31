@@ -2,6 +2,7 @@ package com.primogemstudio.primogemcraft.items.instances.primogem;
 
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -34,6 +35,6 @@ public class PrimogemShovelItem extends ShovelItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
             }
-        }, 1, -3f, new Item.Properties().fireResistant());
+        }, 1, -3f, new Item.Properties().fireResistant().rarity(Rarity.RARE));
     }
 }

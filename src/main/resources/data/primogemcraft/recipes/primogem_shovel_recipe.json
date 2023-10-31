@@ -6,9 +6,6 @@
     "|"
   ],
   "key": {
-    "#": {
-      "item": "primogemcraft:primogem"
-    },
     "*": {
       "item": "primogemcraft:primogem_billet"
     },
