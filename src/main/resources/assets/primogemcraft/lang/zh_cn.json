@@ -25,7 +25,7 @@
   "item.primogemcraft.dull_blade": "无锋剑",
   "item.primogemcraft.mora_billet": "摩拉原胚",
   "item.primogemcraft.mora": "摩拉",
-  "item.primogemcraft.primogem_catalyst": "§b原石原胚",
+  "item.primogemcraft.primogem_billet": "§b原石原胚",
   "item.primogemcraft.old_stone": "§b老石",
   "item.primogemcraft.strange_primogem_sword": "§4奇怪的原石剑",
   "entity.primogemcraft.dendro_core_entity": "草原核",
@@ -45,6 +45,6 @@
   "tooltip.primogemcraft.strange_primogem_sword.line4": "§7 • 使用时有10%概率直接损坏",
   "tooltip.primogemcraft.strange_primogem_sword.line5": "§c • 别在家里使用",
   "tooltip.primogemcraft.primogem_ore": "再氪两单嘛~",
-  "tooltip.primogemcraft.primogem_catalyst": "§7特殊材料",
+  "tooltip.primogemcraft.primogem_billet": "§7特殊材料",
   "subtitles.muted": "...."
 }

@@ -19,7 +19,7 @@ import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.*;
 public class PrimogemCraftItems {
     public static final TheAllBeginningItem THE_ALL_BEGINNING = register("the_all_beginning", new TheAllBeginningItem());
     public static final PrimogemItem PRIMOGEM = register("primogem", new PrimogemItem());
-    public static final PrimogemCatalystItem PRIMOGEM_CATALYST = register("primogem_catalyst", new PrimogemCatalystItem());
+    public static final PrimogemBilletItem PRIMOGEM_BILLET = register("primogem_billet", new PrimogemBilletItem());
     public static final BlockItem DENDRO_CORE_BLOCK_ITEM = register("dendro_core_block", new BlockItem(DENDRO_CORE_BLOCK, new Item.Properties()));
     public static final BlockItem PRIMOGEM_BLOCK_ITEM = register("primogem_block", new BlockItem(PRIMOGEM_BLOCK, new Item.Properties()));
     public static final Item VAYUDA_TURQUOISE_GEMSTONE = register("vayuda_turquoise_gemstone", new Item(new Item.Properties()));

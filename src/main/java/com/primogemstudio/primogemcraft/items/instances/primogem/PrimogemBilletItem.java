@@ -9,13 +9,13 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
-public class PrimogemCatalystItem extends Item {
-    public PrimogemCatalystItem() {
+public class PrimogemBilletItem extends Item {
+    public PrimogemBilletItem() {
         super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
     }
 
     @Override
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-        list.add(Component.translatable("tooltip.primogemcraft.primogem_catalyst"));
+        list.add(Component.translatable("tooltip.primogemcraft.primogem_billet"));
     }
 }

@@ -26,7 +26,7 @@
   "item.primogemcraft.mora_billet": " Mora Billet",
   "item.primogemcraft.mora": "Mora",
   "item.primogemcraft.strange_primogem_sword": "§4Strange Primogem Sword",
-  "item.primogemcraft.primogem_catalyst": "§bPrimogem Catalyst",
+  "item.primogemcraft.primogem_billet": "§bPrimogem Billet",
   "item.primogemcraft.old_stone": "§bOld Stone",
   "entity.primogemcraft.dendro_core_entity": "Dendro Core",
   "effect.primogemcraft.abnormal_disease": "Abnormal Disease",
@@ -45,6 +45,6 @@
   "tooltip.primogemcraft.strange_primogem_sword.line4": "§7 • 使用时有10%概率直接损坏",
   "tooltip.primogemcraft.strange_primogem_sword.line5": "§c • 别在家里使用",
   "tooltip.primogemcraft.primogem_ore": "再氪两单嘛~",
-  "tooltip.primogemcraft.primogem_catalyst": "§7Special Material",
+  "tooltip.primogemcraft.primogem_billet": "§7Special Material",
   "subtitles.muted": "...."
 }
