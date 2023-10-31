@@ -2,12 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "#",
-    "#",
+    "*",
     "|"
   ],
   "key": {
     "#": {
       "item": "primogemcraft:primogem"
+    },
+    "*": {
+      "item": "primogemcraft:primogem_catalyst"
     },
     "|": {
       "item": "minecraft:stick"

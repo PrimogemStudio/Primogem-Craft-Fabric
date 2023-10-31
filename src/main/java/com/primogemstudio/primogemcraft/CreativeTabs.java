@@ -23,6 +23,7 @@ public class CreativeTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_MAIN, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(THE_ALL_BEGINNING);
             output.accept(PRIMOGEM);
+            output.accept(PRIMOGEM_CATALYST);
             output.accept(MORA);
             output.accept(MORA_BILLET);
             output.accept(INTERTWINED_FATE);
