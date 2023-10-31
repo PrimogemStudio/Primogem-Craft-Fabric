@@ -1,36 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "primogemcraft:primogem"
-    },
-    {
-      "item": "primogemcraft:primogem"
-    },
-    {
-      "item": "primogemcraft:primogem"
-    },
-    {
-      "item": "primogemcraft:primogem"
-    },
-    {
-      "item": "primogemcraft:primogem"
-    },
-    {
-      "item": "primogemcraft:primogem"
-    },
-    {
-      "item": "primogemcraft:primogem"
-    },
-    {
-      "item": "primogemcraft:primogem"
-    },
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "000",
+    "000",
+    "000"
+  ],
+  "key": {
+    "0": {
       "item": "primogemcraft:primogem"
     }
-  ],
+  },
   "result": {
-    "item": "primogemcraft:primogem_block",
-    "count": 1
+    "item": "primogemcraft:primogem_block"
   }
 }
