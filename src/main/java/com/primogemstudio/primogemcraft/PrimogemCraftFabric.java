@@ -10,6 +10,7 @@ public class PrimogemCraftFabric implements ModInitializer {
 
     public void onInitialize() {
         CreativeTabs.init();
+        Worldgen.init();
         LOGGER.info("Primogem Craft Loaded");
     }
 }
