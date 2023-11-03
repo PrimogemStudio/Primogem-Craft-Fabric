@@ -1,16 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###",
-    "###"
+    " # ",
+    "#*#",
+    " # "
   ],
   "key": {
     "#": {
       "item": "primogemcraft:primogem"
+    },
+    "*": {
+      "item": "primogemcraft:old_stone"
     }
   },
   "result": {
-    "item": "primogemcraft:primogem_block"
+    "item": "primogemcraft:primogem_billet"
   }
 }
