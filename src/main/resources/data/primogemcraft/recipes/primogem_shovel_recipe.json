@@ -6,11 +6,8 @@
     "|"
   ],
   "key": {
-    "#": {
-      "item": "primogemcraft:primogem"
-    },
     "*": {
-      "item": "primogemcraft:primogem_catalyst"
+      "item": "primogemcraft:primogem_billet"
     },
     "|": {
       "item": "minecraft:stick"

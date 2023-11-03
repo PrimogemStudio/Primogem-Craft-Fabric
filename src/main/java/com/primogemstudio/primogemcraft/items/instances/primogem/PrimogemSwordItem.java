@@ -3,10 +3,7 @@ package com.primogemstudio.primogemcraft.items.instances.primogem;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
@@ -38,7 +35,7 @@ public class PrimogemSwordItem extends SwordItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
             }
-        }, 3, -2.4f, new Item.Properties().fireResistant());
+        }, 3, -2.4f, new Item.Properties().fireResistant().rarity(Rarity.RARE));
     }
 
     @Override
