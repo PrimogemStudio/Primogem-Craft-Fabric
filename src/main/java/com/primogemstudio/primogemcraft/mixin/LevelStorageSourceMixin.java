@@ -5,6 +5,7 @@ import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.Lifecycle;
 import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.gacha.GachaServer;
+import com.primogemstudio.primogemcraft.util.HalfPrecisionFloat;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.nbt.CompoundTag;
@@ -38,6 +39,9 @@ public class LevelStorageSourceMixin {
             if (GachaServer.database != null) GachaServer.database.close();
             GachaServer.database = new GachaDatabase(levelDirectory.path().resolve("gacha_data.db").toFile());
             GachaServer.loadData();
+
+            HalfPrecisionFloat.usePrecisionLost = GachaServer.data.enableCollapsing;
+            HalfPrecisionFloat.opt = GachaServer.data.collapsingArg;
         }
 
         @Inject(at = @At("HEAD"), method = "saveDataTag(Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/storage/WorldData;Lnet/minecraft/nbt/CompoundTag;)V")

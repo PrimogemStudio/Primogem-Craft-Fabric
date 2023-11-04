@@ -54,6 +54,7 @@ public class GachaDatabase implements AbstractDatabase, Closeable {
         Statement statement = conn.createStatement();
         statement.executeUpdate("create table if not exists gacha_pity(id integer primary key autoincrement unique,uuid varchar(36) unique,pity5 integer,pity4 integer)");
         statement.executeUpdate("create table if not exists gacha_history(id integer primary key autoincrement unique,username varchar(64),uuid varchar(36),timestamp long, level integer,item varchar(2048))");
+        statement.executeUpdate("create table if not exists flags(id integer primary key autoincrement unique,key varchar(64),enable bool,value double)");
         statement.close();
     }
 
@@ -64,6 +65,7 @@ public class GachaDatabase implements AbstractDatabase, Closeable {
     public synchronized void write(GachaRecordModel.DataModel data) throws SQLException {
         conn.createStatement().executeUpdate("drop table if exists gacha_pity");
         conn.createStatement().executeUpdate("drop table if exists gacha_history");
+        conn.createStatement().executeUpdate("drop table if exists flags");
         checkOrCreateTable();
 
         data.gachaRecord.forEach(m -> {
@@ -92,6 +94,16 @@ public class GachaDatabase implements AbstractDatabase, Closeable {
                 logger.error("failed to write gacha pity values", e);
             }
         });
+
+        try {
+            PreparedStatement state = conn.prepareStatement("insert into flags(key,enable,value) values(?,?,?)");
+            state.setString(1, "sharp_far_lands");
+            state.setBoolean(2, data.enableCollapsing);
+            state.setDouble(3, data.collapsingArg);
+            state.executeUpdate();
+        } catch (SQLException e) {
+            logger.error("failed to write flags", e);
+        }
     }
 
     public synchronized GachaRecordModel.DataModel read() throws SQLException {
@@ -114,6 +126,20 @@ public class GachaDatabase implements AbstractDatabase, Closeable {
             data.level = set2.getInt(5);
             data.item = set2.getString(6) == null ? null : new ResourceLocation(set2.getString(6));
             model.gachaRecord.add(data);
+        }
+
+        ResultSet set3 = conn.createStatement().executeQuery("select * from flags");
+        while (set3.next()) {
+            var key = set3.getString(1);
+            var flag = set3.getBoolean(2);
+            var value = set3.getDouble(3);
+
+            switch (key) {
+                case "sharp_far_lands":
+                    model.enableCollapsing = flag;
+                    model.collapsingArg = value;
+                default:
+            }
         }
         return model;
     }
