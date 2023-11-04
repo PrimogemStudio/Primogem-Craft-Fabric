@@ -57,6 +57,6 @@ public class GachaRecordModel {
         public PityMap4Star pity_4 = new PityMap4Star();
         public RecordList gachaRecord = new RecordList();
         public boolean enableCollapsing = false;
-        public double collapsingArg = 0;
+        public double collapsingArg = 0.01;
     }
 }

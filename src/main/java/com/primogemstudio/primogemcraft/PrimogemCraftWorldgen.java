@@ -11,7 +11,7 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 
 
-public class Worldgen {
+public class PrimogemCraftWorldgen {
     public static void init() {
         BiomeModifications.create(new ResourceLocation(MOD_ID, "primogem_ore")).add(ModificationPhase.ADDITIONS, c -> c.hasTag(TagKey.create(Registries.BIOME, new ResourceLocation("is_overworld"))), m -> {
             m.getGenerationSettings().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(MOD_ID, "primogem_ore")));

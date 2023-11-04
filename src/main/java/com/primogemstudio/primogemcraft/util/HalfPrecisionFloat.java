@@ -1,6 +1,8 @@
 package com.primogemstudio.primogemcraft.util;
 
+import com.primogemstudio.primogemcraft.advancements.PrimogemCraftAdvancements;
 import com.primogemstudio.primogemcraft.gacha.GachaServer;
+import net.minecraft.server.level.ServerPlayer;
 
 import java.nio.ByteBuffer;
 import java.util.Random;
@@ -18,7 +20,7 @@ import java.util.Random;
  */
 public class HalfPrecisionFloat {
     public static double opt = 0.005;
-    public static boolean usePrecisionLost = true;
+    public static boolean usePrecisionLost = false;
     private final short halfPrecision;
     private Float fullPrecision;
 
@@ -59,11 +61,13 @@ public class HalfPrecisionFloat {
         this.fullPrecision = number;
     }
 
-    public static void onChanged() {
+    public static void onChanged(ServerPlayer player) {
         try {
             GachaServer.data.enableCollapsing = usePrecisionLost;
             GachaServer.data.collapsingArg = opt;
             GachaServer.onDataChange();
+
+            if (usePrecisionLost) PrimogemCraftAdvancements.WORLD_COLLAPSING.trigger(player);
         }
         catch (Exception ignored) {}
     }

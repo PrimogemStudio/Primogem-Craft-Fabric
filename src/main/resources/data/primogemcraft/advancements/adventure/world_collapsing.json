@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "triggered": {
+      "trigger": "primogemcraft:world_collapsing"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.primogemcraft.world_collapse.desc"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:dirt"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.primogemcraft.world_collapse"
+    }
+  },
+  "requirements": [
+    ["triggered"]
+  ],
+  "sends_telemetry_event": true
+}
