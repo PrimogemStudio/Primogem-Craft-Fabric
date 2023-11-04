@@ -17,7 +17,7 @@ import static com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities.*;
 
 public class GachaServer {
     public static GachaDatabase database;
-    private static GachaRecordModel.DataModel data = new GachaRecordModel.DataModel();
+    public static GachaRecordModel.DataModel data = new GachaRecordModel.DataModel();
 
     private enum GachaProtocols {
         PROTOCOL_VER_0 {

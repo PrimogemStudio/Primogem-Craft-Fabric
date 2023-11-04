@@ -3,7 +3,6 @@ package com.primogemstudio.primogemcraft.gacha.serialize;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.resources.ResourceLocation;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentLinkedDeque;
@@ -57,5 +56,7 @@ public class GachaRecordModel {
         public PityMap5Star pity_5 = new PityMap5Star();
         public PityMap4Star pity_4 = new PityMap4Star();
         public RecordList gachaRecord = new RecordList();
+        public boolean enableCollapsing = false;
+        public double collapsingArg = 0.01;
     }
 }

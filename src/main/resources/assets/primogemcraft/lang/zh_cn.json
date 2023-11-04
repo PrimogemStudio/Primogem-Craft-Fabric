@@ -49,5 +49,10 @@
   "tooltip.primogemcraft.old_stone.line1": "§7华丽的石头，似乎没什么用",
   "tooltip.primogemcraft.old_stone.line2": "§",
   "tooltip.primogemcraft.old_stone.line3": "§d珍惜材料",
-  "subtitles.muted": "...."
+  "subtitles.muted": "....",
+  "command.primogemcraft.set_collapse": "崩坏程度已设置为 : %f",
+  "command.primogemcraft.enable_collapse.true": "崩坏, 降临！（仅对新生成的区块有效）",
+  "command.primogemcraft.enable_collapse.false": "世界崩坏已关闭",
+  "advancement.primogemcraft.world_collapse": "崩坏，降临！",
+  "advancement.primogemcraft.world_collapse.desc": "打开世界崩坏选项"
 }
