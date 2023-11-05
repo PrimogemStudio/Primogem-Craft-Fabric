@@ -53,6 +53,10 @@
   "command.primogemcraft.set_collapse": "崩坏程度已设置为 : %f",
   "command.primogemcraft.enable_collapse.true": "崩坏, 降临！（仅对新生成的区块有效）",
   "command.primogemcraft.enable_collapse.false": "世界崩坏已关闭",
+  "advancement.primogemcraft.start": "Result of Genshin Impact",
+  "advancement.primogemcraft.start.desc": "Genshin of everything",
+  "advancement.primogemcraft.root": "Primogem Craft",
+  "advancement.primogemcraft.root.desc": "Welcome to a totally NEW world!",
   "advancement.primogemcraft.world_collapse": "崩坏，降临！",
   "advancement.primogemcraft.world_collapse.desc": "打开世界崩坏选项"
 }

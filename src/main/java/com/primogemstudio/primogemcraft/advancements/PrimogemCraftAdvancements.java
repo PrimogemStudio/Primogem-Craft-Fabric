@@ -4,6 +4,8 @@ import com.primogemstudio.primogemcraft.advancements.criterions.WorldCollapsingC
 import net.minecraft.advancements.CriteriaTriggers;
 
 public class PrimogemCraftAdvancements {
-    public static WorldCollapsingCriterion WORLD_COLLAPSING = CriteriaTriggers.register(new WorldCollapsingCriterion());
-    public static void init() {}
+    public static final WorldCollapsingCriterion WORLD_COLLAPSING = CriteriaTriggers.register(new WorldCollapsingCriterion());
+
+    public static void init() {
+    }
 }

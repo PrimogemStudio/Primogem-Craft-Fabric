@@ -53,6 +53,10 @@
   "command.primogemcraft.set_collapse": "崩坏程度已设置为 : %f",
   "command.primogemcraft.enable_collapse.true": "崩坏, 降临！（仅对新生成的区块有效）",
   "command.primogemcraft.enable_collapse.false": "世界崩坏已关闭",
+  "advancement.primogemcraft.start": "玩 [ ] [ ] 玩的",
+  "advancement.primogemcraft.start.desc": "万物起“原”",
+  "advancement.primogemcraft.root": "原石工艺",
+  "advancement.primogemcraft.root.desc": "欢迎来到一个全新的世界！",
   "advancement.primogemcraft.world_collapse": "崩坏，降临！",
   "advancement.primogemcraft.world_collapse.desc": "打开世界崩坏选项"
 }
