@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:adventure/root",
+  "parent": "primogemcraft:primogemcraft",
   "criteria": {
     "triggered": {
       "trigger": "primogemcraft:world_collapsing"
@@ -10,7 +10,7 @@
     "description": {
       "translate": "advancement.primogemcraft.world_collapse.desc"
     },
-    "frame": "task",
+    "frame": "challenge",
     "hidden": true,
     "icon": {
       "item": "minecraft:dirt"
@@ -21,7 +21,9 @@
     }
   },
   "requirements": [
-    ["triggered"]
+    [
+      "triggered"
+    ]
   ],
   "sends_telemetry_event": true
 }

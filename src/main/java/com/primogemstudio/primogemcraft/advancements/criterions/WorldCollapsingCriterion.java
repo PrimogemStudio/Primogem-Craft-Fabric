@@ -13,6 +13,7 @@ import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 
 public class WorldCollapsingCriterion extends SimpleCriterionTrigger<WorldCollapsingCriterion.WorldCollapsingCriterionTrigger> {
     public static final ResourceLocation ID = new ResourceLocation(MOD_ID, "world_collapsing");
+
     protected @NotNull WorldCollapsingCriterionTrigger createInstance(JsonObject json, ContextAwarePredicate predicate, DeserializationContext deserializationContext) {
         return new WorldCollapsingCriterionTrigger();
     }
@@ -26,7 +27,6 @@ public class WorldCollapsingCriterion extends SimpleCriterionTrigger<WorldCollap
     }
 
     public static class WorldCollapsingCriterionTrigger extends AbstractCriterionTriggerInstance {
-
         public WorldCollapsingCriterionTrigger() {
             super(ID, ContextAwarePredicate.ANY);
         }

@@ -18,7 +18,7 @@ public class OldStoneItem extends Item {
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
         super.appendHoverText(itemstack, world, list, flag);
         list.add(Component.translatable("tooltip.primogemcraft.old_stone.line1"));
+        list.add(Component.empty());
         list.add(Component.translatable("tooltip.primogemcraft.old_stone.line2"));
-        list.add(Component.translatable("tooltip.primogemcraft.old_stone.line3"));
     }
 }
