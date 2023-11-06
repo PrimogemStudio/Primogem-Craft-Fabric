@@ -1,5 +1,5 @@
 {
-  "parent": "primogemcraft:primogemcraft_root",
+  "parent": "primogemcraft:primogemcraft",
   "criteria": {
     "triggered": {
       "trigger": "primogemcraft:world_collapsing"
@@ -21,7 +21,9 @@
     }
   },
   "requirements": [
-    ["triggered"]
+    [
+      "triggered"
+    ]
   ],
   "sends_telemetry_event": true
 }

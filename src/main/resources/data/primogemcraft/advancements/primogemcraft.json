@@ -1,37 +1,23 @@
 {
-  "parent": "primogemcraft:primogemcraft_root",
   "criteria": {
     "triggered": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "primogemcraft:primogem"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "display": {
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
     "description": {
-      "translate": "advancement.primogemcraft.start.desc"
+      "translate": "advancement.primogemcraft.root.desc"
     },
-    "frame": "task",
+    "frame": "challenge",
     "hidden": false,
     "icon": {
       "item": "primogemcraft:primogem"
     },
-    "show_toast": true,
+    "show_toast": false,
     "title": {
-      "translate": "advancement.primogemcraft.start"
+      "translate": "advancement.primogemcraft.root"
     }
   },
   "sends_telemetry_event": true
