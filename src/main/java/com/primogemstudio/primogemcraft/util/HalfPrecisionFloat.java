@@ -3,9 +3,7 @@ package com.primogemstudio.primogemcraft.util;
 import com.primogemstudio.primogemcraft.advancements.PrimogemCraftAdvancements;
 import com.primogemstudio.primogemcraft.gacha.GachaServer;
 import net.minecraft.server.level.ServerPlayer;
-
-import java.nio.ByteBuffer;
-import java.util.Random;
+import net.minecraft.util.RandomSource;
 
 /**
  * Accepts various forms of a floating point half-precision (2 byte) number
@@ -18,36 +16,12 @@ import java.util.Random;
  *
  * @author dougestep
  */
+@SuppressWarnings("SpellCheckingInspection")
 public class HalfPrecisionFloat {
     public static double opt = 0.005;
     public static boolean usePrecisionLost = false;
     private final short halfPrecision;
-    private Float fullPrecision;
-
-    /**
-     * Creates an instance of the class from the supplied the supplied
-     * byte array.  The byte array must be exactly two bytes in length.
-     *
-     * @param bytes the two-byte byte array.
-     */
-    public HalfPrecisionFloat(byte[] bytes) {
-        if (bytes.length != 2) {
-            throw new IllegalArgumentException("The supplied byte array" + "must be exactly two bytes in length");
-        }
-
-        final ByteBuffer buffer = ByteBuffer.wrap(bytes);
-        this.halfPrecision = buffer.getShort();
-    }
-
-    /**
-     * Creates an instance of this class from the supplied short number.
-     *
-     * @param number the number defined as a short.
-     */
-    public HalfPrecisionFloat(final short number) {
-        this.halfPrecision = number;
-        this.fullPrecision = toFullPrecision();
-    }
+    private static final RandomSource random = RandomSource.create();
 
     /**
      * Creates an instance of this class from the supplied
@@ -57,8 +31,7 @@ public class HalfPrecisionFloat {
      */
     public HalfPrecisionFloat(final float number) {
         final int val = fromFullPrecision(number);
-        this.halfPrecision = (short) val;
-        this.fullPrecision = number;
+        halfPrecision = (short) val;
     }
 
     public static void onChanged(ServerPlayer player) {
@@ -68,40 +41,8 @@ public class HalfPrecisionFloat {
             GachaServer.onDataChange();
 
             if (usePrecisionLost) PrimogemCraftAdvancements.WORLD_COLLAPSING.trigger(player);
+        } catch (Exception ignored) {
         }
-        catch (Exception ignored) {}
-    }
-
-    /**
-     * Returns the half-precision float as a number defined as a short.
-     *
-     * @return the short.
-     */
-    public short getHalfPrecisionAsShort() {
-        return halfPrecision;
-    }
-
-    /**
-     * Returns a full-precision floating pointing number from the
-     * half-precision value assigned on this instance.
-     *
-     * @return the full-precision floating pointing number.
-     */
-    public float getFullFloat() {
-        if (fullPrecision == null) {
-            fullPrecision = toFullPrecision();
-        }
-        return fullPrecision;
-    }
-
-    /**
-     * Returns a full-precision double floating point number from the
-     * half-precision value assigned on this instance.
-     *
-     * @return the full-precision double floating pointing number.
-     */
-    public double getFullDouble() {
-        return getFullFloat();
     }
 
     /**
@@ -167,9 +108,8 @@ public class HalfPrecisionFloat {
 
     public static double toHalf(float old) {
         if (usePrecisionLost) {
-            if (new Random().nextDouble(0, 1) < opt) return new HalfPrecisionFloat(old).toFullPrecision();
+            if (random.triangle(0, 1) < opt) return new HalfPrecisionFloat(old).toFullPrecision();
             else return old;
-        }
-        else  return (int) old;
+        } else return old;
     }
 }
