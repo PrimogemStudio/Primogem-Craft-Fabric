@@ -9,9 +9,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "*","*/*" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "*","*/*" ]
 
 permissions:
   contents: read
@@ -51,7 +51,7 @@ jobs:
       - name: Upload JAR file
         uses: actions/upload-artifact@v3
         with:
-          name: primogemcraft-${{ env.LAST_COMMIT_SHA }}.jar
+          name: primogemcraft-${{ env.LAST_COMMIT_SHA }}
           path: |
             build/libs/*.jar
-            !*-sources.jar
+            !build/libs/*-sources.jar
