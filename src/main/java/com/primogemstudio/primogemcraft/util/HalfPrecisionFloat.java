@@ -4,6 +4,7 @@ import com.primogemstudio.primogemcraft.advancements.PrimogemCraftAdvancements;
 import com.primogemstudio.primogemcraft.gacha.GachaServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.levelgen.ThreadSafeLegacyRandomSource;
 
 import java.util.Random;
 
@@ -23,7 +24,7 @@ public class HalfPrecisionFloat {
     public static double opt = 0.005;
     public static boolean usePrecisionLost = false;
     private final short halfPrecision;
-    private static final Random random = new Random();
+    private static final RandomSource random = new ThreadSafeLegacyRandomSource(new Random().nextLong());
 
     /**
      * Creates an instance of this class from the supplied
@@ -110,7 +111,7 @@ public class HalfPrecisionFloat {
 
     public static double toHalf(float old) {
         if (usePrecisionLost) {
-            if (random.nextDouble(0, 1) < opt) return new HalfPrecisionFloat(old).toFullPrecision();
+            if (random.triangle(0, 1) < opt) return new HalfPrecisionFloat(old).toFullPrecision();
             else return old;
         } else return old;
     }
