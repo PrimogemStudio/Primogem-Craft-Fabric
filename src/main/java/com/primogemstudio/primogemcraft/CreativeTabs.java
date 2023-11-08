@@ -25,6 +25,8 @@ public class CreativeTabs {
             output.accept(PRIMOGEM);
             output.accept(PRIMOGEM_BILLET);
             output.accept(OLD_STONE);
+            output.accept(MASTER_LESS_STAR_DUST);
+            output.accept(MASTER_LESS_STARG_LITTER);
             output.accept(MORA);
             output.accept(MORA_BILLET);
             output.accept(INTERTWINED_FATE);

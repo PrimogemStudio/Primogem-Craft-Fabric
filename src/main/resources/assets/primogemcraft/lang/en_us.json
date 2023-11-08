@@ -28,6 +28,8 @@
   "item.primogemcraft.strange_primogem_sword": "§4Strange Primogem Sword",
   "item.primogemcraft.primogem_billet": "Primogem Billet",
   "item.primogemcraft.old_stone": "Old Stone",
+  "item.primogemcraft.masterless_stardust": "§bMasterless Stardust",
+  "item.primogemcraft.masterless_starglitter": "§eMasterless Starglitter",
   "entity.primogemcraft.dendro_core_entity": "Dendro Core",
   "effect.primogemcraft.abnormal_disease": "Abnormal Disease",
   "tooltip.primogemcraft.dendro_core_block.line1": "Generated when lightning strikes the dendro core",
