@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 import static com.primogemstudio.primogemcraft.util.HalfPrecisionFloat.toHalf;
+import static com.primogemstudio.primogemcraft.util.HalfPrecisionFloat.usePrecisionLost;
 
 /**
  * @author coder2
@@ -19,17 +20,20 @@ import static com.primogemstudio.primogemcraft.util.HalfPrecisionFloat.toHalf;
 public abstract class ImprovedNoiseMixin {
     @ModifyVariable(method = "noise(DDDDD)D", ordinal = 8, at = @At(value = "STORE", opcode = Opcodes.DSTORE))
     private double noise$mv1(double value, @Local(ordinal = 5) double d, @Local(ordinal = 0) int i) {
-        return d - toHalf(i);
+        if (usePrecisionLost) return d - toHalf(i);
+        return d - (double) i;
     }
 
     @ModifyVariable(method = "noise(DDDDD)D", ordinal = 9, at = @At(value = "STORE", opcode = Opcodes.DSTORE))
     private double noise$mv2(double value, @Local(ordinal = 6) double e, @Local(ordinal = 1) int j) {
-        return e - toHalf(j);
+        if (usePrecisionLost) return e - toHalf(j);
+        else return e - (double) j;
     }
 
     @ModifyVariable(method = "noise(DDDDD)D", ordinal = 10, at = @At(value = "STORE", opcode = Opcodes.DSTORE))
     private double noise$mv3(double value, @Local(ordinal = 7) double f, @Local(ordinal = 2) int k) {
-        return f - toHalf(k);
+        if (usePrecisionLost) return f - toHalf(k);
+        return f - (double) k;
     }
 
     @WrapOperation(method = "noiseWithDerivative", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/levelgen/synth/ImprovedNoise;sampleWithDerivative(IIIDDD[D)D"))
@@ -37,7 +41,9 @@ public abstract class ImprovedNoiseMixin {
         return original.call(
                 instance,
                 gridX, gridY, gridZ,
-                d - toHalf(gridX), e - toHalf(gridY), f - toHalf(gridZ),
+                usePrecisionLost ? d - toHalf(gridX) : d - (double) gridX,
+                usePrecisionLost ? e - toHalf(gridY) : e - (double) gridY,
+                usePrecisionLost ? f - toHalf(gridZ) : f - (double) gridZ,
                 noiseValues
         );
     }
