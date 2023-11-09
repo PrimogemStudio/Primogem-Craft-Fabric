@@ -12,11 +12,11 @@ import static com.mojang.brigadier.arguments.DoubleArgumentType.doubleArg;
 import static com.mojang.brigadier.arguments.DoubleArgumentType.getDouble;
 
 public class ConfigCommand {
-    public static void register(CommandDispatcher<CommandSourceStack> dispatcher, Commands.CommandSelection environment) {
+    public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(
                 Commands.literal("primogemcraft")
                         .then(Commands.literal("set")
-                                .requires(c -> c.hasPermission(environment.includeIntegrated ? 0 : 4))
+                                .requires(c -> !c.getServer().isDedicatedServer() || c.hasPermission(4))
                                 .then(Commands.literal("collapsing")
                                         .then(Commands.literal("arg")
                                                 .then(Commands.argument("value", doubleArg(0, 1))
