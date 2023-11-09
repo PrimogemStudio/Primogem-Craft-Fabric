@@ -38,13 +38,8 @@ public abstract class ImprovedNoiseMixin {
 
     @WrapOperation(method = "noiseWithDerivative", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/levelgen/synth/ImprovedNoise;sampleWithDerivative(IIIDDD[D)D"))
     private double onNoiseWithDerivative(ImprovedNoise instance, int gridX, int gridY, int gridZ, double deltaX, double deltaY, double deltaZ, double[] noiseValues, Operation<Double> original, @Local(ordinal = 3) double d, @Local(ordinal = 4) double e, @Local(ordinal = 5) double f) {
-        return original.call(
-                instance,
-                gridX, gridY, gridZ,
-                usePrecisionLost ? d - toHalf(gridX) : d - (double) gridX,
-                usePrecisionLost ? e - toHalf(gridY) : e - (double) gridY,
-                usePrecisionLost ? f - toHalf(gridZ) : f - (double) gridZ,
-                noiseValues
-        );
+        if (usePrecisionLost)
+            return original.call(instance, gridX, gridY, gridZ, d - toHalf(gridX), e - toHalf(gridY), f - toHalf(gridZ), noiseValues);
+        return original.call(instance, gridX, gridY, gridZ, deltaX, deltaY, deltaZ, noiseValues);
     }
 }
