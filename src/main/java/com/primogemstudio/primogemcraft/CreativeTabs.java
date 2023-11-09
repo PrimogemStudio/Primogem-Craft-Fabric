@@ -28,6 +28,7 @@ public class CreativeTabs {
             output.accept(MASTER_LESS_STAR_DUST);
             output.accept(MASTER_LESS_STARG_LITTER);
             output.accept(MORA);
+            output.accept(EXQUISITE_MORA);
             output.accept(MORA_BILLET);
             output.accept(INTERTWINED_FATE);
             output.accept(INTERTWINED_FATE_TEN);

@@ -2,6 +2,7 @@ package com.primogemstudio.primogemcraft.items;
 
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
+import com.primogemstudio.primogemcraft.items.instances.mora.ExquisiteMoraItem;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
 import com.primogemstudio.primogemcraft.items.instances.records.ANewDayWithHopeItem;
 import com.primogemstudio.primogemcraft.items.instances.records.HakushinLullabyItem;
@@ -40,6 +41,7 @@ public class PrimogemCraftItems {
     public static final IntertwinedFateTenTimesItem INTERTWINED_FATE_TEN = register("intertwined_fate_ten", new IntertwinedFateTenTimesItem());
     public static final Item MORA_BILLET = register("mora_billet", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Item MORA = register("mora", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final ExquisiteMoraItem EXQUISITE_MORA = register("exquisite_mora", new ExquisiteMoraItem());
     public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD = register("strange_primogem_sword", new StrangePrimogemSwordItem());
     public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
 
