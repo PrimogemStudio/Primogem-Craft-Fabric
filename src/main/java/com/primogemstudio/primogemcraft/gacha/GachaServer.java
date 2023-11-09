@@ -89,7 +89,11 @@ public class GachaServer {
         li.setPos(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
         player.level().addFreshEntity(li);
 
-        player.getServer().getLootData().getLootTable(new ResourceLocation(MOD_ID, "gacha/star5")).getRandomItems(
+        player.getServer().getLootData().getLootTable(new ResourceLocation(MOD_ID, switch (level) {
+            case 5 -> "gacha/star5";
+            case 4 -> "gacha/star4";
+            default -> "gacha/star4";
+        })).getRandomItems(
                 new LootParams.Builder(player.serverLevel())
                         .withParameter(LootContextParams.THIS_ENTITY, player)
                         .withParameter(LootContextParams.DAMAGE_SOURCE, player.damageSources().fall())
