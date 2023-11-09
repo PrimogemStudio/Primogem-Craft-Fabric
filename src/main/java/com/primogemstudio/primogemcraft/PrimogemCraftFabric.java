@@ -15,7 +15,7 @@ public class PrimogemCraftFabric implements ModInitializer {
         CreativeTabs.init();
         PrimogemCraftWorldgen.init();
         PrimogemCraftAdvancements.init();
-        CommandRegistrationCallback.EVENT.register((d, ra, e) -> ConfigCommand.register(d));
+        CommandRegistrationCallback.EVENT.register((d, ra, e) -> ConfigCommand.register(d, e));
         LOGGER.info("Primogem Craft Loaded");
     }
 }

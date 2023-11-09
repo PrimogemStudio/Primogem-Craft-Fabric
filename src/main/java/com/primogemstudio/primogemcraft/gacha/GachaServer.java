@@ -7,12 +7,19 @@ import com.primogemstudio.primogemcraft.entities.instances.entities.GachaThreeSt
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageSources;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.Random;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
+import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 import static com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities.*;
 
 public class GachaServer {
@@ -74,14 +81,6 @@ public class GachaServer {
                 data.pity_4.resetPity(player.getGameProfile());
             }
         }
-        var gac = new GachaRecordModel();
-        gac.name = player.getGameProfile().getName();
-        gac.uuid = player.getGameProfile().getId();
-        gac.timestamp = System.currentTimeMillis();
-        gac.level = level;
-        data.gachaRecord.add(gac);
-        onDataChange();
-
         var li = switch (level) {
             case 4 -> new GachaFourStarEntity(PURPLE_LIGHT, player.level());
             case 5 -> new GachaFiveStarEntity(GOLDEN_LIGHT, player.level());
@@ -89,6 +88,22 @@ public class GachaServer {
         };
         li.setPos(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
         player.level().addFreshEntity(li);
+
+        player.getServer().getLootData().getLootTable(new ResourceLocation(MOD_ID, "gacha/star5")).getRandomItems(
+                new LootParams.Builder(player.serverLevel())
+                        .withParameter(LootContextParams.THIS_ENTITY, player)
+                        .withParameter(LootContextParams.DAMAGE_SOURCE, player.damageSources().fall())
+                        .withParameter(LootContextParams.ORIGIN, player.position())
+                        .create(LootContextParamSets.ENTITY)
+        ).forEach(player::addItem);
+
+        var gac = new GachaRecordModel();
+        gac.name = player.getGameProfile().getName();
+        gac.uuid = player.getGameProfile().getId();
+        gac.timestamp = System.currentTimeMillis();
+        gac.level = level;
+        data.gachaRecord.add(gac);
+        onDataChange();
     }
 
     public static void loadData() {
