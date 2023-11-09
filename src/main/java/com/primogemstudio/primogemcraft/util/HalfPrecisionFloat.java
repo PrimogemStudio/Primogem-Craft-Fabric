@@ -109,9 +109,10 @@ public class HalfPrecisionFloat {
         return sign | ((fbits & 0x7fffff | 0x800000) + (0x800000 >>> val - 102) >>> 126 - val);
     }
 
-    public static double toHalf(float old) {
+    public static float toHalf(float old) {
         if (usePrecisionLost) {
-            if (random.triangle(0, 1) < opt) return new HalfPrecisionFloat(old).toFullPrecision();
+            if (opt == 0) return old;
+            if (random.nextDouble() < opt) return new HalfPrecisionFloat(old).toFullPrecision();
             else return old;
         } else return old;
     }

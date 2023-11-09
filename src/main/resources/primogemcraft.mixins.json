@@ -7,7 +7,8 @@
     "LevelStorageSourceMixin",
     "LevelStorageSourceMixin$LevelStorageAccessMixin",
     "MobEffectInstanceMixin",
-    "PerlinNoiseMixin"
+    "PerlinNoiseMixin",
+    "PlayerListMixin"
   ],
   "injectors": {
     "defaultRequire": 1
