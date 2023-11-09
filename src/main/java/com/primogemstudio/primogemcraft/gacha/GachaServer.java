@@ -6,17 +6,19 @@ import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFourSta
 import com.primogemstudio.primogemcraft.entities.instances.entities.GachaThreeStarEntity;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageSources;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.Random;
+import java.util.concurrent.atomic.AtomicReference;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.LOGGER;
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
@@ -89,6 +91,7 @@ public class GachaServer {
         li.setPos(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
         player.level().addFreshEntity(li);
 
+        AtomicReference<ResourceLocation> it = new AtomicReference<>();
         player.getServer().getLootData().getLootTable(new ResourceLocation(MOD_ID, switch (level) {
             case 5 -> "gacha/star5";
             case 4 -> "gacha/star4";
@@ -99,13 +102,17 @@ public class GachaServer {
                         .withParameter(LootContextParams.DAMAGE_SOURCE, player.damageSources().fall())
                         .withParameter(LootContextParams.ORIGIN, player.position())
                         .create(LootContextParamSets.ENTITY)
-        ).forEach(player::addItem);
+        ).forEach(a -> {
+            if (it.get() == null) it.set(BuiltInRegistries.ITEM.getKey(a.getItem()));
+            if (!player.addItem(a)) player.level().addFreshEntity(new ItemEntity(player.serverLevel(), player.getX(), player.getY(), player.getZ(), a));
+        });
 
         var gac = new GachaRecordModel();
         gac.name = player.getGameProfile().getName();
         gac.uuid = player.getGameProfile().getId();
         gac.timestamp = System.currentTimeMillis();
         gac.level = level;
+        gac.item = it.get();
         data.gachaRecord.add(gac);
         onDataChange();
     }
