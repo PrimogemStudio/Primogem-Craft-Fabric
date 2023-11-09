@@ -11,7 +11,6 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
@@ -95,7 +94,7 @@ public class GachaServer {
         player.getServer().getLootData().getLootTable(new ResourceLocation(MOD_ID, switch (level) {
             case 5 -> "gacha/star5";
             case 4 -> "gacha/star4";
-            default -> "gacha/star4";
+            default -> "gacha/star3";
         })).getRandomItems(
                 new LootParams.Builder(player.serverLevel())
                         .withParameter(LootContextParams.THIS_ENTITY, player)
