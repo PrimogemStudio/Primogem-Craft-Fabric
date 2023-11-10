@@ -50,12 +50,8 @@ public class IntertwinedFateItem extends Item {
             ife.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0f, 1.5f, 1.0f);
             level.addFreshEntity(ife);
             level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5f, 0.4f / (level.getRandom().nextFloat() * 0.4f + 0.8f));
-            if (!player.getAbilities().instabuild) {
-                stack.shrink(1);
-            }
-            if (level.isClientSide) {
-                level.playLocalSound(BlockPos.containing(player.position()), PrimogemCraftSounds.PRE_GACHA, SoundSource.HOSTILE, 70, 1, true);
-            }
+            if (!player.getAbilities().instabuild) stack.shrink(1);
+            if (level.isClientSide) level.playLocalSound(BlockPos.containing(player.position()), PrimogemCraftSounds.PRE_GACHA, SoundSource.HOSTILE, 70, 1, true);
         }
     }
 

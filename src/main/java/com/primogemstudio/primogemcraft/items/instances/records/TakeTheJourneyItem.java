@@ -2,6 +2,7 @@ package com.primogemstudio.primogemcraft.items.instances.records;
 
 import com.primogemstudio.primogemcraft.sounds.PrimogemCraftSounds;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -27,7 +28,8 @@ public class TakeTheJourneyItem extends RecordItem {
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
         InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-        // TODO port procedure -> TtashanglbtuteshuchufaProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+        if (world.isClientSide) world.playLocalSound(entity.getX(), entity.getY(), entity.getZ(), PrimogemCraftSounds.TAKE_THE_JOURNEY, SoundSource.PLAYERS, (float) 0.4, 1, false);
+        entity.getCooldowns().addCooldown(ar.getObject().getItem(), 1280);
         return ar;
     }
 
