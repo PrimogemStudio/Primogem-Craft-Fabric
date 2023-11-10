@@ -64,6 +64,8 @@
   "tooltip.primogemcraft.exquisite_mora.line1": "其铸造工艺使得本地生物也为之赞叹",
   "tooltip.primogemcraft.exquisite_mora_bag.line1": "满满一袋摩拉",
   "tooltip.primogemcraft.mora_wallet.line1": "被精准分配的精致摩拉，或许村民会喜欢",
+  "tooltip.primogemcraft.music_disc_take_the_journey.line1": "§b右键空气§f§a或§f放进§b唱片机§f以播放",
+  "tooltip.primogemcraft.music_disc_take_the_journey.line2": "§bps：唱片机音质更好！",
   "subtitles.muted": "....",
   "command.primogemcraft.set_collapse": "崩坏程度已设置为 : %f",
   "command.primogemcraft.enable_collapse.true": "崩坏, 降临！（仅对新生成的区块有效）",

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:intertwined_fate"
+  },
+  "base": {
+    "item": "minecraft:end_stone"
+  },
+  "result": {
+    "item": "primogemcraft:music_disc_salty_moon"
+  },
+  "template": []
+}

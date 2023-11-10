@@ -52,5 +52,23 @@
         "stream": true
       }
     ]
+  },
+  "music_disc.salty_moon": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:salty_moon",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.take_the_journey": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:take_the_journey",
+        "stream": true
+      }
+    ]
   }
 }

@@ -39,8 +39,10 @@ public class PrimogemCraftItems {
     public static final TheFadingStoriesItem THE_FADING_STORIES = register("music_disc_the_fading_stories", new TheFadingStoriesItem());
     public static final HakushinLullabyItem HAKUSHIN_LULLABY = register("music_disc_hakushin_lullaby", new HakushinLullabyItem());
     public static final VillageSurroundedByGreenItem VILLAGE_SURROUNDED_BY_GREEN = register("music_disc_village_surrounded_by_green", new VillageSurroundedByGreenItem());
-    public static final IntertwinedFateTenTimesItem INTERTWINED_FATE_TEN = register("intertwined_fate_ten", new IntertwinedFateTenTimesItem());
     public static final SpaceWalkItem SPACE_WALK = register("music_disc_space_walk", new SpaceWalkItem());
+    public static final SaltyMoonItem SALTY_MOON = register("music_disc_salty_moon", new SaltyMoonItem());
+    public static final TakeTheJourneyItem TAKE_THE_JOURNEY = register("music_disc_take_the_journey", new TakeTheJourneyItem());
+    public static final IntertwinedFateTenTimesItem INTERTWINED_FATE_TEN = register("intertwined_fate_ten", new IntertwinedFateTenTimesItem());
     public static final Item MORA_BILLET = register("mora_billet", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Item MORA = register("mora", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final ExquisiteMoraItem EXQUISITE_MORA = register("exquisite_mora", new ExquisiteMoraItem());
