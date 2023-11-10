@@ -23,6 +23,9 @@
     ],
     "main": [
       "com.primogemstudio.primogemcraft.PrimogemCraftFabric"
+    ],
+    "rei_client": [
+      "com.primogemstudio.primogemcraft.modprotocols.rei.PrimogemCraftREIPlugin"
     ]
   },
   "depends": {

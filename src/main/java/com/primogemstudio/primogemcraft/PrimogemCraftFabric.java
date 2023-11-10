@@ -5,9 +5,7 @@ import com.primogemstudio.primogemcraft.commands.ConfigCommand;
 import com.primogemstudio.primogemcraft.util.Events;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
-import net.minecraft.network.Connection;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerPlayer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
