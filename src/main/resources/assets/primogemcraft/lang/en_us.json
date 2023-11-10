@@ -31,6 +31,8 @@
   "item.primogemcraft.masterless_stardust": "§bMasterless Stardust",
   "item.primogemcraft.masterless_starglitter": "§eMasterless Starglitter",
   "item.primogemcraft.exquisite_mora": "Exquisite Mora",
+  "item.primogemcraft.exquisite_mora_bag": "§eBag filled with Exquisite Mora",
+  "item.primogemcraft.mora_wallet": "Wallet of Mora",
   "entity.primogemcraft.dendro_core_entity": "Dendro Core",
   "effect.primogemcraft.abnormal_disease": "Abnormal Disease",
   "tooltip.primogemcraft.dendro_core_block.line1": "Generated when lightning strikes the dendro core",
@@ -52,6 +54,8 @@
   "tooltip.primogemcraft.old_stone.line1": "§7华丽的石头，似乎没什么用",
   "tooltip.primogemcraft.old_stone.line2": "§d珍惜材料",
   "tooltip.primogemcraft.exquisite_mora.line1": "其铸造工艺使得本地生物也为之赞叹",
+  "tooltip.primogemcraft.exquisite_mora_bag.line1": "满满一袋摩拉",
+  "tooltip.primogemcraft.mora_wallet.line1": "被精准分配的精致摩拉，或许村民会喜欢",
   "subtitles.muted": "....",
   "command.primogemcraft.set_collapse": "崩坏程度已设置为 : %f",
   "command.primogemcraft.enable_collapse.true": "崩坏, 降临！（仅对新生成的区块有效）",
@@ -61,5 +65,7 @@
   "advancement.primogemcraft.start": "Genshin of everything",
   "advancement.primogemcraft.start.desc": "Because of playing Genshin Impact",
   "advancement.primogemcraft.world_collapse": "崩坏，降临！",
-  "advancement.primogemcraft.world_collapse.desc": "打开世界崩坏选项"
+  "advancement.primogemcraft.world_collapse.desc": "打开世界崩坏选项",
+  "advancement.primogemcraft.first_mora": "唉~果然没带",
+  "advancement.primogemcraft.first_mora.desc": "那这是什么？"
 }

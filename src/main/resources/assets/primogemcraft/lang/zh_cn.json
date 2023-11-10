@@ -31,6 +31,8 @@
   "item.primogemcraft.masterless_stardust": "§b无主的星尘",
   "item.primogemcraft.masterless_starglitter": "§e无主的星辉",
   "item.primogemcraft.exquisite_mora": "精致摩拉",
+  "item.primogemcraft.exquisite_mora_bag": "§e装满精致摩拉的摩拉袋",
+  "item.primogemcraft.mora_wallet": "小袋摩拉",
   "entity.primogemcraft.dendro_core_entity": "草原核",
   "effect.primogemcraft.abnormal_disease": "异疾",
   "tooltip.primogemcraft.dendro_core_block.line1": "当闪电击中草原核时出现",
@@ -52,6 +54,8 @@
   "tooltip.primogemcraft.old_stone.line1": "§7华丽的石头，似乎没什么用",
   "tooltip.primogemcraft.old_stone.line2": "§d珍惜材料",
   "tooltip.primogemcraft.exquisite_mora.line1": "其铸造工艺使得本地生物也为之赞叹",
+  "tooltip.primogemcraft.exquisite_mora_bag.line1": "满满一袋摩拉",
+  "tooltip.primogemcraft.mora_wallet.line1": "被精准分配的精致摩拉，或许村民会喜欢",
   "subtitles.muted": "....",
   "command.primogemcraft.set_collapse": "崩坏程度已设置为 : %f",
   "command.primogemcraft.enable_collapse.true": "崩坏, 降临！（仅对新生成的区块有效）",
@@ -61,5 +65,7 @@
   "advancement.primogemcraft.root": "原石工艺",
   "advancement.primogemcraft.root.desc": "欢迎来到一个全新的世界！",
   "advancement.primogemcraft.world_collapse": "崩坏，降临！",
-  "advancement.primogemcraft.world_collapse.desc": "打开世界崩坏选项"
+  "advancement.primogemcraft.world_collapse.desc": "打开世界崩坏选项",
+  "advancement.primogemcraft.first_mora": "唉~果然没带",
+  "advancement.primogemcraft.first_mora.desc": "那这是什么？"
 }

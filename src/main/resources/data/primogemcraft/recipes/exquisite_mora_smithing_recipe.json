@@ -9,7 +9,5 @@
   "result": {
     "item": "primogemcraft:exquisite_mora"
   },
-  "template": {
-    "item": "minecraft:air"
-  }
+  "template": []
 }

@@ -243,7 +243,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:wmoladai",
+          "name": "primogemcraft:exquisite_mora_bag",
           "weight": 1,
           "functions": [
             {
