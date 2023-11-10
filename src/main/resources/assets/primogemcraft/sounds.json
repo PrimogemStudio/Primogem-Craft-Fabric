@@ -34,5 +34,41 @@
         "stream": true
       }
     ]
+  },
+  "music_disc.village_surrounded_by_green": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:village_surrounded_by_green",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.space_walk": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:space_walk",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.salty_moon": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:salty_moon",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.take_the_journey": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:take_the_journey",
+        "stream": true
+      }
+    ]
   }
 }

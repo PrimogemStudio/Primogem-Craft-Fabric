@@ -2,10 +2,11 @@ package com.primogemstudio.primogemcraft.items;
 
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
+import com.primogemstudio.primogemcraft.items.instances.mora.ExquisiteMoraBagItem;
+import com.primogemstudio.primogemcraft.items.instances.mora.ExquisiteMoraItem;
+import com.primogemstudio.primogemcraft.items.instances.mora.MoraWalletItem;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
-import com.primogemstudio.primogemcraft.items.instances.records.ANewDayWithHopeItem;
-import com.primogemstudio.primogemcraft.items.instances.records.HakushinLullabyItem;
-import com.primogemstudio.primogemcraft.items.instances.records.TheFadingStoriesItem;
+import com.primogemstudio.primogemcraft.items.instances.records.*;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -37,9 +38,16 @@ public class PrimogemCraftItems {
     public static final ANewDayWithHopeItem A_NEW_DAY_WITH_HOPE_RECORD = register("music_disc_a_new_day_with_hope", new ANewDayWithHopeItem());
     public static final TheFadingStoriesItem THE_FADING_STORIES = register("music_disc_the_fading_stories", new TheFadingStoriesItem());
     public static final HakushinLullabyItem HAKUSHIN_LULLABY = register("music_disc_hakushin_lullaby", new HakushinLullabyItem());
+    public static final VillageSurroundedByGreenItem VILLAGE_SURROUNDED_BY_GREEN = register("music_disc_village_surrounded_by_green", new VillageSurroundedByGreenItem());
+    public static final SpaceWalkItem SPACE_WALK = register("music_disc_space_walk", new SpaceWalkItem());
+    public static final SaltyMoonItem SALTY_MOON = register("music_disc_salty_moon", new SaltyMoonItem());
+    public static final TakeTheJourneyItem TAKE_THE_JOURNEY = register("music_disc_take_the_journey", new TakeTheJourneyItem());
     public static final IntertwinedFateTenTimesItem INTERTWINED_FATE_TEN = register("intertwined_fate_ten", new IntertwinedFateTenTimesItem());
     public static final Item MORA_BILLET = register("mora_billet", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Item MORA = register("mora", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final ExquisiteMoraItem EXQUISITE_MORA = register("exquisite_mora", new ExquisiteMoraItem());
+    public static final ExquisiteMoraBagItem EXQUISITE_MORA_BAG = register("exquisite_mora_bag", new ExquisiteMoraBagItem());
+    public static final MoraWalletItem MORA_WALLET = register("mora_wallet", new MoraWalletItem());
     public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD = register("strange_primogem_sword", new StrangePrimogemSwordItem());
     public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
 

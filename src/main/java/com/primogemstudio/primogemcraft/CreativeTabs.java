@@ -28,6 +28,9 @@ public class CreativeTabs {
             output.accept(MASTER_LESS_STAR_DUST);
             output.accept(MASTER_LESS_STARG_LITTER);
             output.accept(MORA);
+            output.accept(EXQUISITE_MORA);
+            output.accept(EXQUISITE_MORA_BAG);
+            output.accept(MORA_WALLET);
             output.accept(MORA_BILLET);
             output.accept(INTERTWINED_FATE);
             output.accept(INTERTWINED_FATE_TEN);
@@ -35,6 +38,10 @@ public class CreativeTabs {
             output.accept(A_NEW_DAY_WITH_HOPE_RECORD);
             output.accept(THE_FADING_STORIES);
             output.accept(HAKUSHIN_LULLABY);
+            output.accept(VILLAGE_SURROUNDED_BY_GREEN);
+            output.accept(SPACE_WALK);
+            output.accept(SALTY_MOON);
+            output.accept(TAKE_THE_JOURNEY);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE_ITEM)).displayItems((itemDisplayParameters, output) -> {
