@@ -34,5 +34,23 @@
         "stream": true
       }
     ]
+  },
+  "music_disc.village_surrounded_by_green": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:village_surrounded_by_green",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.space_walk": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:space_walk",
+        "stream": true
+      }
+    ]
   }
 }

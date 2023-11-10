@@ -38,6 +38,8 @@ public class CreativeTabs {
             output.accept(A_NEW_DAY_WITH_HOPE_RECORD);
             output.accept(THE_FADING_STORIES);
             output.accept(HAKUSHIN_LULLABY);
+            output.accept(VILLAGE_SURROUNDED_BY_GREEN);
+            output.accept(SPACE_WALK);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE_ITEM)).displayItems((itemDisplayParameters, output) -> {

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "minecraft:end_stone"
+  },
+  "result": {
+    "item": "primogemcraft:music_disc_space_walk"
+  },
+  "template": []
+}
