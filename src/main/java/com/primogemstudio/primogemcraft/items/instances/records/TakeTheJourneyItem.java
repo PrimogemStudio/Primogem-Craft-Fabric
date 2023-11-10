@@ -1,7 +1,9 @@
 package com.primogemstudio.primogemcraft.items.instances.records;
 
 import com.primogemstudio.primogemcraft.sounds.PrimogemCraftSounds;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -36,7 +38,25 @@ public class TakeTheJourneyItem extends RecordItem {
     @Override
     public @NotNull InteractionResult useOn(UseOnContext context) {
         super.useOn(context);
-        // TODO port procedure -> TashanglvtuxianzhitiaojianProcedure.execute(context.getLevel(), context.getPlayer());
+        new ServerTickEvents.EndTick() {
+            private int ticks = 0;
+            private float waitTicks;
+            private boolean triggered = false;
+            public void start(int waitTicks) {
+                this.waitTicks = waitTicks;
+                ServerTickEvents.END_SERVER_TICK.register(this);
+            }
+            public void onEndTick(MinecraftServer srv) {
+                this.ticks += 1;
+                if (this.ticks >= this.waitTicks) run();
+            }
+            private void run() {
+                if (!triggered) {
+                    context.getPlayer().getCooldowns().addCooldown(TakeTheJourneyItem.this, 1280);
+                    triggered = true;
+                }
+            }
+        }.start(20);
         return InteractionResult.SUCCESS;
     }
 }
