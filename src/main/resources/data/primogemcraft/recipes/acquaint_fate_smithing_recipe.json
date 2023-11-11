@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:masterless_stardust"
+  },
+  "base": {
+    "item": "primogemcraft:primogem"
+  },
+  "result": {
+    "item": "primogemcraft:acquaint_fate"
+  },
+  "template": []
+}

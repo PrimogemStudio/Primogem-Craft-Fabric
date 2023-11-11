@@ -28,6 +28,7 @@ public class PrimogemCraftItems {
     public static final BlockItem PRIMOGEM_BLOCK_ITEM = register("primogem_block", new BlockItem(PRIMOGEM_BLOCK, new Item.Properties()));
     public static final Item VAYUDA_TURQUOISE_GEMSTONE = register("vayuda_turquoise_gemstone", new Item(new Item.Properties()));
     public static final IntertwinedFateItem INTERTWINED_FATE = register("intertwined_fate", new IntertwinedFateItem());
+    public static final AcquaintFateItem ACQUAINT_FATE = register("acquaint_fate", new AcquaintFateItem());
     public static final DendroPickaxeItem DENDRO_PICKAXE = register("dendro_pickaxe", new DendroPickaxeItem());
     public static final PrimogemPickaxeItem PRIMOGEM_PICKAXE = register("primogem_pickaxe", new PrimogemPickaxeItem());
     public static final PrimogemHoeItem PRIMOGEM_HOE = register("primogem_hoe", new PrimogemHoeItem());
@@ -50,6 +51,7 @@ public class PrimogemCraftItems {
     public static final MoraWalletItem MORA_WALLET = register("mora_wallet", new MoraWalletItem());
     public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD = register("strange_primogem_sword", new StrangePrimogemSwordItem());
     public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
+    public static final BlockItem INTERTWINED_FATE_BLOCK_ITEM = register("intertwined_fate_block", new BlockItem(INTERTWINED_FATE_BLOCK, new Item.Properties()));
 
     public static void init() {
         PrimogemCraftMobEffects.init();

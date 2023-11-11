@@ -57,8 +57,10 @@ public class GachaServer {
         tag.putLong("mem_free", Runtime.getRuntime().freeMemory());
         return tag;
     }
-
     public static void triggered(ServerPlayer player, BlockPos pos) {
+        triggered(player, pos, true);
+    }
+    public static void triggered(ServerPlayer player, BlockPos pos, boolean has5star) {
         var nbt = createGachaSeed();
         int level = 3;
         var star5pity = data.pity_5.increasePity(player.getGameProfile());
@@ -82,6 +84,7 @@ public class GachaServer {
                 data.pity_4.resetPity(player.getGameProfile());
             }
         }
+        if (!has5star) level = 4;
         var li = switch (level) {
             case 4 -> new GachaFourStarEntity(PURPLE_LIGHT, player.level());
             case 5 -> new GachaFiveStarEntity(GOLDEN_LIGHT, player.level());

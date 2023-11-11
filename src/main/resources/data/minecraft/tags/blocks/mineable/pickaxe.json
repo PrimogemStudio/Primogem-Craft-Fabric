@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:dendro_core_block"
+    "primogemcraft:dendro_core_block",
+    "primogemcraft:intertwined_fate_block"
   ]
 }

@@ -11,6 +11,7 @@ public class PrimogemCraftEntityRenderers {
     public static void init() {
         EntityRendererRegistry.register(DENDRO_CORE_ENTITY, DendroCoreEntityRenderer::new);
         EntityRendererRegistry.register(INTERTWINED_FATE_ENTITY, ThrownItemRenderer::new);
+        EntityRendererRegistry.register(ACQUAINT_FATE_ENTITY, ThrownItemRenderer::new);
         EntityRendererRegistry.register(GOLDEN_LIGHT, ColorLightningBoltRenderer::new);
         EntityRendererRegistry.register(PURPLE_LIGHT, ColorLightningBoltRenderer::new);
         EntityRendererRegistry.register(BLUE_LIGHT, ColorLightningBoltRenderer::new);

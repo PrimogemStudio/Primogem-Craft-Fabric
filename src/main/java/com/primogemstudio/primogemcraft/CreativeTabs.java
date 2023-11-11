@@ -32,6 +32,7 @@ public class CreativeTabs {
             output.accept(EXQUISITE_MORA_BAG);
             output.accept(MORA_WALLET);
             output.accept(MORA_BILLET);
+            output.accept(ACQUAINT_FATE);
             output.accept(INTERTWINED_FATE);
             output.accept(INTERTWINED_FATE_TEN);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
@@ -47,6 +48,7 @@ public class CreativeTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE_ITEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(PRIMOGEM_ORE_ITEM);
             output.accept(PRIMOGEM_BLOCK_ITEM);
+            output.accept(INTERTWINED_FATE_BLOCK_ITEM);
             output.accept(DENDRO_CORE_BLOCK_ITEM);
         }).build());
 
