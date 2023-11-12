@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:intertwined_fate_ten"
+    },
+    "title": {
+      "translate": "advancement.primogemcraft.intertwined_fate_ten"
+    },
+    "description": {
+      "translate": "advancement.primogemcraft.intertwined_fate_ten.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "intertwined_fate_ten": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "primogemcraft:intertwined_fate_ten"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "primogemcraft:primogemcraft/intertwined_fate"
+}

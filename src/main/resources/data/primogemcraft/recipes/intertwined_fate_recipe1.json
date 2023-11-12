@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#*#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:primogem"
+    },
+    "*": {
+      "item": "primogemcraft:acquaint_fate"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:intertwined_fate"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "primogemcraft:intertwined_fate_block"
+    },
+    {
+      "item": "primogemcraft:intertwined_fate"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:intertwined_fate_ten",
+    "count": 1
+  }
+}

@@ -26,12 +26,20 @@ public class PrimogemCraftREIPlugin implements REIClientPlugin {
     public void registerDisplays(DisplayRegistry registry) {
         var hashset = new ArrayList<String>();
         try {
-            hashset.addAll(load("star5"));
             hashset.addAll(load("star4"));
             hashset.addAll(load("star3"));
+            hashset.stream()
+                    .distinct()
+                    .map(a -> BuiltInRegistries.ITEM.get(new ResourceLocation(a)))
+                    .map(ItemStack::new)
+                    .forEach(a -> registry.add(new WishDisplay(a, false)));
+
+            load("star5").stream()
+                    .map(a -> BuiltInRegistries.ITEM.get(new ResourceLocation(a)))
+                    .map(ItemStack::new)
+                    .forEach(a -> registry.add(new WishDisplay(a, true)));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        hashset.stream().distinct().map(a -> BuiltInRegistries.ITEM.get(new ResourceLocation(a))).map(ItemStack::new).forEach(a -> registry.add(new WishDisplay(a)));
     }
 }

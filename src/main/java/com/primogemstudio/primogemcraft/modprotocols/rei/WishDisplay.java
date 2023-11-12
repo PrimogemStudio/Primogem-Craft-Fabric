@@ -12,8 +12,17 @@ import java.util.List;
 import static com.primogemstudio.primogemcraft.modprotocols.rei.PrimogemCraftREIPlugin.WISH;
 
 public class WishDisplay extends BasicDisplay {
-    public WishDisplay(ItemStack output) {
-        super(List.of(EntryIngredient.of(EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE), EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_TEN))), List.of(EntryIngredient.of(EntryStacks.of(output))));
+    public WishDisplay(ItemStack output, boolean isFiveStar) {
+        super(List.of(
+                isFiveStar ? EntryIngredient.of(
+                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE),
+                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_TEN)
+                ) : EntryIngredient.of(
+                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE),
+                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_TEN),
+                        EntryStacks.of(PrimogemCraftItems.ACQUAINT_FATE)
+                )
+        ), List.of(EntryIngredient.of(EntryStacks.of(output))));
     }
 
     @Override
