@@ -37,7 +37,7 @@
   "rewards": {
     "experience": 0,
     "loot": [
-      "primogemcraft:blocks/master_less_starg_litter_drop"
+      "primogemcraft:gacha/masterless_starglitter_drop2"
     ]
   },
   "sends_telemetry_event": true
