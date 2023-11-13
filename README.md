@@ -6,8 +6,8 @@ Primogem Craft's port/overwrite project for fabric
 
 ### Current status: 
 - Gacha System 
-  - Database :white_check_mark:
-  - Backend management :white_check_mark:
-  - In game experience :white_large_square:
+  - [x] Database
+  - [x] Backend management
+  - [x] In game experience
 - Weapons & Tools
-  - TODO :white_large_square:
+  - [ ] developing
