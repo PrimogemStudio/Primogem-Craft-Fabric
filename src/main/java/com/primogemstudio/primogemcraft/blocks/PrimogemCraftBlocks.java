@@ -15,6 +15,7 @@ public class PrimogemCraftBlocks {
     public static final IntertwinedFateBlock INTERTWINED_FATE_BLOCK = register("intertwined_fate_block", new IntertwinedFateBlock());
     public static final MoraBunchBlock MORA_BUNCH = register("mora_bunch_block", new MoraBunchBlock());
     public static final MoraBlock MORA_BLOCK = register("mora_block", new MoraBlock());
+    public static final ExquisiteMoraBlock EXQUISITE_MORA_BLOCK = register("exquisite_mora_block", new ExquisiteMoraBlock());
     static {
         MoraBunchBlock.registerRenderLayer();
     }
