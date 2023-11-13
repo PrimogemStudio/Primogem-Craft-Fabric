@@ -52,6 +52,7 @@ public class PrimogemCraftItems {
     public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD = register("strange_primogem_sword", new StrangePrimogemSwordItem());
     public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
     public static final BlockItem INTERTWINED_FATE_BLOCK_ITEM = register("intertwined_fate_block", new BlockItem(INTERTWINED_FATE_BLOCK, new Item.Properties()));
+    public static final BlockItem MORA_BUNCH_BLOCK_ITEM = register("mora_bunch_block", new BlockItem(MORA_BUNCH, new Item.Properties()));
 
     public static void init() {
         PrimogemCraftMobEffects.init();

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "primogemcraft:block/mora_bunch_block"
+    },
+    "facing=east": {
+      "model": "primogemcraft:block/mora_bunch_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "primogemcraft:block/mora_bunch_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "primogemcraft:block/mora_bunch_block",
+      "y": 270
+    }
+  }
+}

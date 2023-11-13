@@ -1,9 +1,6 @@
 package com.primogemstudio.primogemcraft.blocks;
 
-import com.primogemstudio.primogemcraft.blocks.instances.DendroCoreBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.IntertwinedFateBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.PrimogemBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.PrimogemOre;
+import com.primogemstudio.primogemcraft.blocks.instances.*;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -16,7 +13,10 @@ public class PrimogemCraftBlocks {
     public static final PrimogemBlock PRIMOGEM_BLOCK = register("primogem_block", new PrimogemBlock());
     public static final PrimogemOre PRIMOGEM_ORE = register("primogem_ore", new PrimogemOre());
     public static final IntertwinedFateBlock INTERTWINED_FATE_BLOCK = register("intertwined_fate_block", new IntertwinedFateBlock());
-
+    public static final MoraBunchBlock MORA_BUNCH = register("mora_bunch_block", new MoraBunchBlock());
+    static {
+        MoraBunchBlock.registerRenderLayer();
+    }
     private static <T extends Block> T register(String id, T block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MOD_ID, id), block);
     }
