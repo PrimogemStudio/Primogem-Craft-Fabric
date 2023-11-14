@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft.gacha;
 
+import com.primogemstudio.primogemcraft.advancements.PrimogemCraftAdvancements;
 import com.primogemstudio.primogemcraft.database.GachaDatabase;
 import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFiveStarEntity;
 import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFourStarEntity;
@@ -108,6 +109,8 @@ public class GachaServer {
             if (it.get() == null) it.set(BuiltInRegistries.ITEM.getKey(a.getItem()));
             if (!player.addItem(a)) player.level().addFreshEntity(new ItemEntity(player.serverLevel(), player.getX(), player.getY(), player.getZ(), a));
         });
+
+        if (level == 5) PrimogemCraftAdvancements.GACHA_FIVE_STAR_TRIGGERED.trigger(player);
 
         var gac = new GachaRecordModel();
         gac.name = player.getGameProfile().getName();
