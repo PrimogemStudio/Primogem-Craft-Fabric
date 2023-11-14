@@ -619,7 +619,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:llianjiamolakuai",
+          "name": "primogemcraft:cheap_mora_block",
           "weight": 1,
           "functions": [
             {
