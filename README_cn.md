@@ -6,8 +6,8 @@
 
 ### 进度:
 - 抽卡系统
-  - 数据库 :white_check_mark:
-  - 后台管理 :white_check_mark:
-  - 游戏内体验 :white_large_square:
+  - [x] 数据库
+  - [x] 后台管理
+  - [x] 游戏内体验
 - 武器 & 工具
-  - 制作中 :white_large_square:
+  - [ ] 制作中

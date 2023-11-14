@@ -633,6 +633,20 @@
         },
         {
           "type": "minecraft:item",
+          "name": "primogemcraft:cheap_mora_block",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 16,
+                "max": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "primogemcraft:old_stone",
           "weight": 2,
           "functions": [

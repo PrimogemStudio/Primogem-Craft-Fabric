@@ -55,6 +55,7 @@ public class PrimogemCraftItems {
     public static final BlockItem MORA_BUNCH_BLOCK_ITEM = register("mora_bunch_block", new BlockItem(MORA_BUNCH, new Item.Properties()));
     public static final BlockItem MORA_BLOCK_ITEM = register("mora_block", new BlockItem(MORA_BLOCK, new Item.Properties()));
     public static final BlockItem EXQUISITE_MORA_BLOCK_ITEM = register("exquisite_mora_block", new BlockItem(EXQUISITE_MORA_BLOCK, new Item.Properties()));
+    public static final BlockItem CHEAP_MORA_BLOCK_ITEM = register("cheap_mora_block", new BlockItem(CHEAP_MORA_BLOCK, new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

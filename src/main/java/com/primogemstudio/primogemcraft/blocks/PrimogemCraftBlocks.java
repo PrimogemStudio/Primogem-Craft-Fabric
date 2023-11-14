@@ -16,6 +16,7 @@ public class PrimogemCraftBlocks {
     public static final MoraBunchBlock MORA_BUNCH = register("mora_bunch_block", new MoraBunchBlock());
     public static final MoraBlock MORA_BLOCK = register("mora_block", new MoraBlock());
     public static final ExquisiteMoraBlock EXQUISITE_MORA_BLOCK = register("exquisite_mora_block", new ExquisiteMoraBlock());
+    public static final CheapMoraBlock CHEAP_MORA_BLOCK = register("cheap_mora_block", new CheapMoraBlock());
     static {
         MoraBunchBlock.registerRenderLayer();
     }

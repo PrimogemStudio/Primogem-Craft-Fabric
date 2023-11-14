@@ -1,12 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "primogemcraft:block/exquisite_mora_block",
-    "up": "primogemcraft:block/exquisite_mora_block",
-    "north": "primogemcraft:block/exquisite_mora_block",
-    "east": "primogemcraft:block/exquisite_mora_block",
-    "south": "primogemcraft:block/exquisite_mora_block",
-    "west": "primogemcraft:block/exquisite_mora_block",
-    "particle": "primogemcraft:block/exquisite_mora_block"
+    "all": "primogemcraft:block/exquisite_mora_block"
   }
 }
