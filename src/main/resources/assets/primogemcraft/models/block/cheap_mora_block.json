@@ -1,12 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "primogemcraft:block/cheap_mora_block",
-    "up": "primogemcraft:block/cheap_mora_block",
-    "north": "primogemcraft:block/cheap_mora_block",
-    "east": "primogemcraft:block/cheap_mora_block",
-    "south": "primogemcraft:block/cheap_mora_block",
-    "west": "primogemcraft:block/cheap_mora_block",
-    "particle": "primogemcraft:block/cheap_mora_block"
+    "all": "primogemcraft:block/cheap_mora_block"
   }
 }
