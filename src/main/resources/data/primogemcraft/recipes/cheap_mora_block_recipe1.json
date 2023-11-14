@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x#x",
+    "#*#",
+    "x#x"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone_bricks"
+    },
+    "*": {
+      "item": "primogemcraft:mora_block"
+    },
+    "x": {
+      "item": "minecraft:bricks"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:cheap_mora_block"
+  }
+}

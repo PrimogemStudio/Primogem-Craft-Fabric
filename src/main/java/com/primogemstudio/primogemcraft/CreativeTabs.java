@@ -53,6 +53,7 @@ public class CreativeTabs {
             output.accept(MORA_BUNCH_BLOCK_ITEM);
             output.accept(MORA_BLOCK_ITEM);
             output.accept(EXQUISITE_MORA_BLOCK_ITEM);
+            output.accept(CHEAP_MORA_BLOCK_ITEM);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE)).displayItems((itemDisplayParameters, output) -> {
