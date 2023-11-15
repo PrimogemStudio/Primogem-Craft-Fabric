@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 import static com.primogemstudio.primogemcraft.items.PrimogemCraftItems.*;
@@ -54,6 +55,9 @@ public class CreativeTabs {
             output.accept(MORA_BLOCK_ITEM);
             output.accept(EXQUISITE_MORA_BLOCK_ITEM);
             output.accept(CHEAP_MORA_BLOCK_ITEM);
+            output.accept(CHEAP_MORA_SLAB_ITEM);
+            output.accept(CHEAP_MORA_STAIR_ITEM);
+            output.accept(CHEAP_MORA_WALL_ITEM);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE)).displayItems((itemDisplayParameters, output) -> {

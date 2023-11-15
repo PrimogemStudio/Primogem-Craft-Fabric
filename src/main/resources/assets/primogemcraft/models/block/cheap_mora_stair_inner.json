@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "primogemcraft:block/cheap_mora_block",
+    "top": "primogemcraft:block/cheap_mora_block",
+    "side": "primogemcraft:block/cheap_mora_block"
+  }
+}
