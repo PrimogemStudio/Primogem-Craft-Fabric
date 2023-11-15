@@ -5,6 +5,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 
@@ -17,8 +18,12 @@ public class PrimogemCraftBlocks {
     public static final MoraBlock MORA_BLOCK = register("mora_block", new MoraBlock());
     public static final ExquisiteMoraBlock EXQUISITE_MORA_BLOCK = register("exquisite_mora_block", new ExquisiteMoraBlock());
     public static final CheapMoraBlock CHEAP_MORA_BLOCK = register("cheap_mora_block", new CheapMoraBlock());
+    public static final CheapMoraSlabBlock CHEAP_MORA_SLAB = register("cheap_mora_slab", new CheapMoraSlabBlock());
+    public static final CheapMoraStairBlock CHEAP_MORA_STAIR = register("cheap_mora_stair", new CheapMoraStairBlock());
+    public static final CheapMoraWallBlock CHEAP_MORA_WALL = register("cheap_mora_wall", new CheapMoraWallBlock());
     static {
         MoraBunchBlock.registerRenderLayer();
+        CheapMoraWallBlock.registerRenderLayer();
     }
     private static <T extends Block> T register(String id, T block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MOD_ID, id), block);

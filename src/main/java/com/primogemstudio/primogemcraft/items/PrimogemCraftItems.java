@@ -56,6 +56,9 @@ public class PrimogemCraftItems {
     public static final BlockItem MORA_BLOCK_ITEM = register("mora_block", new BlockItem(MORA_BLOCK, new Item.Properties()));
     public static final BlockItem EXQUISITE_MORA_BLOCK_ITEM = register("exquisite_mora_block", new BlockItem(EXQUISITE_MORA_BLOCK, new Item.Properties()));
     public static final BlockItem CHEAP_MORA_BLOCK_ITEM = register("cheap_mora_block", new BlockItem(CHEAP_MORA_BLOCK, new Item.Properties()));
+    public static final BlockItem CHEAP_MORA_SLAB_ITEM = register("cheap_mora_slab", new BlockItem(CHEAP_MORA_SLAB, new Item.Properties()));
+    public static final BlockItem CHEAP_MORA_STAIR_ITEM = register("cheap_mora_stair", new BlockItem(CHEAP_MORA_STAIR, new Item.Properties()));
+    public static final BlockItem CHEAP_MORA_WALL_ITEM = register("cheap_mora_wall", new BlockItem(CHEAP_MORA_WALL, new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

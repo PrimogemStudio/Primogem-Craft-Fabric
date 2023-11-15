@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:cheap_mora_block"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:cheap_mora_slab",
+    "count": 6
+  }
+}
