@@ -69,8 +69,10 @@ public class CreativeTabs {
             output.accept(PRIMOGEM_SWORD);
             output.accept(STRANGE_PRIMOGEM_SWORD);
             output.accept(MORA_PICKAXE_ITEM);
+            output.accept(MORA_HOE_ITEM);
+            output.accept(MORA_AXE_ITEM);
+            output.accept(MORA_SHOVEL_ITEM);
             output.accept(MORA_SWORD_ITEM);
         }).build());
     }
 }
-// mmolachan mmolachutou mmolafu

@@ -59,6 +59,9 @@ public class PrimogemCraftItems {
     public static final BlockItem CHEAP_MORA_WALL_ITEM = register("cheap_mora_wall", new BlockItem(CHEAP_MORA_WALL, new Item.Properties()));
     public static final MoraPickaxeItem MORA_PICKAXE_ITEM = register("mora_pickaxe", new MoraPickaxeItem());
     public static final MoraSwordItem MORA_SWORD_ITEM = register("mora_sword", new MoraSwordItem());
+    public static final MoraShovelItem MORA_SHOVEL_ITEM = register("mora_shovel", new MoraShovelItem());
+    public static final MoraHoeItem MORA_HOE_ITEM = register("mora_hoe", new MoraHoeItem());
+    public static final MoraAxeItem MORA_AXE_ITEM = register("mora_axe", new MoraAxeItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

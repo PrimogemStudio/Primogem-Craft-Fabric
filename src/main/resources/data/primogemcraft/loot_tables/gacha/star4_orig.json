@@ -655,7 +655,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmolafu",
+          "name": "primogemcraft:mora_axe",
           "weight": 1,
           "functions": [
             {
@@ -677,7 +677,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmolachan",
+          "name": "primogemcraft:mora_shovel",
           "weight": 1,
           "functions": [
             {
@@ -699,7 +699,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmolachutou",
+          "name": "primogemcraft:mora_hoe",
           "weight": 1,
           "functions": [
             {

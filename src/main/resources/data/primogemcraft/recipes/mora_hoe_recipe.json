@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#",
-    "#",
-    "|"
+    "##",
+    " |",
+    " |"
   ],
   "key": {
     "#": {
@@ -14,6 +14,6 @@
     }
   },
   "result": {
-    "item": "primogemcraft:mora_sword"
+    "item": "primogemcraft:mora_hoe"
   }
 }
