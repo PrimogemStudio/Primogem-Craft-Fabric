@@ -633,7 +633,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmolagao",
+          "name": "primogemcraft:mora_pickaxe",
           "weight": 1,
           "functions": [
             {
@@ -721,7 +721,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmolajian",
+          "name": "primogemcraft:mora_sword",
           "weight": 1,
           "functions": [
             {

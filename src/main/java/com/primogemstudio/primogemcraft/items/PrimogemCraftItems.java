@@ -2,9 +2,7 @@ package com.primogemstudio.primogemcraft.items;
 
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
-import com.primogemstudio.primogemcraft.items.instances.mora.ExquisiteMoraBagItem;
-import com.primogemstudio.primogemcraft.items.instances.mora.ExquisiteMoraItem;
-import com.primogemstudio.primogemcraft.items.instances.mora.MoraWalletItem;
+import com.primogemstudio.primogemcraft.items.instances.mora.*;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
 import com.primogemstudio.primogemcraft.items.instances.records.*;
 import net.minecraft.core.Registry;
@@ -59,6 +57,8 @@ public class PrimogemCraftItems {
     public static final BlockItem CHEAP_MORA_SLAB_ITEM = register("cheap_mora_slab", new BlockItem(CHEAP_MORA_SLAB, new Item.Properties()));
     public static final BlockItem CHEAP_MORA_STAIR_ITEM = register("cheap_mora_stair", new BlockItem(CHEAP_MORA_STAIR, new Item.Properties()));
     public static final BlockItem CHEAP_MORA_WALL_ITEM = register("cheap_mora_wall", new BlockItem(CHEAP_MORA_WALL, new Item.Properties()));
+    public static final MoraPickaxeItem MORA_PICKAXE_ITEM = register("mora_pickaxe", new MoraPickaxeItem());
+    public static final MoraSwordItem MORA_SWORD_ITEM = register("mora_sword", new MoraSwordItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
