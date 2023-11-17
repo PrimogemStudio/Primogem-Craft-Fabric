@@ -40,11 +40,6 @@ public class DullBladeItem extends SwordItem {
     }
 
     @Override
-    public boolean isValidRepairItem(ItemStack stack, ItemStack repairCandidate) {
-        return false;
-    }
-
-    @Override
     public ItemStack getRecipeRemainder(ItemStack stack) {
         var ret = new ItemStack(this);
         ret.setDamageValue(stack.getDamageValue() + 1);

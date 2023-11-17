@@ -38,11 +38,6 @@ public class MoraShovelItem extends ShovelItem {
     }
 
     @Override
-    public boolean isValidRepairItem(ItemStack stack, ItemStack repairCandidate) {
-        return false;
-    }
-
-    @Override
     public ItemStack getRecipeRemainder(ItemStack stack) {
         var retval = new ItemStack(this);
         retval.setDamageValue(stack.getDamageValue() + 1);
