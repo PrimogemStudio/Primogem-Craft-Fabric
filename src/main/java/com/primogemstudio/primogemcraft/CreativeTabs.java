@@ -9,7 +9,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 import static com.primogemstudio.primogemcraft.items.PrimogemCraftItems.*;
@@ -69,6 +68,11 @@ public class CreativeTabs {
             output.accept(PRIMOGEM_SHOVEL);
             output.accept(PRIMOGEM_SWORD);
             output.accept(STRANGE_PRIMOGEM_SWORD);
+            output.accept(MORA_PICKAXE_ITEM);
+            output.accept(MORA_HOE_ITEM);
+            output.accept(MORA_AXE_ITEM);
+            output.accept(MORA_SHOVEL_ITEM);
+            output.accept(MORA_SWORD_ITEM);
         }).build());
     }
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "|",
+    "|"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:mora_bunch_block"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:mora_shovel"
+  }
+}
