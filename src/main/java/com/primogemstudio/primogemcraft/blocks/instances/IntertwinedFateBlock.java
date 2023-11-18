@@ -11,12 +11,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 import java.util.List;
 
 public class IntertwinedFateBlock extends Block {
     public IntertwinedFateBlock() {
-        super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(30f).requiresCorrectToolForDrops());
+        super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(30f).requiresCorrectToolForDrops());
     }
 
     @Override
@@ -31,7 +32,7 @@ public class IntertwinedFateBlock extends Block {
 
     @Override
     public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
-        return adjacentBlockState.getBlock() == this ? true : super.skipRendering(state, adjacentBlockState, side);
+        return adjacentBlockState.getBlock() == this || super.skipRendering(state, adjacentBlockState, side);
     }
 
     @Override
