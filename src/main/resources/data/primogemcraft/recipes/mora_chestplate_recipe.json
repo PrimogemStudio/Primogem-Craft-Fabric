@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "oxo",
+    "&*&"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:mora_bunch_block"
+    },
+    "&": {
+      "item": "primogemcraft:exquisite_mora"
+    },
+    "*": {
+      "item": "primogemcraft:exquisite_mora_block"
+    },
+    "x": {
+      "item": "primogemcraft:mora_billet"
+    },
+    "o": {
+      "item": "primogemcraft:mora_block"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:mora_chestplate"
+  }
+}
