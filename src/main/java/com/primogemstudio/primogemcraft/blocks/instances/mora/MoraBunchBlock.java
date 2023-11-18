@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.blocks.instances;
+package com.primogemstudio.primogemcraft.blocks.instances.mora;
 
 import com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -27,7 +27,7 @@ public class MoraBunchBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     public MoraBunchBlock() {
-        super(BlockBehaviour.Properties.of().sound(SoundType.ANVIL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+        super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.ANVIL).strength(1.0F, 10.0F).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
     }
 

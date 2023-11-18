@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/teyvat_planks_bottom",
+    "up": "primogemcraft:block/teyvat_planks_bottom",
+    "north": "primogemcraft:block/teyvat_planks_side",
+    "east": "primogemcraft:block/teyvat_planks_side",
+    "south": "primogemcraft:block/teyvat_planks_side",
+    "west": "primogemcraft:block/teyvat_planks_side",
+    "particle": "primogemcraft:block/teyvat_planks_bottom"
+  }
+}

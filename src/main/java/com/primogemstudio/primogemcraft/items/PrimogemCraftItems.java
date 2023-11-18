@@ -66,7 +66,7 @@ public class PrimogemCraftItems {
     public static final MoraArmorItem.MoraChestplate MORA_CHESTPLATE_ITEM = register("mora_chestplate", new MoraArmorItem.MoraChestplate());
     public static final MoraArmorItem.MoraLeggings MORA_LEGGINGS_ITEM = register("mora_leggings", new MoraArmorItem.MoraLeggings());
     public static final MoraArmorItem.MoraBoots MORA_BOOTS_ITEM = register("mora_boots", new MoraArmorItem.MoraBoots());
-
+    public static final BlockItem TEYVAT_PLANKS_BLOCK_ITEM = register("teyvat_planks", new BlockItem(TEYVAT_PLANKS_BLOCK, new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

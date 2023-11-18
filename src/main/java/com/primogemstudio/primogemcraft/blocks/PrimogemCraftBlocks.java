@@ -1,11 +1,15 @@
 package com.primogemstudio.primogemcraft.blocks;
 
-import com.primogemstudio.primogemcraft.blocks.instances.*;
+import com.primogemstudio.primogemcraft.blocks.instances.DendroCoreBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.IntertwinedFateBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.PrimogemBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.PrimogemOre;
+import com.primogemstudio.primogemcraft.blocks.instances.mora.*;
+import com.primogemstudio.primogemcraft.blocks.instances.planks.TeyvatPlanksBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 
@@ -21,6 +25,7 @@ public class PrimogemCraftBlocks {
     public static final CheapMoraSlabBlock CHEAP_MORA_SLAB = register("cheap_mora_slab", new CheapMoraSlabBlock());
     public static final CheapMoraStairBlock CHEAP_MORA_STAIR = register("cheap_mora_stair", new CheapMoraStairBlock());
     public static final CheapMoraWallBlock CHEAP_MORA_WALL = register("cheap_mora_wall", new CheapMoraWallBlock());
+    public static final TeyvatPlanksBlock TEYVAT_PLANKS_BLOCK = register("teyvat_planks", new TeyvatPlanksBlock());
     static {
         MoraBunchBlock.registerRenderLayer();
         CheapMoraWallBlock.registerRenderLayer();

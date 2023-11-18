@@ -1,16 +1,16 @@
-package com.primogemstudio.primogemcraft.blocks.instances;
+package com.primogemstudio.primogemcraft.blocks.instances.mora;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 public class CheapMoraStairBlock extends StairBlock {
     public CheapMoraStairBlock() {
-        super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(2f, 4f).requiresCorrectToolForDrops().dynamicShape());
+        super(Blocks.AIR.defaultBlockState(), Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.0F, 4.0F).requiresCorrectToolForDrops().dynamicShape());
     }
 
     @Override

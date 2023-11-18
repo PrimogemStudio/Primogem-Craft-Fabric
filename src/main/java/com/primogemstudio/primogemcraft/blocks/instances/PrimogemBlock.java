@@ -5,12 +5,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import org.jetbrains.annotations.NotNull;
 
 public class PrimogemBlock extends Block {
@@ -18,7 +18,15 @@ public class PrimogemBlock extends Block {
     public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
 
     public PrimogemBlock() {
-        super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(6f, 14f).lightLevel(s -> 8).requiresCorrectToolForDrops().friction(0.7f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+        super(Properties.of().instrument(NoteBlockInstrument.HAT)
+                .sound(SoundType.GLASS)
+                .strength(6.0F, 14.0F)
+                .lightLevel((s) -> 8)
+                .requiresCorrectToolForDrops()
+                .friction(0.7F)
+                .hasPostProcess((bs, br, bp) -> true)
+                .emissiveRendering((bs, br, bp) -> true)
+        );
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FACE, AttachFace.WALL));
     }
 
