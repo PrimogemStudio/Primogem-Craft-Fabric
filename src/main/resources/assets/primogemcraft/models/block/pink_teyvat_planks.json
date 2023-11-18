@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "primogemcraft:block/teyvat_planks_top",
+    "particle": "primogemcraft:block/teyvat_planks_top"
+  }
+}

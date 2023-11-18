@@ -107,7 +107,7 @@ public class GachaServer {
                         .create(LootContextParamSets.ENTITY)
         ).forEach(a -> {
             if (it.get() == null) it.set(BuiltInRegistries.ITEM.getKey(a.getItem()));
-            if (!player.addItem(a)) player.level().addFreshEntity(new ItemEntity(player.serverLevel(), player.getX(), player.getY(), player.getZ(), a));
+            player.level().addFreshEntity(new ItemEntity(player.level(), pos.getX(), pos.getY(), pos.getZ(), a));
         });
 
         if (level == 5) PrimogemCraftAdvancements.GACHA_FIVE_STAR_TRIGGERED.trigger(player);
