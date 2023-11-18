@@ -4,5 +4,6 @@
     "all": "primogemcraft:block/mora_bunch_block",
     "particle": "primogemcraft:block/mora_bunch_block",
     "0": "primogemcraft:block/mora_bunch_block"
-  }
+  },
+  "render_type": "solid"
 }
