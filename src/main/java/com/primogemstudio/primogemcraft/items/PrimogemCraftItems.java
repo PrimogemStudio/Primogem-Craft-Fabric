@@ -62,6 +62,11 @@ public class PrimogemCraftItems {
     public static final MoraShovelItem MORA_SHOVEL_ITEM = register("mora_shovel", new MoraShovelItem());
     public static final MoraHoeItem MORA_HOE_ITEM = register("mora_hoe", new MoraHoeItem());
     public static final MoraAxeItem MORA_AXE_ITEM = register("mora_axe", new MoraAxeItem());
+    public static final MoraArmorItem.MoraHelmet MORA_HELMET_ITEM = register("mora_helmet", new MoraArmorItem.MoraHelmet());
+    public static final MoraArmorItem.MoraChestplate MORA_CHESTPLATE_ITEM = register("mora_chestplate", new MoraArmorItem.MoraChestplate());
+    public static final MoraArmorItem.MoraLeggings MORA_LEGGINGS_ITEM = register("mora_leggings", new MoraArmorItem.MoraLeggings());
+    public static final MoraArmorItem.MoraBoots MORA_BOOTS_ITEM = register("mora_boots", new MoraArmorItem.MoraBoots());
+
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

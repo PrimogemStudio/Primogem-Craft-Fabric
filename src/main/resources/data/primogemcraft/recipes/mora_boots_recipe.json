@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "*x*",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:exquisite_mora"
+    },
+    "*": {
+      "item": "primogemcraft:exquisite_mora_block"
+    },
+    "x": {
+      "item": "primogemcraft:mora_billet"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:mora_boots"
+  }
+}

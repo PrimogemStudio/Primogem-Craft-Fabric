@@ -73,6 +73,10 @@ public class CreativeTabs {
             output.accept(MORA_AXE_ITEM);
             output.accept(MORA_SHOVEL_ITEM);
             output.accept(MORA_SWORD_ITEM);
+            output.accept(MORA_HELMET_ITEM);
+            output.accept(MORA_CHESTPLATE_ITEM);
+            output.accept(MORA_LEGGINGS_ITEM);
+            output.accept(MORA_BOOTS_ITEM);
         }).build());
     }
 }
