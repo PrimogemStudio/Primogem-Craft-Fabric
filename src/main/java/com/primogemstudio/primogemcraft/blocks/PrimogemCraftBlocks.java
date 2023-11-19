@@ -7,6 +7,7 @@ import com.primogemstudio.primogemcraft.blocks.instances.PrimogemOre;
 import com.primogemstudio.primogemcraft.blocks.instances.mora.*;
 import com.primogemstudio.primogemcraft.blocks.instances.planks.BlueTeyvatPlanksBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.planks.PinkTeyvatPlanksBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.planks.TeyvatPlankSlabBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.planks.TeyvatPlanksBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -28,6 +29,7 @@ public class PrimogemCraftBlocks {
     public static final CheapMoraStairBlock CHEAP_MORA_STAIR = register("cheap_mora_stair", new CheapMoraStairBlock());
     public static final CheapMoraWallBlock CHEAP_MORA_WALL = register("cheap_mora_wall", new CheapMoraWallBlock());
     public static final TeyvatPlanksBlock TEYVAT_PLANKS_BLOCK = register("teyvat_planks", new TeyvatPlanksBlock());
+    public static final TeyvatPlankSlabBlock TEYVAT_PLANK_SLAB_BLOCK = register("teyvat_plank_slab", new TeyvatPlankSlabBlock());
     public static final BlueTeyvatPlanksBlock BLUE_TEYVAT_PLANKS_BLOCK = register("blue_teyvat_planks", new BlueTeyvatPlanksBlock());
     public static final PinkTeyvatPlanksBlock PINK_TEYVAT_PLANKS_BLOCK = register("pink_teyvat_planks", new PinkTeyvatPlanksBlock());
     static {
