@@ -5,10 +5,7 @@ import com.primogemstudio.primogemcraft.blocks.instances.IntertwinedFateBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.PrimogemBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.PrimogemOre;
 import com.primogemstudio.primogemcraft.blocks.instances.mora.*;
-import com.primogemstudio.primogemcraft.blocks.instances.planks.BlueTeyvatPlanksBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.planks.PinkTeyvatPlanksBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.planks.TeyvatPlankSlabBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.planks.TeyvatPlanksBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.planks.*;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -30,6 +27,7 @@ public class PrimogemCraftBlocks {
     public static final CheapMoraWallBlock CHEAP_MORA_WALL = register("cheap_mora_wall", new CheapMoraWallBlock());
     public static final TeyvatPlanksBlock TEYVAT_PLANKS_BLOCK = register("teyvat_planks", new TeyvatPlanksBlock());
     public static final TeyvatPlankSlabBlock TEYVAT_PLANK_SLAB_BLOCK = register("teyvat_plank_slab", new TeyvatPlankSlabBlock());
+    public static final TeyvatPlankStairBlock TEYVAT_PLANK_STAIR_BLOCK = register("teyvat_plank_stair", new TeyvatPlankStairBlock());
     public static final BlueTeyvatPlanksBlock BLUE_TEYVAT_PLANKS_BLOCK = register("blue_teyvat_planks", new BlueTeyvatPlanksBlock());
     public static final PinkTeyvatPlanksBlock PINK_TEYVAT_PLANKS_BLOCK = register("pink_teyvat_planks", new PinkTeyvatPlanksBlock());
     static {
