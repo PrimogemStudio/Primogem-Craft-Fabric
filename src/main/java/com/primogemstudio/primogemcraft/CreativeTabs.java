@@ -60,6 +60,8 @@ public class CreativeTabs {
             output.accept(TEYVAT_PLANKS_BLOCK_ITEM);
             output.accept(TEYVAT_PLANK_SLAB_BLOCK_ITEM);
             output.accept(TEYVAT_PLANK_STAIR_BLOCK_ITEM);
+            output.accept(TEYVAT_PLANK_FENCE_BLOCK_ITEM);
+            output.accept(TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM);
             output.accept(BLUE_TEYVAT_PLANKS_BLOCK_ITEM);
             output.accept(PINK_TEYVAT_PLANKS_BLOCK_ITEM);
             output.accept(TEYVAT_STICK_ITEM);

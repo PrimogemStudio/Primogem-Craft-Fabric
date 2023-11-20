@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#|#",
+    "#|#"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:teyvat_stick"
+    },
+    "|": {
+      "item": "primogemcraft:teyvat_planks"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:teyvat_plank_fence_gate"
+  }
+}

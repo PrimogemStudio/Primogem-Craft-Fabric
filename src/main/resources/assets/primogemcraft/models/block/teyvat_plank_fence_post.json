@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "primogemcraft:block/teyvat_planks_side"
+  }
+}
