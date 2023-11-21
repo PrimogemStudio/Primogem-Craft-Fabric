@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:blue_teyvat_planks"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:blue_teyvat_plank_slab",
+    "count": 6
+  }
+}

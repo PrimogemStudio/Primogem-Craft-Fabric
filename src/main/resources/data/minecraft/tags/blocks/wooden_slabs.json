@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:teyvat_plank_slab"
+    "primogemcraft:teyvat_plank_slab",
+    "primogemcraft:blue_teyvat_plank_slab",
+    "primogemcraft:pink_teyvat_plank_slab"
   ]
 }

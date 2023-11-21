@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "primogemcraft:block/teyvat_planks_top",
+    "top": "primogemcraft:block/teyvat_planks_top",
+    "side": "primogemcraft:block/teyvat_planks_top"
+  },
+  "render_type": "solid"
+}

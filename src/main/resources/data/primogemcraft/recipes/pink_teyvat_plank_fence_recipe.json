@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#|#",
+    "#|#"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:pink_teyvat_planks"
+    },
+    "|": {
+      "item": "primogemcraft:teyvat_stick"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:pink_teyvat_plank_fence",
+    "count": 4
+  }
+}

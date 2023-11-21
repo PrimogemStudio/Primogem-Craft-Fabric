@@ -73,7 +73,16 @@ public class PrimogemCraftItems {
     public static final BlockItem TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM = register("teyvat_plank_fence_gate", new BlockItem(TEYVAT_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
     public static final Item TEYVAT_STICK_ITEM = register("teyvat_stick", new Item(new Item.Properties()));
     public static final BlockItem BLUE_TEYVAT_PLANKS_BLOCK_ITEM = register("blue_teyvat_planks", new BlockItem(BLUE_TEYVAT_PLANKS_BLOCK, new Item.Properties()));
+    public static final BlockItem BLUE_TEYVAT_PLANK_SLAB_BLOCK_ITEM = register("blue_teyvat_plank_slab", new BlockItem(BLUE_TEYVAT_PLANK_SLAB_BLOCK, new Item.Properties()));
+    public static final BlockItem BLUE_TEYVAT_PLANK_STAIR_BLOCK_ITEM = register("blue_teyvat_plank_stair", new BlockItem(BLUE_TEYVAT_PLANK_STAIR_BLOCK, new Item.Properties()));
+    public static final BlockItem BLUE_TEYVAT_PLANK_FENCE_BLOCK_ITEM = register("blue_teyvat_plank_fence", new BlockItem(BLUE_TEYVAT_PLANK_FENCE_BLOCK, new Item.Properties()));
+    public static final BlockItem BLUE_TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM = register("blue_teyvat_plank_fence_gate", new BlockItem(BLUE_TEYVAT_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
     public static final BlockItem PINK_TEYVAT_PLANKS_BLOCK_ITEM = register("pink_teyvat_planks", new BlockItem(PINK_TEYVAT_PLANKS_BLOCK, new Item.Properties()));
+
+    public static final BlockItem PINK_TEYVAT_PLANK_SLAB_BLOCK_ITEM = register("pink_teyvat_plank_slab", new BlockItem(PINK_TEYVAT_PLANK_SLAB_BLOCK, new Item.Properties()));
+    public static final BlockItem PINK_TEYVAT_PLANK_STAIR_BLOCK_ITEM = register("pink_teyvat_plank_stair", new BlockItem(PINK_TEYVAT_PLANK_STAIR_BLOCK, new Item.Properties()));
+    public static final BlockItem PINK_TEYVAT_PLANK_FENCE_BLOCK_ITEM = register("pink_teyvat_plank_fence", new BlockItem(PINK_TEYVAT_PLANK_FENCE_BLOCK, new Item.Properties()));
+    public static final BlockItem PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM = register("pink_teyvat_plank_fence_gate", new BlockItem(PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

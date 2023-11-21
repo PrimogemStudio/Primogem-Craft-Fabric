@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "primogemcraft:block/teyvat_planks_bottom",
+    "top": "primogemcraft:block/teyvat_planks_bottom",
+    "side": "primogemcraft:block/teyvat_planks_bottom"
+  }
+}

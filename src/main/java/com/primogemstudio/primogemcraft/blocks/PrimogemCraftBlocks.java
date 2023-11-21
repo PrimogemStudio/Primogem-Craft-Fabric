@@ -31,7 +31,15 @@ public class PrimogemCraftBlocks {
     public static final TeyvatPlankFenceBlock TEYVAT_PLANK_FENCE_BLOCK = register("teyvat_plank_fence", new TeyvatPlankFenceBlock());
     public static final TeyvatPlankFenceGateBlock TEYVAT_PLANK_FENCE_GATE_BLOCK = register("teyvat_plank_fence_gate", new TeyvatPlankFenceGateBlock());
     public static final BlueTeyvatPlanksBlock BLUE_TEYVAT_PLANKS_BLOCK = register("blue_teyvat_planks", new BlueTeyvatPlanksBlock());
+    public static final TeyvatPlankSlabBlock BLUE_TEYVAT_PLANK_SLAB_BLOCK = register("blue_teyvat_plank_slab", new TeyvatPlankSlabBlock());
+    public static final TeyvatPlankStairBlock BLUE_TEYVAT_PLANK_STAIR_BLOCK = register("blue_teyvat_plank_stair", new TeyvatPlankStairBlock());
+    public static final TeyvatPlankFenceBlock BLUE_TEYVAT_PLANK_FENCE_BLOCK = register("blue_teyvat_plank_fence", new TeyvatPlankFenceBlock());
+    public static final TeyvatPlankFenceGateBlock BLUE_TEYVAT_PLANK_FENCE_GATE_BLOCK = register("blue_teyvat_plank_fence_gate", new TeyvatPlankFenceGateBlock());
     public static final PinkTeyvatPlanksBlock PINK_TEYVAT_PLANKS_BLOCK = register("pink_teyvat_planks", new PinkTeyvatPlanksBlock());
+    public static final TeyvatPlankSlabBlock PINK_TEYVAT_PLANK_SLAB_BLOCK = register("pink_teyvat_plank_slab", new TeyvatPlankSlabBlock());
+    public static final TeyvatPlankStairBlock PINK_TEYVAT_PLANK_STAIR_BLOCK = register("pink_teyvat_plank_stair", new TeyvatPlankStairBlock());
+    public static final TeyvatPlankFenceBlock PINK_TEYVAT_PLANK_FENCE_BLOCK = register("pink_teyvat_plank_fence", new TeyvatPlankFenceBlock());
+    public static final TeyvatPlankFenceGateBlock PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK = register("pink_teyvat_plank_fence_gate", new TeyvatPlankFenceGateBlock());
     static {
         MoraBunchBlock.registerRenderLayer();
         CheapMoraWallBlock.registerRenderLayer();

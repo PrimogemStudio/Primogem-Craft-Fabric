@@ -1,6 +1,6 @@
 {
   "parent": "block/template_fence_gate_wall_open",
   "textures": {
-    "texture": "primogemcraft:block/teyvat_planks_side"
+    "texture": "primogemcraft:block/teyvat_planks_bottom"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "primogemcraft:pink_teyvat_planks"
+  },
+  "result": "primogemcraft:pink_teyvat_plank_slab"
+}
