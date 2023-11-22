@@ -1,9 +1,6 @@
 package com.primogemstudio.primogemcraft.blocks;
 
-import com.primogemstudio.primogemcraft.blocks.instances.DendroCoreBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.IntertwinedFateBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.PrimogemBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.PrimogemOre;
+import com.primogemstudio.primogemcraft.blocks.instances.*;
 import com.primogemstudio.primogemcraft.blocks.instances.mora.*;
 import com.primogemstudio.primogemcraft.blocks.instances.planks.*;
 import net.minecraft.core.Registry;
@@ -40,6 +37,8 @@ public class PrimogemCraftBlocks {
     public static final TeyvatPlankStairBlock PINK_TEYVAT_PLANK_STAIR_BLOCK = register("pink_teyvat_plank_stair", new TeyvatPlankStairBlock());
     public static final TeyvatPlankFenceBlock PINK_TEYVAT_PLANK_FENCE_BLOCK = register("pink_teyvat_plank_fence", new TeyvatPlankFenceBlock());
     public static final TeyvatPlankFenceGateBlock PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK = register("pink_teyvat_plank_fence_gate", new TeyvatPlankFenceGateBlock());
+    public static final CharCoalBlock CHAR_COAL_BLOCK = register("charcoal_block", new CharCoalBlock());
+    public static final RustedPlankBlock RUSTED_PLANK_BLOCK = register("rusted_plank", new RustedPlankBlock());
     static {
         MoraBunchBlock.registerRenderLayer();
         CheapMoraWallBlock.registerRenderLayer();

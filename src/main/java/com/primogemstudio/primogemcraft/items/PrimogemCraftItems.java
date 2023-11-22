@@ -83,6 +83,8 @@ public class PrimogemCraftItems {
     public static final BlockItem PINK_TEYVAT_PLANK_STAIR_BLOCK_ITEM = register("pink_teyvat_plank_stair", new BlockItem(PINK_TEYVAT_PLANK_STAIR_BLOCK, new Item.Properties()));
     public static final BlockItem PINK_TEYVAT_PLANK_FENCE_BLOCK_ITEM = register("pink_teyvat_plank_fence", new BlockItem(PINK_TEYVAT_PLANK_FENCE_BLOCK, new Item.Properties()));
     public static final BlockItem PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM = register("pink_teyvat_plank_fence_gate", new BlockItem(PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
+    public static final BlockItem CHAR_COAL_BLOCK_ITEM = register("charcoal_block", new BlockItem(CHAR_COAL_BLOCK, new Item.Properties()));
+    public static final BlockItem RUSTED_PLANK_BLOCK_ITEM = register("rusted_plank", new BlockItem(RUSTED_PLANK_BLOCK, new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

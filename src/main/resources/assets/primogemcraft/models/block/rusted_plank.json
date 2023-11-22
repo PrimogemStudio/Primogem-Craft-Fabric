@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "east": "primogemcraft:block/rusted_plank",
+    "south": "primogemcraft:block/rusted_plank",
+    "north": "primogemcraft:block/rusted_plank",
+    "west": "primogemcraft:block/rusted_plank",
+    "particle": "primogemcraft:block/rusted_plank",
+    "up": "primogemcraft:block/rusted_plank",
+    "down": "primogemcraft:block/rusted_plank"
+  }
+}
