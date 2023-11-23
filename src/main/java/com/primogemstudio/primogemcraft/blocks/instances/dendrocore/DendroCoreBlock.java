@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.blocks.instances;
+package com.primogemstudio.primogemcraft.blocks.instances.dendrocore;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

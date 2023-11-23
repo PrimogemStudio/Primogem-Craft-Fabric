@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "primogemcraft:dendro_core_planks",
+    "primogemcraft:teyvat_planks",
+    "primogemcraft:teyvat_plank_slab",
+    "primogemcraft:teyvat_plank_stair",
+    "primogemcraft:teyvat_plank_fence",
+    "primogemcraft:teyvat_plank_fence_gate",
+    "primogemcraft:blue_teyvat_planks",
+    "primogemcraft:blue_teyvat_plank_slab",
+    "primogemcraft:blue_teyvat_plank_stair",
+    "primogemcraft:blue_teyvat_plank_fence",
+    "primogemcraft:blue_teyvat_plank_fence_gate",
+    "primogemcraft:pink_teyvat_planks",
+    "primogemcraft:pink_teyvat_plank_slab",
+    "primogemcraft:pink_teyvat_plank_stair",
+    "primogemcraft:pink_teyvat_plank_fence",
+    "primogemcraft:pink_teyvat_plank_fence_gate"
+  ]
+}

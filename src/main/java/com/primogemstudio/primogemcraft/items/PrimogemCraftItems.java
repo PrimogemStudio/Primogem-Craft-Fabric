@@ -86,6 +86,7 @@ public class PrimogemCraftItems {
     public static final BlockItem CHAR_COAL_BLOCK_ITEM = register("charcoal_block", new BlockItem(CHAR_COAL_BLOCK, new Item.Properties()));
     public static final BlockItem RUSTED_PLANK_BLOCK_ITEM = register("rusted_plank", new BlockItem(RUSTED_PLANK_BLOCK, new Item.Properties()));
     public static final BlockItem RUSTED_PLANK_STAIR_BLOCK_ITEM = register("rusted_plank_stairs", new BlockItem(RUSTED_PLANK_STAIR_BLOCK, new Item.Properties()));
+    public static final BlockItem DENDRO_CORE_PLANKS_BLOCK_ITEM = register("dendro_core_planks", new BlockItem(DENDRO_CORE_PLANKS_BLOCK, new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
