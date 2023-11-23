@@ -39,9 +39,11 @@ public class PrimogemCraftBlocks {
     public static final TeyvatPlankFenceGateBlock PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK = register("pink_teyvat_plank_fence_gate", new TeyvatPlankFenceGateBlock());
     public static final CharCoalBlock CHAR_COAL_BLOCK = register("charcoal_block", new CharCoalBlock());
     public static final RustedPlankBlock RUSTED_PLANK_BLOCK = register("rusted_plank", new RustedPlankBlock());
+    public static final RustedPlankStairsBlock RUSTED_PLANK_STAIR_BLOCK = register("rusted_plank_stairs", new RustedPlankStairsBlock());
     static {
         MoraBunchBlock.registerRenderLayer();
         CheapMoraWallBlock.registerRenderLayer();
+        RustedPlankStairsBlock.registerRenderLayer();
     }
     private static <T extends Block> T register(String id, T block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MOD_ID, id), block);

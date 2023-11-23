@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "side": "primogemcraft:block/rusted_plank_stairs",
+    "top": "primogemcraft:block/rusted_plank_stairs",
+    "bottom": "primogemcraft:block/rusted_plank_stairs"
+  }
+}

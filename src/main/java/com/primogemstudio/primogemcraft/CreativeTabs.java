@@ -74,6 +74,7 @@ public class CreativeTabs {
             output.accept(PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM);
             output.accept(CHAR_COAL_BLOCK_ITEM);
             output.accept(RUSTED_PLANK_BLOCK_ITEM);
+            output.accept(RUSTED_PLANK_STAIR_BLOCK_ITEM);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE)).displayItems((itemDisplayParameters, output) -> {

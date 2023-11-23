@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "primogemcraft:teyvat_planks"
+      "item": "primogemcraft:rusted_plank"
     }
   },
   "result": {
-    "item": "primogemcraft:teyvat_plank_stair",
+    "item": "primogemcraft:rusted_plank_stairs",
     "count": 4
   }
 }
