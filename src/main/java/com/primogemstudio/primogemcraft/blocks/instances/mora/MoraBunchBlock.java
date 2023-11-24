@@ -1,8 +1,5 @@
 package com.primogemstudio.primogemcraft.blocks.instances.mora;
 
-import com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -81,9 +78,5 @@ public class MoraBunchBlock extends FallingBlock implements SimpleWaterloggedBlo
             world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
         }
         return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
-    }
-
-    public static void registerRenderLayer() {
-        BlockRenderLayerMap.INSTANCE.putBlock(PrimogemCraftBlocks.MORA_BUNCH, RenderType.cutout());
     }
 }

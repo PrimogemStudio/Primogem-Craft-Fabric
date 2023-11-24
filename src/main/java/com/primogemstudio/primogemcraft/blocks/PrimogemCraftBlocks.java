@@ -43,11 +43,7 @@ public class PrimogemCraftBlocks {
     public static final RustedPlankBlock RUSTED_PLANK_BLOCK = register("rusted_plank", new RustedPlankBlock());
     public static final RustedPlankStairsBlock RUSTED_PLANK_STAIR_BLOCK = register("rusted_plank_stairs", new RustedPlankStairsBlock());
     public static final DendroCorePlanksBlock DENDRO_CORE_PLANKS_BLOCK = register("dendro_core_planks", new DendroCorePlanksBlock());
-    static {
-        MoraBunchBlock.registerRenderLayer();
-        CheapMoraWallBlock.registerRenderLayer();
-        RustedPlankStairsBlock.registerRenderLayer();
-    }
+
     private static <T extends Block> T register(String id, T block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MOD_ID, id), block);
     }

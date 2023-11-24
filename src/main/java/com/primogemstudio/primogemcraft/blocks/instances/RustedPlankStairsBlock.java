@@ -1,8 +1,5 @@
 package com.primogemstudio.primogemcraft.blocks.instances;
 
-import com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -29,9 +26,5 @@ public class RustedPlankStairsBlock extends StairBlock {
     @Override
     public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
         return adjacentBlockState.getBlock() == this || super.skipRendering(state, adjacentBlockState, side);
-    }
-
-    public static void registerRenderLayer() {
-        BlockRenderLayerMap.INSTANCE.putBlock(PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK, RenderType.cutout());
     }
 }
