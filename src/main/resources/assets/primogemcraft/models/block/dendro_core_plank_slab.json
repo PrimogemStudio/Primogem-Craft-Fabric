@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "side": "primogemcraft:block/dendro_core_planks",
+    "top": "primogemcraft:block/dendro_core_planks",
+    "bottom": "primogemcraft:block/dendro_core_planks"
+  },
+  "render_type": "solid"
+}

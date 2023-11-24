@@ -16,6 +16,13 @@
     "primogemcraft:pink_teyvat_plank_slab",
     "primogemcraft:pink_teyvat_plank_stair",
     "primogemcraft:pink_teyvat_plank_fence",
-    "primogemcraft:pink_teyvat_plank_fence_gate"
+    "primogemcraft:pink_teyvat_plank_fence_gate",
+    "primogemcraft:dendro_core_planks",
+    "primogemcraft:dendro_core_plank_slab",
+    "primogemcraft:dendro_core_plank_stairs",
+    "primogemcraft:dendro_core_plank_fence",
+    "primogemcraft:dendro_core_plank_fence_gate",
+    "primogemcraft:dendro_core_plank_pressure_plate",
+    "primogemcraft:dendro_core_plank_button"
   ]
 }

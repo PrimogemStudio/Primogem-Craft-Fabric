@@ -1,10 +1,11 @@
 package com.primogemstudio.primogemcraft.blocks;
 
 import com.primogemstudio.primogemcraft.blocks.instances.*;
-import com.primogemstudio.primogemcraft.blocks.instances.dendrocore.DendroCoreBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.dendrocore.DendroCorePlanksBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.dendrocore.*;
 import com.primogemstudio.primogemcraft.blocks.instances.mora.*;
 import com.primogemstudio.primogemcraft.blocks.instances.planks.*;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -43,7 +44,20 @@ public class PrimogemCraftBlocks {
     public static final RustedPlankBlock RUSTED_PLANK_BLOCK = register("rusted_plank", new RustedPlankBlock());
     public static final RustedPlankStairsBlock RUSTED_PLANK_STAIR_BLOCK = register("rusted_plank_stairs", new RustedPlankStairsBlock());
     public static final DendroCorePlanksBlock DENDRO_CORE_PLANKS_BLOCK = register("dendro_core_planks", new DendroCorePlanksBlock());
-
+    public static final DendroCorePlankSlabBlock DENDRO_CORE_PLANK_SLAB_BLOCK = register("dendro_core_plank_slab", new DendroCorePlankSlabBlock());
+    public static final DendroCorePlankStairsBlock DENDRO_CORE_PLANK_STAIRS_BLOCK = register("dendro_core_plank_stairs", new DendroCorePlankStairsBlock());
+    public static final DendroCorePlankPressurePlateBlock DENDRO_CORE_PLANK_PRESSURE_PLATE_BLOCK = register("dendro_core_plank_pressure_plate", new DendroCorePlankPressurePlateBlock());
+    public static final DendroCodePlankButtonBlock DENDRO_CORE_PLANK_BUTTON_BLOCK = register("dendro_core_plank_button", new DendroCodePlankButtonBlock());
+    public static final DendroCorePlanksFenceGateBlock DENDRO_CORE_PLANK_FENCE_GATE_BLOCK = register("dendro_core_plank_fence_gate", new DendroCorePlanksFenceGateBlock());
+    public static final DendroCorePlankFenceBlock DENDRO_CORE_PLANK_FENCE_BLOCK = register("dendro_core_plank_fence", new DendroCorePlankFenceBlock());
+    public static void initRenderLayers() {
+        BlockRenderLayerMap.INSTANCE.putBlocks(
+                RenderType.cutout(),
+                PrimogemCraftBlocks.MORA_BUNCH,
+                PrimogemCraftBlocks.CHEAP_MORA_WALL,
+                PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK
+        );
+    }
     private static <T extends Block> T register(String id, T block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MOD_ID, id), block);
     }

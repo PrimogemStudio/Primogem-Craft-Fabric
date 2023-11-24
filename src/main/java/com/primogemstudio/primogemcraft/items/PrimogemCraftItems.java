@@ -87,6 +87,12 @@ public class PrimogemCraftItems {
     public static final BlockItem RUSTED_PLANK_BLOCK_ITEM = register("rusted_plank", new BlockItem(RUSTED_PLANK_BLOCK, new Item.Properties()));
     public static final BlockItem RUSTED_PLANK_STAIR_BLOCK_ITEM = register("rusted_plank_stairs", new BlockItem(RUSTED_PLANK_STAIR_BLOCK, new Item.Properties()));
     public static final BlockItem DENDRO_CORE_PLANKS_BLOCK_ITEM = register("dendro_core_planks", new BlockItem(DENDRO_CORE_PLANKS_BLOCK, new Item.Properties()));
+    public static final BlockItem DENDRO_CORE_PLANK_SLAB_ITEM = register("dendro_core_plank_slab", new BlockItem(DENDRO_CORE_PLANK_SLAB_BLOCK, new Item.Properties()));
+    public static final BlockItem DENDRO_CORE_PLANK_STAIRS_ITEM = register("dendro_core_plank_stairs", new BlockItem(DENDRO_CORE_PLANK_STAIRS_BLOCK, new Item.Properties()));
+    public static final BlockItem DENDRO_CORE_PLANK_PRESSURE_PLATE_ITEM = register("dendro_core_plank_pressure_plate", new BlockItem(DENDRO_CORE_PLANK_PRESSURE_PLATE_BLOCK, new Item.Properties()));
+    public static final BlockItem DENDRO_CORE_PLANK_BUTTON_ITEM = register("dendro_core_plank_button", new BlockItem(DENDRO_CORE_PLANK_BUTTON_BLOCK, new Item.Properties()));
+    public static final BlockItem DENDRO_CORE_PLANK_FENCE_GATE_ITEM = register("dendro_core_plank_fence_gate", new BlockItem(DENDRO_CORE_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
+    public static final BlockItem DENDRO_CORE_PLANK_FENCE_ITEM = register("dendro_core_plank_fence", new BlockItem(DENDRO_CORE_PLANK_FENCE_BLOCK, new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

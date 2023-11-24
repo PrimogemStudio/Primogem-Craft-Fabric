@@ -14,7 +14,7 @@ public class PrimogemCraftFabric implements ModInitializer {
     public static final Logger LOGGER = LogManager.getLogger();
 
     public void onInitialize() {
-        CreativeTabs.init();
+        PrimogemCraftCreativeTabs.init();
         PrimogemCraftWorldgen.init();
         PrimogemCraftAdvancements.init();
         CommandRegistrationCallback.EVENT.register((d, ra, e) -> ConfigCommand.register(d));

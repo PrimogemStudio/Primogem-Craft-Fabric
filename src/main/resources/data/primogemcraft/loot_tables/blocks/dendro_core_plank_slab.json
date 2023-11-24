@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "primogemcraft:blue_teyvat_plank_slab",
+                  "block": "primogemcraft:dendro_core_plank_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "primogemcraft:blue_teyvat_plank_slab"
+          "name": "primogemcraft:dendro_core_plank_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "primogemcraft:blocks/blue_teyvat_plank_slab"
+  "random_sequence": "primogemcraft:blocks/dendro_core_plank_slab"
 }

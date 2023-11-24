@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "east": "primogemcraft:block/rusted_iron",
+    "south": "primogemcraft:block/rusted_iron",
+    "north": "primogemcraft:block/rusted_iron",
+    "west": "primogemcraft:block/rusted_iron",
+    "particle": "primogemcraft:block/rusted_iron",
+    "up": "primogemcraft:block/rusted_iron",
+    "down": "primogemcraft:block/rusted_iron"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:dendro_core_planks"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:dendro_core_plank_pressure_plate"
+  }
+}

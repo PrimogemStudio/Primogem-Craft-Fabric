@@ -13,7 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 import static com.primogemstudio.primogemcraft.items.PrimogemCraftItems.*;
 
-public class CreativeTabs {
+public class PrimogemCraftCreativeTabs {
     public static final ResourceKey<CreativeModeTab> KEY_MAIN = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_tab"));
     public static final ResourceKey<CreativeModeTab> KEY_BLOCKS = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_blocks_tab"));
     public static final ResourceKey<CreativeModeTab> KEY_TOOLS = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "primogemcraft_tools_tab"));
@@ -76,6 +76,12 @@ public class CreativeTabs {
             output.accept(RUSTED_PLANK_BLOCK_ITEM);
             output.accept(RUSTED_PLANK_STAIR_BLOCK_ITEM);
             output.accept(DENDRO_CORE_PLANKS_BLOCK_ITEM);
+            output.accept(DENDRO_CORE_PLANK_SLAB_ITEM);
+            output.accept(DENDRO_CORE_PLANK_STAIRS_ITEM);
+            output.accept(DENDRO_CORE_PLANK_FENCE_ITEM);
+            output.accept(DENDRO_CORE_PLANK_FENCE_GATE_ITEM);
+            output.accept(DENDRO_CORE_PLANK_PRESSURE_PLATE_ITEM);
+            output.accept(DENDRO_CORE_PLANK_BUTTON_ITEM);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE)).displayItems((itemDisplayParameters, output) -> {
