@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:vayuda_turquoise_gemstone_fragment"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_piece"
+  }
+}

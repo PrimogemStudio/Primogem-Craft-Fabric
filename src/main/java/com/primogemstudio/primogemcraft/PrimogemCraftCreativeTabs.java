@@ -36,6 +36,8 @@ public class PrimogemCraftCreativeTabs {
             output.accept(INTERTWINED_FATE);
             output.accept(INTERTWINED_FATE_TEN);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_SLIVER);
             output.accept(A_NEW_DAY_WITH_HOPE_RECORD);
             output.accept(THE_FADING_STORIES);
             output.accept(HAKUSHIN_LULLABY);
