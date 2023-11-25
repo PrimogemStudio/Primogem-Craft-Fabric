@@ -18,5 +18,6 @@ public class PrimogemCraftWorldgen {
             m.getGenerationSettings().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(MOD_ID, "primogem_ore_buried")));
             m.getGenerationSettings().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(MOD_ID, "primogem_ore_large")));
         });
+        BiomeModifications.addFeature(c -> c.getBiomeKey().location().equals(new ResourceLocation("plains")), GenerationStep.Decoration.UNDERGROUND_ORES, ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(MOD_ID, "vayuda_turquoise_gemstone_ore")));
     }
 }

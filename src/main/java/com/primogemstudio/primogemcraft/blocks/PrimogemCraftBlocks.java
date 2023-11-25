@@ -56,15 +56,12 @@ public class PrimogemCraftBlocks {
     public static final DendroCorePlankFenceBlock DENDRO_CORE_PLANK_FENCE_BLOCK = register("dendro_core_plank_fence", new DendroCorePlankFenceBlock());
     public static final VayudaTurquoiseGemstoneOre VAYUDA_TURQUOISE_GEMSTONE_ORE_BLOCK = register("vayuda_turquoise_gemstone_ore", new VayudaTurquoiseGemstoneOre());
     public static final VayudaTurquoiseGemstoneBlock VAYUDA_TURQUOISE_GEMSTONE_BLOCK = register("vayuda_turquoise_gemstone_block", new VayudaTurquoiseGemstoneBlock());
+
     @Environment(value = EnvType.CLIENT)
     public static void initRenderLayers() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(
-                RenderType.cutout(),
-                PrimogemCraftBlocks.MORA_BUNCH,
-                PrimogemCraftBlocks.CHEAP_MORA_WALL,
-                PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK
-        );
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(), PrimogemCraftBlocks.MORA_BUNCH, PrimogemCraftBlocks.CHEAP_MORA_WALL, PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK);
     }
+
     private static <T extends Block> T register(String id, T block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MOD_ID, id), block);
     }
