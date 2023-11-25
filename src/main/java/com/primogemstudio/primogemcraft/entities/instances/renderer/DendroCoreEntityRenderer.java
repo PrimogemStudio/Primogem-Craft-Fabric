@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 
-@Environment(value = EnvType.CLIENT)
+@Environment(EnvType.CLIENT)
 public class DendroCoreEntityRenderer extends MobRenderer<DendroCoreEntity, DendroCoreEntityModel> {
     public DendroCoreEntityRenderer(EntityRendererProvider.Context context) {
         super(context, new DendroCoreEntityModel(), 0.2f);

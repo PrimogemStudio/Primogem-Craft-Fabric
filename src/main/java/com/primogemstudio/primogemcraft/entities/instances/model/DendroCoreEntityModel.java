@@ -13,7 +13,7 @@ import net.minecraft.client.model.geom.builders.CubeListBuilder;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.model.geom.builders.MeshDefinition;
 
-@Environment(value = EnvType.CLIENT)
+@Environment(EnvType.CLIENT)
 public class DendroCoreEntityModel extends EntityModel<DendroCoreEntity> {
     public final ModelPart seed;
 
@@ -54,6 +54,6 @@ public class DendroCoreEntityModel extends EntityModel<DendroCoreEntity> {
     }
 
     public void setupAnim(DendroCoreEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-        this.seed.yRot = ageInTicks;
+        seed.yRot = ageInTicks;
     }
 }

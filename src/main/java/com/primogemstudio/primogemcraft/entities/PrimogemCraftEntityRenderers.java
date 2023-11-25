@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import static com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities.*;
 
-@Environment(value = EnvType.CLIENT)
+@Environment(EnvType.CLIENT)
 public class PrimogemCraftEntityRenderers {
     public static void init() {
         EntityRendererRegistry.register(DENDRO_CORE_ENTITY, DendroCoreEntityRenderer::new);
