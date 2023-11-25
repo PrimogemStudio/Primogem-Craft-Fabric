@@ -2,6 +2,10 @@ package com.primogemstudio.primogemcraft.items;
 
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
+import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.VayudaTurquoiseGemstoneAxeItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.VayudaTurquoiseGemstoneHoeItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.VayudaTurquoiseGemstonePickaxeItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.VayudaTurquoiseGemstoneShovelItem;
 import com.primogemstudio.primogemcraft.items.instances.mora.*;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
 import com.primogemstudio.primogemcraft.items.instances.records.*;
@@ -24,10 +28,6 @@ public class PrimogemCraftItems {
     public static final PrimogemBilletItem PRIMOGEM_BILLET = register("primogem_billet", new PrimogemBilletItem());
     public static final BlockItem DENDRO_CORE_BLOCK_ITEM = register("dendro_core_block", new BlockItem(DENDRO_CORE_BLOCK, new Item.Properties()));
     public static final BlockItem PRIMOGEM_BLOCK_ITEM = register("primogem_block", new BlockItem(PRIMOGEM_BLOCK, new Item.Properties()));
-    public static final Item VAYUDA_TURQUOISE_GEMSTONE = register("vayuda_turquoise_gemstone", new Item(new Item.Properties()));
-    public static final Item VAYUDA_TURQUOISE_GEMSTONE_PIECE = register("vayuda_turquoise_gemstone_piece", new Item(new Item.Properties()));
-    public static final Item VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT = register("vayuda_turquoise_gemstone_fragment", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final Item VAYUDA_TURQUOISE_GEMSTONE_SLIVER = register("vayuda_turquoise_gemstone_sliver", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final IntertwinedFateItem INTERTWINED_FATE = register("intertwined_fate", new IntertwinedFateItem());
     public static final AcquaintFateItem ACQUAINT_FATE = register("acquaint_fate", new AcquaintFateItem());
     public static final DendroPickaxeItem DENDRO_PICKAXE = register("dendro_pickaxe", new DendroPickaxeItem());
@@ -98,6 +98,14 @@ public class PrimogemCraftItems {
     public static final BlockItem DENDRO_CORE_PLANK_FENCE_ITEM = register("dendro_core_plank_fence", new BlockItem(DENDRO_CORE_PLANK_FENCE_BLOCK, new Item.Properties()));
     public static final BlockItem VAYUDA_TURQUOISE_GEMSTONE_ORE_ITEM = register("vayuda_turquoise_gemstone_ore", new BlockItem(VAYUDA_TURQUOISE_GEMSTONE_ORE_BLOCK, new Item.Properties()));
     public static final BlockItem VAYUDA_TURQUOISE_GEMSTONE_BLOCK_ITEM = register("vayuda_turquoise_gemstone_block", new BlockItem(VAYUDA_TURQUOISE_GEMSTONE_BLOCK, new Item.Properties()));
+    public static final Item VAYUDA_TURQUOISE_GEMSTONE = register("vayuda_turquoise_gemstone", new Item(new Item.Properties()));
+    public static final Item VAYUDA_TURQUOISE_GEMSTONE_PIECE = register("vayuda_turquoise_gemstone_piece", new Item(new Item.Properties()));
+    public static final Item VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT = register("vayuda_turquoise_gemstone_fragment", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final Item VAYUDA_TURQUOISE_GEMSTONE_SLIVER = register("vayuda_turquoise_gemstone_sliver", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final VayudaTurquoiseGemstoneHoeItem VAYUDA_TURQUOISE_GEMSTONE_HOE_ITEM = register("vayuda_turquoise_gemstone_hoe", new VayudaTurquoiseGemstoneHoeItem());
+    public static final VayudaTurquoiseGemstoneAxeItem VAYUDA_TURQUOISE_GEMSTONE_AXE_ITEM = register("vayuda_turquoise_gemstone_axe", new VayudaTurquoiseGemstoneAxeItem());
+    public static final VayudaTurquoiseGemstonePickaxeItem VAYUDA_TURQUOISE_GEMSTONE_PICKAXE_ITEM = register("vayuda_turquoise_gemstone_pickaxe", new VayudaTurquoiseGemstonePickaxeItem());
+    public static final VayudaTurquoiseGemstoneShovelItem VAYUDA_TURQUOISE_GEMSTONE_SHOVEL_ITEM = register("vayuda_turquoise_gemstone_shovel", new VayudaTurquoiseGemstoneShovelItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

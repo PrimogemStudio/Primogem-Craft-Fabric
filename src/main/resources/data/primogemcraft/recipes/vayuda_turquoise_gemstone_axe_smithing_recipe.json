@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_piece"
+  },
+  "base": {
+    "item": "primogemcraft:primogem_axe"
+  },
+  "result": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_axe"
+  },
+  "template": []
+}

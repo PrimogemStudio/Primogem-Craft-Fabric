@@ -108,6 +108,10 @@ public class PrimogemCraftCreativeTabs {
             output.accept(MORA_LEGGINGS_ITEM);
             output.accept(MORA_BOOTS_ITEM);
             output.accept(TEYVAT_STICK_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_HOE_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_AXE_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_PICKAXE_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_SHOVEL_ITEM);
         }).build());
     }
 }
