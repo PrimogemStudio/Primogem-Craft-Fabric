@@ -25,6 +25,7 @@ public class PrimogemCraftItems {
     public static final BlockItem DENDRO_CORE_BLOCK_ITEM = register("dendro_core_block", new BlockItem(DENDRO_CORE_BLOCK, new Item.Properties()));
     public static final BlockItem PRIMOGEM_BLOCK_ITEM = register("primogem_block", new BlockItem(PRIMOGEM_BLOCK, new Item.Properties()));
     public static final Item VAYUDA_TURQUOISE_GEMSTONE = register("vayuda_turquoise_gemstone", new Item(new Item.Properties()));
+    public static final Item VAYUDA_TURQUOISE_GEMSTONE_PIECE = register("vayuda_turquoise_gemstone_piece", new Item(new Item.Properties()));
     public static final Item VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT = register("vayuda_turquoise_gemstone_fragment", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final Item VAYUDA_TURQUOISE_GEMSTONE_SLIVER = register("vayuda_turquoise_gemstone_sliver", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final IntertwinedFateItem INTERTWINED_FATE = register("intertwined_fate", new IntertwinedFateItem());
