@@ -93,6 +93,8 @@ public class PrimogemCraftItems {
     public static final BlockItem DENDRO_CORE_PLANK_BUTTON_ITEM = register("dendro_core_plank_button", new BlockItem(DENDRO_CORE_PLANK_BUTTON_BLOCK, new Item.Properties()));
     public static final BlockItem DENDRO_CORE_PLANK_FENCE_GATE_ITEM = register("dendro_core_plank_fence_gate", new BlockItem(DENDRO_CORE_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
     public static final BlockItem DENDRO_CORE_PLANK_FENCE_ITEM = register("dendro_core_plank_fence", new BlockItem(DENDRO_CORE_PLANK_FENCE_BLOCK, new Item.Properties()));
+    public static final BlockItem VAYUDA_TURQUOISE_GEMSTONE_ORE_ITEM = register("vayuda_turquoise_gemstone_ore", new BlockItem(VAYUDA_TURQUOISE_GEMSTONE_ORE_BLOCK, new Item.Properties()));
+    public static final BlockItem VAYUDA_TURQUOISE_GEMSTONE_BLOCK_ITEM = register("vayuda_turquoise_gemstone_block", new BlockItem(VAYUDA_TURQUOISE_GEMSTONE_BLOCK, new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

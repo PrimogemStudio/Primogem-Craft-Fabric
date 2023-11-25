@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "east": "primogemcraft:block/vayuda_turquoise_gemstone_block",
+    "south": "primogemcraft:block/vayuda_turquoise_gemstone_block",
+    "north": "primogemcraft:block/vayuda_turquoise_gemstone_block",
+    "west": "primogemcraft:block/vayuda_turquoise_gemstone_block",
+    "particle": "primogemcraft:block/vayuda_turquoise_gemstone_block",
+    "up": "primogemcraft:block/vayuda_turquoise_gemstone_block",
+    "down": "primogemcraft:block/vayuda_turquoise_gemstone_block"
+  },
+  "render_type": "solid"
+}

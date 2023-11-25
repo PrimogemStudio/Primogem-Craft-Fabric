@@ -2,6 +2,8 @@ package com.primogemstudio.primogemcraft.blocks;
 
 import com.primogemstudio.primogemcraft.blocks.instances.*;
 import com.primogemstudio.primogemcraft.blocks.instances.dendrocore.*;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.vayuda.VayudaTurquoiseGemstoneBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.vayuda.VayudaTurquoiseGemstoneOre;
 import com.primogemstudio.primogemcraft.blocks.instances.mora.*;
 import com.primogemstudio.primogemcraft.blocks.instances.planks.*;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -50,6 +52,8 @@ public class PrimogemCraftBlocks {
     public static final DendroCodePlankButtonBlock DENDRO_CORE_PLANK_BUTTON_BLOCK = register("dendro_core_plank_button", new DendroCodePlankButtonBlock());
     public static final DendroCorePlanksFenceGateBlock DENDRO_CORE_PLANK_FENCE_GATE_BLOCK = register("dendro_core_plank_fence_gate", new DendroCorePlanksFenceGateBlock());
     public static final DendroCorePlankFenceBlock DENDRO_CORE_PLANK_FENCE_BLOCK = register("dendro_core_plank_fence", new DendroCorePlankFenceBlock());
+    public static final VayudaTurquoiseGemstoneOre VAYUDA_TURQUOISE_GEMSTONE_ORE_BLOCK = register("vayuda_turquoise_gemstone_ore", new VayudaTurquoiseGemstoneOre());
+    public static final VayudaTurquoiseGemstoneBlock VAYUDA_TURQUOISE_GEMSTONE_BLOCK = register("vayuda_turquoise_gemstone_block", new VayudaTurquoiseGemstoneBlock());
     public static void initRenderLayers() {
         BlockRenderLayerMap.INSTANCE.putBlocks(
                 RenderType.cutout(),
