@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_diamond"
+  },
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "result": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_diamond_chestplate"
+  },
+  "template": []
+}
