@@ -39,6 +39,9 @@ public class PrimogemCraftCreativeTabs {
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_PIECE);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_ITEM);
             output.accept(A_NEW_DAY_WITH_HOPE_RECORD);
             output.accept(THE_FADING_STORIES);
             output.accept(HAKUSHIN_LULLABY);
@@ -112,6 +115,9 @@ public class PrimogemCraftCreativeTabs {
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_AXE_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_PICKAXE_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_SHOVEL_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_SWORD_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_SWORD_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_SWORD_ITEM);
         }).build());
     }
 }

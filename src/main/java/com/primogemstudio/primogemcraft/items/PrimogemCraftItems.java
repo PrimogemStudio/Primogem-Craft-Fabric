@@ -2,10 +2,7 @@ package com.primogemstudio.primogemcraft.items;
 
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
-import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.VayudaTurquoiseGemstoneAxeItem;
-import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.VayudaTurquoiseGemstoneHoeItem;
-import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.VayudaTurquoiseGemstonePickaxeItem;
-import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.VayudaTurquoiseGemstoneShovelItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.*;
 import com.primogemstudio.primogemcraft.items.instances.mora.*;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
 import com.primogemstudio.primogemcraft.items.instances.records.*;
@@ -106,6 +103,12 @@ public class PrimogemCraftItems {
     public static final VayudaTurquoiseGemstoneAxeItem VAYUDA_TURQUOISE_GEMSTONE_AXE_ITEM = register("vayuda_turquoise_gemstone_axe", new VayudaTurquoiseGemstoneAxeItem());
     public static final VayudaTurquoiseGemstonePickaxeItem VAYUDA_TURQUOISE_GEMSTONE_PICKAXE_ITEM = register("vayuda_turquoise_gemstone_pickaxe", new VayudaTurquoiseGemstonePickaxeItem());
     public static final VayudaTurquoiseGemstoneShovelItem VAYUDA_TURQUOISE_GEMSTONE_SHOVEL_ITEM = register("vayuda_turquoise_gemstone_shovel", new VayudaTurquoiseGemstoneShovelItem());
+    public static final VayudaTurquoiseGemstoneIronItem VAYUDA_TURQUOISE_GEMSTONE_IRON_ITEM = register("vayuda_turquoise_gemstone_iron", new VayudaTurquoiseGemstoneIronItem());
+    public static final VayudaTurquoiseGemstoneDiamondItem VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_ITEM = register("vayuda_turquoise_gemstone_diamond", new VayudaTurquoiseGemstoneDiamondItem());
+    public static final VayudaTurquoiseGemstoneNetheriteItem VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_ITEM = register("vayuda_turquoise_gemstone_netherite", new VayudaTurquoiseGemstoneNetheriteItem());
+    public static final VayudaTurquoiseGemstoneIronSwordItem VAYUDA_TURQUOISE_GEMSTONE_IRON_SWORD_ITEM = register("vayuda_turquoise_gemstone_iron_sword", new VayudaTurquoiseGemstoneIronSwordItem());
+    public static final VayudaTurquoiseGemstoneDiamondSwordItem VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_SWORD_ITEM = register("vayuda_turquoise_gemstone_diamond_sword", new VayudaTurquoiseGemstoneDiamondSwordItem());
+    public static final VayudaTurquoiseGemstoneNetheriteSwordItem VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_SWORD_ITEM = register("vayuda_turquoise_gemstone_netherite_sword", new VayudaTurquoiseGemstoneNetheriteSwordItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

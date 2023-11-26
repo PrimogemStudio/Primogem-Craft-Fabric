@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_iron"
+  },
+  "base": {
+    "item": "minecraft:iron_sword"
+  },
+  "result": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_iron_sword"
+  },
+  "template": []
+}
