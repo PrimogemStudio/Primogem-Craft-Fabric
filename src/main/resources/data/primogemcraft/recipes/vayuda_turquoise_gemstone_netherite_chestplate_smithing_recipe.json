@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_netherite"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "result": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_netherite_chestplate"
+  },
+  "template": []
+}

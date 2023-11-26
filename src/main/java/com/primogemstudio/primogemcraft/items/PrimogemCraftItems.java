@@ -109,6 +109,10 @@ public class PrimogemCraftItems {
     public static final VayudaTurquoiseGemstoneIronSwordItem VAYUDA_TURQUOISE_GEMSTONE_IRON_SWORD_ITEM = register("vayuda_turquoise_gemstone_iron_sword", new VayudaTurquoiseGemstoneIronSwordItem());
     public static final VayudaTurquoiseGemstoneDiamondSwordItem VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_SWORD_ITEM = register("vayuda_turquoise_gemstone_diamond_sword", new VayudaTurquoiseGemstoneDiamondSwordItem());
     public static final VayudaTurquoiseGemstoneNetheriteSwordItem VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_SWORD_ITEM = register("vayuda_turquoise_gemstone_netherite_sword", new VayudaTurquoiseGemstoneNetheriteSwordItem());
+    public static final VayudaTurquoiseGemstoneNetheriteArmorItem.Helmet VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_HELMET_ITEM = register("vayuda_turquoise_gemstone_netherite_helmet", new VayudaTurquoiseGemstoneNetheriteArmorItem.Helmet());
+    public static final VayudaTurquoiseGemstoneNetheriteArmorItem.Chestplate VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_CHESTPLATE_ITEM = register("vayuda_turquoise_gemstone_netherite_chestplate", new VayudaTurquoiseGemstoneNetheriteArmorItem.Chestplate());
+    public static final VayudaTurquoiseGemstoneNetheriteArmorItem.Leggings VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_LEGGINGS_ITEM = register("vayuda_turquoise_gemstone_netherite_leggings", new VayudaTurquoiseGemstoneNetheriteArmorItem.Leggings());
+    public static final VayudaTurquoiseGemstoneNetheriteArmorItem.Boots VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_BOOTS_ITEM = register("vayuda_turquoise_gemstone_netherite_boots", new VayudaTurquoiseGemstoneNetheriteArmorItem.Boots());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
