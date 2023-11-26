@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "primogemcraft:blocks/cangsnagshizhuan",
-    "top": "primogemcraft:blocks/cangsnagshizhuan",
-    "side": "primogemcraft:blocks/cangsnagshizhuan"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "primogemcraft:custom/cao_yuan_he_fang_kuai_",
-  "textures": {
-    "0": "primogemcraft:blocks/cx_cyh_tt",
-    "particle": "primogemcraft:items/cx_cyh_tt"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 18,
-  "ingredient": {
-    "item": "minecraft:gold_block"
-  },
-  "result": "primogemcraft:mmola_01"
-}

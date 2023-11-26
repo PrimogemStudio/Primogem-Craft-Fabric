@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "primogemcraft:blocks/yuanhe_muban_2",
-    "top": "primogemcraft:blocks/yuanhe_muban_2",
-    "side": "primogemcraft:blocks/yuanhe_muban_2"
-  }
-}

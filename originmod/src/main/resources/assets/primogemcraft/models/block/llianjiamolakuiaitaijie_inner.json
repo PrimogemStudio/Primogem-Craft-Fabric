@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "primogemcraft:blocks/xinxinlianjiamolakuai",
-    "top": "primogemcraft:blocks/xinxinlianjiamolakuai",
-    "side": "primogemcraft:blocks/xinxinlianjiamolakuai"
-  }
-}

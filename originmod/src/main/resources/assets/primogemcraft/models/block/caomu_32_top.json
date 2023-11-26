@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "primogemcraft:blocks/yuanhe_muban_3",
-    "top": "primogemcraft:blocks/yuanhe_muban_3",
-    "side": "primogemcraft:blocks/yuanhe_muban_3"
-  }
-}

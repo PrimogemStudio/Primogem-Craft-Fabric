@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "primogemcraft:blocks/yimudi",
-    "top": "primogemcraft:blocks/yimuding",
-    "side": "primogemcraft:blocks/yimuce"
-  }
-}

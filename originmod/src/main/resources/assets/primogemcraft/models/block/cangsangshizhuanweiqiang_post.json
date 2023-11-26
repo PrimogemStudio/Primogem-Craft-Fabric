@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_wall_post",
-  "textures": {
-    "wall": "primogemcraft:blocks/cangsnagshizhuan",
-    "particle": "primogemcraft:blocks/cangsnagshizhuan"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "primogemcraft:custom/guanzi",
-  "textures": {
-    "all": "primogemcraft:blocks/jiuchanzhiyuankuai",
-    "particle": "primogemcraft:blocks/jiuchanzhiyuankuai"
-  }
-}
