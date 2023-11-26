@@ -47,7 +47,7 @@ public class VayudaTurquoiseGemstoneDiamondArmorItem extends ArmorItem {
 
             @Override
             public @NotNull String getName() {
-                return "vayuda_turquoise_gemstone_armor";
+                return "vayuda_turquoise_gemstone_diamond_armor";
             }
 
             @Override

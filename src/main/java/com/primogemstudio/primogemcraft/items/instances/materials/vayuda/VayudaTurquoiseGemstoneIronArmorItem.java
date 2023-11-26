@@ -16,18 +16,18 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class VayudaTurquoiseGemstoneNetheriteArmorItem extends ArmorItem {
-    public VayudaTurquoiseGemstoneNetheriteArmorItem(Type type, Item.Properties properties) {
+public class VayudaTurquoiseGemstoneIronArmorItem extends ArmorItem {
+    public VayudaTurquoiseGemstoneIronArmorItem(Type type, Properties properties) {
         super(new ArmorMaterial() {
 
             @Override
             public int getDurabilityForType(Type type) {
-                return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 203;
+                return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 21;
             }
 
             @Override
             public int getDefenseForType(Type type) {
-                return new int[]{5, 7, 9, 5}[type.getSlot().getIndex()];
+                return new int[]{3, 6, 7, 3}[type.getSlot().getIndex()];
             }
 
             @Override
@@ -47,7 +47,7 @@ public class VayudaTurquoiseGemstoneNetheriteArmorItem extends ArmorItem {
 
             @Override
             public @NotNull String getName() {
-                return "vayuda_turquoise_gemstone_netherite_armor";
+                return "vayuda_turquoise_gemstone_iron_armor";
             }
 
             @Override
@@ -78,35 +78,34 @@ public class VayudaTurquoiseGemstoneNetheriteArmorItem extends ArmorItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag isAdvanced) {
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_armor.line1"));
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_armor.line2"));
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_armor.line3"));
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_armor.line4"));
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_armor.line5"));
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_armor.line6"));
+        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_iron_armor.line1"));
+        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_iron_armor.line2"));
+        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_iron_armor.line3"));
+        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_iron_armor.line4"));
+        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_iron_armor.line5"));
     }
 
-    public static class Helmet extends VayudaTurquoiseGemstoneNetheriteArmorItem {
+    public static class Helmet extends VayudaTurquoiseGemstoneIronArmorItem {
         public Helmet() {
-            super(Type.HELMET, new Item.Properties().fireResistant());
+            super(Type.HELMET, new Properties().fireResistant());
         }
     }
 
-    public static class Chestplate extends VayudaTurquoiseGemstoneNetheriteArmorItem {
+    public static class Chestplate extends VayudaTurquoiseGemstoneIronArmorItem {
         public Chestplate() {
-            super(Type.CHESTPLATE, new Item.Properties().fireResistant());
+            super(Type.CHESTPLATE, new Properties().fireResistant());
         }
     }
 
-    public static class Leggings extends VayudaTurquoiseGemstoneNetheriteArmorItem {
+    public static class Leggings extends VayudaTurquoiseGemstoneIronArmorItem {
         public Leggings() {
-            super(Type.LEGGINGS, new Item.Properties().fireResistant());
+            super(Type.LEGGINGS, new Properties().fireResistant());
         }
     }
 
-    public static class Boots extends VayudaTurquoiseGemstoneNetheriteArmorItem {
+    public static class Boots extends VayudaTurquoiseGemstoneIronArmorItem {
         public Boots() {
-            super(Type.BOOTS, new Item.Properties().fireResistant());
+            super(Type.BOOTS, new Properties().fireResistant());
         }
     }
 }

@@ -116,6 +116,10 @@ public class PrimogemCraftCreativeTabs {
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_PICKAXE_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_SHOVEL_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_SWORD_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_HELMET_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_CHESTPLATE_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_LEGGINGS_ITEM);
+            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_BOOTS_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_SWORD_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_HELMET_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_CHESTPLATE_ITEM);

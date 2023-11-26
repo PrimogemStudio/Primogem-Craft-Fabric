@@ -16,9 +16,7 @@ public class OnArmorTick {
         if (entity == null)
             return;
         if (!itemstack.getOrCreateTag().getBoolean("armor_value")) {
-            /*if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaotie")))) {
-                itemstack.getOrCreateTag().putDouble("armor_value", 0.5);
-            }*/
+            if (itemstack.is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "element_iron")))) itemstack.getOrCreateTag().putDouble("armor_value", 0.5);
             if (itemstack.is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "element_diamond")))) itemstack.getOrCreateTag().putDouble("armor_value", 1);
             if (itemstack.is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "element_netherite")))) itemstack.getOrCreateTag().putDouble("armor_value", 2);
         }

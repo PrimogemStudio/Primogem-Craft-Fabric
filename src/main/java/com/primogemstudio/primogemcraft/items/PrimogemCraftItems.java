@@ -118,6 +118,11 @@ public class PrimogemCraftItems {
     public static final VayudaTurquoiseGemstoneDiamondArmorItem.Chestplate VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_CHESTPLATE_ITEM = register("vayuda_turquoise_gemstone_diamond_chestplate", new VayudaTurquoiseGemstoneDiamondArmorItem.Chestplate());
     public static final VayudaTurquoiseGemstoneDiamondArmorItem.Leggings VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_LEGGINGS_ITEM = register("vayuda_turquoise_gemstone_diamond_leggings", new VayudaTurquoiseGemstoneDiamondArmorItem.Leggings());
     public static final VayudaTurquoiseGemstoneDiamondArmorItem.Boots VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_BOOTS_ITEM = register("vayuda_turquoise_gemstone_diamond_boots", new VayudaTurquoiseGemstoneDiamondArmorItem.Boots());
+
+    public static final VayudaTurquoiseGemstoneIronArmorItem.Helmet VAYUDA_TURQUOISE_GEMSTONE_IRON_HELMET_ITEM = register("vayuda_turquoise_gemstone_iron_helmet", new VayudaTurquoiseGemstoneIronArmorItem.Helmet());
+    public static final VayudaTurquoiseGemstoneIronArmorItem.Chestplate VAYUDA_TURQUOISE_GEMSTONE_IRON_CHESTPLATE_ITEM = register("vayuda_turquoise_gemstone_iron_chestplate", new VayudaTurquoiseGemstoneIronArmorItem.Chestplate());
+    public static final VayudaTurquoiseGemstoneIronArmorItem.Leggings VAYUDA_TURQUOISE_GEMSTONE_IRON_LEGGINGS_ITEM = register("vayuda_turquoise_gemstone_iron_leggings", new VayudaTurquoiseGemstoneIronArmorItem.Leggings());
+    public static final VayudaTurquoiseGemstoneIronArmorItem.Boots VAYUDA_TURQUOISE_GEMSTONE_IRON_BOOTS_ITEM = register("vayuda_turquoise_gemstone_iron_boots", new VayudaTurquoiseGemstoneIronArmorItem.Boots());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
