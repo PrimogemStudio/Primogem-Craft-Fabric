@@ -24,32 +24,38 @@ public class TakeTheJourneyItem extends RecordItem {
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
         super.appendHoverText(itemstack, world, list, flag);
         list.add(Component.translatable("tooltip.primogemcraft.music_disc_take_the_journey.line1"));
-        list.add(Component.translatable("tooltip.primogemcraft.music_disc_take_the_journey.line2"));
     }
 
     @Override
-    public @NotNull InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-        InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-        if (world.isClientSide) world.playLocalSound(entity.getX(), entity.getY(), entity.getZ(), PrimogemCraftSounds.TAKE_THE_JOURNEY, SoundSource.PLAYERS, (float) 0.4, 1, false);
-        entity.getCooldowns().addCooldown(ar.getObject().getItem(), 1280);
+    @NotNull
+    public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
+        InteractionResultHolder<ItemStack> ar = super.use(world, player, hand);
+        if (!world.isClientSide)
+            world.playSound(null, player, PrimogemCraftSounds.TAKE_THE_JOURNEY, SoundSource.PLAYERS, 0.4f, 1);
+        player.getCooldowns().addCooldown(ar.getObject().getItem(), 1280);
         return ar;
     }
 
     @Override
-    public @NotNull InteractionResult useOn(UseOnContext context) {
+    @NotNull
+    public InteractionResult useOn(UseOnContext context) {
         super.useOn(context);
         new ServerTickEvents.EndTick() {
             private int ticks = 0;
             private float waitTicks;
             private boolean triggered = false;
+
             public void start(int waitTicks) {
                 this.waitTicks = waitTicks;
                 ServerTickEvents.END_SERVER_TICK.register(this);
             }
+
             public void onEndTick(MinecraftServer srv) {
                 this.ticks += 1;
                 if (this.ticks >= this.waitTicks) run();
             }
+
+            @SuppressWarnings("DataFlowIssue")
             private void run() {
                 if (!triggered) {
                     context.getPlayer().getCooldowns().addCooldown(TakeTheJourneyItem.this, 1280);
