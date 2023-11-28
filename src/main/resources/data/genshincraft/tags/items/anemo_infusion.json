@@ -1,5 +1,12 @@
 {
   "replace": false,
   "values": [
+    "primogemcraft:vayuda_turquoise_gemstone_hoe",
+    "primogemcraft:vayuda_turquoise_gemstone_axe",
+    "primogemcraft:vayuda_turquoise_gemstone_pickaxe",
+    "primogemcraft:vayuda_turquoise_gemstone_shovel",
+    "primogemcraft:vayuda_turquoise_gemstone_iron_sword",
+    "primogemcraft:vayuda_turquoise_gemstone_diamond_sword",
+    "primogemcraft:vayuda_turquoise_gemstone_netherite_sword"
   ]
 }

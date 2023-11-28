@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "-*-",
+    "*#*",
+    "-*-"
+  ],
+  "key": {
+    "-": {
+      "item": "primogemcraft:primogem"
+    },
+    "*": {
+      "item": "primogemcraft:vayuda_turquoise_gemstone_fragment"
+    },
+    "#": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_netherite"
+  }
+}
