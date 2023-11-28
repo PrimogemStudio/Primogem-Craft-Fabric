@@ -33,7 +33,7 @@ public class PrimogemPickaxeItem extends PickaxeItem {
 
             @NotNull
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
+                return Ingredient.of(PrimogemCraftItems.PRIMOGEM_ITEM);
             }
         }, 1, -2.8f, new Item.Properties().fireResistant().rarity(Rarity.RARE));
     }

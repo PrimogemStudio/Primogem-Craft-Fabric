@@ -5,8 +5,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.RecordItem;
 
-public class SaltyMoonItem extends RecordItem {
-    public SaltyMoonItem() {
-        super(15, PrimogemCraftSounds.SALTY_MOON, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 43);
+public class SpaceWalkRecordItem extends RecordItem {
+    public SpaceWalkRecordItem() {
+        super(15, PrimogemCraftSounds.SPACE_WALK, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 115);
     }
 }

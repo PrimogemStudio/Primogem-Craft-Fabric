@@ -42,7 +42,7 @@ public class VayudaTurquoiseGemstoneHoeItem extends HoeItem {
             }
 
             public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAYUDA_TURQUOISE_GEMSTONE_SLIVER), new ItemStack(PrimogemCraftItems.PRIMOGEM));
+                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAYUDA_TURQUOISE_GEMSTONE_SLIVER_ITEM), new ItemStack(PrimogemCraftItems.PRIMOGEM_ITEM));
             }
         }, 0, -3.6f, new Item.Properties().fireResistant());
     }

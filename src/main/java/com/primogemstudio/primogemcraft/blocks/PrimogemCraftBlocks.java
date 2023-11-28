@@ -22,13 +22,13 @@ public class PrimogemCraftBlocks {
     public static final PrimogemBlock PRIMOGEM_BLOCK = register("primogem_block", new PrimogemBlock());
     public static final PrimogemOre PRIMOGEM_ORE = register("primogem_ore", new PrimogemOre());
     public static final IntertwinedFateBlock INTERTWINED_FATE_BLOCK = register("intertwined_fate_block", new IntertwinedFateBlock());
-    public static final MoraBunchBlock MORA_BUNCH = register("mora_bunch_block", new MoraBunchBlock());
+    public static final MoraBunchBlock MORA_BUNCH_BLOCK = register("mora_bunch_block", new MoraBunchBlock());
     public static final MoraBlock MORA_BLOCK = register("mora_block", new MoraBlock());
     public static final ExquisiteMoraBlock EXQUISITE_MORA_BLOCK = register("exquisite_mora_block", new ExquisiteMoraBlock());
     public static final CheapMoraBlock CHEAP_MORA_BLOCK = register("cheap_mora_block", new CheapMoraBlock());
-    public static final CheapMoraSlabBlock CHEAP_MORA_SLAB = register("cheap_mora_slab", new CheapMoraSlabBlock());
-    public static final CheapMoraStairBlock CHEAP_MORA_STAIR = register("cheap_mora_stair", new CheapMoraStairBlock());
-    public static final CheapMoraWallBlock CHEAP_MORA_WALL = register("cheap_mora_wall", new CheapMoraWallBlock());
+    public static final CheapMoraSlabBlock CHEAP_MORA_SLAB_BLOCK = register("cheap_mora_slab", new CheapMoraSlabBlock());
+    public static final CheapMoraStairBlock CHEAP_MORA_STAIR_BLOCK = register("cheap_mora_stair", new CheapMoraStairBlock());
+    public static final CheapMoraWallBlock CHEAP_MORA_WALL_BLOCK = register("cheap_mora_wall", new CheapMoraWallBlock());
     public static final TeyvatPlanksBlock TEYVAT_PLANKS_BLOCK = register("teyvat_planks", new TeyvatPlanksBlock());
     public static final TeyvatPlankSlabBlock TEYVAT_PLANK_SLAB_BLOCK = register("teyvat_plank_slab", new TeyvatPlankSlabBlock());
     public static final TeyvatPlankStairBlock TEYVAT_PLANK_STAIR_BLOCK = register("teyvat_plank_stair", new TeyvatPlankStairBlock());
@@ -59,7 +59,7 @@ public class PrimogemCraftBlocks {
 
     @Environment(EnvType.CLIENT)
     public static void initRenderLayers() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(), PrimogemCraftBlocks.MORA_BUNCH, PrimogemCraftBlocks.CHEAP_MORA_WALL, PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(), PrimogemCraftBlocks.MORA_BUNCH_BLOCK, PrimogemCraftBlocks.CHEAP_MORA_WALL_BLOCK, PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK);
     }
 
     private static <T extends Block> T register(String id, T block) {

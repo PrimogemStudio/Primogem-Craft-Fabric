@@ -16,8 +16,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class TakeTheJourneyItem extends RecordItem {
-    public TakeTheJourneyItem() {
+public class TakeTheJourneyRecordItem extends RecordItem {
+    public TakeTheJourneyRecordItem() {
         super(15, PrimogemCraftSounds.TAKE_THE_JOURNEY, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 64);
     }
 
@@ -52,7 +52,7 @@ public class TakeTheJourneyItem extends RecordItem {
             }
             private void run() {
                 if (!triggered) {
-                    context.getPlayer().getCooldowns().addCooldown(TakeTheJourneyItem.this, 1280);
+                    context.getPlayer().getCooldowns().addCooldown(TakeTheJourneyRecordItem.this, 1280);
                     triggered = true;
                 }
             }

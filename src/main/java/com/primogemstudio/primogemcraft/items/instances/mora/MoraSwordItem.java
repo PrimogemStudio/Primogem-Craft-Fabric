@@ -32,7 +32,7 @@ public class MoraSwordItem extends SwordItem {
             }
 
             public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.MORA));
+                return Ingredient.of(new ItemStack(PrimogemCraftItems.MORA_ITEM));
             }
         }, 3, -2.4f, new Item.Properties());
     }

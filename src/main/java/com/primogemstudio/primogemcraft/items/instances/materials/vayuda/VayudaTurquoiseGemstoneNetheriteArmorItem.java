@@ -42,7 +42,7 @@ public class VayudaTurquoiseGemstoneNetheriteArmorItem extends ArmorItem {
 
             @Override
             public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT), new ItemStack(Items.NETHERITE_INGOT));
+                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT_ITEM), new ItemStack(Items.NETHERITE_INGOT));
             }
 
             @Override

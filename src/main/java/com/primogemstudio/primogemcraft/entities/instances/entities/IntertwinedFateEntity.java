@@ -3,11 +3,8 @@ package com.primogemstudio.primogemcraft.entities.instances.entities;
 import com.primogemstudio.primogemcraft.entities.PrimogemCraftEntities;
 import com.primogemstudio.primogemcraft.gacha.GachaServer;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
-import com.primogemstudio.primogemcraft.sounds.PrimogemCraftSounds;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
@@ -28,7 +25,7 @@ public class IntertwinedFateEntity extends ThrowableItemProjectile {
     @Override
     @NotNull
     protected Item getDefaultItem() {
-        return PrimogemCraftItems.INTERTWINED_FATE;
+        return PrimogemCraftItems.INTERTWINED_FATE_ITEM;
     }
 
     @Override

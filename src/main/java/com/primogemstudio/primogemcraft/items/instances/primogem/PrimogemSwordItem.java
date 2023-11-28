@@ -33,7 +33,7 @@ public class PrimogemSwordItem extends SwordItem {
 
             @NotNull
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
+                return Ingredient.of(PrimogemCraftItems.PRIMOGEM_ITEM);
             }
         }, 3, -2.4f, new Item.Properties().fireResistant().rarity(Rarity.RARE));
     }
@@ -47,7 +47,7 @@ public class PrimogemSwordItem extends SwordItem {
     public void inventoryTick(ItemStack stack, Level world, Entity entity, int slot, boolean selected) {
         if (stack.hasTag() && stack.getOrCreateTag().getBoolean("strange") && entity instanceof Player player) {
             player.getInventory().removeItem(slot, stack.getCount());
-            player.getInventory().add(slot, PrimogemCraftItems.STRANGE_PRIMOGEM_SWORD.getDefaultInstance());
+            player.getInventory().add(slot, PrimogemCraftItems.STRANGE_PRIMOGEM_SWORD_ITEM.getDefaultInstance());
         }
     }
 }
