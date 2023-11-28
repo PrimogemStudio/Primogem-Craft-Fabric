@@ -49,6 +49,7 @@ public class PrimogemCraftItems {
     public static final MoraWalletItem MORA_WALLET_ITEM = register("mora_wallet", new MoraWalletItem());
     public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD_ITEM = register("strange_primogem_sword", new StrangePrimogemSwordItem());
     public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
+    public static final BlockItem DEEP_SLATE_PRIMOGEM_ORE_ITEM = register("deep_slate_primogem_ore", new BlockItem(DEEP_SLATE_PRIMOGEM_ORE, new Item.Properties()));
     public static final BlockItem INTERTWINED_FATE_BLOCK_ITEM = register("intertwined_fate_block", new BlockItem(INTERTWINED_FATE_BLOCK, new Item.Properties()));
     public static final BlockItem MORA_BUNCH_BLOCK_ITEM = register("mora_bunch_block", new BlockItem(MORA_BUNCH_BLOCK, new Item.Properties()));
     public static final BlockItem MORA_BLOCK_ITEM = register("mora_block", new BlockItem(MORA_BLOCK, new Item.Properties()));
@@ -127,6 +128,7 @@ public class PrimogemCraftItems {
     public static final Item VAJRADA_AMETHYST_SLIVER_ITEM = register("vajrada_amethyst_sliver", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_FRAGMENT_ITEM = register("vajrada_amethyst_fragment", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_PIECE_ITEM = register("vajrada_amethyst_piece", new Item(new Item.Properties()));
+
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

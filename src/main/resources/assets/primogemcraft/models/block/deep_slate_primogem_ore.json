@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "primogemcraft:block/deep_slate_primogem_ore"
+  },
+  "render_type": "solid"
+}
