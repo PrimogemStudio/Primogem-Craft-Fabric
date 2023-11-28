@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#*#",
+    "*#*",
+    "#*#"
+  ],
+  "key": {
+    "*": {
+      "item": "primogemcraft:vayuda_turquoise_gemstone_sliver"
+    },
+    "#": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:vayuda_turquoise_gemstone_iron"
+  }
+}

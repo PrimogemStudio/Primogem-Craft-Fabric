@@ -38,7 +38,7 @@ public class DendroPickaxeItem extends PickaxeItem {
 
             public @NotNull Ingredient getRepairIngredient() {
                 // TODO item addition -> PrimogemcraftModItems.SHENGZHANGBIFEISUIXIE
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.PRIMOGEM));
+                return Ingredient.of(new ItemStack(PrimogemCraftItems.PRIMOGEM_ITEM));
             }
         }, 1, -3f, new Item.Properties().fireResistant());
     }

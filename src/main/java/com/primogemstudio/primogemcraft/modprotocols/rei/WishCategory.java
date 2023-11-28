@@ -29,7 +29,7 @@ public class WishCategory implements DisplayCategory<WishDisplay> {
 
     @Override
     public Renderer getIcon() {
-        return EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE);
+        return EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_ITEM);
     }
 
     @Override

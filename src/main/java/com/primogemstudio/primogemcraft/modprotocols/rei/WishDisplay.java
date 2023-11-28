@@ -15,12 +15,12 @@ public class WishDisplay extends BasicDisplay {
     public WishDisplay(ItemStack output, boolean isFiveStar) {
         super(List.of(
                 isFiveStar ? EntryIngredient.of(
-                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE),
-                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_TEN)
+                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_ITEM),
+                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_TEN_ITEM)
                 ) : EntryIngredient.of(
-                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE),
-                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_TEN),
-                        EntryStacks.of(PrimogemCraftItems.ACQUAINT_FATE)
+                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_ITEM),
+                        EntryStacks.of(PrimogemCraftItems.INTERTWINED_FATE_TEN_ITEM),
+                        EntryStacks.of(PrimogemCraftItems.ACQUAINT_FATE_ITEM)
                 )
         ), List.of(EntryIngredient.of(EntryStacks.of(output))));
     }

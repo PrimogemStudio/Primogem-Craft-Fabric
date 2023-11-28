@@ -33,7 +33,7 @@ public class PrimogemHoeItem extends HoeItem {
 
             @NotNull
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
+                return Ingredient.of(PrimogemCraftItems.PRIMOGEM_ITEM);
             }
         }, 0, -3f, new Item.Properties().fireResistant().rarity(Rarity.RARE));
     }

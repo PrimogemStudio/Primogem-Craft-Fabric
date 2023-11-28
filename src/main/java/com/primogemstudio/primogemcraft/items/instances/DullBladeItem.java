@@ -34,7 +34,7 @@ public class DullBladeItem extends SwordItem {
 
             @NotNull
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(PrimogemCraftItems.MORA_BILLET);
+                return Ingredient.of(PrimogemCraftItems.MORA_BILLET_ITEM);
             }
         }, 3, -3.95f, new Item.Properties().fireResistant());
     }

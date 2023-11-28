@@ -33,7 +33,7 @@ public class PrimogemShovelItem extends ShovelItem {
 
             @NotNull
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(PrimogemCraftItems.PRIMOGEM);
+                return Ingredient.of(PrimogemCraftItems.PRIMOGEM_ITEM);
             }
         }, 1, -3f, new Item.Properties().fireResistant().rarity(Rarity.RARE));
     }

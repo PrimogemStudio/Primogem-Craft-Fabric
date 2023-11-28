@@ -25,7 +25,7 @@ public class AcquaintFateEntity extends ThrowableItemProjectile {
     @Override
     @NotNull
     protected Item getDefaultItem() {
-        return PrimogemCraftItems.ACQUAINT_FATE;
+        return PrimogemCraftItems.ACQUAINT_FATE_ITEM;
     }
 
     @Override

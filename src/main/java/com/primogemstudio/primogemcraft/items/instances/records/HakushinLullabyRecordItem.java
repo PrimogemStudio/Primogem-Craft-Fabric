@@ -5,8 +5,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.RecordItem;
 
-public class TheFadingStoriesItem extends RecordItem {
-    public TheFadingStoriesItem() {
-        super(15, PrimogemCraftSounds.THE_FADING_STORIES, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 129);
+public class HakushinLullabyRecordItem extends RecordItem {
+    public HakushinLullabyRecordItem() {
+        super(15, PrimogemCraftSounds.HAKUSHIN_LULLABY, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 128);
     }
 }

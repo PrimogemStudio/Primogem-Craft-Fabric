@@ -46,7 +46,7 @@ public class VayudaTurquoiseGemstonePickaxeItem extends PickaxeItem {
             }
 
             public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAYUDA_TURQUOISE_GEMSTONE_SLIVER), new ItemStack(PrimogemCraftItems.PRIMOGEM));
+                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAYUDA_TURQUOISE_GEMSTONE_SLIVER_ITEM), new ItemStack(PrimogemCraftItems.PRIMOGEM_ITEM));
             }
         }, 1, -2.8f, new Item.Properties().fireResistant());
     }
