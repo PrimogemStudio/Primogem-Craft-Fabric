@@ -44,6 +44,15 @@
       }
     ]
   },
+  "music_disc.ballad_of_many_waters": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "primogemcraft:ballad_of_many_waters",
+        "stream": true
+      }
+    ]
+  },
   "music_disc.space_walk": {
     "category": "music",
     "sounds": [

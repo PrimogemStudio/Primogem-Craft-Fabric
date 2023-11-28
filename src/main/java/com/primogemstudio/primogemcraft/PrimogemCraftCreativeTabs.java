@@ -50,6 +50,7 @@ public class PrimogemCraftCreativeTabs {
             output.accept(THE_FADING_STORIES_RECORD_ITEM);
             output.accept(HAKUSHIN_LULLABY_RECORD_ITEM);
             output.accept(VILLAGE_SURROUNDED_BY_GREEN_RECORD_ITEM);
+            output.accept(BALLAD_OF_MANY_WATERS_RECORD_ITEM);
             output.accept(SPACE_WALK_RECORD_ITEM);
             output.accept(SALTY_MOON_RECORD_ITEM);
             output.accept(TAKE_THE_JOURNEY_RECORD_ITEM);
