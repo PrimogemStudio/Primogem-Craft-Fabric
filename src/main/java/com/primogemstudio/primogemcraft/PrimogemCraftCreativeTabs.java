@@ -58,8 +58,9 @@ public class PrimogemCraftCreativeTabs {
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE_ITEM)).displayItems((itemDisplayParameters, output) -> {
             output.accept(PRIMOGEM_ORE_ITEM);
-            output.accept(PRIMOGEM_BLOCK_ITEM);
+            output.accept(DEEP_SLATE_PRIMOGEM_ORE_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_ORE_ITEM);
+            output.accept(PRIMOGEM_BLOCK_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_BLOCK_ITEM);
             output.accept(INTERTWINED_FATE_BLOCK_ITEM);
             output.accept(DENDRO_CORE_BLOCK_ITEM);

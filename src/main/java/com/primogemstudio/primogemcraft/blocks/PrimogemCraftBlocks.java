@@ -14,6 +14,9 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 
@@ -21,6 +24,7 @@ public class PrimogemCraftBlocks {
     public static final DendroCoreBlock DENDRO_CORE_BLOCK = register("dendro_core_block", new DendroCoreBlock());
     public static final PrimogemBlock PRIMOGEM_BLOCK = register("primogem_block", new PrimogemBlock());
     public static final PrimogemOre PRIMOGEM_ORE = register("primogem_ore", new PrimogemOre());
+    public static final Block DEEP_SLATE_PRIMOGEM_ORE = register("deep_slate_primogem_ore", new Block(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.POLISHED_DEEPSLATE).strength(5f, 10f).lightLevel(s -> 1).requiresCorrectToolForDrops()));
     public static final IntertwinedFateBlock INTERTWINED_FATE_BLOCK = register("intertwined_fate_block", new IntertwinedFateBlock());
     public static final MoraBunchBlock MORA_BUNCH_BLOCK = register("mora_bunch_block", new MoraBunchBlock());
     public static final MoraBlock MORA_BLOCK = register("mora_block", new MoraBlock());
