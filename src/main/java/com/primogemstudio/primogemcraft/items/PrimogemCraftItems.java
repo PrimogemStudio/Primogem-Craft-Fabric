@@ -38,6 +38,7 @@ public class PrimogemCraftItems {
     public static final TheFadingStoriesRecordItem THE_FADING_STORIES_RECORD_ITEM = register("music_disc_the_fading_stories", new TheFadingStoriesRecordItem());
     public static final HakushinLullabyRecordItem HAKUSHIN_LULLABY_RECORD_ITEM = register("music_disc_hakushin_lullaby", new HakushinLullabyRecordItem());
     public static final VillageSurroundedByGreenRecordItem VILLAGE_SURROUNDED_BY_GREEN_RECORD_ITEM = register("music_disc_village_surrounded_by_green", new VillageSurroundedByGreenRecordItem());
+    public static final BalladofManyWatersRecordItem BALLAD_OF_MANY_WATERS_RECORD_ITEM = register("music_disc_ballad_of_many_waters", new BalladofManyWatersRecordItem());
     public static final SpaceWalkRecordItem SPACE_WALK_RECORD_ITEM = register("music_disc_space_walk", new SpaceWalkRecordItem());
     public static final SaltyMoonRecordItem SALTY_MOON_RECORD_ITEM = register("music_disc_salty_moon", new SaltyMoonRecordItem());
     public static final TakeTheJourneyRecordItem TAKE_THE_JOURNEY_RECORD_ITEM = register("music_disc_take_the_journey", new TakeTheJourneyRecordItem());
@@ -127,6 +128,7 @@ public class PrimogemCraftItems {
     public static final Item VAJRADA_AMETHYST_SLIVER_ITEM = register("vajrada_amethyst_sliver", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_FRAGMENT_ITEM = register("vajrada_amethyst_fragment", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_PIECE_ITEM = register("vajrada_amethyst_piece", new Item(new Item.Properties()));
+
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
