@@ -32,6 +32,7 @@ public class PrimogemCraftCreativeTabs {
             output.accept(EXQUISITE_MORA_BAG_ITEM);
             output.accept(MORA_WALLET_ITEM);
             output.accept(MORA_BILLET_ITEM);
+            output.accept(COSMIC_FRAGMENTS_ITEM);
             output.accept(ACQUAINT_FATE_ITEM);
             output.accept(INTERTWINED_FATE_ITEM);
             output.accept(INTERTWINED_FATE_TEN_ITEM);
