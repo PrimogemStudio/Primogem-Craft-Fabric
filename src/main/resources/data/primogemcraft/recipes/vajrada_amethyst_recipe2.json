@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "primogemcraft:vajrada_amethyst_block"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:vajrada_amethyst_gemstone",
+    "count": 9
+  }
+}

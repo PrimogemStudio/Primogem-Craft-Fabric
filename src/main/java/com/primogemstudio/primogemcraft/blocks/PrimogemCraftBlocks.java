@@ -2,6 +2,8 @@ package com.primogemstudio.primogemcraft.blocks;
 
 import com.primogemstudio.primogemcraft.blocks.instances.*;
 import com.primogemstudio.primogemcraft.blocks.instances.dendrocore.*;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.vajrada.VajradaAmethystBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.vajrada.VajradaAmethystOre;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vayuda.VayudaTurquoiseGemstoneBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vayuda.VayudaTurquoiseGemstoneOre;
 import com.primogemstudio.primogemcraft.blocks.instances.mora.*;
@@ -60,6 +62,8 @@ public class PrimogemCraftBlocks {
     public static final DendroCorePlankFenceBlock DENDRO_CORE_PLANK_FENCE_BLOCK = register("dendro_core_plank_fence", new DendroCorePlankFenceBlock());
     public static final VayudaTurquoiseGemstoneOre VAYUDA_TURQUOISE_GEMSTONE_ORE_BLOCK = register("vayuda_turquoise_gemstone_ore", new VayudaTurquoiseGemstoneOre());
     public static final VayudaTurquoiseGemstoneBlock VAYUDA_TURQUOISE_GEMSTONE_BLOCK = register("vayuda_turquoise_gemstone_block", new VayudaTurquoiseGemstoneBlock());
+    public static final VajradaAmethystOre VAJRADA_AMETHYST_ORE_BLOCK = register("vajrada_amethyst_ore", new VajradaAmethystOre());
+    public static final VajradaAmethystBlock VAJRADA_AMETHYST_BLOCK = register("vajrada_amethyst_block", new VajradaAmethystBlock());
 
     @Environment(EnvType.CLIENT)
     public static void initRenderLayers() {

@@ -132,6 +132,8 @@ public class PrimogemCraftItems {
     public static final Item VAJRADA_AMETHYST_SLIVER_ITEM = register("vajrada_amethyst_sliver", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_FRAGMENT_ITEM = register("vajrada_amethyst_fragment", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_PIECE_ITEM = register("vajrada_amethyst_piece", new Item(new Item.Properties()));
+    public static final BlockItem VAJRADA_AMETHYST_ORE_BLOCK_ITEM = register("vajrada_amethyst_ore", new BlockItem(VAJRADA_AMETHYST_ORE_BLOCK, new Item.Properties()));
+    public static final BlockItem VAJRADA_AMETHYST_BLOCK_ITEM = register("vajrada_amethyst_block", new BlockItem(VAJRADA_AMETHYST_BLOCK, new Item.Properties()));
 
     public static void init() {
         PrimogemCraftMobEffects.init();
