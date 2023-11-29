@@ -55,6 +55,7 @@ public class PrimogemCraftCreativeTabs {
             output.accept(SPACE_WALK_RECORD_ITEM);
             output.accept(SALTY_MOON_RECORD_ITEM);
             output.accept(TAKE_THE_JOURNEY_RECORD_ITEM);
+            output.accept(SOCIETY_TICKET_ITEM);
         }).build());
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE_ITEM)).displayItems((itemDisplayParameters, output) -> {
