@@ -1,0 +1,12 @@
+req -> src/main/resources/data/primogemcraft/loot_tables/entities/dendro_core_entity.json
+    add item shengzhangbifeisuixie
+    add item ssanbamiantou
+    add item wawanxiangwuchangtou
+    add item cebuzhunxia
+    add item chuangshijiejing
+    add item fulinjiao
+    add item yiyinhedaletou
+    add item zhzhenyinhedaletou
+    add item gongsideguguzhong
+    add item xiangdanganlao
+    add item qiwuchongwang

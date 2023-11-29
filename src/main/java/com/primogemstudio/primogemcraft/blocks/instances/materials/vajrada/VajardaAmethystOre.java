@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.blocks.instances.materials.vajarda;
+package com.primogemstudio.primogemcraft.blocks.instances.materials.vajrada;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
