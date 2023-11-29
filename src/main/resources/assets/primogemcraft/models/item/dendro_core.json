@@ -1,0 +1,7 @@
+{
+  "parent": "primogemcraft:custom/cao_yuan_he_fang_kuai_",
+  "textures": {
+    "0": "primogemcraft:item/dendro_core",
+    "particle": "primogemcraft:item/dendro_core"
+  }
+}
