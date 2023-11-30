@@ -3,6 +3,7 @@ package com.primogemstudio.primogemcraft.items.instances.materials.vayuda;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -10,11 +11,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.levelgen.LegacyRandomSource;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
-import java.util.Random;
 
 public class VayudaTurquoiseGemstoneAxeItem extends AxeItem {
     public VayudaTurquoiseGemstoneAxeItem() {
@@ -64,7 +63,7 @@ public class VayudaTurquoiseGemstoneAxeItem extends AxeItem {
                         _entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 240, 1, false, false));
                     }
 
-                    if (itemstack.hurt(Mth.nextInt(new LegacyRandomSource(new Random().nextLong()), 4, 8), new LegacyRandomSource(new Random().nextLong()), null)) {
+                    if (itemstack.hurt(Mth.nextInt(RandomSource.create(), 4, 8), RandomSource.create(), null)) {
                         itemstack.shrink(1);
                         itemstack.setDamageValue(0);
                     }
@@ -75,7 +74,7 @@ public class VayudaTurquoiseGemstoneAxeItem extends AxeItem {
                     if (entity instanceof LivingEntity _entity) {
                         _entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 1, false, false));
                     }
-                    if (itemstack.hurt(4, new LegacyRandomSource(new Random().nextLong()), null)) {
+                    if (itemstack.hurt(4, RandomSource.create(), null)) {
                         itemstack.shrink(1);
                         itemstack.setDamageValue(0);
                     }

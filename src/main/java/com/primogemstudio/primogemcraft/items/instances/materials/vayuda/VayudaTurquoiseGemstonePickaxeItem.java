@@ -8,6 +8,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -16,11 +17,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.levelgen.LegacyRandomSource;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
-import java.util.Random;
 
 public class VayudaTurquoiseGemstonePickaxeItem extends PickaxeItem {
     public VayudaTurquoiseGemstonePickaxeItem() {
@@ -52,7 +51,7 @@ public class VayudaTurquoiseGemstonePickaxeItem extends PickaxeItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player entity, InteractionHand hand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player entity, InteractionHand hand) {
         InteractionResultHolder<ItemStack> ar = super.use(level, entity, hand);
         if (entity.isShiftKeyDown()) {
             int x = (int) entity.getX();
@@ -62,11 +61,11 @@ public class VayudaTurquoiseGemstonePickaxeItem extends PickaxeItem {
             entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 300, 2, false, false));
             entity.getCooldowns().addCooldown(ar.getObject().getItem(), 800);
             if (!level.isClientSide()) {
-                level.playSound(null, new BlockPos(x, y, z), SoundEvents.TRIDENT_RIPTIDE_2, SoundSource.PLAYERS, (float) 0.3, (float) Mth.nextDouble(new LegacyRandomSource(new Random().nextLong()), 1.2, 5));
+                level.playSound(null, new BlockPos(x, y, z), SoundEvents.TRIDENT_RIPTIDE_2, SoundSource.PLAYERS, (float) 0.3, (float) Mth.nextDouble(RandomSource.create(), 1.2, 5));
             }
             else {
 
-                level.playLocalSound(x, y, z, SoundEvents.TRIDENT_RIPTIDE_2, SoundSource.PLAYERS, (float) 0.3, (float) Mth.nextDouble(new LegacyRandomSource(new Random().nextLong()), 1.2, 5), false);
+                level.playLocalSound(x, y, z, SoundEvents.TRIDENT_RIPTIDE_2, SoundSource.PLAYERS, (float) 0.3, (float) Mth.nextDouble(RandomSource.create(), 1.2, 5), false);
             }
             if (ar.getObject().getItem() == entity.getMainHandItem().getItem()) {
                 entity.swing(InteractionHand.MAIN_HAND, true);
@@ -79,7 +78,7 @@ public class VayudaTurquoiseGemstonePickaxeItem extends PickaxeItem {
             }
 
             ItemStack _ist = ar.getObject();
-            if (_ist.hurt(1, new LegacyRandomSource(new Random().nextLong()), null)) {
+            if (_ist.hurt(1, RandomSource.create(), null)) {
                 _ist.shrink(1);
                 _ist.setDamageValue(0);
             }

@@ -9,6 +9,7 @@ public class Events {
     public static final Event<NewPlayerJoinEvent> ON_PLAYER_JOIN = EventFactory.createArrayBacked(NewPlayerJoinEvent.class, arr -> (netManager, player) -> {
         for (var event : arr) event.onConnect(netManager, player);
     });
+
     public interface NewPlayerJoinEvent {
         void onConnect(Connection netManager, ServerPlayer player);
     }
