@@ -132,6 +132,7 @@ public class PrimogemCraftItems {
     public static final Item VAJRADA_AMETHYST_SLIVER_ITEM = register("vajrada_amethyst_sliver", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_FRAGMENT_ITEM = register("vajrada_amethyst_fragment", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_PIECE_ITEM = register("vajrada_amethyst_piece", new Item(new Item.Properties()));
+    public static final DendroCoreItem DENDRO_CORE_ITEM = register("dendro_core", new DendroCoreItem());
 
     public static void init() {
         PrimogemCraftMobEffects.init();

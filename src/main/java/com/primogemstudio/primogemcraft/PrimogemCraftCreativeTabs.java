@@ -24,6 +24,7 @@ public class PrimogemCraftCreativeTabs {
             output.accept(THE_ALL_BEGINNING_ITEM);
             output.accept(PRIMOGEM_ITEM);
             output.accept(PRIMOGEM_BILLET_ITEM);
+            output.accept(DENDRO_CORE_ITEM);
             output.accept(OLD_STONE_ITEM);
             output.accept(MASTER_LESS_STAR_DUST_ITEM);
             output.accept(MASTER_LESS_STARG_LITTER_ITEM);
