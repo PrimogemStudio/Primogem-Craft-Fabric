@@ -6,6 +6,7 @@
     "ImprovedNoiseMixin",
     "LevelStorageSourceMixin",
     "LevelStorageSourceMixin$LevelStorageAccessMixin",
+    "LivingEntityMixin",
     "MobEffectInstanceMixin",
     "PerlinNoiseMixin",
     "PlayerListMixin"

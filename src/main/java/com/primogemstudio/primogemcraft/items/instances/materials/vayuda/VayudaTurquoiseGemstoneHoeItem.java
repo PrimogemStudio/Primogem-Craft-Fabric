@@ -3,6 +3,7 @@ package com.primogemstudio.primogemcraft.items.instances.materials.vayuda;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -10,11 +11,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.levelgen.LegacyRandomSource;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
-import java.util.Random;
 
 import static com.primogemstudio.primogemcraft.util.GameUtil.isCreative;
 
@@ -69,7 +68,7 @@ public class VayudaTurquoiseGemstoneHoeItem extends HoeItem {
         if (entity == null) return;
         if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.KNOCKBACK, itemstack) == 0 && !isCreative(entity) && entity.getMainHandItem().getItem() == itemstack.getItem()
                 && entity.getOffhandItem().getItem() == itemstack.getItem()) {
-            (itemstack).enchant(Enchantments.KNOCKBACK, Mth.nextInt(new LegacyRandomSource(new Random().nextLong()), 8, 10));
+            (itemstack).enchant(Enchantments.KNOCKBACK, Mth.nextInt(RandomSource.create(), 8, 10));
         }
         if (isCreative(entity) && EnchantmentHelper.getItemEnchantmentLevel(Enchantments.KNOCKBACK, itemstack) == 0) {
             (itemstack).enchant(Enchantments.KNOCKBACK, 10);
