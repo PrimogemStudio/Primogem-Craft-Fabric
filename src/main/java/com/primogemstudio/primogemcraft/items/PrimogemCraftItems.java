@@ -2,6 +2,7 @@ package com.primogemstudio.primogemcraft.items;
 
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
+import com.primogemstudio.primogemcraft.items.instances.curios.SocietyTicketItem;
 import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.*;
 import com.primogemstudio.primogemcraft.items.instances.mora.*;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
@@ -48,6 +49,8 @@ public class PrimogemCraftItems {
     public static final ExquisiteMoraItem EXQUISITE_MORA_ITEM = register("exquisite_mora", new ExquisiteMoraItem());
     public static final ExquisiteMoraBagItem EXQUISITE_MORA_BAG_ITEM = register("exquisite_mora_bag", new ExquisiteMoraBagItem());
     public static final MoraWalletItem MORA_WALLET_ITEM = register("mora_wallet", new MoraWalletItem());
+    public static final CosmicFragmentsItem COSMIC_FRAGMENTS_ITEM = register("cosmic_fragments", new CosmicFragmentsItem());
+    public static final SocietyTicketItem SOCIETY_TICKET_ITEM = register("society_ticket", new SocietyTicketItem());
     public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD_ITEM = register("strange_primogem_sword", new StrangePrimogemSwordItem());
     public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
     public static final BlockItem DEEP_SLATE_PRIMOGEM_ORE_ITEM = register("deep_slate_primogem_ore", new BlockItem(DEEP_SLATE_PRIMOGEM_ORE, new Item.Properties()));
