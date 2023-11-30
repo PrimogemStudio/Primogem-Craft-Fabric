@@ -42,6 +42,8 @@
   "block.primogemcraft.rusted_plank_stairs": "朽木楼梯",
   "block.primogemcraft.vayuda_turquoise_gemstone_block": "§a自在松石 块",
   "block.primogemcraft.vayuda_turquoise_gemstone_ore": "§a自在松石 矿石",
+  "block.primogemcraft.vajrada_amethyst_ore": "§d最胜紫晶 矿石",
+  "block.primogemcraft.vajrada_amethyst_block": "§d最胜紫晶 块",
   "item.primogemcraft.primogem": "原石",
   "item.primogemcraft.vayuda_turquoise_gemstone": "自在松石",
   "item.primogemcraft.vayuda_turquoise_gemstone_sliver": "§a自在松石 碎屑",
@@ -117,8 +119,8 @@
   "item.primogemcraft.vayuda_turquoise_gemstone_iron_leggings": "§a『自在松石』 §f铁护腿",
   "item.primogemcraft.vayuda_turquoise_gemstone_iron_helmet": "§a『自在松石』 §f铁头盔",
   "item.primogemcraft.vajrada_amethyst": "§d最胜紫晶",
-  "item.primogemcraft.vajrada_amethyst_sliver": "§d最胜紫晶 碎屑",
   "item.primogemcraft.vajrada_amethyst_fragment": "§d最胜紫晶 断片",
+  "item.primogemcraft.vajrada_amethyst_sliver": "§d最胜紫晶 碎屑",
   "item.primogemcraft.vajrada_amethyst_piece": "§d最胜紫晶 块",
   "item.primogemcraft.dendro_core": "§a草原核",
   "item.primogemcraft.cosmic_fragments": "宇宙碎片",
@@ -228,5 +230,6 @@
   "advancement.primogemcraft.intertwined_fate.desc": "获得一枚纠缠之缘",
   "advancement.primogemcraft.intertwined_fate_ten": "十连抽！！！",
   "advancement.primogemcraft.intertwined_fate_ten.desc": "获得十连抽道具",
-  "rei.primogemcraft.category.wish": "祈愿"
+  "rei.primogemcraft.category.wish": "祈愿",
+  "item.primogemcraft.dendro_core": "§a草原核"
 }
