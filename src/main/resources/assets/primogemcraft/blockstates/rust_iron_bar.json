@@ -1,0 +1,77 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_post"
+      }
+    },
+    {
+      "when": {
+        "north": true
+      },
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_side"
+      }
+    },
+    {
+      "when": {
+        "east": true
+      },
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_side",
+        "y": 90.0
+      }
+    },
+    {
+      "when": {
+        "south": true
+      },
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_side_alt"
+      }
+    },
+    {
+      "when": {
+        "west": true
+      },
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_side_alt",
+        "y": 90.0
+      }
+    },
+    {
+      "when": {
+        "north": false
+      },
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_noside"
+      }
+    },
+    {
+      "when": {
+        "east": false
+      },
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_noside_alt"
+      }
+    },
+    {
+      "when": {
+        "south": false
+      },
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_noside_alt",
+        "y": 90.0
+      }
+    },
+    {
+      "when": {
+        "west": false
+      },
+      "apply": {
+        "model": "primogemcraft:block/rust_iron_bar_noside",
+        "y": 270.0
+      }
+    }
+  ]
+}

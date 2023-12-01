@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "primogemcraft:block/tiesiwang"
+  },
+  "render_type": "solid"
+}
