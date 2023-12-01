@@ -3,8 +3,10 @@ package com.primogemstudio.primogemcraft.items;
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
 import com.primogemstudio.primogemcraft.items.instances.curios.SocietyTicketItem;
-import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.VajradaAmethystAxe;
-import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.VajradaAmethystHoe;
+import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.VajradaAmethystAxeItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.VajradaAmethystHoeItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.VajradaAmethystPickaxeItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.VajradaAmethystShovelItem;
 import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.*;
 import com.primogemstudio.primogemcraft.items.instances.mora.*;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
@@ -137,8 +139,10 @@ public class PrimogemCraftItems {
     public static final DendroCoreItem DENDRO_CORE_ITEM = register("dendro_core", new DendroCoreItem());
     public static final BlockItem VAJRADA_AMETHYST_ORE_BLOCK_ITEM = register("vajrada_amethyst_ore", new BlockItem(VAJRADA_AMETHYST_ORE_BLOCK, new Item.Properties()));
     public static final BlockItem VAJRADA_AMETHYST_BLOCK_ITEM = register("vajrada_amethyst_block", new BlockItem(VAJRADA_AMETHYST_BLOCK, new Item.Properties()));
-    public static final VajradaAmethystHoe VAJRADA_AMETHYST_HOE = register("vajrada_amethyst_hoe", new VajradaAmethystHoe());
-    public static final VajradaAmethystAxe VAJRADA_AMETHYST_AXE = register("vajrada_amethyst_axe", new VajradaAmethystAxe());
+    public static final VajradaAmethystHoeItem VAJRADA_AMETHYST_HOE_ITEM = register("vajrada_amethyst_hoe", new VajradaAmethystHoeItem());
+    public static final VajradaAmethystAxeItem VAJRADA_AMETHYST_AXE_ITEM = register("vajrada_amethyst_axe", new VajradaAmethystAxeItem());
+    public static final VajradaAmethystPickaxeItem VAJRADA_AMETHYST_PICKAXE_ITEM = register("vajrada_amethyst_pickaxe", new VajradaAmethystPickaxeItem());
+    public static final VajradaAmethystShovelItem VAJRADA_AMETHYST_SHOVEL_ITEM = register("vajrada_amethyst_shovel", new VajradaAmethystShovelItem());
 
     public static void init() {
         PrimogemCraftMobEffects.init();

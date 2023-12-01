@@ -17,8 +17,8 @@ import java.util.List;
 
 import static net.minecraft.server.level.ServerLevel.*;
 
-public class VajradaAmethystHoe extends HoeItem {
-    public VajradaAmethystHoe() {
+public class VajradaAmethystHoeItem extends HoeItem {
+    public VajradaAmethystHoeItem() {
         super(new Tier() {
             public int getUses() {
                 return 1561;

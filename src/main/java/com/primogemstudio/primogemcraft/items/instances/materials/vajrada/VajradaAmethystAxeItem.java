@@ -16,8 +16,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class VajradaAmethystAxe extends AxeItem implements ItemExtension {
-    public VajradaAmethystAxe() {
+public class VajradaAmethystAxeItem extends AxeItem implements ItemExtension {
+    public VajradaAmethystAxeItem() {
         super(new Tier() {
             public int getUses() {
                 return 1561;

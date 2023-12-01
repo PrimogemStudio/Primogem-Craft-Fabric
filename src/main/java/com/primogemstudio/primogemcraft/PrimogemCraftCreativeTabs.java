@@ -141,8 +141,10 @@ public class PrimogemCraftCreativeTabs {
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_CHESTPLATE_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_LEGGINGS_ITEM);
             output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_BOOTS_ITEM);
-            output.accept(VAJRADA_AMETHYST_HOE);
-            output.accept(VAJRADA_AMETHYST_AXE);
+            output.accept(VAJRADA_AMETHYST_HOE_ITEM);
+            output.accept(VAJRADA_AMETHYST_AXE_ITEM);
+            output.accept(VAJRADA_AMETHYST_PICKAXE_ITEM);
+            output.accept(VAJRADA_AMETHYST_SHOVEL_ITEM);
         }).build());
     }
 }
