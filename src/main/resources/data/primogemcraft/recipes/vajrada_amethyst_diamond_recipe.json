@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "-/-",
+    "*#*",
+    "-/-"
+  ],
+  "key": {
+    "-": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "/": {
+      "item": "primogemcraft:vajrada_amethyst_sliver"
+    },
+    "*": {
+      "item": "primogemcraft:vajrada_amethyst_fragment"
+    },
+    "#": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:vajrada_amethyst_diamond"
+  }
+}

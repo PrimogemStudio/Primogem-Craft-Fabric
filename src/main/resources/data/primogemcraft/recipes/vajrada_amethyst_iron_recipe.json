@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "-#-",
+    "#-#",
+    "-#-"
+  ],
+  "key": {
+    "-": {
+      "item": "minecraft:iron_ingot"
+    },
+    "#": {
+      "item": "primogemcraft:vajrada_amethyst_sliver"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:vajrada_amethyst_iron"
+  }
+}

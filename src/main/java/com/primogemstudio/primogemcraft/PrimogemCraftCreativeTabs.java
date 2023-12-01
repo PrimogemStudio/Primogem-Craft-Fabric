@@ -48,6 +48,9 @@ public class PrimogemCraftCreativeTabs {
             output.accept(VAJRADA_AMETHYST_FRAGMENT_ITEM);
             output.accept(VAJRADA_AMETHYST_PIECE_ITEM);
             output.accept(VAJRADA_AMETHYST_ITEM);
+            output.accept(VAJRADA_AMETHYST_IRON_ITEM);
+            output.accept(VAJRADA_AMETHYST_DIAMOND_ITEM);
+            output.accept(VAJRADA_AMETHYST_NETHERITE_ITEM);
             output.accept(A_NEW_DAY_WITH_HOPE_RECORD_ITEM);
             output.accept(THE_FADING_STORIES_RECORD_ITEM);
             output.accept(HAKUSHIN_LULLABY_RECORD_ITEM);

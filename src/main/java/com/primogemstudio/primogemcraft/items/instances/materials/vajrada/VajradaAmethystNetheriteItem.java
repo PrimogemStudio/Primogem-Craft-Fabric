@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.items.instances.materials.vayuda;
+package com.primogemstudio.primogemcraft.items.instances.materials.vajrada;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
@@ -9,9 +9,9 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
-public class VayudaTurquoiseGemstoneNetheriteItem extends Item {
-    public VayudaTurquoiseGemstoneNetheriteItem() {
-        super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+public class VajradaAmethystNetheriteItem extends Item {
+    public VajradaAmethystNetheriteItem() {
+        super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON));
     }
 
     @Override
