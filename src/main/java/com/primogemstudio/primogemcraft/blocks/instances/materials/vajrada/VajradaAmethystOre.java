@@ -20,7 +20,7 @@ public class VajradaAmethystOre extends Block {
 
     @Override
     public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-        list.add(Component.literal("§5在\u6C34\u57DF\u00A7c\u9644\u8FD1\u00A75\u751F\u6210"));
+        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_ore.line1"));
     }
 
     @Override
