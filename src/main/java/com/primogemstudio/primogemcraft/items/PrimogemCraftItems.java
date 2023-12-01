@@ -14,12 +14,10 @@ import com.primogemstudio.primogemcraft.items.instances.records.*;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
-import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.*;
 
 public class PrimogemCraftItems {
     public static final TheAllBeginningItem THE_ALL_BEGINNING_ITEM = register("the_all_beginning", new TheAllBeginningItem());
@@ -28,8 +26,6 @@ public class PrimogemCraftItems {
     public static final Item MASTER_LESS_STAR_DUST_ITEM = register("masterless_stardust", new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
     public static final Item MASTER_LESS_STARG_LITTER_ITEM = register("masterless_starglitter", new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
     public static final PrimogemBilletItem PRIMOGEM_BILLET_ITEM = register("primogem_billet", new PrimogemBilletItem());
-    public static final BlockItem DENDRO_CORE_BLOCK_ITEM = register("dendro_core_block", new BlockItem(DENDRO_CORE_BLOCK, new Item.Properties()));
-    public static final BlockItem PRIMOGEM_BLOCK_ITEM = register("primogem_block", new BlockItem(PRIMOGEM_BLOCK, new Item.Properties()));
     public static final IntertwinedFateItem INTERTWINED_FATE_ITEM = register("intertwined_fate", new IntertwinedFateItem());
     public static final AcquaintFateItem ACQUAINT_FATE_ITEM = register("acquaint_fate", new AcquaintFateItem());
     public static final DendroPickaxeItem DENDRO_PICKAXE_ITEM = register("dendro_pickaxe", new DendroPickaxeItem());
@@ -56,16 +52,6 @@ public class PrimogemCraftItems {
     public static final CosmicFragmentsItem COSMIC_FRAGMENTS_ITEM = register("cosmic_fragments", new CosmicFragmentsItem());
     public static final SocietyTicketItem SOCIETY_TICKET_ITEM = register("society_ticket", new SocietyTicketItem());
     public static final StrangePrimogemSwordItem STRANGE_PRIMOGEM_SWORD_ITEM = register("strange_primogem_sword", new StrangePrimogemSwordItem());
-    public static final BlockItem PRIMOGEM_ORE_ITEM = register("primogem_ore", new BlockItem(PRIMOGEM_ORE, new Item.Properties()));
-    public static final BlockItem DEEP_SLATE_PRIMOGEM_ORE_ITEM = register("deep_slate_primogem_ore", new BlockItem(DEEP_SLATE_PRIMOGEM_ORE, new Item.Properties()));
-    public static final BlockItem INTERTWINED_FATE_BLOCK_ITEM = register("intertwined_fate_block", new BlockItem(INTERTWINED_FATE_BLOCK, new Item.Properties()));
-    public static final BlockItem MORA_BUNCH_BLOCK_ITEM = register("mora_bunch_block", new BlockItem(MORA_BUNCH_BLOCK, new Item.Properties()));
-    public static final BlockItem MORA_BLOCK_ITEM = register("mora_block", new BlockItem(MORA_BLOCK, new Item.Properties()));
-    public static final BlockItem EXQUISITE_MORA_BLOCK_ITEM = register("exquisite_mora_block", new BlockItem(EXQUISITE_MORA_BLOCK, new Item.Properties()));
-    public static final BlockItem CHEAP_MORA_BLOCK_ITEM = register("cheap_mora_block", new BlockItem(CHEAP_MORA_BLOCK, new Item.Properties()));
-    public static final BlockItem CHEAP_MORA_SLAB_ITEM = register("cheap_mora_slab", new BlockItem(CHEAP_MORA_SLAB_BLOCK, new Item.Properties()));
-    public static final BlockItem CHEAP_MORA_STAIR_ITEM = register("cheap_mora_stair", new BlockItem(CHEAP_MORA_STAIR_BLOCK, new Item.Properties()));
-    public static final BlockItem CHEAP_MORA_WALL_ITEM = register("cheap_mora_wall", new BlockItem(CHEAP_MORA_WALL_BLOCK, new Item.Properties()));
     public static final MoraPickaxeItem MORA_PICKAXE_ITEM = register("mora_pickaxe", new MoraPickaxeItem());
     public static final MoraSwordItem MORA_SWORD_ITEM = register("mora_sword", new MoraSwordItem());
     public static final MoraShovelItem MORA_SHOVEL_ITEM = register("mora_shovel", new MoraShovelItem());
@@ -75,35 +61,7 @@ public class PrimogemCraftItems {
     public static final MoraArmorItem.MoraChestplate MORA_CHESTPLATE_ITEM = register("mora_chestplate", new MoraArmorItem.MoraChestplate());
     public static final MoraArmorItem.MoraLeggings MORA_LEGGINGS_ITEM = register("mora_leggings", new MoraArmorItem.MoraLeggings());
     public static final MoraArmorItem.MoraBoots MORA_BOOTS_ITEM = register("mora_boots", new MoraArmorItem.MoraBoots());
-    public static final BlockItem TEYVAT_PLANKS_BLOCK_ITEM = register("teyvat_planks", new BlockItem(TEYVAT_PLANKS_BLOCK, new Item.Properties()));
-    public static final BlockItem TEYVAT_PLANK_SLAB_BLOCK_ITEM = register("teyvat_plank_slab", new BlockItem(TEYVAT_PLANK_SLAB_BLOCK, new Item.Properties()));
-    public static final BlockItem TEYVAT_PLANK_STAIR_BLOCK_ITEM = register("teyvat_plank_stair", new BlockItem(TEYVAT_PLANK_STAIR_BLOCK, new Item.Properties()));
-    public static final BlockItem TEYVAT_PLANK_FENCE_BLOCK_ITEM = register("teyvat_plank_fence", new BlockItem(TEYVAT_PLANK_FENCE_BLOCK, new Item.Properties()));
-    public static final BlockItem TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM = register("teyvat_plank_fence_gate", new BlockItem(TEYVAT_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
     public static final Item TEYVAT_STICK_ITEM = register("teyvat_stick", new Item(new Item.Properties()));
-    public static final BlockItem BLUE_TEYVAT_PLANKS_BLOCK_ITEM = register("blue_teyvat_planks", new BlockItem(BLUE_TEYVAT_PLANKS_BLOCK, new Item.Properties()));
-    public static final BlockItem BLUE_TEYVAT_PLANK_SLAB_BLOCK_ITEM = register("blue_teyvat_plank_slab", new BlockItem(BLUE_TEYVAT_PLANK_SLAB_BLOCK, new Item.Properties()));
-    public static final BlockItem BLUE_TEYVAT_PLANK_STAIR_BLOCK_ITEM = register("blue_teyvat_plank_stair", new BlockItem(BLUE_TEYVAT_PLANK_STAIR_BLOCK, new Item.Properties()));
-    public static final BlockItem BLUE_TEYVAT_PLANK_FENCE_BLOCK_ITEM = register("blue_teyvat_plank_fence", new BlockItem(BLUE_TEYVAT_PLANK_FENCE_BLOCK, new Item.Properties()));
-    public static final BlockItem BLUE_TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM = register("blue_teyvat_plank_fence_gate", new BlockItem(BLUE_TEYVAT_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
-    public static final BlockItem PINK_TEYVAT_PLANKS_BLOCK_ITEM = register("pink_teyvat_planks", new BlockItem(PINK_TEYVAT_PLANKS_BLOCK, new Item.Properties()));
-
-    public static final BlockItem PINK_TEYVAT_PLANK_SLAB_BLOCK_ITEM = register("pink_teyvat_plank_slab", new BlockItem(PINK_TEYVAT_PLANK_SLAB_BLOCK, new Item.Properties()));
-    public static final BlockItem PINK_TEYVAT_PLANK_STAIR_BLOCK_ITEM = register("pink_teyvat_plank_stair", new BlockItem(PINK_TEYVAT_PLANK_STAIR_BLOCK, new Item.Properties()));
-    public static final BlockItem PINK_TEYVAT_PLANK_FENCE_BLOCK_ITEM = register("pink_teyvat_plank_fence", new BlockItem(PINK_TEYVAT_PLANK_FENCE_BLOCK, new Item.Properties()));
-    public static final BlockItem PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM = register("pink_teyvat_plank_fence_gate", new BlockItem(PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
-    public static final BlockItem CHAR_COAL_BLOCK_ITEM = register("charcoal_block", new BlockItem(CHAR_COAL_BLOCK, new Item.Properties()));
-    public static final BlockItem RUSTED_PLANK_BLOCK_ITEM = register("rusted_plank", new BlockItem(RUSTED_PLANK_BLOCK, new Item.Properties()));
-    public static final BlockItem RUSTED_PLANK_STAIR_BLOCK_ITEM = register("rusted_plank_stairs", new BlockItem(RUSTED_PLANK_STAIR_BLOCK, new Item.Properties()));
-    public static final BlockItem DENDRO_CORE_PLANKS_BLOCK_ITEM = register("dendro_core_planks", new BlockItem(DENDRO_CORE_PLANKS_BLOCK, new Item.Properties()));
-    public static final BlockItem DENDRO_CORE_PLANK_SLAB_ITEM = register("dendro_core_plank_slab", new BlockItem(DENDRO_CORE_PLANK_SLAB_BLOCK, new Item.Properties()));
-    public static final BlockItem DENDRO_CORE_PLANK_STAIRS_ITEM = register("dendro_core_plank_stairs", new BlockItem(DENDRO_CORE_PLANK_STAIRS_BLOCK, new Item.Properties()));
-    public static final BlockItem DENDRO_CORE_PLANK_PRESSURE_PLATE_ITEM = register("dendro_core_plank_pressure_plate", new BlockItem(DENDRO_CORE_PLANK_PRESSURE_PLATE_BLOCK, new Item.Properties()));
-    public static final BlockItem DENDRO_CORE_PLANK_BUTTON_ITEM = register("dendro_core_plank_button", new BlockItem(DENDRO_CORE_PLANK_BUTTON_BLOCK, new Item.Properties()));
-    public static final BlockItem DENDRO_CORE_PLANK_FENCE_GATE_ITEM = register("dendro_core_plank_fence_gate", new BlockItem(DENDRO_CORE_PLANK_FENCE_GATE_BLOCK, new Item.Properties()));
-    public static final BlockItem DENDRO_CORE_PLANK_FENCE_ITEM = register("dendro_core_plank_fence", new BlockItem(DENDRO_CORE_PLANK_FENCE_BLOCK, new Item.Properties()));
-    public static final BlockItem VAYUDA_TURQUOISE_GEMSTONE_ORE_ITEM = register("vayuda_turquoise_gemstone_ore", new BlockItem(VAYUDA_TURQUOISE_GEMSTONE_ORE_BLOCK, new Item.Properties()));
-    public static final BlockItem VAYUDA_TURQUOISE_GEMSTONE_BLOCK_ITEM = register("vayuda_turquoise_gemstone_block", new BlockItem(VAYUDA_TURQUOISE_GEMSTONE_BLOCK, new Item.Properties()));
     public static final Item VAYUDA_TURQUOISE_GEMSTONE_ITEM = register("vayuda_turquoise_gemstone", new Item(new Item.Properties()));
     public static final Item VAYUDA_TURQUOISE_GEMSTONE_PIECE_ITEM = register("vayuda_turquoise_gemstone_piece", new Item(new Item.Properties()));
     public static final Item VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT_ITEM = register("vayuda_turquoise_gemstone_fragment", new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
@@ -137,8 +95,6 @@ public class PrimogemCraftItems {
     public static final Item VAJRADA_AMETHYST_FRAGMENT_ITEM = register("vajrada_amethyst_fragment", new Item(new Item.Properties()));
     public static final Item VAJRADA_AMETHYST_PIECE_ITEM = register("vajrada_amethyst_piece", new Item(new Item.Properties()));
     public static final DendroCoreItem DENDRO_CORE_ITEM = register("dendro_core", new DendroCoreItem());
-    public static final BlockItem VAJRADA_AMETHYST_ORE_BLOCK_ITEM = register("vajrada_amethyst_ore", new BlockItem(VAJRADA_AMETHYST_ORE_BLOCK, new Item.Properties()));
-    public static final BlockItem VAJRADA_AMETHYST_BLOCK_ITEM = register("vajrada_amethyst_block", new BlockItem(VAJRADA_AMETHYST_BLOCK, new Item.Properties()));
     public static final VajradaAmethystHoeItem VAJRADA_AMETHYST_HOE_ITEM = register("vajrada_amethyst_hoe", new VajradaAmethystHoeItem());
     public static final VajradaAmethystAxeItem VAJRADA_AMETHYST_AXE_ITEM = register("vajrada_amethyst_axe", new VajradaAmethystAxeItem());
     public static final VajradaAmethystPickaxeItem VAJRADA_AMETHYST_PICKAXE_ITEM = register("vajrada_amethyst_pickaxe", new VajradaAmethystPickaxeItem());

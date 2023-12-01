@@ -1,7 +1,6 @@
 package com.primogemstudio.primogemcraft.entities.instances.entities;
 
 import com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks;
-import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.protocol.Packet;
@@ -72,7 +71,7 @@ public class DendroCoreEntity extends PathfinderMob {
         } else if ((posit = findAir(serverWorld, posit)) != null) {
             serverWorld.setBlock(posit, PrimogemCraftBlocks.DENDRO_CORE_BLOCK.defaultBlockState(), 3);
         } else {
-            serverWorld.addFreshEntity(new ItemEntity(serverWorld, getX(), getY(), getZ(), new ItemStack(PrimogemCraftItems.DENDRO_CORE_BLOCK_ITEM)));
+            serverWorld.addFreshEntity(new ItemEntity(serverWorld, getX(), getY(), getZ(), new ItemStack(PrimogemCraftBlocks.DENDRO_CORE_BLOCK)));
         }
         discard();
     }
