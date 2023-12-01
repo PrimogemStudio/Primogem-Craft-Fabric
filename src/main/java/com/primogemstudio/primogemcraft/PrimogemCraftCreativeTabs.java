@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft;
 
+import com.google.common.collect.ImmutableList;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -11,6 +12,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
+import static com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks.*;
 import static com.primogemstudio.primogemcraft.items.PrimogemCraftItems.*;
 
 public class PrimogemCraftCreativeTabs {
@@ -20,131 +22,61 @@ public class PrimogemCraftCreativeTabs {
 
     public static void init() {
         PrimogemCraftItems.init();
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_MAIN, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM_ITEM)).displayItems((itemDisplayParameters, output) -> {
-            output.accept(THE_ALL_BEGINNING_ITEM);
-            output.accept(PRIMOGEM_ITEM);
-            output.accept(PRIMOGEM_BILLET_ITEM);
-            output.accept(DENDRO_CORE_ITEM);
-            output.accept(OLD_STONE_ITEM);
-            output.accept(MASTER_LESS_STAR_DUST_ITEM);
-            output.accept(MASTER_LESS_STARG_LITTER_ITEM);
-            output.accept(MORA_ITEM);
-            output.accept(EXQUISITE_MORA_ITEM);
-            output.accept(EXQUISITE_MORA_BAG_ITEM);
-            output.accept(MORA_WALLET_ITEM);
-            output.accept(MORA_BILLET_ITEM);
-            output.accept(COSMIC_FRAGMENTS_ITEM);
-            output.accept(ACQUAINT_FATE_ITEM);
-            output.accept(INTERTWINED_FATE_ITEM);
-            output.accept(INTERTWINED_FATE_TEN_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_SLIVER_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_PIECE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_ITEM);
-            output.accept(VAJRADA_AMETHYST_SLIVER_ITEM);
-            output.accept(VAJRADA_AMETHYST_FRAGMENT_ITEM);
-            output.accept(VAJRADA_AMETHYST_PIECE_ITEM);
-            output.accept(VAJRADA_AMETHYST_ITEM);
-            output.accept(A_NEW_DAY_WITH_HOPE_RECORD_ITEM);
-            output.accept(THE_FADING_STORIES_RECORD_ITEM);
-            output.accept(HAKUSHIN_LULLABY_RECORD_ITEM);
-            output.accept(VILLAGE_SURROUNDED_BY_GREEN_RECORD_ITEM);
-            output.accept(BALLAD_OF_MANY_WATERS_RECORD_ITEM);
-            output.accept(SPACE_WALK_RECORD_ITEM);
-            output.accept(SALTY_MOON_RECORD_ITEM);
-            output.accept(TAKE_THE_JOURNEY_RECORD_ITEM);
-            output.accept(SOCIETY_TICKET_ITEM);
-        }).build());
-
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE_ITEM)).displayItems((itemDisplayParameters, output) -> {
-            output.accept(PRIMOGEM_ORE_ITEM);
-            output.accept(DEEP_SLATE_PRIMOGEM_ORE_ITEM);
-            output.accept(PRIMOGEM_BLOCK_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_ORE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_BLOCK_ITEM);
-            output.accept(VAJRADA_AMETHYST_ORE_BLOCK_ITEM);
-            output.accept(VAJRADA_AMETHYST_BLOCK_ITEM);
-            output.accept(INTERTWINED_FATE_BLOCK_ITEM);
-            output.accept(DENDRO_CORE_BLOCK_ITEM);
-            output.accept(MORA_BUNCH_BLOCK_ITEM);
-            output.accept(MORA_BLOCK_ITEM);
-            output.accept(EXQUISITE_MORA_BLOCK_ITEM);
-            output.accept(CHEAP_MORA_BLOCK_ITEM);
-            output.accept(CHEAP_MORA_SLAB_ITEM);
-            output.accept(CHEAP_MORA_STAIR_ITEM);
-            output.accept(CHEAP_MORA_WALL_ITEM);
-            output.accept(TEYVAT_STICK_ITEM);
-            output.accept(TEYVAT_PLANKS_BLOCK_ITEM);
-            output.accept(TEYVAT_PLANK_SLAB_BLOCK_ITEM);
-            output.accept(TEYVAT_PLANK_STAIR_BLOCK_ITEM);
-            output.accept(TEYVAT_PLANK_FENCE_BLOCK_ITEM);
-            output.accept(TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM);
-            output.accept(BLUE_TEYVAT_PLANKS_BLOCK_ITEM);
-            output.accept(BLUE_TEYVAT_PLANK_SLAB_BLOCK_ITEM);
-            output.accept(BLUE_TEYVAT_PLANK_STAIR_BLOCK_ITEM);
-            output.accept(BLUE_TEYVAT_PLANK_FENCE_BLOCK_ITEM);
-            output.accept(BLUE_TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM);
-            output.accept(PINK_TEYVAT_PLANKS_BLOCK_ITEM);
-            output.accept(PINK_TEYVAT_PLANK_SLAB_BLOCK_ITEM);
-            output.accept(PINK_TEYVAT_PLANK_STAIR_BLOCK_ITEM);
-            output.accept(PINK_TEYVAT_PLANK_FENCE_BLOCK_ITEM);
-            output.accept(PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK_ITEM);
-            output.accept(CHAR_COAL_BLOCK_ITEM);
-            output.accept(RUSTED_PLANK_BLOCK_ITEM);
-            output.accept(RUSTED_PLANK_STAIR_BLOCK_ITEM);
-            output.accept(DENDRO_CORE_PLANKS_BLOCK_ITEM);
-            output.accept(DENDRO_CORE_PLANK_SLAB_ITEM);
-            output.accept(DENDRO_CORE_PLANK_STAIRS_ITEM);
-            output.accept(DENDRO_CORE_PLANK_FENCE_ITEM);
-            output.accept(DENDRO_CORE_PLANK_FENCE_GATE_ITEM);
-            output.accept(DENDRO_CORE_PLANK_PRESSURE_PLATE_ITEM);
-            output.accept(DENDRO_CORE_PLANK_BUTTON_ITEM);
-        }).build());
-
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE_ITEM)).displayItems((itemDisplayParameters, output) -> {
-            output.accept(DULL_BLADE_ITEM);
-            output.accept(DENDRO_PICKAXE_ITEM);
-            output.accept(PRIMOGEM_PICKAXE_ITEM);
-            output.accept(PRIMOGEM_HOE_ITEM);
-            output.accept(PRIMOGEM_AXE_ITEM);
-            output.accept(PRIMOGEM_SHOVEL_ITEM);
-            output.accept(PRIMOGEM_SWORD_ITEM);
-            output.accept(STRANGE_PRIMOGEM_SWORD_ITEM);
-            output.accept(MORA_PICKAXE_ITEM);
-            output.accept(MORA_HOE_ITEM);
-            output.accept(MORA_AXE_ITEM);
-            output.accept(MORA_SHOVEL_ITEM);
-            output.accept(MORA_SWORD_ITEM);
-            output.accept(MORA_HELMET_ITEM);
-            output.accept(MORA_CHESTPLATE_ITEM);
-            output.accept(MORA_LEGGINGS_ITEM);
-            output.accept(MORA_BOOTS_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_HOE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_AXE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_PICKAXE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_SHOVEL_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_SWORD_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_HELMET_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_CHESTPLATE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_LEGGINGS_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_IRON_BOOTS_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_SWORD_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_HELMET_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_CHESTPLATE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_LEGGINGS_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_BOOTS_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_SWORD_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_HELMET_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_CHESTPLATE_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_LEGGINGS_ITEM);
-            output.accept(VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_BOOTS_ITEM);
-            output.accept(VAJRADA_AMETHYST_HOE_ITEM);
-            output.accept(VAJRADA_AMETHYST_AXE_ITEM);
-            output.accept(VAJRADA_AMETHYST_PICKAXE_ITEM);
-            output.accept(VAJRADA_AMETHYST_SHOVEL_ITEM);
-        }).build());
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_MAIN, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft")).icon(() -> new ItemStack(PRIMOGEM_ITEM))
+                .displayItems((ip, output) -> ImmutableList.of(
+                        THE_ALL_BEGINNING_ITEM, PRIMOGEM_ITEM, PRIMOGEM_BILLET_ITEM,
+                        DENDRO_CORE_ITEM, OLD_STONE_ITEM, MASTER_LESS_STAR_DUST_ITEM,
+                        MASTER_LESS_STARG_LITTER_ITEM, MORA_ITEM, EXQUISITE_MORA_ITEM,
+                        EXQUISITE_MORA_BAG_ITEM, MORA_WALLET_ITEM, MORA_BILLET_ITEM,
+                        COSMIC_FRAGMENTS_ITEM, ACQUAINT_FATE_ITEM, INTERTWINED_FATE_ITEM,
+                        INTERTWINED_FATE_TEN_ITEM, VAYUDA_TURQUOISE_GEMSTONE_SLIVER_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_FRAGMENT_ITEM, VAYUDA_TURQUOISE_GEMSTONE_PIECE_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_ITEM, VAYUDA_TURQUOISE_GEMSTONE_IRON_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_ITEM, VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_ITEM,
+                        VAJRADA_AMETHYST_SLIVER_ITEM, VAJRADA_AMETHYST_FRAGMENT_ITEM,
+                        VAJRADA_AMETHYST_PIECE_ITEM, VAJRADA_AMETHYST_ITEM, A_NEW_DAY_WITH_HOPE_RECORD_ITEM,
+                        THE_FADING_STORIES_RECORD_ITEM, HAKUSHIN_LULLABY_RECORD_ITEM,
+                        VILLAGE_SURROUNDED_BY_GREEN_RECORD_ITEM, BALLAD_OF_MANY_WATERS_RECORD_ITEM,
+                        SPACE_WALK_RECORD_ITEM, SALTY_MOON_RECORD_ITEM, TAKE_THE_JOURNEY_RECORD_ITEM,
+                        SOCIETY_TICKET_ITEM
+                ).forEach(output::accept)).build());
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE))
+                .displayItems((ip, output) -> ImmutableList.of(
+                        PRIMOGEM_ORE, DEEP_SLATE_PRIMOGEM_ORE, PRIMOGEM_BLOCK,
+                        VAYUDA_TURQUOISE_GEMSTONE_ORE_BLOCK, VAYUDA_TURQUOISE_GEMSTONE_BLOCK,
+                        VAJRADA_AMETHYST_ORE_BLOCK, VAJRADA_AMETHYST_BLOCK, INTERTWINED_FATE_BLOCK,
+                        DENDRO_CORE_BLOCK, MORA_BUNCH_BLOCK, MORA_BLOCK, EXQUISITE_MORA_BLOCK,
+                        CHEAP_MORA_BLOCK, CHEAP_MORA_SLAB_BLOCK, CHEAP_MORA_STAIR_BLOCK,
+                        CHEAP_MORA_WALL_BLOCK, TEYVAT_STICK_ITEM, TEYVAT_PLANKS_BLOCK,
+                        TEYVAT_PLANK_SLAB_BLOCK, TEYVAT_PLANK_STAIR_BLOCK, TEYVAT_PLANK_FENCE_BLOCK,
+                        TEYVAT_PLANK_FENCE_GATE_BLOCK, BLUE_TEYVAT_PLANKS_BLOCK, BLUE_TEYVAT_PLANK_SLAB_BLOCK,
+                        BLUE_TEYVAT_PLANK_STAIR_BLOCK, BLUE_TEYVAT_PLANK_FENCE_BLOCK,
+                        BLUE_TEYVAT_PLANK_FENCE_GATE_BLOCK, PINK_TEYVAT_PLANKS_BLOCK,
+                        PINK_TEYVAT_PLANK_SLAB_BLOCK, PINK_TEYVAT_PLANK_STAIR_BLOCK,
+                        PINK_TEYVAT_PLANK_FENCE_BLOCK, PINK_TEYVAT_PLANK_FENCE_GATE_BLOCK, CHAR_COAL_BLOCK,
+                        RUSTED_PLANK_BLOCK, RUSTED_PLANK_STAIR_BLOCK, DENDRO_CORE_PLANKS_BLOCK,
+                        DENDRO_CORE_PLANK_SLAB_BLOCK, DENDRO_CORE_PLANK_STAIRS_BLOCK,
+                        DENDRO_CORE_PLANK_FENCE_BLOCK, DENDRO_CORE_PLANK_FENCE_GATE_BLOCK,
+                        DENDRO_CORE_PLANK_PRESSURE_PLATE_BLOCK, DENDRO_CORE_PLANK_BUTTON_BLOCK
+                ).forEach(output::accept)).build());
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE_ITEM))
+                .displayItems((ip, output) -> ImmutableList.of(
+                        DULL_BLADE_ITEM, DENDRO_PICKAXE_ITEM, PRIMOGEM_PICKAXE_ITEM,
+                        PRIMOGEM_HOE_ITEM, PRIMOGEM_AXE_ITEM, PRIMOGEM_SHOVEL_ITEM,
+                        PRIMOGEM_SWORD_ITEM, STRANGE_PRIMOGEM_SWORD_ITEM, MORA_PICKAXE_ITEM,
+                        MORA_HOE_ITEM, MORA_AXE_ITEM, MORA_SHOVEL_ITEM, MORA_SWORD_ITEM,
+                        MORA_HELMET_ITEM, MORA_CHESTPLATE_ITEM, MORA_LEGGINGS_ITEM, MORA_BOOTS_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_HOE_ITEM, VAYUDA_TURQUOISE_GEMSTONE_AXE_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_PICKAXE_ITEM, VAYUDA_TURQUOISE_GEMSTONE_SHOVEL_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_IRON_SWORD_ITEM, VAYUDA_TURQUOISE_GEMSTONE_IRON_HELMET_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_IRON_CHESTPLATE_ITEM, VAYUDA_TURQUOISE_GEMSTONE_IRON_LEGGINGS_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_IRON_BOOTS_ITEM, VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_SWORD_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_HELMET_ITEM, VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_CHESTPLATE_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_LEGGINGS_ITEM, VAYUDA_TURQUOISE_GEMSTONE_DIAMOND_BOOTS_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_SWORD_ITEM, VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_HELMET_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_CHESTPLATE_ITEM, VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_LEGGINGS_ITEM,
+                        VAYUDA_TURQUOISE_GEMSTONE_NETHERITE_BOOTS_ITEM, VAJRADA_AMETHYST_HOE_ITEM, VAJRADA_AMETHYST_AXE_ITEM,
+                        VAJRADA_AMETHYST_PICKAXE_ITEM, VAJRADA_AMETHYST_SHOVEL_ITEM
+                ).forEach(output::accept)).build());
     }
 }

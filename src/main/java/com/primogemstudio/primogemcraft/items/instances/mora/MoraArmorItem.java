@@ -1,6 +1,6 @@
 package com.primogemstudio.primogemcraft.items.instances.mora;
 
-import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
+import com.primogemstudio.primogemcraft.blocks.PrimogemCraftBlocks;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.ArmorItem;
@@ -35,7 +35,7 @@ public class MoraArmorItem extends ArmorItem {
 
             @Override
             public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.MORA_BUNCH_BLOCK_ITEM));
+                return Ingredient.of(new ItemStack(PrimogemCraftBlocks.MORA_BUNCH_BLOCK));
             }
 
             @Override
