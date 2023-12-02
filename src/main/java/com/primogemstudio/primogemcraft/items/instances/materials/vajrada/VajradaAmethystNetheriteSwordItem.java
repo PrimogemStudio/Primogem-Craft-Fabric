@@ -13,34 +13,33 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class VajradaAmethystIronSwordItem extends SwordItem {
-    public VajradaAmethystIronSwordItem() {
+public class VajradaAmethystNetheriteSwordItem extends SwordItem {
+    public VajradaAmethystNetheriteSwordItem() {
         super(new Tier() {
             public int getUses() {
-                return 320;
+                return 2460;
             }
 
             public float getSpeed() {
-                return 6f;
+                return 9f;
             }
 
             public float getAttackDamageBonus() {
-                return 2f;
+                return 4.5f;
             }
 
             public int getLevel() {
-                return 1;
+                return 4;
             }
 
             public int getEnchantmentValue() {
-                return 12;
+                return 18;
             }
 
-            @NotNull
-            public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(Items.IRON_INGOT), new ItemStack(PrimogemCraftItems.VAJRADA_AMETHYST_SLIVER_ITEM));
+            public @NotNull Ingredient getRepairIngredient() {
+                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAJRADA_AMETHYST_SLIVER_ITEM), new ItemStack(Items.NETHERITE_INGOT));
             }
-        }, 3, -2.4f, new Item.Properties().fireResistant());
+        }, 3, -2f, new Item.Properties().fireResistant());
     }
 
     @Override
@@ -58,12 +57,12 @@ public class VajradaAmethystIronSwordItem extends SwordItem {
 
     @Override
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_sword.line1"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_sword.line2"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_sword.line3"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_sword.line4"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_sword.line5"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_sword.line6"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_sword.line7"));
+        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_netherite_sword.line1"));
+        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_netherite_sword.line2"));
+        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_netherite_sword.line3"));
+        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_netherite_sword.line4"));
+        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_netherite_sword.line5"));
+        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_netherite_sword.line6"));
+        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_netherite_sword.line7"));
     }
 }

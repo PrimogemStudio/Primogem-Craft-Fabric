@@ -99,6 +99,9 @@ public class PrimogemCraftItems {
     public static final VajradaAmethystIronItem VAJRADA_AMETHYST_IRON_ITEM = register("vajrada_amethyst_iron", new VajradaAmethystIronItem());
     public static final VajradaAmethystDiamondItem VAJRADA_AMETHYST_DIAMOND_ITEM = register("vajrada_amethyst_diamond", new VajradaAmethystDiamondItem());
     public static final VajradaAmethystNetheriteItem VAJRADA_AMETHYST_NETHERITE_ITEM = register("vajrada_amethyst_netherite", new VajradaAmethystNetheriteItem());
+    public static final VajradaAmethystIronSwordItem VAJRADA_AMETHYST_IRON_SWORD_ITEM = register("vajrada_amethyst_iron_sword", new VajradaAmethystIronSwordItem());
+    public static final VajradaAmethystDiamondSwordItem VAJRADA_AMETHYST_DIAMOND_SWORD_ITEM = register("vajrada_amethyst_diamond_sword", new VajradaAmethystDiamondSwordItem());
+    public static final VajradaAmethystNetheriteSwordItem VAJRADA_AMETHYST_NETHERITE_SWORD_ITEM = register("vajrada_amethyst_netherite_sword", new VajradaAmethystNetheriteSwordItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

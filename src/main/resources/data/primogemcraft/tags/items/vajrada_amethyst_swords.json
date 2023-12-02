@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:vajrada_amethyst_hoe",
-    "primogemcraft:vajrada_amethyst_axe",
-    "primogemcraft:vajrada_amethyst_pickaxe",
-    "primogemcraft:vajrada_amethyst_shovel",
     "primogemcraft:vajrada_amethyst_iron_sword",
     "primogemcraft:vajrada_amethyst_diamond_sword",
     "primogemcraft:vajrada_amethyst_netherite_sword"

@@ -1,6 +1,7 @@
 package com.primogemstudio.primogemcraft.effects;
 
 import com.primogemstudio.primogemcraft.effects.instances.AbnormalDiseaseMobEffect;
+import com.primogemstudio.primogemcraft.effects.instances.AmulateMobEffect;
 import com.primogemstudio.primogemcraft.effects.instances.PastMobEffect;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -12,6 +13,7 @@ import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
 public class PrimogemCraftMobEffects {
     public static final AbnormalDiseaseMobEffect ABNORMAL_DISEASE = register("abnormal_disease", new AbnormalDiseaseMobEffect());
     public static final PastMobEffect PAST = register("past", new PastMobEffect());
+    public static final AmulateMobEffect AMULATE = register("amulate", new AmulateMobEffect());
 
     public static void init() {
     }
