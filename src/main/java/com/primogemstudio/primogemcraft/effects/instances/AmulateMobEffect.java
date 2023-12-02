@@ -48,8 +48,6 @@ public class AmulateMobEffect extends MobEffect {
 
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
-        if (entity == null)
-            return;
         if (entity.getMainHandItem().is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "vajrada_amethyst_swords")))) {
             if (!entity.level().isClientSide()) {
                 entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60,
