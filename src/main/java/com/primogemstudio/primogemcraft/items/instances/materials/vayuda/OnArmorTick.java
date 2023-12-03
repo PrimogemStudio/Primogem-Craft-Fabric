@@ -20,31 +20,19 @@ public class OnArmorTick {
             if (itemstack.is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "element_diamond")))) itemstack.getOrCreateTag().putDouble("armor_value", 1);
             if (itemstack.is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "element_netherite")))) itemstack.getOrCreateTag().putDouble("armor_value", 2);
         }
-        if (!entity.hasEffect(MobEffects.SLOW_FALLING)) {
-            if (entity.getItemBySlot(EquipmentSlot.FEET).getOrCreateTag().getDouble("armor_value")
-                    + entity.getItemBySlot(EquipmentSlot.LEGS).getOrCreateTag().getDouble("armor_value")
-                    + entity.getItemBySlot(EquipmentSlot.CHEST).getOrCreateTag().getDouble("armor_value")
-                    + entity.getItemBySlot(EquipmentSlot.HEAD).getOrCreateTag().getDouble("armor_value") >= 2) {
-                entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100,
-                            (int) (
-                                    entity.getItemBySlot(EquipmentSlot.FEET).getOrCreateTag().getDouble("armor_value")
-                                    + entity.getItemBySlot(EquipmentSlot.LEGS).getOrCreateTag().getDouble("armor_value")
-                                    + entity.getItemBySlot(EquipmentSlot.CHEST).getOrCreateTag().getDouble("armor_value")
-                                    + entity.getItemBySlot(EquipmentSlot.HEAD).getOrCreateTag().getDouble("armor_value") * 0.5 - 1), true, false));
-            }
+        double armor_value =
+                entity.getItemBySlot(EquipmentSlot.FEET).getOrCreateTag().getDouble("armor_value")
+                + entity.getItemBySlot(EquipmentSlot.LEGS).getOrCreateTag().getDouble("armor_value")
+                + entity.getItemBySlot(EquipmentSlot.CHEST).getOrCreateTag().getDouble("armor_value")
+                + entity.getItemBySlot(EquipmentSlot.HEAD).getOrCreateTag().getDouble("armor_value");
+        if (!entity.hasEffect(MobEffects.SLOW_FALLING) && armor_value >= 2) {
+            entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100,
+                    (int) (armor_value * 0.5 - 1), true, false));
         }
-        if (!entity.hasEffect(MobEffects.JUMP)) {
-            if (entity.getItemBySlot(EquipmentSlot.FEET).getOrCreateTag().getDouble("armor_value")
-                    + (entity.getItemBySlot(EquipmentSlot.LEGS).getOrCreateTag().getDouble("armor_value")
-                    + entity.getItemBySlot(EquipmentSlot.CHEST).getOrCreateTag().getDouble("armor_value")
-                    + entity.getItemBySlot(EquipmentSlot.HEAD).getOrCreateTag().getDouble("armor_value")) >= 4) {
-                entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 100,
-                            (int) ((entity.getItemBySlot(EquipmentSlot.FEET).getOrCreateTag().getDouble("armor_value")
-                                    + entity.getItemBySlot(EquipmentSlot.LEGS).getOrCreateTag().getDouble("armor_value")
-                                    + entity.getItemBySlot(EquipmentSlot.CHEST).getOrCreateTag().getDouble("armor_value")
-                                    + entity.getItemBySlot(EquipmentSlot.HEAD).getOrCreateTag().getDouble("armor_value")) * 0.5 - 1),
+        if (!entity.hasEffect(MobEffects.JUMP) && armor_value >= 4) {
+            entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 100,
+                            (int) (armor_value * 0.5 - 1),
                             true, false));
-            }
         }
     }
 }

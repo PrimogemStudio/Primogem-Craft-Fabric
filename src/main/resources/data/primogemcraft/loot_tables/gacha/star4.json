@@ -605,20 +605,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:exquisite_mora",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "primogemcraft:exquisite_mora_bag",
           "weight": 1,
           "functions": [
@@ -669,7 +655,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mora_sword",
+          "name": "primogemcraft:mora_axe",
           "weight": 1,
           "functions": [
             {
@@ -684,7 +670,7 @@
               "treasure": true,
               "levels": {
                 "min": 10,
-                "max": 10
+                "max": 20
               }
             }
           ]
@@ -735,7 +721,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mora_axe",
+          "name": "primogemcraft:mora_sword",
           "weight": 1,
           "functions": [
             {
@@ -750,7 +736,35 @@
               "treasure": true,
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:exquisite_mora",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:vajrada_amethyst_sliver",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
               }
             }
           ]
@@ -787,62 +801,6 @@
               "levels": {
                 "min": 16,
                 "max": 28
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:vayuda_turquoise_gemstone_sliver",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:vayuda_turquoise_gemstone_shovel",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:vayuda_turquoise_gemstone_pickaxe",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:vayuda_turquoise_gemstone_iron_sword",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
               }
             }
           ]
