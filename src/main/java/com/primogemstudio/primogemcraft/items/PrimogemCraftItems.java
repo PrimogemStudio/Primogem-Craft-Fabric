@@ -110,6 +110,11 @@ public class PrimogemCraftItems {
     public static final VajradaAmethystDiamondArmorItem.Chestplate VAJRADA_AMETHYST_DIAMOND_CHESTPLATE = register("vajrada_amethyst_diamond_chestplate", new VajradaAmethystDiamondArmorItem.Chestplate());
     public static final VajradaAmethystDiamondArmorItem.Leggings VAJRADA_AMETHYST_DIAMOND_LEGGINGS = register("vajrada_amethyst_diamond_leggings", new VajradaAmethystDiamondArmorItem.Leggings());
     public static final VajradaAmethystDiamondArmorItem.Boots VAJRADA_AMETHYST_DIAMOND_BOOTS = register("vajrada_amethyst_diamond_boots", new VajradaAmethystDiamondArmorItem.Boots());
+
+    public static final VajradaAmethystNetheriteArmorItem.Helmet VAJRADA_AMETHYST_NETHERITE_HELMET = register("vajrada_amethyst_netherite_helmet", new VajradaAmethystNetheriteArmorItem.Helmet());
+    public static final VajradaAmethystNetheriteArmorItem.Chestplate VAJRADA_AMETHYST_NETHERITE_CHESTPLATE = register("vajrada_amethyst_netherite_chestplate", new VajradaAmethystNetheriteArmorItem.Chestplate());
+    public static final VajradaAmethystNetheriteArmorItem.Leggings VAJRADA_AMETHYST_NETHERITE_LEGGINGS = register("vajrada_amethyst_netherite_leggings", new VajradaAmethystNetheriteArmorItem.Leggings());
+    public static final VajradaAmethystNetheriteArmorItem.Boots VAJRADA_AMETHYST_NETHERITE_BOOTS = register("vajrada_amethyst_netherite_boots", new VajradaAmethystNetheriteArmorItem.Boots());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
