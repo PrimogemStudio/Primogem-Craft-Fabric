@@ -106,6 +106,10 @@ public class PrimogemCraftItems {
     public static final VajradaAmethystIronArmorItem.Chestplate VAJRADA_AMETHYST_IRON_CHESTPLATE = register("vajrada_amethyst_iron_chestplate", new VajradaAmethystIronArmorItem.Chestplate());
     public static final VajradaAmethystIronArmorItem.Leggings VAJRADA_AMETHYST_IRON_LEGGINGS = register("vajrada_amethyst_iron_leggings", new VajradaAmethystIronArmorItem.Leggings());
     public static final VajradaAmethystIronArmorItem.Boots VAJRADA_AMETHYST_IRON_BOOTS = register("vajrada_amethyst_iron_boots", new VajradaAmethystIronArmorItem.Boots());
+    public static final VajradaAmethystDiamondArmorItem.Helmet VAJRADA_AMETHYST_DIAMOND_HELMET = register("vajrada_amethyst_diamond_helmet", new VajradaAmethystDiamondArmorItem.Helmet());
+    public static final VajradaAmethystDiamondArmorItem.Chestplate VAJRADA_AMETHYST_DIAMOND_CHESTPLATE = register("vajrada_amethyst_diamond_chestplate", new VajradaAmethystDiamondArmorItem.Chestplate());
+    public static final VajradaAmethystDiamondArmorItem.Leggings VAJRADA_AMETHYST_DIAMOND_LEGGINGS = register("vajrada_amethyst_diamond_leggings", new VajradaAmethystDiamondArmorItem.Leggings());
+    public static final VajradaAmethystDiamondArmorItem.Boots VAJRADA_AMETHYST_DIAMOND_BOOTS = register("vajrada_amethyst_diamond_boots", new VajradaAmethystDiamondArmorItem.Boots());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

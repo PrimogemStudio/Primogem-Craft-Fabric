@@ -154,6 +154,10 @@ public class PrimogemCraftCreativeTabs {
                         VAJRADA_AMETHYST_IRON_LEGGINGS,
                         VAJRADA_AMETHYST_IRON_BOOTS,
                         VAJRADA_AMETHYST_DIAMOND_SWORD_ITEM,
+                        VAJRADA_AMETHYST_DIAMOND_HELMET,
+                        VAJRADA_AMETHYST_DIAMOND_CHESTPLATE,
+                        VAJRADA_AMETHYST_DIAMOND_LEGGINGS,
+                        VAJRADA_AMETHYST_DIAMOND_BOOTS,
                         VAJRADA_AMETHYST_NETHERITE_SWORD_ITEM
                 ).forEach(output::accept)).build());
     }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:vajrada_amethyst_iron"
+  },
+  "base": {
+    "item": "minecraft:iron_helmet"
+  },
+  "result": {
+    "item": "primogemcraft:vajrada_amethyst_iron_helmet"
+  },
+  "template": []
+}
