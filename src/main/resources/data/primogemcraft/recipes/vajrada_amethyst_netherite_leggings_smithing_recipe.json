@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:vajrada_amethyst_netherite"
+  },
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "result": {
+    "item": "primogemcraft:vajrada_amethyst_netherite_leggings"
+  },
+  "template": []
+}
