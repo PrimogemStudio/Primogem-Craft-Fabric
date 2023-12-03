@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "primogemcraft:block/tiesiwang"
+    "layer0": "primogemcraft:block/rust_iron_bar"
   },
   "render_type": "solid"
 }
