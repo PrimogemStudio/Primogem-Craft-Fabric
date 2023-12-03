@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/march_7th_statue",
+  "textures": {
+    "all": "primogemcraft:block/march_7th_statue",
+    "particle": "primogemcraft:block/intertwined_fate_block",
+    "0": "primogemcraft:block/march_7th_statue"
+  },
+  "render_type": "solid"
+}

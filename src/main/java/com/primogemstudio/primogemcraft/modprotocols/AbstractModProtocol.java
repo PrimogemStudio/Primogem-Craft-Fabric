@@ -5,7 +5,7 @@ import net.minecraft.world.entity.Entity;
 
 public interface AbstractModProtocol {
     boolean GENSHINCRAFT = FabricLoader.getInstance().isModLoaded("genshincraft");
-
+    boolean REI = FabricLoader.getInstance().isModLoaded("roughlyenoughitems");
     class Holder {
         private static final AbstractModProtocol DUMMY = entity -> entity.hurt(entity.damageSources().lightningBolt(), 5);
         private static final AbstractModProtocol GENSHIN_CRAFT_PROTOCOL = GENSHINCRAFT ? new GenshinCraftProtocol() : null;

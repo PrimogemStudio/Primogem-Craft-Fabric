@@ -79,5 +79,35 @@
         "stream": true
       }
     ]
+  },
+  "march_7th_sound1": {
+    "category": "hostile",
+    "subtitle": "subtitles.march_7th_sound1",
+    "sounds": [
+      {
+        "name": "primogemcraft:march_7th_sound1",
+        "stream": false
+      }
+    ]
+  },
+  "march_7th_sound2": {
+    "category": "hostile",
+    "subtitle": "subtitles.march_7th_sound2",
+    "sounds": [
+      {
+        "name": "primogemcraft:march_7th_sound2",
+        "stream": false
+      }
+    ]
+  },
+  "march_7th_sound3": {
+    "category": "hostile",
+    "subtitle": "subtitles.march_7th_sound3",
+    "sounds": [
+      {
+        "name": "primogemcraft:march_7th_sound3",
+        "stream": false
+      }
+    ]
   }
 }
