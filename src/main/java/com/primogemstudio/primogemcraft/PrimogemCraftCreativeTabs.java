@@ -107,7 +107,8 @@ public class PrimogemCraftCreativeTabs {
                         DENDRO_CORE_PLANK_FENCE_BLOCK,
                         DENDRO_CORE_PLANK_FENCE_GATE_BLOCK,
                         DENDRO_CORE_PLANK_PRESSURE_PLATE_BLOCK,
-                        DENDRO_CORE_PLANK_BUTTON_BLOCK
+                        DENDRO_CORE_PLANK_BUTTON_BLOCK,
+                        RUST_IRON_BAR_BLOCK
                 ).forEach(output::accept)).build());
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE_ITEM))
                 .displayItems((ip, output) -> ImmutableList.of(

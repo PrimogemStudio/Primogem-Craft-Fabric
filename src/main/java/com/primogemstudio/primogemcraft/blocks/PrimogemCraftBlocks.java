@@ -55,6 +55,7 @@ public class PrimogemCraftBlocks {
     public static final CharCoalBlock CHAR_COAL_BLOCK = registerWithItem("charcoal_block", new CharCoalBlock());
     public static final RustedPlankBlock RUSTED_PLANK_BLOCK = registerWithItem("rusted_plank", new RustedPlankBlock());
     public static final RustedPlankStairsBlock RUSTED_PLANK_STAIR_BLOCK = registerWithItem("rusted_plank_stairs", new RustedPlankStairsBlock());
+    public static final RustIronBarBlock RUST_IRON_BAR_BLOCK = registerWithItem("rust_iron_bar", new RustIronBarBlock());
     public static final DendroCorePlanksBlock DENDRO_CORE_PLANKS_BLOCK = registerWithItem("dendro_core_planks", new DendroCorePlanksBlock());
     public static final DendroCorePlankSlabBlock DENDRO_CORE_PLANK_SLAB_BLOCK = registerWithItem("dendro_core_plank_slab", new DendroCorePlankSlabBlock());
     public static final DendroCorePlankStairsBlock DENDRO_CORE_PLANK_STAIRS_BLOCK = registerWithItem("dendro_core_plank_stairs", new DendroCorePlankStairsBlock());
