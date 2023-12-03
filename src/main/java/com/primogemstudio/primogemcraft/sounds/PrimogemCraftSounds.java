@@ -17,6 +17,9 @@ public class PrimogemCraftSounds {
     public static final SoundEvent SPACE_WALK = register("space_walk", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "music_disc.space_walk")));
     public static final SoundEvent SALTY_MOON = register("salty_moon", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "music_disc.salty_moon")));
     public static final SoundEvent TAKE_THE_JOURNEY = register("take_the_journey", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "music_disc.take_the_journey")));
+    public static final SoundEvent MARCH_7TH_SOUND1 = register("march_7th_sound1", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "march_7th_sound1")));
+    public static final SoundEvent MARCH_7TH_SOUND2 = register("march_7th_sound2", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "march_7th_sound2")));
+    public static final SoundEvent MARCH_7TH_SOUND3 = register("march_7th_sound3", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "march_7th_sound3")));
 
     public static <T extends SoundEvent> T register(String name, T event) {
         return Registry.register(BuiltInRegistries.SOUND_EVENT, new ResourceLocation(MOD_ID, name), event);

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:march_7th_statue"
+    },
+    "title": {
+      "translate": "advancement.primogemcraft.march_7th_statue"
+    },
+    "description": {
+      "translate": "advancement.primogemcraft.march_7th_statue.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chengjingle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "primogemcraft:march_7th_statue"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "primogemcraft:primogemcraft/intertwined_fate"
+}

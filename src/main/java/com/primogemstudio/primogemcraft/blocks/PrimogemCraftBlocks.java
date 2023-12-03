@@ -67,6 +67,7 @@ public class PrimogemCraftBlocks {
     public static final VayudaTurquoiseGemstoneBlock VAYUDA_TURQUOISE_GEMSTONE_BLOCK = registerWithItem("vayuda_turquoise_gemstone_block", new VayudaTurquoiseGemstoneBlock());
     public static final VajradaAmethystOre VAJRADA_AMETHYST_ORE_BLOCK = registerWithItem("vajrada_amethyst_ore", new VajradaAmethystOre());
     public static final VajradaAmethystBlock VAJRADA_AMETHYST_BLOCK = registerWithItem("vajrada_amethyst_block", new VajradaAmethystBlock());
+    public static final March7thStatueBlock MARCH_7TH_STATUE_BLOCK = registerWithItem("march_7th_statue", new March7thStatueBlock());
 
     @Environment(EnvType.CLIENT)
     public static void initRenderLayers() {
