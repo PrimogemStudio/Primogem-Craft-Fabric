@@ -109,5 +109,32 @@
         "stream": false
       }
     ]
+  },
+  "gacha_3star": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "primogemcraft:gacha_3star",
+        "stream": false
+      }
+    ]
+  },
+  "gacha_4star": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "primogemcraft:gacha_4star",
+        "stream": false
+      }
+    ]
+  },
+  "gacha_5star": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "primogemcraft:gacha_5star",
+        "stream": false
+      }
+    ]
   }
 }
