@@ -6,11 +6,13 @@ import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFiveSta
 import com.primogemstudio.primogemcraft.entities.instances.entities.GachaFourStarEntity;
 import com.primogemstudio.primogemcraft.entities.instances.entities.GachaThreeStarEntity;
 import com.primogemstudio.primogemcraft.gacha.serialize.GachaRecordModel;
+import com.primogemstudio.primogemcraft.sounds.PrimogemCraftSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
@@ -111,6 +113,11 @@ public class GachaServer {
         });
 
         if (level == 5) PrimogemCraftAdvancements.GACHA_FIVE_STAR_TRIGGERED.trigger(player);
+        player.serverLevel().playSound(player, pos, switch (level) {
+            case 4 -> PrimogemCraftSounds.GACHA_4STAR;
+            case 5 -> PrimogemCraftSounds.GACHA_5STAR;
+            default -> PrimogemCraftSounds.GACHA_3STAR;
+        }, SoundSource.PLAYERS);
 
         var gac = new GachaRecordModel();
         gac.name = player.getGameProfile().getName();

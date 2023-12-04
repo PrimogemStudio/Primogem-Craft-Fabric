@@ -20,6 +20,9 @@ public class PrimogemCraftSounds {
     public static final SoundEvent MARCH_7TH_SOUND1 = register("march_7th_sound1", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "march_7th_sound1")));
     public static final SoundEvent MARCH_7TH_SOUND2 = register("march_7th_sound2", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "march_7th_sound2")));
     public static final SoundEvent MARCH_7TH_SOUND3 = register("march_7th_sound3", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "march_7th_sound3")));
+    public static final SoundEvent GACHA_3STAR = register("gacha_3star", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "gacha_3star")));
+    public static final SoundEvent GACHA_4STAR = register("gacha_4star", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "gacha_4star")));
+    public static final SoundEvent GACHA_5STAR = register("gacha_5star", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "gacha_5star")));
 
     public static <T extends SoundEvent> T register(String name, T event) {
         return Registry.register(BuiltInRegistries.SOUND_EVENT, new ResourceLocation(MOD_ID, name), event);
