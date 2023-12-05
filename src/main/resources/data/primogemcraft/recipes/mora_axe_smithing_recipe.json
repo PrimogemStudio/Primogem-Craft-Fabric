@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:mora"
+  },
+  "base": {
+    "item": "minecraft:stone_axe"
+  },
+  "result": {
+    "item": "primogemcraft:mora_axe"
+  },
+  "template": {
+    "item": "primogemcraft:smithing_template_mora"
+  }
+}

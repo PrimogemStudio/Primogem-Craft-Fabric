@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "primogemcraft:vajrada_amethyst_netherite"
+    "item": "minecraft:netherite_upgrade_smithing_template"
   },
   "base": {
-    "item": "minecraft:netherite_leggings"
+    "item": "primogemcraft:smithing_template_element2"
   },
   "result": {
-    "item": "primogemcraft:vajrada_amethyst_netherite_leggings"
+    "item": "primogemcraft:mora_block"
   },
   "template": {
     "item": "primogemcraft:smithing_template_element1"

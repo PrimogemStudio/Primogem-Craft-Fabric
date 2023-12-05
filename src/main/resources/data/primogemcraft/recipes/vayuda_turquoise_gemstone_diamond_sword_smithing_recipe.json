@@ -4,10 +4,12 @@
     "item": "primogemcraft:vayuda_turquoise_gemstone_diamond"
   },
   "base": {
-    "item": "minecraft:iron_sword"
+    "item": "minecraft:diamond_sword"
   },
   "result": {
     "item": "primogemcraft:vayuda_turquoise_gemstone_diamond_sword"
   },
-  "template": []
+  "template": {
+    "item": "primogemcraft:smithing_template_element1"
+  }
 }

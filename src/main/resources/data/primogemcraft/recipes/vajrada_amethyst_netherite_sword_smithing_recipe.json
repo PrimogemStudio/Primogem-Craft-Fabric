@@ -4,10 +4,12 @@
     "item": "primogemcraft:vajrada_amethyst_netherite"
   },
   "base": {
-    "item": "minecraft:iron_sword"
+    "item": "minecraft:netherite_sword"
   },
   "result": {
     "item": "primogemcraft:vajrada_amethyst_netherite_sword"
   },
-  "template": []
+  "template": {
+    "item": "primogemcraft:smithing_template_element1"
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#-#",
+    "#*#"
+  ],
+  "key": {
+    "#": {
+      "item": "primogemcraft:mora"
+    },
+    "-": {
+      "item": "primogemcraft:smithing_template_mora"
+    },
+    "*": {
+      "tag": "primogemcraft:stones"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:smithing_template_mora",
+    "count": 2
+  }
+}

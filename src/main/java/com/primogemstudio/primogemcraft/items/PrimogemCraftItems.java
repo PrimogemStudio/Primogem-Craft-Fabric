@@ -8,6 +8,9 @@ import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.*;
 import com.primogemstudio.primogemcraft.items.instances.mora.*;
 import com.primogemstudio.primogemcraft.items.instances.primogem.*;
 import com.primogemstudio.primogemcraft.items.instances.records.*;
+import com.primogemstudio.primogemcraft.items.instances.templates.SmithingTemplateElement1Item;
+import com.primogemstudio.primogemcraft.items.instances.templates.SmithingTemplateElement2Item;
+import com.primogemstudio.primogemcraft.items.instances.templates.SmithingTemplateMoraItem;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -115,6 +118,10 @@ public class PrimogemCraftItems {
     public static final VajradaAmethystNetheriteArmorItem.Chestplate VAJRADA_AMETHYST_NETHERITE_CHESTPLATE = register("vajrada_amethyst_netherite_chestplate", new VajradaAmethystNetheriteArmorItem.Chestplate());
     public static final VajradaAmethystNetheriteArmorItem.Leggings VAJRADA_AMETHYST_NETHERITE_LEGGINGS = register("vajrada_amethyst_netherite_leggings", new VajradaAmethystNetheriteArmorItem.Leggings());
     public static final VajradaAmethystNetheriteArmorItem.Boots VAJRADA_AMETHYST_NETHERITE_BOOTS = register("vajrada_amethyst_netherite_boots", new VajradaAmethystNetheriteArmorItem.Boots());
+    public static final SmithingTemplateMoraItem SMITHING_TEMPLATE_MORA_ITEM = register("smithing_template_mora", new SmithingTemplateMoraItem());
+    public static final SmithingTemplateElement1Item SMITHING_TEMPLATE_ELEMENT_1_ITEM = register("smithing_template_element1", new SmithingTemplateElement1Item());
+    public static final SmithingTemplateElement2Item SMITHING_TEMPLATE_ELEMENT_2_ITEM = register("smithing_template_element2", new SmithingTemplateElement2Item());
+    public static final Item ELEMENT_CRYSTAL = register("element_crystal", new Item(new Item.Properties().fireResistant().rarity(Rarity.EPIC)));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

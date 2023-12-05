@@ -62,7 +62,11 @@ public class PrimogemCraftCreativeTabs {
                         SPACE_WALK_RECORD_ITEM,
                         SALTY_MOON_RECORD_ITEM,
                         TAKE_THE_JOURNEY_RECORD_ITEM,
-                        SOCIETY_TICKET_ITEM
+                        SOCIETY_TICKET_ITEM,
+                        SMITHING_TEMPLATE_MORA_ITEM,
+                        SMITHING_TEMPLATE_ELEMENT_1_ITEM,
+                        SMITHING_TEMPLATE_ELEMENT_2_ITEM,
+                        ELEMENT_CRYSTAL
                 ).forEach(output::accept)).build());
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE))
                 .displayItems((ip, output) -> ImmutableList.of(
