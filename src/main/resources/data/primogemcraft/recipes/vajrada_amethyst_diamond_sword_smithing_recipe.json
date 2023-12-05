@@ -4,10 +4,12 @@
     "item": "primogemcraft:vajrada_amethyst_diamond"
   },
   "base": {
-    "item": "minecraft:iron_sword"
+    "item": "minecraft:diamond_sword"
   },
   "result": {
     "item": "primogemcraft:vajrada_amethyst_diamond_sword"
   },
-  "template": []
+  "template": {
+    "item": "primogemcraft:smithing_template_element1"
+  }
 }

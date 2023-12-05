@@ -9,5 +9,7 @@
   "result": {
     "item": "primogemcraft:vayuda_turquoise_gemstone_netherite_boots"
   },
-  "template": []
+  "template": {
+    "item": "primogemcraft:smithing_template_element1"
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:primogem"
+  },
+  "base": {
+    "item": "primogemcraft:smithing_template_mora"
+  },
+  "result": {
+    "item": "primogemcraft:smithing_template_element2"
+  },
+  "template": {
+    "item": "primogemcraft:old_stone"
+  }
+}
