@@ -9,5 +9,7 @@
   "result": {
     "item": "primogemcraft:vajrada_amethyst_iron_boots"
   },
-  "template": []
+  "template": {
+    "item": "primogemcraft:mora"
+  }
 }

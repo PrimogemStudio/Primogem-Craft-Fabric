@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.blocks.instances.materials.dagadus;
+package com.primogemstudio.primogemcraft.blocks.instances.materials.nagadus;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;

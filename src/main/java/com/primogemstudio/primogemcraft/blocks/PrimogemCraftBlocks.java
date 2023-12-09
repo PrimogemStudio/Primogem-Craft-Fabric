@@ -2,8 +2,8 @@ package com.primogemstudio.primogemcraft.blocks;
 
 import com.primogemstudio.primogemcraft.blocks.instances.*;
 import com.primogemstudio.primogemcraft.blocks.instances.dendrocore.*;
-import com.primogemstudio.primogemcraft.blocks.instances.materials.dagadus.NagadusEmeraldBlock;
-import com.primogemstudio.primogemcraft.blocks.instances.materials.dagadus.NagadusEmeraldOreBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.nagadus.NagadusEmeraldBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.nagadus.NagadusEmeraldOreBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vajrada.VajradaAmethystBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vajrada.VajradaAmethystOre;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vayuda.VayudaTurquoiseGemstoneBlock;
