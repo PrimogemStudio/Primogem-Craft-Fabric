@@ -122,6 +122,10 @@ public class PrimogemCraftItems {
     public static final SmithingTemplateElement1Item SMITHING_TEMPLATE_ELEMENT_1_ITEM = register("smithing_template_element1", new SmithingTemplateElement1Item());
     public static final SmithingTemplateElement2Item SMITHING_TEMPLATE_ELEMENT_2_ITEM = register("smithing_template_element2", new SmithingTemplateElement2Item());
     public static final Item ELEMENT_CRYSTAL = register("element_crystal", new Item(new Item.Properties().fireResistant().rarity(Rarity.EPIC)));
+    public static final Item NAGADUS_EMERALD_ITEM = register("nagadus_emerald", new Item(new Item.Properties()));
+    public static final Item NAGADUS_EMERALD_SLIVER_ITEM = register("nagadus_emerald_sliver", new Item(new Item.Properties()));
+    public static final Item NAGADUS_EMERALD_FRAGMENT_ITEM = register("nagadus_emerald_fragment", new Item(new Item.Properties()));
+    public static final Item NAGADUS_EMERALD_PIECE_ITEM = register("nagadus_emerald_piece", new Item(new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
