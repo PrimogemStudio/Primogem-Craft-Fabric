@@ -2,6 +2,7 @@ package com.primogemstudio.primogemcraft.blocks.instances.materials.nagadus;
 
 import com.primogemstudio.primogemcraft.interfaces.BlockExtension;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -28,7 +29,10 @@ public class NagadusEmeraldOreBlock extends Block implements BlockExtension {
         list.add(Component.translatable("tooltip.primogemcraft.nagadus_emerald_ore.line1"));
     }
 
-    // TODO canSustainPlant
+    @Override
+    public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction facing) {
+        return true;
+    }
 
     @Override
     public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {

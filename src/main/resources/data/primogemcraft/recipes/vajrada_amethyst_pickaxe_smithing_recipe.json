@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:vajrada_amethyst_piece"
+  },
+  "base": {
+    "item": "primogemcraft:primogem_pickaxe"
+  },
+  "result": {
+    "item": "primogemcraft:vajrada_amethyst_pickaxe"
+  },
+  "template": {
+    "item": "primogemcraft:smithing_template_element2"
+  }
+}

@@ -10,7 +10,9 @@
     "LivingEntityMixin",
     "MobEffectInstanceMixin",
     "PerlinNoiseMixin",
-    "PlayerListMixin"
+    "PlayerListMixin",
+    "blocks.BushBlockMixin",
+    "blocks.CactusBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
