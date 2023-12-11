@@ -1,5 +1,6 @@
 package com.primogemstudio.primogemcraft.mixin.blocks;
 
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.primogemstudio.primogemcraft.interfaces.BlockExtension;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -8,16 +9,17 @@ import net.minecraft.world.level.block.BushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(BushBlock.class)
 public class BushBlockMixin {
-    @Inject(at = @At("HEAD"), method = "canSurvive", cancellable = true)
-    public void canSurvive(BlockState state, LevelReader level, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
+    @ModifyReturnValue(method = "canSurvive", at = @At("TAIL"))
+    public boolean canSurvive(boolean original, BlockState state, LevelReader level, BlockPos pos) {
         if (state.getBlock() == (Object) this) {
             var bl = level.getBlockState(pos.below());
-            if (bl.getBlock() instanceof BlockExtension be) cir.setReturnValue(be.canSustainPlant(bl, level, pos.below(), Direction.UP));
+            if (bl.getBlock() instanceof BlockExtension be) {
+                return be.canSustainPlant(bl, level, pos.below(), Direction.UP);
+            }
         }
+        return original;
     }
 }

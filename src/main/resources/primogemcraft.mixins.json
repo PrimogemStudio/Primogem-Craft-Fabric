@@ -12,7 +12,8 @@
     "PerlinNoiseMixin",
     "PlayerListMixin",
     "blocks.BushBlockMixin",
-    "blocks.CactusBlockMixin"
+    "blocks.CactusBlockMixin",
+    "blocks.CropBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
