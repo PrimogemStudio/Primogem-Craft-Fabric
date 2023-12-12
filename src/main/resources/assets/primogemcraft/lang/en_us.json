@@ -251,7 +251,6 @@
   "advancement.primogemcraft.intertwined_fate.desc": "获得一枚纠缠之缘",
   "advancement.primogemcraft.intertwined_fate_ten": "十连抽！！！",
   "advancement.primogemcraft.intertwined_fate_ten.desc": "获得十连抽道具",
-  "custom.primogemcraft.vajrada_amethyst_axe.red": "§c效果延迟%s秒！",
-  "custom.primogemcraft.vajrada_amethyst_axe.green": "§a效果延迟%s秒！",
+  "custom.primogemcraft.vajrada_amethyst_axe": "效果延迟%s秒！",
   "rei.primogemcraft.category.wish": "Wish"
 }

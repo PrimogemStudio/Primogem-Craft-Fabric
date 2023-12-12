@@ -3,6 +3,7 @@ package com.primogemstudio.primogemcraft.items.instances.materials.vajrada;
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.interfaces.ItemExtension;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -69,6 +70,11 @@ public class VajradaAmethystAxeItem extends AxeItem implements ItemExtension {
 
     @Override
     public boolean onEntitySwing(ItemStack stack, LivingEntity entity) {
+        skill(stack, entity);
+        return false;
+    }
+
+    public static void skill(ItemStack stack, LivingEntity entity) {
         if (!entity.level().isClientSide() && entity.isShiftKeyDown()) {
             entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, 1, 1);
             var tag = stack.getOrCreateTag();
@@ -76,7 +82,7 @@ public class VajradaAmethystAxeItem extends AxeItem implements ItemExtension {
                 var delay = tag.getInt("delay");
                 var rev = tag.getBoolean("reverse");
                 delay = rev ? delay - 10 : delay + 10;
-                player.displayClientMessage(Component.translatable("custom.primogemcraft.vajrada_amethyst_axe." + (rev ? "red" : "green"), delay), true);
+                player.displayClientMessage(Component.translatable("custom.primogemcraft.vajrada_amethyst_axe", delay).withStyle(rev ? ChatFormatting.RED : ChatFormatting.GREEN), true);
                 if (delay >= 40) {
                     tag.putBoolean("reverse", true);
                 } else if (delay <= 0) {
@@ -85,6 +91,5 @@ public class VajradaAmethystAxeItem extends AxeItem implements ItemExtension {
                 tag.putInt("delay", delay);
             }
         }
-        return false;
     }
 }
