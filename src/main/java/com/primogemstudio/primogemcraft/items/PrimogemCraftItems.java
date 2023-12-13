@@ -3,6 +3,7 @@ package com.primogemstudio.primogemcraft.items;
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
 import com.primogemstudio.primogemcraft.items.instances.curios.SocietyTicketItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldPickaxeItem;
 import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.*;
 import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.*;
 import com.primogemstudio.primogemcraft.items.instances.mora.*;
@@ -28,7 +29,7 @@ public class PrimogemCraftItems {
     public static final PrimogemBilletItem PRIMOGEM_BILLET_ITEM = register("primogem_billet", new PrimogemBilletItem());
     public static final IntertwinedFateItem INTERTWINED_FATE_ITEM = register("intertwined_fate", new IntertwinedFateItem());
     public static final AcquaintFateItem ACQUAINT_FATE_ITEM = register("acquaint_fate", new AcquaintFateItem());
-    public static final DendroPickaxeItem DENDRO_PICKAXE_ITEM = register("dendro_pickaxe", new DendroPickaxeItem());
+    public static final NagadusEmeraldPickaxeItem DENDRO_PICKAXE_ITEM = register("dendro_pickaxe", new NagadusEmeraldPickaxeItem());
     public static final PrimogemPickaxeItem PRIMOGEM_PICKAXE_ITEM = register("primogem_pickaxe", new PrimogemPickaxeItem());
     public static final PrimogemHoeItem PRIMOGEM_HOE_ITEM = register("primogem_hoe", new PrimogemHoeItem());
     public static final PrimogemAxeItem PRIMOGEM_AXE_ITEM = register("primogem_axe", new PrimogemAxeItem());
@@ -122,6 +123,10 @@ public class PrimogemCraftItems {
     public static final SmithingTemplateElement1Item SMITHING_TEMPLATE_ELEMENT_1_ITEM = register("smithing_template_element1", new SmithingTemplateElement1Item());
     public static final SmithingTemplateElement2Item SMITHING_TEMPLATE_ELEMENT_2_ITEM = register("smithing_template_element2", new SmithingTemplateElement2Item());
     public static final Item ELEMENT_CRYSTAL = register("element_crystal", new Item(new Item.Properties().fireResistant().rarity(Rarity.EPIC)));
+    public static final Item NAGADUS_EMERALD_ITEM = register("nagadus_emerald", new Item(new Item.Properties()));
+    public static final Item NAGADUS_EMERALD_SLIVER_ITEM = register("nagadus_emerald_sliver", new Item(new Item.Properties()));
+    public static final Item NAGADUS_EMERALD_FRAGMENT_ITEM = register("nagadus_emerald_fragment", new Item(new Item.Properties()));
+    public static final Item NAGADUS_EMERALD_PIECE_ITEM = register("nagadus_emerald_piece", new Item(new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

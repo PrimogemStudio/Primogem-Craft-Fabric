@@ -9,5 +9,7 @@
   "result": {
     "item": "primogemcraft:vayuda_turquoise_gemstone_diamond_boots"
   },
-  "template": []
+  "template": {
+    "item": "primogemcraft:exquisite_mora"
+  }
 }

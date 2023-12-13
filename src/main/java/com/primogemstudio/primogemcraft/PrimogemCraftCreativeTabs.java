@@ -54,6 +54,10 @@ public class PrimogemCraftCreativeTabs {
                         VAJRADA_AMETHYST_IRON_ITEM,
                         VAJRADA_AMETHYST_DIAMOND_ITEM,
                         VAJRADA_AMETHYST_NETHERITE_ITEM,
+                        NAGADUS_EMERALD_SLIVER_ITEM,
+                        NAGADUS_EMERALD_FRAGMENT_ITEM,
+                        NAGADUS_EMERALD_PIECE_ITEM,
+                        NAGADUS_EMERALD_ITEM,
                         A_NEW_DAY_WITH_HOPE_RECORD_ITEM,
                         THE_FADING_STORIES_RECORD_ITEM,
                         HAKUSHIN_LULLABY_RECORD_ITEM,
@@ -113,7 +117,9 @@ public class PrimogemCraftCreativeTabs {
                         DENDRO_CORE_PLANK_PRESSURE_PLATE_BLOCK,
                         DENDRO_CORE_PLANK_BUTTON_BLOCK,
                         RUST_IRON_BAR_BLOCK,
-                        MARCH_7TH_STATUE_BLOCK
+                        MARCH_7TH_STATUE_BLOCK,
+                        NAGADUS_EMERALD_ORE_BLOCK,
+                        NAGADUS_EMERALD_BLOCK
                 ).forEach(output::accept)).build());
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE_ITEM))
                 .displayItems((ip, output) -> ImmutableList.of(
