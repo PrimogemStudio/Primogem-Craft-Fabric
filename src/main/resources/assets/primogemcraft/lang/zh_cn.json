@@ -339,7 +339,6 @@
   "advancement.primogemcraft.intertwined_fate_ten.desc": "获得十连抽道具",
   "advancement.primogemcraft.march_7th_statue": "成精了...？",
   "advancement.primogemcraft.march_7th_statue.desc": "获得小三月......的雕像",
-  "custom.primogemcraft.vajrada_amethyst_axe.red": "§c效果延迟%s秒！",
-  "custom.primogemcraft.vajrada_amethyst_axe.green": "§a效果延迟%s秒！",
+  "custom.primogemcraft.vajrada_amethyst_axe": "效果延迟%s秒！",
   "rei.primogemcraft.category.wish": "祈愿"
 }

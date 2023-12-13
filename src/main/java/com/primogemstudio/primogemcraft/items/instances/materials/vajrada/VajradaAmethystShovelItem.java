@@ -4,8 +4,6 @@ import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.interfaces.ItemExtension;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -18,6 +16,8 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+
+import static com.primogemstudio.primogemcraft.items.instances.materials.vajrada.VajradaAmethystAxeItem.skill;
 
 public class VajradaAmethystShovelItem extends ShovelItem implements ItemExtension {
     public VajradaAmethystShovelItem() {
@@ -79,22 +79,7 @@ public class VajradaAmethystShovelItem extends ShovelItem implements ItemExtensi
 
     @Override
     public boolean onEntitySwing(ItemStack stack, LivingEntity entity) {
-        if (!entity.level().isClientSide() && entity.isShiftKeyDown()) {
-            entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, 1, 1);
-            var tag = stack.getOrCreateTag();
-            if (entity instanceof Player player) {
-                var delay = tag.getInt("delay");
-                var rev = tag.getBoolean("reverse");
-                delay = rev ? delay - 10 : delay + 10;
-                player.displayClientMessage(Component.translatable("custom.primogemcraft.vajrada_amethyst_axe." + (rev ? "red" : "green"), delay), true);
-                if (delay >= 40) {
-                    tag.putBoolean("reverse", true);
-                } else if (delay <= 0) {
-                    tag.putBoolean("reverse", false);
-                }
-                tag.putInt("delay", delay);
-            }
-        }
+        skill(stack, entity);
         return false;
     }
 }
