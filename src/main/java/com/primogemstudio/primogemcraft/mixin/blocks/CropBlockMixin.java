@@ -24,8 +24,8 @@ public class CropBlockMixin {
 
     @Redirect(method = "getGrowthSpeed", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/state/BlockState;is(Lnet/minecraft/world/level/block/Block;)Z", ordinal = 0))
     private static boolean getGrowthSpeed(BlockState instance, Block ob, Block block, BlockGetter level, BlockPos pos, @Share("pos") LocalRef<BlockPos> bp) {
-        if (instance.getBlock() instanceof BlockExtension be) {
-            return be.canSustainPlant(instance, level, bp.get(), Direction.UP);
+        if (instance.getBlock() instanceof BlockExtension be && be.canSustainPlant(instance, level, bp.get(), Direction.UP)) {
+            return true;
         }
         return instance.is(ob);
     }
