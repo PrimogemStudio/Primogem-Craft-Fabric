@@ -16,8 +16,8 @@ public class BushBlockMixin {
     public boolean canSurvive(boolean original, BlockState state, LevelReader level, BlockPos pos) {
         if (state.getBlock() == (Object) this) {
             var bl = level.getBlockState(pos.below());
-            if (bl.getBlock() instanceof BlockExtension be) {
-                return be.canSustainPlant(bl, level, pos.below(), Direction.UP);
+            if (bl.getBlock() instanceof BlockExtension be && be.canSustainPlant(bl, level, pos.below(), Direction.UP)) {
+                return true;
             }
         }
         return original;

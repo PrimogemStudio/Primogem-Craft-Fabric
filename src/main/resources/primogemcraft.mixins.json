@@ -13,7 +13,10 @@
     "PlayerListMixin",
     "blocks.BushBlockMixin",
     "blocks.CactusBlockMixin",
-    "blocks.CropBlockMixin"
+    "blocks.CropBlockMixin",
+    "blocks.FarmBlockMixin",
+    "blocks.MushroomBlockMixin",
+    "blocks.SugarCaneBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
