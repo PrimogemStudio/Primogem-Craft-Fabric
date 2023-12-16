@@ -23,7 +23,7 @@ public class PrimogemCraftSounds {
     public static final SoundEvent GACHA_3STAR = register("gacha_3star", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "gacha_3star")));
     public static final SoundEvent GACHA_4STAR = register("gacha_4star", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "gacha_4star")));
     public static final SoundEvent GACHA_5STAR = register("gacha_5star", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "gacha_5star")));
-
+    public static final SoundEvent NAGADUS_EMERALD_SHOVEL_ONUSE = register("nagadus_emerald_shovel_onuse", SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "nagadus_emerald_shovel_onuse")));
     public static <T extends SoundEvent> T register(String name, T event) {
         return Registry.register(BuiltInRegistries.SOUND_EVENT, new ResourceLocation(MOD_ID, name), event);
     }

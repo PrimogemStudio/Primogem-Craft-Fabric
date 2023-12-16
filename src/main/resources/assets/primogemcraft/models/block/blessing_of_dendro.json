@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/blessing_of_dendro",
+  "textures": {
+    "all": "primogemcraft:block/blessing_of_dendro",
+    "0": "primogemcraft:block/blessing_of_dendro",
+    "particle": "primogemcraft:block/blessing_of_dendro"
+  },
+  "render_type": "solid"
+}

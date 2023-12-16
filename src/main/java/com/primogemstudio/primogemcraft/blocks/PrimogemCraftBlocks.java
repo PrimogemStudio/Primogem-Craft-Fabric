@@ -72,6 +72,7 @@ public class PrimogemCraftBlocks {
     public static final March7thStatueBlock MARCH_7TH_STATUE_BLOCK = registerWithItem("march_7th_statue", new March7thStatueBlock());
     public static final NagadusEmeraldOreBlock NAGADUS_EMERALD_ORE_BLOCK = registerWithItem("nagadus_emerald_ore", new NagadusEmeraldOreBlock());
     public static final NagadusEmeraldBlock NAGADUS_EMERALD_BLOCK = registerWithItem("nagadus_emerald_block", new NagadusEmeraldBlock());
+    public static final BlessingOfDendroBlock BLESSING_OF_DENDRO_BLOCK = registerWithItem("blessing_of_dendro", new BlessingOfDendroBlock());
     @Environment(EnvType.CLIENT)
     public static void initRenderLayers() {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(), PrimogemCraftBlocks.MORA_BUNCH_BLOCK, PrimogemCraftBlocks.CHEAP_MORA_WALL_BLOCK, PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK);
