@@ -124,7 +124,6 @@ public class PrimogemCraftCreativeTabs {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE_ITEM))
                 .displayItems((ip, output) -> ImmutableList.of(
                         DULL_BLADE_ITEM,
-                        DENDRO_PICKAXE_ITEM,
                         PRIMOGEM_PICKAXE_ITEM,
                         PRIMOGEM_HOE_ITEM,
                         PRIMOGEM_AXE_ITEM,
@@ -174,7 +173,10 @@ public class PrimogemCraftCreativeTabs {
                         VAJRADA_AMETHYST_NETHERITE_HELMET,
                         VAJRADA_AMETHYST_NETHERITE_CHESTPLATE,
                         VAJRADA_AMETHYST_NETHERITE_LEGGINGS,
-                        VAJRADA_AMETHYST_NETHERITE_BOOTS
+                        VAJRADA_AMETHYST_NETHERITE_BOOTS,
+                        NAGADUS_EMERALD_PICKAXE,
+                        NAGADUS_EMERALD_HOE,
+                        NAGADUS_EMERALD_AXE
                 ).forEach(output::accept)).build());
     }
 }
