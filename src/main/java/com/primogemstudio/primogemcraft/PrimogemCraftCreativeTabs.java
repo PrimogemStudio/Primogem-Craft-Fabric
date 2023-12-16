@@ -119,7 +119,8 @@ public class PrimogemCraftCreativeTabs {
                         RUST_IRON_BAR_BLOCK,
                         MARCH_7TH_STATUE_BLOCK,
                         NAGADUS_EMERALD_ORE_BLOCK,
-                        NAGADUS_EMERALD_BLOCK
+                        NAGADUS_EMERALD_BLOCK,
+                        BLESSING_OF_DENDRO_BLOCK
                 ).forEach(output::accept)).build());
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_TOOLS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_weapon_tools")).icon(() -> new ItemStack(DULL_BLADE_ITEM))
                 .displayItems((ip, output) -> ImmutableList.of(
@@ -176,7 +177,8 @@ public class PrimogemCraftCreativeTabs {
                         VAJRADA_AMETHYST_NETHERITE_BOOTS,
                         NAGADUS_EMERALD_PICKAXE,
                         NAGADUS_EMERALD_HOE,
-                        NAGADUS_EMERALD_AXE
+                        NAGADUS_EMERALD_AXE,
+                        NAGADUS_EMERALD_SHOVEL_ITEM
                 ).forEach(output::accept)).build());
     }
 }

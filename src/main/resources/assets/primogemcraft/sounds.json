@@ -136,5 +136,13 @@
         "stream": false
       }
     ]
+  },
+  "nagadus_emerald_shovel_onuse": {
+    "sounds": [
+      {
+        "name": "primogemcraft:nagadus_emerald_shovel_onuse",
+        "stream": false
+      }
+    ]
   }
 }

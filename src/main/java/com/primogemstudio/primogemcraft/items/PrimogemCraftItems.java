@@ -6,6 +6,7 @@ import com.primogemstudio.primogemcraft.items.instances.curios.SocietyTicketItem
 import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldAxeItem;
 import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldHoeItem;
 import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldPickaxeItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldShovelItem;
 import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.*;
 import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.*;
 import com.primogemstudio.primogemcraft.items.instances.mora.*;
@@ -131,6 +132,7 @@ public class PrimogemCraftItems {
     public static final Item NAGADUS_EMERALD_PIECE_ITEM = register("nagadus_emerald_piece", new Item(new Item.Properties()));
     public static final NagadusEmeraldHoeItem NAGADUS_EMERALD_HOE = register("nagadus_emerald_hoe", new NagadusEmeraldHoeItem());
     public static final NagadusEmeraldAxeItem NAGADUS_EMERALD_AXE = register("nagadus_emerald_axe", new NagadusEmeraldAxeItem());
+    public static final NagadusEmeraldShovelItem NAGADUS_EMERALD_SHOVEL_ITEM = register("nagadus_emerald_shovel", new NagadusEmeraldShovelItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
