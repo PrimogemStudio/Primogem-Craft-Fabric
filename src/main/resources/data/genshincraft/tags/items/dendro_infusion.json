@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:dendro_pickaxe"
+    "primogemcraft:nagadus_emerald_pickaxe",
+    "primogemcraft:nagadus_emerald_axe",
+    "primogemcraft:nagadus_emerald_hoe"
   ]
 }
