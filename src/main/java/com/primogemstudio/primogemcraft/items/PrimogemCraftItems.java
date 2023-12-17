@@ -132,6 +132,9 @@ public class PrimogemCraftItems {
     public static final Item NAGADUS_EMERALD_PIECE_ITEM = register("nagadus_emerald_piece", new Item(new Item.Properties()));
     public static final NagadusEmeraldHoeItem NAGADUS_EMERALD_HOE = register("nagadus_emerald_hoe", new NagadusEmeraldHoeItem());
     public static final NagadusEmeraldAxeItem NAGADUS_EMERALD_AXE = register("nagadus_emerald_axe", new NagadusEmeraldAxeItem());
+    public static final Item NAGADUS_EMERALD_IRON_ITEM = register("nagadus_emerald_iron", new Item(new Item.Properties()));
+    public static final Item NAGADUS_EMERALD_DIAMOND_ITEM = register("nagadus_emerald_diamond", new Item(new Item.Properties()));
+    public static final Item NAGADUS_EMERALD_NETHERITE_ITEM = register("nagadus_emerald_netherite", new Item(new Item.Properties()));
     public static final NagadusEmeraldShovelItem NAGADUS_EMERALD_SHOVEL_ITEM = register("nagadus_emerald_shovel", new NagadusEmeraldShovelItem());
     public static void init() {
         PrimogemCraftMobEffects.init();

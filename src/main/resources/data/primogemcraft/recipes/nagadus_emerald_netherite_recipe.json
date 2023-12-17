@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "-*-",
+    "*#*",
+    "-*-"
+  ],
+  "key": {
+    "-": {
+      "item": "primogemcraft:primogem"
+    },
+    "*": {
+      "item": "primogemcraft:nagadus_emerald_fragment"
+    },
+    "#": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:nagadus_emerald_netherite"
+  }
+}

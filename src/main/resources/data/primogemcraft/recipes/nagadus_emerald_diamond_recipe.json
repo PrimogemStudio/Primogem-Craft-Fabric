@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "-/-",
+    "*#*",
+    "-/-"
+  ],
+  "key": {
+    "-": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "/": {
+      "item": "primogemcraft:nagadus_emerald_sliver"
+    },
+    "*": {
+      "item": "primogemcraft:nagadus_emerald_fragment"
+    },
+    "#": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:nagadus_emerald_diamond"
+  }
+}
