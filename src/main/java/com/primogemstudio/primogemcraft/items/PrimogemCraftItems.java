@@ -3,10 +3,7 @@ package com.primogemstudio.primogemcraft.items;
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
 import com.primogemstudio.primogemcraft.items.instances.curios.SocietyTicketItem;
-import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldAxeItem;
-import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldHoeItem;
-import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldPickaxeItem;
-import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.NagadusEmeraldShovelItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.*;
 import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.*;
 import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.*;
 import com.primogemstudio.primogemcraft.items.instances.mora.*;
@@ -136,6 +133,9 @@ public class PrimogemCraftItems {
     public static final Item NAGADUS_EMERALD_DIAMOND_ITEM = register("nagadus_emerald_diamond", new Item(new Item.Properties()));
     public static final Item NAGADUS_EMERALD_NETHERITE_ITEM = register("nagadus_emerald_netherite", new Item(new Item.Properties()));
     public static final NagadusEmeraldShovelItem NAGADUS_EMERALD_SHOVEL_ITEM = register("nagadus_emerald_shovel", new NagadusEmeraldShovelItem());
+    public static final NagadusEmeraldIronSwordItem NAGADUS_EMERALD_IRON_SWORD_ITEM = register("nagadus_emerald_iron_sword", new NagadusEmeraldIronSwordItem());
+    public static final NagadusEmeraldDiamondSwordItem NAGADUS_EMERALD_DIAMOND_SWORD_ITEM = register("nagadus_emerald_diamond_sword", new NagadusEmeraldDiamondSwordItem());
+    public static final NagadusEmeraldNetheriteSwordItem NAGADUS_EMERALD_NETHERITE_SWORD_ITEM = register("nagadus_emerald_netherite_sword", new NagadusEmeraldNetheriteSwordItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

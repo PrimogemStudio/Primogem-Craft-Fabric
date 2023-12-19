@@ -26,6 +26,9 @@
     ],
     "rei_client": [
       "com.primogemstudio.primogemcraft.modprotocols.rei.PrimogemCraftREIPlugin"
+    ],
+    "modmenu": [
+      "com.primogemstudio.primogemcraft.modprotocols.modmenu.PrimogemCraftModMenuCompat"
     ]
   },
   "depends": {

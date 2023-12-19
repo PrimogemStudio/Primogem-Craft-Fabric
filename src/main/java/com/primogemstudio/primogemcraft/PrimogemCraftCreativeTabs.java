@@ -181,7 +181,10 @@ public class PrimogemCraftCreativeTabs {
                         NAGADUS_EMERALD_PICKAXE,
                         NAGADUS_EMERALD_HOE,
                         NAGADUS_EMERALD_AXE,
-                        NAGADUS_EMERALD_SHOVEL_ITEM
+                        NAGADUS_EMERALD_SHOVEL_ITEM,
+                        NAGADUS_EMERALD_IRON_SWORD_ITEM,
+                        NAGADUS_EMERALD_DIAMOND_SWORD_ITEM,
+                        NAGADUS_EMERALD_NETHERITE_SWORD_ITEM
                 ).forEach(output::accept)).build());
     }
 }

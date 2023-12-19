@@ -1,6 +1,6 @@
 package com.primogemstudio.primogemcraft.effects.instances;
 
-import com.primogemstudio.primogemcraft.interfaces.PastAble;
+import com.primogemstudio.primogemcraft.interfaces.EntityExtension;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -32,7 +32,7 @@ public class PastMobEffect extends MobEffect {
     @Override
     public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
         if (!entity.level().isClientSide()) {
-            ((PastAble) entity).setPastInfo(new PastInfo(entity));
+            ((EntityExtension) entity).setPastInfo(new PastInfo(entity));
             if (entity instanceof Player) {
                 entity.level().playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.PLAYERS, 0.5f, 0.2f);
             } else {
@@ -44,7 +44,7 @@ public class PastMobEffect extends MobEffect {
     @Override
     public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
         super.removeAttributeModifiers(entity, attributeMap, amplifier);
-        var info = ((PastAble) entity).getPastInfo();
+        var info = ((EntityExtension) entity).getPastInfo();
         entity.teleportTo(info.x, info.y, info.z);
         entity.setHealth(info.health);
         if (entity instanceof ServerPlayer player) {
