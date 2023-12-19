@@ -1,8 +1,8 @@
 package com.primogemstudio.primogemcraft.mixin;
 
 import com.primogemstudio.primogemcraft.effects.instances.PastMobEffect;
+import com.primogemstudio.primogemcraft.interfaces.EntityExtension;
 import com.primogemstudio.primogemcraft.interfaces.ItemExtension;
-import com.primogemstudio.primogemcraft.interfaces.PastAble;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,12 +15,16 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LivingEntity.class)
-public abstract class LivingEntityMixin implements PastAble {
+public abstract class LivingEntityMixin implements EntityExtension {
     @Shadow
     public abstract ItemStack getItemInHand(InteractionHand hand);
 
+    @Shadow protected abstract int decreaseAirSupply(int currentAir);
+
     @Unique
     private PastMobEffect.PastInfo pastInfo;
+    @Unique
+    private int dawnsongValue = 0;
 
     @Inject(at = @At("HEAD"), method = "swing(Lnet/minecraft/world/InteractionHand;Z)V", cancellable = true)
     public void onSwing(InteractionHand hand, boolean updateSelf, CallbackInfo ci) {
@@ -36,6 +40,7 @@ public abstract class LivingEntityMixin implements PastAble {
             var info = compound.getCompound("PastInfo");
             pastInfo = new PastMobEffect.PastInfo(info.getDouble("x"), info.getDouble("y"), info.getDouble("z"), info.getFloat("health"));
         }
+        dawnsongValue = compound.getInt("dawnsong");
     }
 
     @Inject(method = "addAdditionalSaveData", at = @At("HEAD"))
@@ -48,6 +53,7 @@ public abstract class LivingEntityMixin implements PastAble {
             info.putDouble("z", pastInfo.z());
             info.putFloat("health", pastInfo.health());
         }
+        compound.putInt("dawnsong", dawnsongValue);
     }
 
     public void setPastInfo(PastMobEffect.PastInfo info) {
@@ -57,5 +63,15 @@ public abstract class LivingEntityMixin implements PastAble {
     @Override
     public PastMobEffect.PastInfo getPastInfo() {
         return pastInfo;
+    }
+
+    @Override
+    public void setDawnsongValue(int value) {
+        dawnsongValue = value;
+    }
+
+    @Override
+    public int getDawnsongValue() {
+        return dawnsongValue;
     }
 }

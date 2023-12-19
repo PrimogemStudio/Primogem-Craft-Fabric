@@ -44,8 +44,9 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "maven.modrinth:genshincraft:1.3.2"
-    modRuntimeOnly "com.terraformersmc:modmenu:7.2.2"
+    modImplementation "com.terraformersmc:modmenu:7.2.2"
     modRuntimeOnly "maven.modrinth:imblocker-original:4.0.5"
+    include(modImplementation("maven.modrinth:cloth-config:11.1.106+fabric"))
     modRuntimeOnly "curse.maven:xray-301609:4580961"
     modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:$rei_version").exclude(group: "net.fabricmc.fabric-api")
     modCompileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:$rei_version").exclude(group: "net.fabricmc.fabric-api")

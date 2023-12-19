@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:nagadus_emerald_netherite"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "item": "primogemcraft:nagadus_emerald_diamond_netherite"
+  },
+  "template": {
+    "item": "primogemcraft:smithing_template_element1"
+  }
+}
