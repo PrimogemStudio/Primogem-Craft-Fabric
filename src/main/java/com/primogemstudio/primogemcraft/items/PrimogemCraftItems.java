@@ -136,6 +136,10 @@ public class PrimogemCraftItems {
     public static final NagadusEmeraldIronSwordItem NAGADUS_EMERALD_IRON_SWORD_ITEM = register("nagadus_emerald_iron_sword", new NagadusEmeraldIronSwordItem());
     public static final NagadusEmeraldDiamondSwordItem NAGADUS_EMERALD_DIAMOND_SWORD_ITEM = register("nagadus_emerald_diamond_sword", new NagadusEmeraldDiamondSwordItem());
     public static final NagadusEmeraldNetheriteSwordItem NAGADUS_EMERALD_NETHERITE_SWORD_ITEM = register("nagadus_emerald_netherite_sword", new NagadusEmeraldNetheriteSwordItem());
+    public static final NagadusEmeraldIronArmorItem.Helmet NAGADUS_EMERALD_IRON_HELMET_ITEM = register("nagadus_emerald_iron_helmet", new NagadusEmeraldIronArmorItem.Helmet());
+    public static final NagadusEmeraldIronArmorItem.Chestplate NAGADUS_EMERALD_IRON_CHESTPLATE_ITEM = register("nagadus_emerald_iron_chestplate", new NagadusEmeraldIronArmorItem.Chestplate());
+    public static final NagadusEmeraldIronArmorItem.Leggings NAGADUS_EMERALD_IRON_LEGGINGS_ITEM = register("nagadus_emerald_iron_leggings", new NagadusEmeraldIronArmorItem.Leggings());
+    public static final NagadusEmeraldIronArmorItem.Boots NAGADUS_EMERALD_IRON_BOOTS_ITEM = register("nagadus_emerald_iron_boots", new NagadusEmeraldIronArmorItem.Boots());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

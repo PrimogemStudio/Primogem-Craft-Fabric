@@ -183,6 +183,10 @@ public class PrimogemCraftCreativeTabs {
                         NAGADUS_EMERALD_AXE,
                         NAGADUS_EMERALD_SHOVEL_ITEM,
                         NAGADUS_EMERALD_IRON_SWORD_ITEM,
+                        NAGADUS_EMERALD_IRON_HELMET_ITEM,
+                        NAGADUS_EMERALD_IRON_CHESTPLATE_ITEM,
+                        NAGADUS_EMERALD_IRON_LEGGINGS_ITEM,
+                        NAGADUS_EMERALD_IRON_BOOTS_ITEM,
                         NAGADUS_EMERALD_DIAMOND_SWORD_ITEM,
                         NAGADUS_EMERALD_NETHERITE_SWORD_ITEM
                 ).forEach(output::accept)).build());

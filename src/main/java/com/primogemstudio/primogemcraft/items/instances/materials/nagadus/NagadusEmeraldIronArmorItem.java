@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.items.instances.materials.vajrada;
+package com.primogemstudio.primogemcraft.items.instances.materials.nagadus;
 
 import com.google.common.collect.Iterables;
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
@@ -14,17 +14,17 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class VajradaAmethystIronArmorItem extends ArmorItem {
-    public VajradaAmethystIronArmorItem(ArmorItem.Type type, Item.Properties properties) {
+public class NagadusEmeraldIronArmorItem extends ArmorItem {
+    public NagadusEmeraldIronArmorItem(ArmorItem.Type type, Item.Properties properties) {
         super(new ArmorMaterial() {
             @Override
             public int getDurabilityForType(ArmorItem.Type type) {
-                return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 20;
+                return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 21;
             }
 
             @Override
             public int getDefenseForType(ArmorItem.Type type) {
-                return new int[]{3, 5, 6, 3}[type.getSlot().getIndex()];
+                return new int[]{3, 6, 7, 3}[type.getSlot().getIndex()];
             }
 
             @Override
@@ -39,12 +39,12 @@ public class VajradaAmethystIronArmorItem extends ArmorItem {
 
             @Override
             public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAJRADA_AMETHYST_SLIVER_ITEM), new ItemStack(Items.IRON_INGOT));
+                return Ingredient.of(new ItemStack(PrimogemCraftItems.NAGADUS_EMERALD_SLIVER_ITEM), new ItemStack(Items.IRON_INGOT));
             }
 
             @Override
             public @NotNull String getName() {
-                return "vajrada_amethyst_iron_armor";
+                return "nagadus_emerald_iron_armor";
             }
 
             @Override
@@ -61,41 +61,42 @@ public class VajradaAmethystIronArmorItem extends ArmorItem {
 
     @Override
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_armor.line1"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_armor.line2"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_armor.line3"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_armor.line4"));
-        list.add(Component.translatable("tooltip.primogemcraft.vajrada_amethyst_iron_armor.line5"));
+        list.add(Component.translatable("tooltip.primogemcraft.nagadus_emerald_iron_armor.line1"));
+        list.add(Component.translatable("tooltip.primogemcraft.nagadus_emerald_iron_armor.line2"));
+        list.add(Component.translatable("tooltip.primogemcraft.nagadus_emerald_iron_armor.line3"));
+        list.add(Component.translatable("tooltip.primogemcraft.nagadus_emerald_iron_armor.line4"));
+        list.add(Component.translatable("tooltip.primogemcraft.nagadus_emerald_iron_armor.line5"));
     }
 
+    @Override
     public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(itemstack, world, entity, slot, selected);
         if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-            OnArmorTick.execute(world, entity, itemstack);
+            OnArmorTick.execute(player, itemstack);
         }
     }
 
-    public static class Chestplate extends VajradaAmethystIronArmorItem {
-        public Chestplate() {
-            super(Type.CHESTPLATE, new Item.Properties().fireResistant());
-        }
-    }
-
-    public static class Helmet extends VajradaAmethystIronArmorItem {
+    public static class Helmet extends NagadusEmeraldIronArmorItem {
         public Helmet() {
-            super(Type.HELMET, new Item.Properties().fireResistant());
+            super(ArmorItem.Type.HELMET, new Item.Properties().fireResistant());
         }
     }
 
-    public static class Leggings extends VajradaAmethystIronArmorItem {
+    public static class Chestplate extends NagadusEmeraldIronArmorItem {
+        public Chestplate() {
+            super(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant());
+        }
+    }
+
+    public static class Leggings extends NagadusEmeraldIronArmorItem {
         public Leggings() {
-            super(Type.LEGGINGS, new Item.Properties().fireResistant());
+            super(ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant());
         }
     }
 
-    public static class Boots extends VajradaAmethystIronArmorItem {
+    public static class Boots extends NagadusEmeraldIronArmorItem {
         public Boots() {
-            super(Type.BOOTS, new Item.Properties().fireResistant());
+            super(ArmorItem.Type.BOOTS, new Item.Properties().fireResistant());
         }
     }
 }
