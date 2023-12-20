@@ -1,9 +1,6 @@
 package com.primogemstudio.primogemcraft.items.instances.materials.vajrada;
 
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -12,14 +9,14 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.LevelAccessor;
 
-import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
+import static com.primogemstudio.primogemcraft.items.PrimogemCraftItemTags.*;
 
 public class OnArmorTick {
     public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
         if (!itemstack.getOrCreateTag().getBoolean("armor_value")) {
-            if (itemstack.is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "element_iron")))) itemstack.getOrCreateTag().putDouble("armor_value", 0.5);
-            if (itemstack.is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "element_diamond")))) itemstack.getOrCreateTag().putDouble("armor_value", 1);
-            if (itemstack.is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "element_netherite")))) itemstack.getOrCreateTag().putDouble("armor_value", 2);
+            if (itemstack.is(ELEMENT_IRON)) itemstack.getOrCreateTag().putDouble("armor_value", 0.5);
+            if (itemstack.is(ELEMENT_DIAMOND)) itemstack.getOrCreateTag().putDouble("armor_value", 1);
+            if (itemstack.is(ELEMENT_NETHERITE)) itemstack.getOrCreateTag().putDouble("armor_value", 2);
         }
         LivingEntity livEnt = (LivingEntity) entity;
         double armor_value =

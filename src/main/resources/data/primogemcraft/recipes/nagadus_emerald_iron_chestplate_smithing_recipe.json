@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:nagadus_emerald_iron"
+  },
+  "base": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "result": {
+    "item": "primogemcraft:nagadus_emerald_iron_chestplate"
+  },
+  "template": {
+    "item": "primogemcraft:mora"
+  }
+}
