@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:nagadus_emerald_netherite"
+  },
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "result": {
+    "item": "primogemcraft:nagadus_emerald_netherite_leggings"
+  },
+  "template": {
+    "item": "primogemcraft:smithing_template_element1"
+  }
+}
