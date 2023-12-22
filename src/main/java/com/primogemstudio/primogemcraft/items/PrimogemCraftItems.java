@@ -140,6 +140,14 @@ public class PrimogemCraftItems {
     public static final NagadusEmeraldIronArmorItem.Chestplate NAGADUS_EMERALD_IRON_CHESTPLATE_ITEM = register("nagadus_emerald_iron_chestplate", new NagadusEmeraldIronArmorItem.Chestplate());
     public static final NagadusEmeraldIronArmorItem.Leggings NAGADUS_EMERALD_IRON_LEGGINGS_ITEM = register("nagadus_emerald_iron_leggings", new NagadusEmeraldIronArmorItem.Leggings());
     public static final NagadusEmeraldIronArmorItem.Boots NAGADUS_EMERALD_IRON_BOOTS_ITEM = register("nagadus_emerald_iron_boots", new NagadusEmeraldIronArmorItem.Boots());
+    public static final NagadusEmeraldDiamondArmorItem.Helmet NAGADUS_EMERALD_DIAMOND_HELMET_ITEM = register("nagadus_emerald_diamond_helmet", new NagadusEmeraldDiamondArmorItem.Helmet());
+    public static final NagadusEmeraldDiamondArmorItem.Chestplate NAGADUS_EMERALD_DIAMOND_CHESTPLATE_ITEM = register("nagadus_emerald_diamond_chestplate", new NagadusEmeraldDiamondArmorItem.Chestplate());
+    public static final NagadusEmeraldDiamondArmorItem.Leggings NAGADUS_EMERALD_DIAMOND_LEGGINGS_ITEM = register("nagadus_emerald_diamond_leggings", new NagadusEmeraldDiamondArmorItem.Leggings());
+    public static final NagadusEmeraldDiamondArmorItem.Boots NAGADUS_EMERALD_DIAMOND_BOOTS_ITEM = register("nagadus_emerald_diamond_boots", new NagadusEmeraldDiamondArmorItem.Boots());
+    public static final NagadusEmeraldNetheriteArmorItem.Helmet NAGADUS_EMERALD_NETHERITE_HELMET_ITEM = register("nagadus_emerald_netherite_helmet", new NagadusEmeraldNetheriteArmorItem.Helmet());
+    public static final NagadusEmeraldNetheriteArmorItem.Chestplate NAGADUS_EMERALD_NETHERITE_CHESTPLATE_ITEM = register("nagadus_emerald_netherite_chestplate", new NagadusEmeraldNetheriteArmorItem.Chestplate());
+    public static final NagadusEmeraldNetheriteArmorItem.Leggings NAGADUS_EMERALD_NETHERITE_LEGGINGS_ITEM = register("nagadus_emerald_netherite_leggings", new NagadusEmeraldNetheriteArmorItem.Leggings());
+    public static final NagadusEmeraldNetheriteArmorItem.Boots NAGADUS_EMERALD_NETHERITE_BOOTS_ITEM = register("nagadus_emerald_netherite_boots", new NagadusEmeraldNetheriteArmorItem.Boots());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

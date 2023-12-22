@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:nagadus_emerald_diamond"
+  },
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "result": {
+    "item": "primogemcraft:nagadus_emerald_diamond_boots"
+  },
+  "template": {
+    "item": "primogemcraft:exquisite_mora"
+  }
+}

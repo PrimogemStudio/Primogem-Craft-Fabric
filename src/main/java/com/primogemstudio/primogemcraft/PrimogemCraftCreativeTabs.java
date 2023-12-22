@@ -188,7 +188,15 @@ public class PrimogemCraftCreativeTabs {
                         NAGADUS_EMERALD_IRON_LEGGINGS_ITEM,
                         NAGADUS_EMERALD_IRON_BOOTS_ITEM,
                         NAGADUS_EMERALD_DIAMOND_SWORD_ITEM,
-                        NAGADUS_EMERALD_NETHERITE_SWORD_ITEM
+                        NAGADUS_EMERALD_DIAMOND_HELMET_ITEM,
+                        NAGADUS_EMERALD_DIAMOND_CHESTPLATE_ITEM,
+                        NAGADUS_EMERALD_DIAMOND_LEGGINGS_ITEM,
+                        NAGADUS_EMERALD_DIAMOND_BOOTS_ITEM,
+                        NAGADUS_EMERALD_NETHERITE_SWORD_ITEM,
+                        NAGADUS_EMERALD_NETHERITE_HELMET_ITEM,
+                        NAGADUS_EMERALD_NETHERITE_CHESTPLATE_ITEM,
+                        NAGADUS_EMERALD_NETHERITE_LEGGINGS_ITEM,
+                        NAGADUS_EMERALD_NETHERITE_BOOTS_ITEM
                 ).forEach(output::accept)).build());
     }
 }
