@@ -45,20 +45,17 @@ public class VayudaTurquoiseGemstoneShovelItem extends ShovelItem {
 
     @Override
     public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
-        boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-        if ((entity.hasEffect(MobEffects.DIG_SPEED))
-                && (entity.hasEffect(MobEffects.DIG_SPEED) ? entity.getEffect(MobEffects.DIG_SPEED).getDuration() : 0) > 100) {
+        var ret = super.mineBlock(itemstack, world, blockstate, pos, entity);
+        var effect = entity.getEffect(MobEffects.DIG_SPEED);
+        if (effect != null && effect.getDuration() > 100) {
             entity.removeEffect(MobEffects.DIG_SPEED);
             entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 100, 0, true, false));
-        }
-        else if (entity.hasEffect(MobEffects.DIG_SPEED)) {
-            entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, entity.hasEffect(MobEffects.DIG_SPEED) ? entity.getEffect(MobEffects.DIG_SPEED).getDuration() : 0,
-                    (entity.hasEffect(MobEffects.DIG_SPEED) ? entity.getEffect(MobEffects.DIG_SPEED).getAmplifier() : 0) + 1, false, false));
-        }
-        else {
+        } else if (effect != null) {
+            entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, effect.getDuration(), effect.getAmplifier() + 1, false, false));
+        } else {
             entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 80, 0, true, false));
         }
-        return retval;
+        return ret;
     }
 
     @Override

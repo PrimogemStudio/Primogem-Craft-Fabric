@@ -61,13 +61,11 @@ public class VayudaTurquoiseGemstoneHoeItem extends HoeItem {
     @Override
     public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(itemstack, world, entity, slot, selected);
-        onUpdate(itemstack, entity instanceof Player ply ? ply : null);
+        onUpdate(itemstack, (Player) entity);
     }
 
     public void onUpdate(ItemStack itemstack, Player entity) {
-        if (entity == null) return;
-        if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.KNOCKBACK, itemstack) == 0 && !isCreative(entity) && entity.getMainHandItem().getItem() == itemstack.getItem()
-                && entity.getOffhandItem().getItem() == itemstack.getItem()) {
+        if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.KNOCKBACK, itemstack) == 0 && !isCreative(entity) && entity.getMainHandItem().getItem() == itemstack.getItem() && entity.getOffhandItem().getItem() == itemstack.getItem()) {
             (itemstack).enchant(Enchantments.KNOCKBACK, Mth.nextInt(RandomSource.create(), 8, 10));
         }
         if (isCreative(entity) && EnchantmentHelper.getItemEnchantmentLevel(Enchantments.KNOCKBACK, itemstack) == 0) {
