@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 64,
+  "ingredient": {
+    "item": "primogemcraft:agnidus_agate"
+  },
+  "result": "primogemcraft:agnidus_agate_sliver"
+}

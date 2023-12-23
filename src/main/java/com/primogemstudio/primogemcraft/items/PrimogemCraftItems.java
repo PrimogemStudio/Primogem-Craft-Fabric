@@ -148,6 +148,10 @@ public class PrimogemCraftItems {
     public static final NagadusEmeraldNetheriteArmorItem.Chestplate NAGADUS_EMERALD_NETHERITE_CHESTPLATE_ITEM = register("nagadus_emerald_netherite_chestplate", new NagadusEmeraldNetheriteArmorItem.Chestplate());
     public static final NagadusEmeraldNetheriteArmorItem.Leggings NAGADUS_EMERALD_NETHERITE_LEGGINGS_ITEM = register("nagadus_emerald_netherite_leggings", new NagadusEmeraldNetheriteArmorItem.Leggings());
     public static final NagadusEmeraldNetheriteArmorItem.Boots NAGADUS_EMERALD_NETHERITE_BOOTS_ITEM = register("nagadus_emerald_netherite_boots", new NagadusEmeraldNetheriteArmorItem.Boots());
+    public static final Item AGNIDUS_AGATE_ITEM = register("agnidus_agate", new Item(new Item.Properties()));
+    public static final Item AGNIDUS_AGATE_SLIVER_ITEM = register("agnidus_agate_sliver", new Item(new Item.Properties()));
+    public static final Item AGNIDUS_AGATE_FRAGMENT_ITEM = register("agnidus_agate_fragment", new Item(new Item.Properties()));
+    public static final Item AGNIDUS_AGATE_PIECE_ITEM = register("agnidus_agate_piece", new Item(new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

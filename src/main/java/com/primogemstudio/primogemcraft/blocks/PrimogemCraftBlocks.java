@@ -2,6 +2,8 @@ package com.primogemstudio.primogemcraft.blocks;
 
 import com.primogemstudio.primogemcraft.blocks.instances.*;
 import com.primogemstudio.primogemcraft.blocks.instances.dendrocore.*;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.agnidus.AgnidusAgateBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.agnidus.AgnidusAgateOreBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.nagadus.NagadusEmeraldBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.nagadus.NagadusEmeraldOreBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vajrada.VajradaAmethystBlock;
@@ -73,6 +75,8 @@ public class PrimogemCraftBlocks {
     public static final NagadusEmeraldOreBlock NAGADUS_EMERALD_ORE_BLOCK = registerWithItem("nagadus_emerald_ore", new NagadusEmeraldOreBlock());
     public static final NagadusEmeraldBlock NAGADUS_EMERALD_BLOCK = registerWithItem("nagadus_emerald_block", new NagadusEmeraldBlock());
     public static final BlessingOfDendroBlock BLESSING_OF_DENDRO_BLOCK = registerWithItem("blessing_of_dendro", new BlessingOfDendroBlock());
+    public static final AgnidusAgateBlock AGNIDUS_AGATE_BLOCK = registerWithItem("agnidus_agate_block", new AgnidusAgateBlock());
+    public static final AgnidusAgateOreBlock AGNIDUS_AGATE_ORE_BLOCK = registerWithItem("agnidus_agate_ore", new AgnidusAgateOreBlock());
     @Environment(EnvType.CLIENT)
     public static void initRenderLayers() {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(), PrimogemCraftBlocks.MORA_BUNCH_BLOCK, PrimogemCraftBlocks.CHEAP_MORA_WALL_BLOCK, PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK);
