@@ -7,7 +7,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
@@ -54,26 +54,19 @@ public class VayudaTurquoiseGemstoneAxeItem extends AxeItem {
     @Override
     public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(itemstack, world, entity, slot, selected);
+        var player = (Player) entity;
         if (selected) {
-            if (entity == null)
-                return;
             if (entity.isInWaterOrBubble()) {
-                if (!(entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DOLPHINS_GRACE))) {
-                    if (entity instanceof LivingEntity _entity) {
-                        _entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 240, 1, false, false));
-                    }
-
+                if (!player.hasEffect(MobEffects.DOLPHINS_GRACE)) {
+                    player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 240, 1, false, false));
                     if (itemstack.hurt(Mth.nextInt(RandomSource.create(), 4, 8), RandomSource.create(), null)) {
                         itemstack.shrink(1);
                         itemstack.setDamageValue(0);
                     }
                 }
-            }
-            else {
-                if (!(entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SPEED))) {
-                    if (entity instanceof LivingEntity _entity) {
-                        _entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 1, false, false));
-                    }
+            } else {
+                if (!player.hasEffect(MobEffects.MOVEMENT_SPEED)) {
+                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 1, false, false));
                     if (itemstack.hurt(4, RandomSource.create(), null)) {
                         itemstack.shrink(1);
                         itemstack.setDamageValue(0);
