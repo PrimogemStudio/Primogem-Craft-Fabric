@@ -3,6 +3,9 @@ package com.primogemstudio.primogemcraft.items;
 import com.primogemstudio.primogemcraft.effects.PrimogemCraftMobEffects;
 import com.primogemstudio.primogemcraft.items.instances.*;
 import com.primogemstudio.primogemcraft.items.instances.curios.SocietyTicketItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.agnidus.AgnidusAgateDiamondItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.agnidus.AgnidusAgateIronItem;
+import com.primogemstudio.primogemcraft.items.instances.materials.agnidus.AgnidusAgateNetheriteItem;
 import com.primogemstudio.primogemcraft.items.instances.materials.nagadus.*;
 import com.primogemstudio.primogemcraft.items.instances.materials.vajrada.*;
 import com.primogemstudio.primogemcraft.items.instances.materials.vayuda.*;
@@ -152,6 +155,9 @@ public class PrimogemCraftItems {
     public static final Item AGNIDUS_AGATE_SLIVER_ITEM = register("agnidus_agate_sliver", new Item(new Item.Properties()));
     public static final Item AGNIDUS_AGATE_FRAGMENT_ITEM = register("agnidus_agate_fragment", new Item(new Item.Properties()));
     public static final Item AGNIDUS_AGATE_PIECE_ITEM = register("agnidus_agate_piece", new Item(new Item.Properties()));
+    public static final AgnidusAgateIronItem AGNIDUS_AGATE_IRON_ITEM = register("agnidus_agate_iron", new AgnidusAgateIronItem());
+    public static final AgnidusAgateDiamondItem AGNIDUS_AGATE_DIAMOND_ITEM = register("agnidus_agate_diamond", new AgnidusAgateDiamondItem());
+    public static final AgnidusAgateNetheriteItem AGNIDUS_AGATE_NETHERITE_ITEM = register("agnidus_agate_netherite", new AgnidusAgateNetheriteItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

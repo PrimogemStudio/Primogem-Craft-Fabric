@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "-/-",
+    "*#*",
+    "-/-"
+  ],
+  "key": {
+    "-": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "/": {
+      "item": "primogemcraft:agnidus_agate_sliver"
+    },
+    "*": {
+      "item": "primogemcraft:agnidus_agate_fragment"
+    },
+    "#": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:agnidus_agate_diamond"
+  }
+}
