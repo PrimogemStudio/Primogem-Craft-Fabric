@@ -90,9 +90,6 @@ public class March7thStatueBlock extends Block implements BlockExtension {
             if (!_level.isClientSide()) {
                 _level.playSound(null, BlockPos.containing(x, y, z), ev, SoundSource.BLOCKS, (float) 0.4, 1);
             }
-            else {
-                _level.playLocalSound(x, y, z, ev, SoundSource.BLOCKS, (float) 0.4, 1, false);
-            }
         }
     }
 

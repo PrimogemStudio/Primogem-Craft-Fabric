@@ -62,9 +62,6 @@ public class NagadusEmeraldAxeItem extends AxeItem {
             if (!world.isClientSide()) {
                 world.playSound(null, BlockPos.containing(x, y, z), SoundEvents.DRAGON_FIREBALL_EXPLODE, SoundSource.NEUTRAL, (float) 0.5, (float) 0.5);
             }
-            else {
-                world.playLocalSound(x, y, z, SoundEvents.DRAGON_FIREBALL_EXPLODE, SoundSource.NEUTRAL, (float) 0.5, (float) 0.5, false);
-            }
             ItemStack _ist = ar.getObject();
             if (_ist.hurt((int) (ar.getObject().getMaxDamage() * 0.1), RandomSource.create(), null)) {
                 _ist.shrink(1);

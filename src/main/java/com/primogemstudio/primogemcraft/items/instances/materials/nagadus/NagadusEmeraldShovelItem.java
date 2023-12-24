@@ -109,9 +109,6 @@ public class NagadusEmeraldShovelItem extends ShovelItem {
             if (!world.isClientSide()) {
                 world.playSound(null, BlockPos.containing(x, y, z), PrimogemCraftSounds.NAGADUS_EMERALD_SHOVEL_ONUSE, SoundSource.NEUTRAL, (float) 0.3, 5);
             }
-            else {
-                world.playLocalSound(x, y, z, PrimogemCraftSounds.NAGADUS_EMERALD_SHOVEL_ONUSE, SoundSource.NEUTRAL, (float) 0.3, 5, false);
-            }
             if (Math.random() < 0.2) {
                 world.setBlock(BlockPos.containing(x, y, z), Blocks.GRASS_BLOCK.defaultBlockState(), 3);
             } else {

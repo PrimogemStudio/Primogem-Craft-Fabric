@@ -77,6 +77,7 @@ public class PrimogemCraftBlocks {
     public static final BlessingOfDendroBlock BLESSING_OF_DENDRO_BLOCK = registerWithItem("blessing_of_dendro", new BlessingOfDendroBlock());
     public static final AgnidusAgateBlock AGNIDUS_AGATE_BLOCK = registerWithItem("agnidus_agate_block", new AgnidusAgateBlock());
     public static final AgnidusAgateOreBlock AGNIDUS_AGATE_ORE_BLOCK = registerWithItem("agnidus_agate_ore", new AgnidusAgateOreBlock());
+    public static final NetherrackFarmlandBlock NETHERRACK_FARMLAND_BLOCK = registerWithItem("netherrack_farmland", new NetherrackFarmlandBlock());
     @Environment(EnvType.CLIENT)
     public static void initRenderLayers() {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(), PrimogemCraftBlocks.MORA_BUNCH_BLOCK, PrimogemCraftBlocks.CHEAP_MORA_WALL_BLOCK, PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK);

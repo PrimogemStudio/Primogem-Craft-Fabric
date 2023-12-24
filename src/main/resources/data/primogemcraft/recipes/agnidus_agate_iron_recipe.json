@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "-#-",
+    "#-#",
+    "-#-"
+  ],
+  "key": {
+    "-": {
+      "item": "minecraft:iron_ingot"
+    },
+    "#": {
+      "item": "primogemcraft:agnidus_agate_sliver"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:agnidus_agate_iron"
+  }
+}

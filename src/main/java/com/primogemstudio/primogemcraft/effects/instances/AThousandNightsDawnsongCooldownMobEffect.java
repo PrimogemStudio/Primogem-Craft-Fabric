@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
+import org.jetbrains.annotations.NotNull;
 
 public class AThousandNightsDawnsongCooldownMobEffect extends MobEffect {
     public AThousandNightsDawnsongCooldownMobEffect() {
@@ -14,7 +15,7 @@ public class AThousandNightsDawnsongCooldownMobEffect extends MobEffect {
     }
 
     @Override
-    public String getDescriptionId() {
+    public @NotNull String getDescriptionId() {
         return "effect.primogemcraft.a_thousand_nights_dawnsong_cooldown";
     }
 
@@ -27,9 +28,6 @@ public class AThousandNightsDawnsongCooldownMobEffect extends MobEffect {
         var z = entity.getZ();
         if (!level.isClientSide()) {
             level.playSound(null, BlockPos.containing(x, y, z), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, (float) 0.5, 1);
-        }
-        else {
-            level.playLocalSound(x, y, z, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, (float) 0.5, 1, false);
         }
     }
 
