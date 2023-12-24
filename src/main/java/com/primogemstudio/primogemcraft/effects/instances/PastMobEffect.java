@@ -33,11 +33,7 @@ public class PastMobEffect extends MobEffect {
     public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
         if (!entity.level().isClientSide()) {
             ((EntityExtension) entity).setPastInfo(new PastInfo(entity));
-            if (entity instanceof Player) {
-                entity.level().playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.PLAYERS, 0.5f, 0.2f);
-            } else {
-                entity.level().playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.NEUTRAL, 0.1f, 0.2f);
-            }
+            entity.level().playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.PLAYERS, entity instanceof Player ? 0.5f : 0.1f, 0.2f);
         }
     }
 

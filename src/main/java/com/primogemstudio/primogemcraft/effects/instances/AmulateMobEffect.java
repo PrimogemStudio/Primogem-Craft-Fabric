@@ -41,9 +41,6 @@ public class AmulateMobEffect extends MobEffect {
         if (!entity.level().isClientSide()) {
             entity.level().playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), SoundEvents.TRIDENT_THUNDER, SoundSource.PLAYERS, 3, 0.5F);
         }
-        else {
-            entity.level().playLocalSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.TRIDENT_THUNDER, SoundSource.PLAYERS, 3, 0.5F, false);
-        }
     }
 
     @Override

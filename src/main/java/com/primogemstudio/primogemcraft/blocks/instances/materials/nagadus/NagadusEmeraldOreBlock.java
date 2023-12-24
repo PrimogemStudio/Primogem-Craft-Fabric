@@ -44,8 +44,5 @@ public class NagadusEmeraldOreBlock extends Block implements BlockExtension {
         if (!level.isClientSide()) {
             level.playSound(null, pos, SoundEvents.GLASS_BREAK, SoundSource.BLOCKS, (float) 0.5, 1);
         }
-        else {
-            level.playLocalSound(pos.getX(), pos.getY(), pos.getZ(), SoundEvents.GLASS_BREAK, SoundSource.BLOCKS, (float) 0.5, 1, false);
-        }
     }
 }

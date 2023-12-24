@@ -90,9 +90,6 @@ public class VajradaAmethystPickaxeItem extends PickaxeItem {
                 if (!_level.isClientSide()) {
                     _level.playSound(null, BlockPos.containing(x, y, z), SoundEvents.GLASS_BREAK, SoundSource.BLOCKS, 5, (float) 0.5);
                 }
-                else {
-                    _level.playLocalSound(x, y, z, SoundEvents.GLASS_BREAK, SoundSource.BLOCKS, 5, (float) 0.5, false);
-                }
                 if (Math.random() < 0.05) {
                     if ((world.getBlockState(BlockPos.containing(x, y, z))).is(TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "deepslate_ores")))) {
                         world.setBlock(BlockPos.containing(x, y, z), PrimogemCraftBlocks.VAJRADA_AMETHYST_ORE_BLOCK.defaultBlockState(), 3);

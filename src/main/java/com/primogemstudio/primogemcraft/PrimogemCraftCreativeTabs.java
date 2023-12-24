@@ -65,6 +65,9 @@ public class PrimogemCraftCreativeTabs {
                         AGNIDUS_AGATE_FRAGMENT_ITEM,
                         AGNIDUS_AGATE_PIECE_ITEM,
                         AGNIDUS_AGATE_ITEM,
+                        AGNIDUS_AGATE_IRON_ITEM,
+                        AGNIDUS_AGATE_DIAMOND_ITEM,
+                        AGNIDUS_AGATE_NETHERITE_ITEM,
                         A_NEW_DAY_WITH_HOPE_RECORD_ITEM,
                         THE_FADING_STORIES_RECORD_ITEM,
                         HAKUSHIN_LULLABY_RECORD_ITEM,
@@ -77,7 +80,7 @@ public class PrimogemCraftCreativeTabs {
                         SMITHING_TEMPLATE_MORA_ITEM,
                         SMITHING_TEMPLATE_ELEMENT_1_ITEM,
                         SMITHING_TEMPLATE_ELEMENT_2_ITEM,
-                        ELEMENT_CRYSTAL
+                        ELEMENT_CRYSTAL_ITEM
                 ).forEach(output::accept)).build());
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, KEY_BLOCKS, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 1).title(Component.translatable("itemGroup.primogemcraft_blocks")).icon(() -> new ItemStack(PRIMOGEM_ORE))
                 .displayItems((ip, output) -> ImmutableList.of(
@@ -128,6 +131,7 @@ public class PrimogemCraftCreativeTabs {
                         DENDRO_CORE_PLANK_PRESSURE_PLATE_BLOCK,
                         DENDRO_CORE_PLANK_BUTTON_BLOCK,
                         RUST_IRON_BAR_BLOCK,
+                        NETHERRACK_FARMLAND_BLOCK,
                         MARCH_7TH_STATUE_BLOCK,
                         BLESSING_OF_DENDRO_BLOCK
                 ).forEach(output::accept)).build());
@@ -170,23 +174,23 @@ public class PrimogemCraftCreativeTabs {
                         VAJRADA_AMETHYST_PICKAXE_ITEM,
                         VAJRADA_AMETHYST_SHOVEL_ITEM,
                         VAJRADA_AMETHYST_IRON_SWORD_ITEM,
-                        VAJRADA_AMETHYST_IRON_HELMET,
-                        VAJRADA_AMETHYST_IRON_CHESTPLATE,
-                        VAJRADA_AMETHYST_IRON_LEGGINGS,
-                        VAJRADA_AMETHYST_IRON_BOOTS,
+                        VAJRADA_AMETHYST_IRON_HELMET_ITEM,
+                        VAJRADA_AMETHYST_IRON_CHESTPLATE_ITEM,
+                        VAJRADA_AMETHYST_IRON_LEGGINGS_ITEM,
+                        VAJRADA_AMETHYST_IRON_BOOTS_ITEM,
                         VAJRADA_AMETHYST_DIAMOND_SWORD_ITEM,
-                        VAJRADA_AMETHYST_DIAMOND_HELMET,
-                        VAJRADA_AMETHYST_DIAMOND_CHESTPLATE,
-                        VAJRADA_AMETHYST_DIAMOND_LEGGINGS,
-                        VAJRADA_AMETHYST_DIAMOND_BOOTS,
+                        VAJRADA_AMETHYST_DIAMOND_HELMET_ITEM,
+                        VAJRADA_AMETHYST_DIAMOND_CHESTPLATE_ITEM,
+                        VAJRADA_AMETHYST_DIAMOND_LEGGINGS_ITEM,
+                        VAJRADA_AMETHYST_DIAMOND_BOOTS_ITEM,
                         VAJRADA_AMETHYST_NETHERITE_SWORD_ITEM,
-                        VAJRADA_AMETHYST_NETHERITE_HELMET,
-                        VAJRADA_AMETHYST_NETHERITE_CHESTPLATE,
-                        VAJRADA_AMETHYST_NETHERITE_LEGGINGS,
-                        VAJRADA_AMETHYST_NETHERITE_BOOTS,
-                        NAGADUS_EMERALD_PICKAXE,
-                        NAGADUS_EMERALD_HOE,
-                        NAGADUS_EMERALD_AXE,
+                        VAJRADA_AMETHYST_NETHERITE_HELMET_ITEM,
+                        VAJRADA_AMETHYST_NETHERITE_CHESTPLATE_ITEM,
+                        VAJRADA_AMETHYST_NETHERITE_LEGGINGS_ITEM,
+                        VAJRADA_AMETHYST_NETHERITE_BOOTS_ITEM,
+                        NAGADUS_EMERALD_PICKAXE_ITEM,
+                        NAGADUS_EMERALD_HOE_ITEM,
+                        NAGADUS_EMERALD_AXE_ITEM,
                         NAGADUS_EMERALD_SHOVEL_ITEM,
                         NAGADUS_EMERALD_IRON_SWORD_ITEM,
                         NAGADUS_EMERALD_IRON_HELMET_ITEM,
@@ -202,7 +206,9 @@ public class PrimogemCraftCreativeTabs {
                         NAGADUS_EMERALD_NETHERITE_HELMET_ITEM,
                         NAGADUS_EMERALD_NETHERITE_CHESTPLATE_ITEM,
                         NAGADUS_EMERALD_NETHERITE_LEGGINGS_ITEM,
-                        NAGADUS_EMERALD_NETHERITE_BOOTS_ITEM
+                        NAGADUS_EMERALD_NETHERITE_BOOTS_ITEM,
+                        AGNIDUS_AGATE_SHOVEL_ITEM,
+                        AGNIDUS_AGATE_HOE_ITEM
                 ).forEach(output::accept)).build());
     }
 }
