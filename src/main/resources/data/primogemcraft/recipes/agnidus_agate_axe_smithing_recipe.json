@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:smithing_template_element2"
+  },
+  "base": {
+    "item": "primogemcraft:primogem_axe"
+  },
+  "addition": {
+    "item": "primogemcraft:agnidus_agate_fragment"
+  },
+  "result": {
+    "item": "primogemcraft:agnidus_agate_axe"
+  }
+}

@@ -27,6 +27,7 @@ public class PrimogemCraftCreativeTabs {
                         THE_ALL_BEGINNING_ITEM,
                         PRIMOGEM_ITEM,
                         PRIMOGEM_BILLET_ITEM,
+                        ELEMENT_CRYSTAL_DUST_ITEM,
                         DENDRO_CORE_ITEM,
                         OLD_STONE_ITEM,
                         MASTER_LESS_STAR_DUST_ITEM,
@@ -208,7 +209,9 @@ public class PrimogemCraftCreativeTabs {
                         NAGADUS_EMERALD_NETHERITE_LEGGINGS_ITEM,
                         NAGADUS_EMERALD_NETHERITE_BOOTS_ITEM,
                         AGNIDUS_AGATE_SHOVEL_ITEM,
-                        AGNIDUS_AGATE_HOE_ITEM
+                        AGNIDUS_AGATE_HOE_ITEM,
+                        AGNIDUS_AGATE_AXE_ITEM,
+                        AGNIDUS_AGATE_PICKAXE_ITEM
                 ).forEach(output::accept)).build());
     }
 }
