@@ -7,7 +7,7 @@
     "item": "minecraft:iron_sword"
   },
   "result": {
-    "item": "primogemcraft:agnidus_agate_iron"
+    "item": "primogemcraft:agnidus_agate_iron_sword"
   },
   "template": {
     "item": "primogemcraft:smithing_template_element1"
