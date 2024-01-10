@@ -41,7 +41,7 @@ public class VayudaTurquoiseGemstoneDiamondSwordItem extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-        OnAttackion.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+        OnAttack.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
         return super.hurtEnemy(itemstack, entity, sourceentity);
     }
 

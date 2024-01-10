@@ -161,7 +161,9 @@ public class PrimogemCraftItems {
     public static final ElementCrystalDustItem ELEMENT_CRYSTAL_DUST_ITEM = register("element_crystal_dust", new ElementCrystalDustItem());
     public static final AgnidusAgateAxeItem AGNIDUS_AGATE_AXE_ITEM = register("agnidus_agate_axe", new AgnidusAgateAxeItem());
     public static final AgnidusAgatePickaxeItem AGNIDUS_AGATE_PICKAXE_ITEM = register("agnidus_agate_pickaxe", new AgnidusAgatePickaxeItem());
-
+    public static final AgnidusAgateIronSwordItem AGNIDUS_AGATE_IRON_SWORD_ITEM = register("agnidus_agate_iron_sword", new AgnidusAgateIronSwordItem());
+    public static final AgnidusAgateDiamondSwordItem AGNIDUS_AGATE_DIAMOND_SWORD_ITEM = register("agnidus_agate_diamond_sword", new AgnidusAgateDiamondSwordItem());
+    public static final AgnidusAgateNetheriteSwordItem AGNIDUS_AGATE_NETHERITE_SWORD_ITEM = register("agnidus_agate_netherite_sword", new AgnidusAgateNetheriteSwordItem());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }
