@@ -25,6 +25,8 @@ public abstract class LivingEntityMixin implements EntityExtension {
     private PastMobEffect.PastInfo pastInfo;
     @Unique
     private int dawnsongValue = 0;
+    @Unique
+    private int burnValue = 0;
 
     @Inject(at = @At("HEAD"), method = "swing(Lnet/minecraft/world/InteractionHand;Z)V", cancellable = true)
     public void onSwing(InteractionHand hand, boolean updateSelf, CallbackInfo ci) {
@@ -41,6 +43,7 @@ public abstract class LivingEntityMixin implements EntityExtension {
             pastInfo = new PastMobEffect.PastInfo(info.getDouble("x"), info.getDouble("y"), info.getDouble("z"), info.getFloat("health"));
         }
         dawnsongValue = compound.getInt("dawnsong");
+        burnValue = compound.getInt("burn");
     }
 
     @Inject(method = "addAdditionalSaveData", at = @At("HEAD"))
@@ -54,6 +57,7 @@ public abstract class LivingEntityMixin implements EntityExtension {
             info.putFloat("health", pastInfo.health());
         }
         compound.putInt("dawnsong", dawnsongValue);
+        compound.putInt("burn", burnValue);
     }
 
     public void setPastInfo(PastMobEffect.PastInfo info) {
@@ -73,5 +77,15 @@ public abstract class LivingEntityMixin implements EntityExtension {
     @Override
     public int getDawnsongValue() {
         return dawnsongValue;
+    }
+
+    @Override
+    public void setBurnValue(int burnValue) {
+        this.burnValue = burnValue;
+    }
+
+    @Override
+    public int getBurnValue() {
+        return burnValue;
     }
 }

@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "primogemcraft:nagadus_emerald_iron"
+    "item": "primogemcraft:agnidus_agate_iron"
   },
   "base": {
     "item": "minecraft:iron_sword"
   },
   "result": {
-    "item": "primogemcraft:nagadus_emerald_iron_sword"
+    "item": "primogemcraft:agnidus_agate_iron"
   },
   "template": {
     "item": "primogemcraft:smithing_template_element1"

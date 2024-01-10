@@ -14,6 +14,7 @@ public class PrimogemCraftMobEffects {
     public static final AmulateMobEffect AMULATE = register("amulate", new AmulateMobEffect());
     public static final AThousandNightsDawnsongMobEffect DAWNSONG = register("a_thousand_nights_dawnsong", new AThousandNightsDawnsongMobEffect());
     public static final AThousandNightsDawnsongCooldownMobEffect DAWNSONG_COOLDOWN = register("a_thousand_nights_dawnsong_cooldown", new AThousandNightsDawnsongCooldownMobEffect());
+    public static final BurnMobEffect BURN = register("burn", new BurnMobEffect());
     public static void init() {
     }
 

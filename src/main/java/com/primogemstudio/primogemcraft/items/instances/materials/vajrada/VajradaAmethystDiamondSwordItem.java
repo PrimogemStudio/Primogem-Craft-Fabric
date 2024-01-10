@@ -45,7 +45,7 @@ public class VajradaAmethystDiamondSwordItem extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-        OnAttacktion.execute(entity.level(), entity, sourceentity, itemstack);
+        OnAttack.execute(entity.level(), entity, sourceentity, itemstack);
         return super.hurtEnemy(itemstack, entity, sourceentity);
     }
 

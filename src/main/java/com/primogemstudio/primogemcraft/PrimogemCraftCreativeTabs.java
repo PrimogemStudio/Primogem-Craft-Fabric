@@ -211,7 +211,10 @@ public class PrimogemCraftCreativeTabs {
                         AGNIDUS_AGATE_SHOVEL_ITEM,
                         AGNIDUS_AGATE_HOE_ITEM,
                         AGNIDUS_AGATE_AXE_ITEM,
-                        AGNIDUS_AGATE_PICKAXE_ITEM
+                        AGNIDUS_AGATE_PICKAXE_ITEM,
+                        AGNIDUS_AGATE_IRON_SWORD_ITEM,
+                        AGNIDUS_AGATE_DIAMOND_SWORD_ITEM,
+                        AGNIDUS_AGATE_NETHERITE_SWORD_ITEM
                 ).forEach(output::accept)).build());
     }
 }

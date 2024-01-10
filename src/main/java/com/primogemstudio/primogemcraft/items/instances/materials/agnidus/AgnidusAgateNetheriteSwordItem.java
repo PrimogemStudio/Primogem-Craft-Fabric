@@ -1,4 +1,4 @@
-package com.primogemstudio.primogemcraft.items.instances.materials.vayuda;
+package com.primogemstudio.primogemcraft.items.instances.materials.agnidus;
 
 import com.primogemstudio.primogemcraft.items.PrimogemCraftItems;
 import net.minecraft.network.chat.Component;
@@ -10,11 +10,11 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class VayudaTurquoiseGemstoneNetheriteSwordItem extends SwordItem {
-    public VayudaTurquoiseGemstoneNetheriteSwordItem() {
+public class AgnidusAgateNetheriteSwordItem extends SwordItem {
+    public AgnidusAgateNetheriteSwordItem() {
         super(new Tier() {
             public int getUses() {
-                return 2680;
+                return 2561;
             }
 
             public float getSpeed() {
@@ -22,7 +22,7 @@ public class VayudaTurquoiseGemstoneNetheriteSwordItem extends SwordItem {
             }
 
             public float getAttackDamageBonus() {
-                return 5f;
+                return 6f;
             }
 
             public int getLevel() {
@@ -34,21 +34,22 @@ public class VayudaTurquoiseGemstoneNetheriteSwordItem extends SwordItem {
             }
 
             public @NotNull Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(PrimogemCraftItems.VAYUDA_TURQUOISE_GEMSTONE_SLIVER_ITEM), new ItemStack(PrimogemCraftItems.PRIMOGEM_ITEM));
+                return Ingredient.of(new ItemStack(PrimogemCraftItems.AGNIDUS_AGATE_SLIVER_ITEM), new ItemStack(Items.IRON_INGOT));
             }
         }, 3, -2f, new Item.Properties().fireResistant());
     }
 
     @Override
     public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-        OnAttack.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
-        return super.hurtEnemy(itemstack, entity, sourceentity);
+        boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+        OnAttack.execute(entity, itemstack);
+        return retval;
     }
 
     @Override
     public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_sword.line1"));
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_sword.line2"));
-        list.add(Component.translatable("tooltip.primogemcraft.vayuda_turquoise_gemstone_netherite_sword.line3"));
+        list.add(Component.translatable("tooltip.primogemcraft.agnidus_agate_netherite_sword.line1"));
+        list.add(Component.translatable("tooltip.primogemcraft.agnidus_agate_netherite_sword.line2"));
+        list.add(Component.translatable("tooltip.primogemcraft.agnidus_agate_netherite_sword.line3"));
     }
 }

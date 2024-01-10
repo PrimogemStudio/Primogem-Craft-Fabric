@@ -10,7 +10,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class OnAttackion {
+public class OnAttack {
     public static void execute(Level level, double x, double y, double z, LivingEntity entity, ItemStack itemstack) {
         if (itemstack.getItem() instanceof VayudaTurquoiseGemstoneIronSwordItem) {
             if (Math.random() < 0.25) {

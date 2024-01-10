@@ -10,7 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.phys.Vec3;
 
-public class OnAttacktion {
+public class OnAttack {
     public static void execute(LevelAccessor world, LivingEntity entity, LivingEntity sourceentity, ItemStack itemstack) {
         if (!sourceentity.hasEffect(PrimogemCraftMobEffects.AMULATE)) {
             var rate = itemstack.getItem() instanceof VajradaAmethystIronItem ? 0.05 : (itemstack.getItem() instanceof VajradaAmethystDiamondSwordItem ? 0.07 : 0.1);

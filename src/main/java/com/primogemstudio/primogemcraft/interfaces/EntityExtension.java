@@ -9,4 +9,7 @@ public interface EntityExtension {
 
     void setDawnsongValue(int value);
     int getDawnsongValue();
+
+    void setBurnValue(int value);
+    int getBurnValue();
 }
