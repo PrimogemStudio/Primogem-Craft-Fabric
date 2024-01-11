@@ -24,7 +24,6 @@ public class PrimogemCraftWorldgen {
         });
         BiomeModifications.addFeature(c -> c.getBiomeKey() == PLAINS, UNDERGROUND_ORES, placedFeature("vayuda_turquoise_gemstone_ore"));
         BiomeModifications.addFeature(c -> List.of(LUKEWARM_OCEAN, BEACH, RIVER).contains(c.getBiomeKey()), UNDERGROUND_ORES, placedFeature("vajrada_amethyst_ore"));
-        BiomeModifications.addFeature(c -> true, UNDERGROUND_ORES, placedFeature("nagadus_emerald_ore"));
     }
 
     private static ResourceKey<PlacedFeature> placedFeature(String id) {

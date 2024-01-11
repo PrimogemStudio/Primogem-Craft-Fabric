@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:agnidus_agate_diamond"
+  },
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "result": {
+    "item": "primogemcraft:agnidus_agate_diamond_helmet"
+  },
+  "template": {
+    "item": "primogemcraft:exquisite_mora"
+  }
+}

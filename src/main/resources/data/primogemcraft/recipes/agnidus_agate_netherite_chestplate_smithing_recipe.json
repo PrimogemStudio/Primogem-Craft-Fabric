@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:agnidus_agate_netherite"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "result": {
+    "item": "primogemcraft:agnidus_agate_netherite_chestplate"
+  },
+  "template": {
+    "item": "primogemcraft:smithing_template_element1"
+  }
+}

@@ -1,12 +1,9 @@
 package com.primogemstudio.primogemcraft.effects.instances;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -18,7 +15,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
-import static com.primogemstudio.primogemcraft.PrimogemCraftFabric.MOD_ID;
+import static com.primogemstudio.primogemcraft.items.PrimogemCraftItemTags.VAJRADA_AMETHYST_SWORDS;
 
 public class AmulateMobEffect extends MobEffect {
     public AmulateMobEffect() {
@@ -45,7 +42,7 @@ public class AmulateMobEffect extends MobEffect {
 
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
-        if (entity.getMainHandItem().is(TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "vajrada_amethyst_swords")))) {
+        if (entity.getMainHandItem().is(VAJRADA_AMETHYST_SWORDS)) {
             if (!entity.level().isClientSide()) {
                 entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60,
                         (entity.hasEffect(this) ? entity.getEffect(this).getAmplifier() : 0) * 2, false, false));
