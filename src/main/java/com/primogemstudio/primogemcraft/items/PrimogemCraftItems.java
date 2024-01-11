@@ -164,6 +164,18 @@ public class PrimogemCraftItems {
     public static final AgnidusAgateIronSwordItem AGNIDUS_AGATE_IRON_SWORD_ITEM = register("agnidus_agate_iron_sword", new AgnidusAgateIronSwordItem());
     public static final AgnidusAgateDiamondSwordItem AGNIDUS_AGATE_DIAMOND_SWORD_ITEM = register("agnidus_agate_diamond_sword", new AgnidusAgateDiamondSwordItem());
     public static final AgnidusAgateNetheriteSwordItem AGNIDUS_AGATE_NETHERITE_SWORD_ITEM = register("agnidus_agate_netherite_sword", new AgnidusAgateNetheriteSwordItem());
+    public static final AgnidusAgateIronArmorItem.Helmet AGNIDUS_AGATE_IRON_HELMET_ITEM = register("agnidus_agate_iron_helmet", new AgnidusAgateIronArmorItem.Helmet());
+    public static final AgnidusAgateIronArmorItem.Chestplate AGNIDUS_AGATE_IRON_CHESTPLATE_ITEM = register("agnidus_agate_iron_chestplate", new AgnidusAgateIronArmorItem.Chestplate());
+    public static final AgnidusAgateIronArmorItem.Leggings AGNIDUS_AGATE_IRON_LEGGINGS_ITEM = register("agnidus_agate_iron_leggings", new AgnidusAgateIronArmorItem.Leggings());
+    public static final AgnidusAgateIronArmorItem.Boots AGNIDUS_AGATE_IRON_BOOTS_ITEM = register("agnidus_agate_iron_boots", new AgnidusAgateIronArmorItem.Boots());
+    public static final AgnidusAgateDiamondArmorItem.Helmet AGNIDUS_AGATE_DIAMOND_HELMET_ITEM = register("agnidus_agate_diamond_helmet", new AgnidusAgateDiamondArmorItem.Helmet());
+    public static final AgnidusAgateDiamondArmorItem.Chestplate AGNIDUS_AGATE_DIAMOND_CHESTPLATE_ITEM = register("agnidus_agate_diamond_chestplate", new AgnidusAgateDiamondArmorItem.Chestplate());
+    public static final AgnidusAgateDiamondArmorItem.Leggings AGNIDUS_AGATE_DIAMOND_LEGGINGS_ITEM = register("agnidus_agate_diamond_leggings", new AgnidusAgateDiamondArmorItem.Leggings());
+    public static final AgnidusAgateDiamondArmorItem.Boots AGNIDUS_AGATE_DIAMOND_BOOTS_ITEM = register("agnidus_agate_diamond_boots", new AgnidusAgateDiamondArmorItem.Boots());
+    public static final AgnidusAgateNetheriteArmorItem.Boots AGNIDUS_AGATE_NETHERITE_BOOTS_ITEM = register("agnidus_agate_netherite_boots", new AgnidusAgateNetheriteArmorItem.Boots());
+    public static final AgnidusAgateNetheriteArmorItem.Helmet AGNIDUS_AGATE_NETHERITE_HELMET_ITEM = register("agnidus_agate_netherite_helmet", new AgnidusAgateNetheriteArmorItem.Helmet());
+    public static final AgnidusAgateNetheriteArmorItem.Chestplate AGNIDUS_AGATE_NETHERITE_CHESTPLATE_ITEM = register("agnidus_agate_netherite_chestplate", new AgnidusAgateNetheriteArmorItem.Chestplate());
+    public static final AgnidusAgateNetheriteArmorItem.Leggings AGNIDUS_AGATE_NETHERITE_LEGGINGS_ITEM = register("agnidus_agate_netherite_leggings", new AgnidusAgateNetheriteArmorItem.Leggings());
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

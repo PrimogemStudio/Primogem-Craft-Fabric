@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "primogemcraft:agnidus_agate_iron"
+  },
+  "base": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "result": {
+    "item": "primogemcraft:agnidus_agate_iron_chestplate"
+  },
+  "template": {
+    "item": "primogemcraft:mora"
+  }
+}

@@ -213,8 +213,20 @@ public class PrimogemCraftCreativeTabs {
                         AGNIDUS_AGATE_AXE_ITEM,
                         AGNIDUS_AGATE_PICKAXE_ITEM,
                         AGNIDUS_AGATE_IRON_SWORD_ITEM,
+                        AGNIDUS_AGATE_IRON_HELMET_ITEM,
+                        AGNIDUS_AGATE_IRON_CHESTPLATE_ITEM,
+                        AGNIDUS_AGATE_IRON_LEGGINGS_ITEM,
+                        AGNIDUS_AGATE_IRON_BOOTS_ITEM,
                         AGNIDUS_AGATE_DIAMOND_SWORD_ITEM,
-                        AGNIDUS_AGATE_NETHERITE_SWORD_ITEM
+                        AGNIDUS_AGATE_DIAMOND_HELMET_ITEM,
+                        AGNIDUS_AGATE_DIAMOND_CHESTPLATE_ITEM,
+                        AGNIDUS_AGATE_DIAMOND_LEGGINGS_ITEM,
+                        AGNIDUS_AGATE_DIAMOND_BOOTS_ITEM,
+                        AGNIDUS_AGATE_NETHERITE_SWORD_ITEM,
+                        AGNIDUS_AGATE_NETHERITE_HELMET_ITEM,
+                        AGNIDUS_AGATE_NETHERITE_CHESTPLATE_ITEM,
+                        AGNIDUS_AGATE_NETHERITE_LEGGINGS_ITEM,
+                        AGNIDUS_AGATE_NETHERITE_BOOTS_ITEM
                 ).forEach(output::accept)).build());
     }
 }
