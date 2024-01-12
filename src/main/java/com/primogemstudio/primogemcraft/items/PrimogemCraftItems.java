@@ -176,6 +176,10 @@ public class PrimogemCraftItems {
     public static final AgnidusAgateNetheriteArmorItem.Helmet AGNIDUS_AGATE_NETHERITE_HELMET_ITEM = register("agnidus_agate_netherite_helmet", new AgnidusAgateNetheriteArmorItem.Helmet());
     public static final AgnidusAgateNetheriteArmorItem.Chestplate AGNIDUS_AGATE_NETHERITE_CHESTPLATE_ITEM = register("agnidus_agate_netherite_chestplate", new AgnidusAgateNetheriteArmorItem.Chestplate());
     public static final AgnidusAgateNetheriteArmorItem.Leggings AGNIDUS_AGATE_NETHERITE_LEGGINGS_ITEM = register("agnidus_agate_netherite_leggings", new AgnidusAgateNetheriteArmorItem.Leggings());
+    public static final Item PRITHVA_TOPAZ_ITEM = register("prithva_topaz", new Item(new Item.Properties()));
+    public static final Item PRITHVA_TOPAZ_FRAGMENT_ITEM = register("prithva_topaz_fragment", new Item(new Item.Properties()));
+    public static final Item PRITHVA_TOPAZ_SLIVER_ITEM = register("prithva_topaz_sliver", new Item(new Item.Properties()));
+    public static final Item PRITHVA_TOPAZ_PIECE_ITEM = register("prithva_topaz_piece", new Item(new Item.Properties()));
     public static void init() {
         PrimogemCraftMobEffects.init();
     }

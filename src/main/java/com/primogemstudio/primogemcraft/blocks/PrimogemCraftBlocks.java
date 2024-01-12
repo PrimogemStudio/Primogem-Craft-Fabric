@@ -6,6 +6,8 @@ import com.primogemstudio.primogemcraft.blocks.instances.materials.agnidus.Agnid
 import com.primogemstudio.primogemcraft.blocks.instances.materials.agnidus.AgnidusAgateOreBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.nagadus.NagadusEmeraldBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.nagadus.NagadusEmeraldOreBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.prithva.PrithvaTopazBlock;
+import com.primogemstudio.primogemcraft.blocks.instances.materials.prithva.PrithvaTopazOreBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vajrada.VajradaAmethystBlock;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vajrada.VajradaAmethystOre;
 import com.primogemstudio.primogemcraft.blocks.instances.materials.vayuda.VayudaTurquoiseGemstoneBlock;
@@ -78,6 +80,8 @@ public class PrimogemCraftBlocks {
     public static final AgnidusAgateBlock AGNIDUS_AGATE_BLOCK = registerWithItem("agnidus_agate_block", new AgnidusAgateBlock());
     public static final AgnidusAgateOreBlock AGNIDUS_AGATE_ORE_BLOCK = registerWithItem("agnidus_agate_ore", new AgnidusAgateOreBlock());
     public static final NetherrackFarmlandBlock NETHERRACK_FARMLAND_BLOCK = registerWithItem("netherrack_farmland", new NetherrackFarmlandBlock());
+    public static final PrithvaTopazBlock PRITHVA_TOPAZ_BLOCK = registerWithItem("prithva_topaz_block", new PrithvaTopazBlock());
+    public static final PrithvaTopazOreBlock PRITHVA_TOPAZ_ORE_BLOCK = registerWithItem("prithva_topaz_ore", new PrithvaTopazOreBlock());
     @Environment(EnvType.CLIENT)
     public static void initRenderLayers() {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(), PrimogemCraftBlocks.MORA_BUNCH_BLOCK, PrimogemCraftBlocks.CHEAP_MORA_WALL_BLOCK, PrimogemCraftBlocks.RUSTED_PLANK_STAIR_BLOCK);
